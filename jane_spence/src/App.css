@@ -6,12 +6,7 @@
 .App-header {
   
   
-  background: linear-gradient(to right, #5359a8, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-
+  background: linear-gradient(to right, #a2a6da, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -112,6 +107,15 @@
   text-decoration: none;
   margin: 15px 2px;
   cursor: pointer;
+
+}
+
+.submit:hover {
+
+  background-color:#0613c2;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  
 }
 
 .messageBox {
@@ -123,12 +127,3 @@
 
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
