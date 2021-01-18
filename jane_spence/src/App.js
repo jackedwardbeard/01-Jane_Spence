@@ -23,7 +23,7 @@ class App extends Component{
 			  <input name="phone" type="number" placeholder="* Phone Number"/>
 			  <input name="date" type="datetime-local"/>
 			  <input name="subject" type="text" placeholder="* Subject"/>
-        <input name="message" type="text" placeholder="* Message"/>
+        <textarea className="messageBox" name="message" type="text" placeholder="* Message"/>
 			  <input className="submit" name="submit" type="submit"/>
 			  </form>
         </div>
