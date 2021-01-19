@@ -1,0 +1,13 @@
+.mapInformation {
+    
+    position: relative;
+    font-size: 20px;
+}
+
+#list li {
+    list-style-type: none;
+}
+
+.locationsTitle {
+    top: 1000%;
+}

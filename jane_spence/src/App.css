@@ -6,7 +6,7 @@
 .App-header {
   
   
-  background: linear-gradient(to right, #a2a6da, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #457fca, #5691c8);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,6 +47,7 @@
 	letter-spacing: 0px; 
 	line-height: 1.5; 
   text-align: left;
+  
 }
 
 .topicTitle {

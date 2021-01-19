@@ -15,7 +15,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Contact Me',
+        title: 'Contact',
         url: '//localhost:3000/contact',
         cName: 'nav-links'
     },

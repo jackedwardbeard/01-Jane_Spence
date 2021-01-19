@@ -8,7 +8,7 @@ const Contact = () => {
         <Navbar></Navbar>
         <div className="contactMeForm">
         <h3 className="contactMeTitle">
-			  CONTACT ME
+			  CONTACT
 			  </h3>
         <h3 className="requiredFields">
 			  * Required Fields
@@ -24,7 +24,9 @@ const Contact = () => {
 			  <input className="submit" name="submit" type="submit"/>
 			  </form>
         </div>
+		
     </div>
+	
     );
 }
  

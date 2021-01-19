@@ -6,6 +6,8 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Topics from './components/Topics';
 import Locations from './components/Locations';
+import Footer from './components/Footer/Footer.js';
+import Footer2 from './components/Footer/Footer2.js';
 
 // classes are stateful, functions are not
 class App extends Component{
@@ -24,9 +26,12 @@ class App extends Component{
              
             <Route component={Error}/>
            </Switch>
-        </div> 
+      </div> 
+      <Footer2></Footer2>
+      <Footer></Footer>
       
-    </BrowserRouter>
+      </BrowserRouter>
+    
     );
   }
 }
