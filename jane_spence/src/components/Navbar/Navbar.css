@@ -1,7 +1,6 @@
 .NavbarItems {
     
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgb(138, 51, 123) 0%, rgb(128, 50, 131) 50%, rgba(0,0,0,1) 100%);
     outline: solid black;
     outline-width: 5px;
     height: 70px;
@@ -32,7 +31,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 30px;
+    grid-gap: 40px;
     list-style: none;
     text-align: center;
 }
@@ -50,7 +49,7 @@
     transition: all 0.2s ease-out;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 100%) {
     .NavbarItems {
         position: relative;
     }

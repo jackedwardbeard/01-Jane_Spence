@@ -11,7 +11,7 @@ class Footer extends Component{
 
                           <div className="col">
                               <ul id="col">
-                                  <h4 className="footer2title">PAGES</h4>
+                                  <h3 className="footer2title">PAGES</h3>
                                   <nav>
                                     <li>
                                         <a className="nav-links" href="//localhost:3000/home" >HOME</a>
@@ -31,7 +31,7 @@ class Footer extends Component{
                           
                           <div className="col">
                               <ul id="col">
-                                <h4 className="footer2title"> TOPICS </h4>
+                                <h3 className="footer2title"> EDUCATION TOPICS </h3>
                                 <nav>
                                     <li>
                                         <a className="nav-links" href="//localhost:3000/contact" >DIABETES</a>
@@ -51,7 +51,7 @@ class Footer extends Component{
 
                           <div className="col">
                               <ul id="col">
-                                <h4 className="footer2title"> DIETRY INFORMATION </h4>
+                                <h3 className="footer2title"> DIETRY INFORMATION </h3>
                                 <nav>
                                     <li>
                                         <a className="nav-links" href="//localhost:3000/contact" >CARBOHYDRATES</a>
@@ -64,6 +64,23 @@ class Footer extends Component{
                                     </li>
                                     <li>
                                         <a className="nav-links" href="//localhost:3000/contact" >GLYCAEMIC INDEX</a>
+                                    </li>
+                                </nav>
+                              </ul>
+                          </div>
+
+                          <div className="col">
+                              <ul id="col">
+                                <h3 className="footer2title"> IMPORTANT WEBSITES </h3>
+                                <nav>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 1</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 2</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 3</a>
                                     </li>
                                 </nav>
                               </ul>

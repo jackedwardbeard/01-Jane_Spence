@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@600&display=swap');
+
 .App {
   text-align: center;
 }
@@ -6,55 +9,25 @@
 .App-header {
   
   
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba(0,0,0,1) 100%);
-  min-height: 100vh;
+  background: linear-gradient(90deg, rgb(223, 201, 219) 0%, rgb(226, 229, 238) 50%, rgb(241, 233, 233) 100%);
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: top;
   color: rgb(255, 255, 255); 
-  font-family: 'Helvetica Neue', sans-serif; 
+  font-family: 'Montserrat';
   font-size: 50px; font-weight: bold; 
   letter-spacing: -1px; 
   line-height: 2; 
   text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.contactMeTitle {
-
-  color: white; 
-	font-family: 'Helvetica Neue', sans-serif; 
-	font-size: 28px; 
-	font-weight: bold; 
-	letter-spacing: 0px; 
-	line-height: 0; 
-  text-align: left;
-  
-}
-
-.contactMeForm {
-
-  width: 200px;
-  margin: auto;
-  color: white; 
-	font-family: 'Helvetica Neue', sans-serif; 
-	font-size: 20px; 
-	font-weight: lighter; 
-	letter-spacing: 0px; 
-	line-height: 1.5; 
-  text-align: left;
-  
-}
 
 .topicTitle {
 
   color: white; 
-	font-family: 'Helvetica Neue', sans-serif; 
+	font-family: 'Raleway', cursive; 
 	font-size: 28px; 
 	font-weight: bold; 
 	letter-spacing: 0px; 
@@ -67,7 +40,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba
 .locationsTitle {
 
   color: white; 
-	font-family: 'Helvetica Neue', sans-serif; 
+	font-family: 'Raleway', cursive; 
 	font-size: 28px; 
 	font-weight: bold; 
 	letter-spacing: 0px; 
@@ -80,7 +53,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba
 .homeTitle {
 
   color: white; 
-	font-family: 'Helvetica Neue', sans-serif; 
+	font-family: 'Raleway', cursive; 
 	font-size: 28px; 
 	font-weight: bold; 
 	letter-spacing: 0px; 
@@ -90,15 +63,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba
 
 }
 
-.requiredFields {
-
-  color: red;
-  font-size: 15px;
-  font-family:'Helvetica Neue', sans-serif;
-  text-align: left;
-  font-weight: lighter;
-  line-height: 0px;
-}
 
 .submit {
 
@@ -109,6 +73,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba
   text-decoration: none;
   margin: 15px 2px;
   cursor: pointer;
+  font-family: 'Monserrat';
 
 }
 
@@ -128,4 +93,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba
   vertical-align: text-top
 
 }
+
+
 

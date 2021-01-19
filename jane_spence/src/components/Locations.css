@@ -1,5 +1,6 @@
 .mapInformation {
     
+    margin: auto;
     position: relative;
     font-size: 20px;
 }
@@ -9,5 +10,5 @@
 }
 
 .locationsTitle {
-    top: 1000%;
+    margin: auto;
 }
