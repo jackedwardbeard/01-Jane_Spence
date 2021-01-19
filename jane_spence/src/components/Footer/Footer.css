@@ -1,9 +1,10 @@
 
   .footer {
       color: white;
-      background: linear-gradient(to right, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba(0,0,0,1) 100%);
       bottom: 0;
-      height: 30px;
+      height: px;
       width: 100%;
     
   }

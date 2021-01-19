@@ -6,7 +6,8 @@
 .App-header {
   
   
-  background: linear-gradient(to right, #457fca, #5691c8);
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,74,88,1) 50%, rgba(0,0,0,1) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,7 +102,7 @@
 
 .submit {
 
-  background-color: #6495b1;
+  background-color: rgb(131, 127, 207);
   border: none;
   color: white;
   padding: 16px 32px;

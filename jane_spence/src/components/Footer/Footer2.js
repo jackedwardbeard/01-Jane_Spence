@@ -12,30 +12,60 @@ class Footer extends Component{
                           <div className="col">
                               <ul id="col">
                                   <h4 className="footer2title">PAGES</h4>
-                                  <li>HOME</li>
-                                  <li>TOPICS</li>
-                                  <li>LOCATIONS</li>
-                                  <li>CONTACT</li>
+                                  <nav>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/home" >HOME</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/topics" >TOPICS</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/locations" >LOCATIONS</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >CONTACT</a>
+                                    </li>
+                                </nav>
                               </ul>
                           </div>
                           
                           <div className="col">
                               <ul id="col">
                                 <h4 className="footer2title"> TOPICS </h4>
-                                  <li>DIABETES</li>
-                                  <li>MEDICATION</li>
-                                  <li>EXERCISE</li>
-                                  <li>DIETING</li>
+                                <nav>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >DIABETES</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >EXERCISE</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >NUTRITION</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >MEDICATION</a>
+                                    </li>
+                                </nav>
                               </ul>
                           </div>
 
                           <div className="col">
                               <ul id="col">
                                 <h4 className="footer2title"> DIETRY INFORMATION </h4>
-                                  <li>CARBOHYDRATES</li>
-                                  <li>SUGAR</li>
-                                  <li>PROTEIN</li>
-                                  <li>GLYCAEMIC INDEX</li>
+                                <nav>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >CARBOHYDRATES</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >SUGAR</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >PROTEIN</a>
+                                    </li>
+                                    <li>
+                                        <a className="nav-links" href="//localhost:3000/contact" >GLYCAEMIC INDEX</a>
+                                    </li>
+                                </nav>
                               </ul>
                           </div>
 
