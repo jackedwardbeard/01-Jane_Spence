@@ -1,8 +1,8 @@
 export const MenuItems = [
     {
-    title: 'Home',
-    url: '//localhost:3000/home',
-    cName: 'nav-links'
+        title: 'Home',
+        url: '//localhost:3000/home',
+        cName: 'nav-links'
     },
     {
         title: 'Education Topics',

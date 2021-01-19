@@ -16,11 +16,11 @@ class App extends Component{
       <div>
             <Switch>
         
-             <Route path="" component={Home}/>
-             <Route path="/home" component={Home}/>
-             <Route path="/locations" component={Locations}/>
-             <Route path="/topics" component={Topics}/>
-             <Route path="/contact" component={Contact}/>
+             <Route exact path="/" component={Home}/>
+             <Route exact path="/home" component={Home}/>
+             <Route exact path="/locations" component={Locations}/>
+             <Route exact path="/topics" component={Topics}/>
+             <Route exact path="/contact" component={Contact}/>
              
             <Route component={Error}/>
            </Switch>
