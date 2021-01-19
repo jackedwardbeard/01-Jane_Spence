@@ -74,13 +74,13 @@ class Footer extends Component{
                                 <h3 className="footer2title"> IMPORTANT WEBSITES </h3>
                                 <nav>
                                     <li>
-                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 1</a>
+                                        <a className="nav-links" href="//google.com" >WEBSITE 1</a>
                                     </li>
                                     <li>
-                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 2</a>
+                                        <a className="nav-links" href="//youtube.com" >WEBSITE 2</a>
                                     </li>
                                     <li>
-                                        <a className="nav-links" href="//localhost:3000/contact" >WEBSITE 3</a>
+                                        <a className="nav-links" href="//netflix.com" >WEBSITE 3</a>
                                     </li>
                                 </nav>
                               </ul>

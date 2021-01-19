@@ -3,6 +3,7 @@
     margin: auto;
     position: relative;
     font-size: 20px;
+    color: black;
 }
 
 #list li {
@@ -11,4 +12,5 @@
 
 .locationsTitle {
     margin: auto;
+    color: black;
 }
