@@ -36,6 +36,7 @@ export const NavLogo = styled(LinkRouter)`
     display: flex;
     align-items: center;
     margin-left: 24px;
+    font-family: 'Dosis', sans-serif;
     font-weight: bold;
     text-decoration: none;
     position: relative;
@@ -82,6 +83,8 @@ export const NavItem = styled.li`
     height: 80px;
     margin: 30px;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -109,6 +112,7 @@ export const NavLinks = styled(LinkScroll)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 768px) {
         display: none;

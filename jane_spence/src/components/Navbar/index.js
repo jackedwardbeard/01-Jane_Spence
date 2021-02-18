@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to="/">Jane Spence</NavLogo>
+                <NavLogo to="/">JANE SPENCE</NavLogo>
                 <MobileIcon>
                     <FaBars />
                 </MobileIcon>
