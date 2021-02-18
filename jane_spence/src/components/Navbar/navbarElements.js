@@ -39,6 +39,10 @@ export const NavLogo = styled(LinkRouter)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+        text-shadow: 0px 0px 5px pink;
+    }
     
 `;
 
@@ -68,6 +72,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 80px;
     margin: 30px;
+    font-size: 1rem;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -84,11 +89,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &:active {
-        border-bottom: 3px solid pink;
+        border-bottom: 4px solid pink;
     }
 
     &:hover {
-        border-bottom: 3px solid pink;
+        border-bottom: 4px solid pink;
     }
 `;
 
