@@ -33,16 +33,25 @@ export const NavLogo = styled(LinkRouter)`
     color: white;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-
+    position: relative;
+    font-size: 2em;
+    overflow: hidden;
+    background: linear-gradient(to right, pink, pink 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    
     &:hover {
-        text-shadow: 0px 0px 5px pink;
-    }
+        background-position: 0 100%;
     
 `;
 
