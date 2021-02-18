@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa' // mobile menu icon
+import { MobileMenu } from '../MobileMenu/mobileMenuElements'
 import { 
     Nav, 
     NavbarContainer, 
@@ -19,7 +20,7 @@ const Navbar = () => {
             <NavbarContainer>
                 <NavLogo to="/">JANE SPENCE</NavLogo>
                 <MobileIcon>
-                    <FaBars />
+                    <FaBars/>
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
@@ -36,7 +37,7 @@ const Navbar = () => {
                     </NavItem>
                 </NavMenu>
             <NavBtn>
-                <NavBtnLink to="enquire">Enquire Now</NavBtnLink>
+                <NavBtnLink to="/enquire">Enquire Now</NavBtnLink>
             </NavBtn>
             </NavbarContainer>
         </Nav>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom'
-import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkRouter } from 'react-router-dom' // used for links that do not use smooth scroll (i.e. enquire)
+import { Link as LinkScroll } from 'react-scroll' // used for links that redirect using smooth scroll (i.e. all pages except for enquire)
 
 export const Nav = styled.nav`
     background: #000;
