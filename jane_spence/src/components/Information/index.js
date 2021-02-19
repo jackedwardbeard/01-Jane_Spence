@@ -6,6 +6,7 @@ import {
     Column1,
     TextWrapper,
     Title,
+    Subtitle,
     Body,
     Column2,
     Img,
@@ -15,7 +16,7 @@ import {
 } from './InformationComponents'
 
 
-const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, img}) => {
+const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext}) => {
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
             <InformationWrapper>
@@ -27,6 +28,24 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             </Title>
                             <Body darkText={darkText}>
                                 {body}
+                            </Body>
+                            <Subtitle darkText={darkText} showSubtitle={showSubtitle} >
+                            {subtext}
+                            </Subtitle>
+                            <Body darkText={darkText}>
+                                {subbody}
+                            </Body>
+                            <Body darkText={darkText}>
+                                {subbody2}
+                            </Body>
+                            <Body darkText={darkText}>
+                                {subbody3}
+                            </Body>
+                            <Body darkText={darkText}>
+                                {subbody4}
+                            </Body>
+                            <Body darkText={darkText}>
+                                {subbody5}
                             </Body>
                             <ButtonWrapper>
                                 <Button 
@@ -41,6 +60,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                 {buttonText}
                                 </Button>
                             </ButtonWrapper>
+                            
                         </TextWrapper>
                     </Column1>
                     <Column2>

@@ -12,9 +12,16 @@ export const About = {
     buttonText: 'Return To Home',
     buttonLocation: 'contact',
     title: 'About',
+    subtext: 'Credentials',
     body: 'Jane Spence is an Accredited Pharmacist and Diabetes Educator who has been a part of the industry for over 10 years. Services include Home Medication Reviews (HMRs) and Diabetes Education. Jane is available and ready to answer your questions!',
+    subbody: 'Bachelor of Pharmacy',
+    subbody2: 'Grad Cert. of Diabetes Education',
+    subbody3: 'Accreditation: Australian Association of Consultation Pharmacy',
+    subbody4: 'Credentialled Diabetes Educator (CDE)',
+    subbody5: 'Consultant Clinical Pharmacist',
     img: about,
-    imageLeft: true
+    imageLeft: true,
+    showSubtitle: true
 }
 
 export const FAQ = {
@@ -29,6 +36,7 @@ export const FAQ = {
     title: 'FAQ',
     body: 'Template for FAQ',
     img: faq,
-    imageLeft: false
+    imageLeft: false,
+    showSubtitle: false
 
 }

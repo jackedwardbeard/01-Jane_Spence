@@ -28,9 +28,11 @@ export const Row1 = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
+    margin-left: 70px;
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
+    
 `
 
 export const Title = styled.h1`
@@ -40,10 +42,23 @@ export const Title = styled.h1`
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
 `
 
+export const Subtitle = styled.h1`
+    margin-top: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: ${({darkText}) => (darkText ? 'black' : 'pink')}
+    display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
+
+`
+
 export const Body = styled.p`
+    margin-top: 15px;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')}
+
+   
 `
 
 export const Column2 = styled.div`
@@ -61,6 +76,10 @@ export const TextWrapper = styled.div`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 `
 
 export const Img = styled.img`
