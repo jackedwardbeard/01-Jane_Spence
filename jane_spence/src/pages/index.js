@@ -26,6 +26,7 @@ const Home = ({toggle}) => {
         <Information {...FAQ}/>
         <Location id="location"/>
         <Contact id="contact"/>
+        
         </>
     )
 };

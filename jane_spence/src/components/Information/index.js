@@ -4,6 +4,7 @@ import {
     InformationWrapper,
     Row1,
     Column1,
+    TextWrapper,
     Title,
     Body,
     Column2,
@@ -14,35 +15,36 @@ import {
 } from './InformationComponents'
 
 
-const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, id, title, body, image}) => {
+const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, id, title, body, img}) => {
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
             <InformationWrapper>
                 <Row1>
                     <Column1>
-                        <Title darkText={darkText}>
-                            {title}
-                        </Title>
-                        <Body darkText={darkText}>
-                            {body}
-                        </Body>
+                        <TextWrapper>
+                            <Title darkText={darkText}>
+                                {title}
+                            </Title>
+                            <Body darkText={darkText}>
+                                {body}
+                            </Body>
+                            <ButtonWrapper>
+                                <Button to="about" darkButton={darkButton} darkButtonText={darkButtonText} showButton={showButton}>
+                                {buttonText}
+                                </Button>
+                            </ButtonWrapper>
+                        </TextWrapper>
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={image}>
-                            
-                            </Img>
+                            <Img src={img}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>
-                <ButtonWrapper>
-                    <Button to="about" darkButton={darkButton} darkButtonText={darkButtonText} showButton={showButton}>
-                    {buttonText}
-                    </Button>
-                </ButtonWrapper>
             </InformationWrapper>
         </InformationContainer>
     )
-}
+};
+
 
 export default Information
