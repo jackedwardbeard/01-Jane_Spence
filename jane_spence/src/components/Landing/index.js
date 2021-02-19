@@ -27,7 +27,7 @@ const Landing = () => {
                 &nbsp;
                 <LearnMoreBtnWrapper>
                     <LearnMoreBtn to="about">
-                    Learn More ->
+                    Learn More
                     </LearnMoreBtn>
                 </LearnMoreBtnWrapper>
             </LandingText>
