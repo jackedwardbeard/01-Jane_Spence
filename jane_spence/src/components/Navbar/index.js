@@ -23,7 +23,7 @@ const Navbar = ({reverseState}) => {
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to="/">JANE SPENCE</NavLogo>
+                <NavLogo to="landing" smooth={true} spy={true} offset={-80}>JANE SPENCE</NavLogo>
                 <MobileIcon onClick={reverseState}>
                     <FaBars/>
                 </MobileIcon>
@@ -42,7 +42,7 @@ const Navbar = ({reverseState}) => {
                     </NavItem>
                 </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/enquire">Enquire Now</NavBtnLink>
+                <NavBtnLink to="contact" smooth={true} spy={true} offset={-80}>Enquire Now</NavBtnLink>
             </NavBtn>
             </NavbarContainer>
         </Nav>

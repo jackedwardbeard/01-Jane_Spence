@@ -21,7 +21,7 @@ const Home = ({toggle}) => {
         <>
         <MobileMenu clicked={clicked} reverseState={reverseState}/>
         <Navbar reverseState={reverseState}/>
-        <LandingBackground/>
+        <LandingBackground id="landing"/>
         <Information {...About}/>
         <Information {...FAQ}/>
         <Location id="location"/>

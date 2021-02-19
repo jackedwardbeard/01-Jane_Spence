@@ -11,9 +11,9 @@ import {
 } from './LandingComponents'
 import Video from '../../videos/landingVideo.mp4'
 
-const Landing = () => {
+const Landing = ({id}) => {
     return (
-        <LandingContainer>
+        <LandingContainer id={id}>
             <LandingBackground>
                 <VideoLoop autoPlay loop muted src={Video} type='video/mp4'></VideoLoop>
             </LandingBackground>
