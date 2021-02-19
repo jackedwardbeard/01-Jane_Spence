@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages';
+import Landing from './components/Landing';
 
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <Router>
       <Home/>
+      <Landing/>
     </Router>
   )
 }

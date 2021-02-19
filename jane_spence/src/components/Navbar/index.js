@@ -1,6 +1,10 @@
+// in our index.js files we import all of our styled components which reside
+// in our xxxxComponents.js file
+// these are the building blocks of our overall component
+
 import React from 'react'
 import {FaBars} from 'react-icons/fa' // mobile menu icon
-import { MobileMenu } from '../MobileMenu/mobileMenuElements'
+import { MobileMenu } from '../MobileMenu/MobileMenuComponents'
 import { 
     Nav, 
     NavbarContainer, 
@@ -11,15 +15,16 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink
-} from './navbarElements'
+} from './NavbarComponents'
 
-
-const Navbar = () => {
+// you can pass in state variables and functions to components
+// in this case we pass in reverseState(a function to flip the state when clicked)
+const Navbar = ({reverseState}) => {
     return (
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">JANE SPENCE</NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={reverseState}>
                     <FaBars/>
                 </MobileIcon>
                 <NavMenu>
