@@ -30,7 +30,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
-    outline: solid yellow 2px;
+    margin-right: 100px;
 `
 
 export const Title = styled.h1`

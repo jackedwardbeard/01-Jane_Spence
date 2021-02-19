@@ -10,7 +10,8 @@ import {
     Column2,
     ContactWrap,
     ContactForm,
-    ContactTitle,
+    Img,
+    ImgWrap,
     Item,
     Label,
     Input,
@@ -18,6 +19,7 @@ import {
     SubmitBtn,
     BtnWrapper
 } from './ContactComponents'
+import contact from '../../images/contact.svg'
 
 
 const Contact = ({id}) => {
@@ -59,7 +61,9 @@ const Contact = ({id}) => {
                         </ContactWrap>
                     </Column1>
                     <Column2>
-                        
+                        <ImgWrap>
+                            <Img src={contact}/>
+                        </ImgWrap>
                     </Column2>
                 </Row1>
             </InformationWrapper>
