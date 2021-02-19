@@ -4,8 +4,6 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const LocationContainer = styled.div`
-    background: ${({darkBackground}) => (darkBackground ? 'black' : 'pink')};
-    
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
