@@ -5,7 +5,9 @@ import {
     VideoLoop,
     LandingText,
     LandingTitle,
-    LandingSubText
+    LandingSubText,
+    LearnMoreBtnWrapper,
+    LearnMoreBtn
 } from './LandingComponents'
 import Video from '../../videos/landingVideo.mp4'
 
@@ -22,7 +24,15 @@ const Landing = () => {
                 <LandingSubText>
                 Seek professional advice from a Certified Pharmacist and Diabetes Educator
                 </LandingSubText>
+                &nbsp;
+                <LearnMoreBtnWrapper>
+                    <LearnMoreBtn to="about">
+                    Learn More ->
+                    </LearnMoreBtn>
+                </LearnMoreBtnWrapper>
             </LandingText>
+            
+            
         </LandingContainer>
         
     )
