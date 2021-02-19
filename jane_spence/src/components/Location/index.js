@@ -13,7 +13,7 @@ import {
 } from './LocationComponents'
 
 
-const Location = ({darkBackground, darkText, darkButton, buttonLocation, darkButtonText, buttonText, id, title, body, image}) => {
+const Location = () => {
     return (
         <LocationContainer>
             <LocationWrapper>
