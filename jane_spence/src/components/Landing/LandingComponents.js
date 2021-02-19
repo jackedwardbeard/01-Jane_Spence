@@ -10,6 +10,7 @@ export const LandingContainer = styled.div`
     padding: 0 40px;
     position: relative;
     height:800px;
+    background: white;
 
 `
 

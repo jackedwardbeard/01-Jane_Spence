@@ -5,6 +5,7 @@ import LandingBackground from '../components/Landing';
 import Information from '../components/Information';
 import { About, FAQ } from '../components/Information/pages';
 import Location from '../components/Location'
+import Contact from '../components/Contact'
 
 const Home = ({toggle}) => {
 
@@ -24,6 +25,7 @@ const Home = ({toggle}) => {
         <Information {...About}/>
         <Information {...FAQ}/>
         <Location/>
+        <Contact/>
         </>
     )
 };
