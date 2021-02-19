@@ -15,7 +15,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 800px;
+    height: 900px;
     display: flex;
 `
 

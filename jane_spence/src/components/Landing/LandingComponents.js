@@ -9,7 +9,7 @@ export const LandingContainer = styled.div`
     z-index: 1;
     padding: 0 40px;
     position: relative;
-    height:800px;
+    height: 900px;
     background: white;
 
 `
