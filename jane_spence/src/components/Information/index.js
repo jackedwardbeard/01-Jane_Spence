@@ -15,7 +15,7 @@ import {
 } from './InformationComponents'
 
 
-const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, id, title, body, img}) => {
+const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, img}) => {
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
             <InformationWrapper>
@@ -29,7 +29,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                 {body}
                             </Body>
                             <ButtonWrapper>
-                                <Button to="about" darkButton={darkButton} darkButtonText={darkButtonText} showButton={showButton}>
+                                <Button to='contact' darkButton={darkButton} darkButtonText={darkButtonText} showButton={showButton}>
                                 {buttonText}
                                 </Button>
                             </ButtonWrapper>

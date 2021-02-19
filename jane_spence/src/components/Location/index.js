@@ -13,9 +13,9 @@ import {
 } from './LocationComponents'
 
 
-const Location = () => {
+const Location = ({id}) => {
     return (
-        <InformationContainer>
+        <InformationContainer id={id}>
             <InformationWrapper>
                 <Row1>
                     <Column1>

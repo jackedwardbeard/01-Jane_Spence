@@ -20,9 +20,9 @@ import {
 } from './ContactComponents'
 
 
-const Contact = () => {
+const Contact = ({id}) => {
     return (
-        <InformationContainer>
+        <InformationContainer id={id}>
             <InformationWrapper>
                 <Row1>
                     <Column1>
