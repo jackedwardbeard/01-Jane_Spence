@@ -24,8 +24,8 @@ const Home = ({toggle}) => {
         <LandingBackground/>
         <Information {...About}/>
         <Information {...FAQ}/>
-        <Location/>
-        <Contact/>
+        <Location id="location"/>
+        <Contact id="contact"/>
         </>
     )
 };

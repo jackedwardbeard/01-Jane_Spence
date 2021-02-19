@@ -57,9 +57,15 @@ export const Column2 = styled.div`
     grid-area: col2;
 `
 
-export const Image = styled.image`
+export const ImgWrap = styled.div`
+    max-width: 555px;
+    height: 100%;
+`
+
+export const Img = styled.img`
     width: 100%;
     padding-right: 0;
+    margin: 0 0 10px 0;
 `
 
 export const ButtonWrapper = styled.div`

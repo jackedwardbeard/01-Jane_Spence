@@ -9,7 +9,7 @@ export const About = {
     buttonLocation: 'faq',
     title: 'About',
     body: 'Jane Spence is an Accredited Pharmacist and Diabetes Educator who has been a part of the industry for over 10 years. Services include Home Medication Reviews (HMRs) and Diabetes Education.',
-    image: require('../../images/about.svg').default,
+    img: require('../../images/about.svg').default,
     imageLeft: true
 }
 
@@ -24,7 +24,7 @@ export const FAQ = {
     buttonLocation: 'about',
     title: 'FAQ',
     body: 'Jane Spence is an Accredited Pharmacist and Diabetes Educator who has been a part of the industry for over 10 years. Services include Home Medication Reviews (HMRs) and Diabetes Education.',
-    image: '../../images/about.svg',
+    img: require('../../images/about.svg').default,
     imageLeft: false
 
 }

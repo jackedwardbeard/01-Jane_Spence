@@ -6,9 +6,9 @@ import {
 } from './ContactComponents'
 
 
-const Contact = () => {
+const Contact = ({id}) => {
     return (
-        <ContactContainer>
+        <ContactContainer id={id}>
             <ContactWrapper>
                 <Title>
                 Contact

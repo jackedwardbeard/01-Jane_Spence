@@ -7,7 +7,8 @@ import {
     Title,
     Body,
     Column2,
-    Image,
+    Img,
+    ImgWrap,
     ButtonWrapper,
     Button
 } from './InformationComponents'
@@ -27,9 +28,11 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                         </Body>
                     </Column1>
                     <Column2>
-                        <Image src={image}>
-                        
-                        </Image>
+                        <ImgWrap>
+                            <Img src={image}>
+                            
+                            </Img>
+                        </ImgWrap>
                     </Column2>
                 </Row1>
                 <ButtonWrapper>

@@ -7,9 +7,9 @@ import {
 } from './LocationComponents'
 
 
-const Location = () => {
+const Location = ({id}) => {
     return (
-        <LocationContainer>
+        <LocationContainer id={id}>
             <LocationWrapper>
                 <Title>
                 Locations
