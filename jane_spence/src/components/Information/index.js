@@ -29,7 +29,15 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                 {body}
                             </Body>
                             <ButtonWrapper>
-                                <Button to='contact' darkButton={darkButton} darkButtonText={darkButtonText} showButton={showButton}>
+                                <Button 
+                                to={buttonLocation} 
+                                darkButton={darkButton}
+                                darkButtonText={darkButtonText} 
+                                showButton={showButton}
+                                smooth={true} 
+                                spy={true} 
+                                offset={-80}
+                                >
                                 {buttonText}
                                 </Button>
                             </ButtonWrapper>

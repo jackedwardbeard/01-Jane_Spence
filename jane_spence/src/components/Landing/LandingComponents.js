@@ -51,6 +51,7 @@ export const LearnMoreBtnWrapper = styled.nav`
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 `
 
 export const LearnMoreBtn = styled(LinkScroll)`
