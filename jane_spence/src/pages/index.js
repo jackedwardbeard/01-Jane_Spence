@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import MobileMenu from '../components/MobileMenu'
 import Navbar from '../components/Navbar'
-
+import LandingBackground from '../components/Landing';
+import Information from '../components/Information';
+import { About, FAQ } from '../components/Information/pages';
+import Location from '../components/Location'
 
 const Home = ({toggle}) => {
 
@@ -17,6 +20,10 @@ const Home = ({toggle}) => {
         <>
         <MobileMenu clicked={clicked} reverseState={reverseState}/>
         <Navbar reverseState={reverseState}/>
+        <LandingBackground/>
+        <Information {...About}/>
+        <Information {...FAQ}/>
+        <Location/>
         </>
     )
 };
