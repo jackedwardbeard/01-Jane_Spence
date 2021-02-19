@@ -1,22 +1,71 @@
 import React from 'react'
 import {
-    ContactContainer,
-    ContactWrapper,
-    Title
+    InformationContainer,
+    InformationWrapper,
+    Row1,
+    Column1,
+    TextWrapper,
+    Title,
+    Body,
+    Column2,
+    ContactWrap,
+    ContactForm,
+    ContactTitle,
+    Item,
+    Label,
+    Input,
+    InputLarge,
+    SubmitBtn,
+    BtnWrapper
 } from './ContactComponents'
 
 
-const Contact = ({id}) => {
+const Contact = () => {
     return (
-        <ContactContainer id={id}>
-            <ContactWrapper>
-                <Title>
-                Contact
-                </Title>
-                
-            </ContactWrapper>
-        </ContactContainer>
+        <InformationContainer>
+            <InformationWrapper>
+                <Row1>
+                    <Column1>
+                        <TextWrapper>
+                            <Title>
+                                Contact
+                            </Title>
+                            <Body>
+                                <Item>PO BOX 5049</Item>
+                                <Item>Frankston South 3199</Item>
+                                <Item>T: 0417 389 257</Item>
+                                <Item>F: 5971 4686</Item>
+                                <Item>E: jane.spence@bigpond.com</Item>
+                            </Body>
+                        </TextWrapper>
+                        <ContactWrap>
+                            <ContactForm>
+                                <Label>
+                                Name
+                                </Label>
+                                <Input></Input>
+                                <Label>
+                                Phone
+                                </Label>
+                                <Input></Input>
+                                <Label>
+                                Enquiry
+                                </Label>
+                                <InputLarge></InputLarge>
+                                <BtnWrapper>
+                                    <SubmitBtn>Submit</SubmitBtn>
+                                </BtnWrapper>
+                            </ContactForm>
+                        </ContactWrap>
+                    </Column1>
+                    <Column2>
+                        
+                    </Column2>
+                </Row1>
+            </InformationWrapper>
+        </InformationContainer>
     )
-}
+};
+
 
 export default Contact
