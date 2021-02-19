@@ -14,8 +14,8 @@ export const MobileMenuContainer = styled.aside`
     left: 0;
     transition: 0.3s ease-in-out;
     background: black;
-    opacity: ${({isOpen}) => (isOpen ? '100%' : '0%')}; // show menu if its been opened, else do not show it
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+    opacity: ${({clicked}) => (clicked ? '100%' : '0%')}; // show menu if its been opened, else do not show it
+    top: ${({clicked}) => (clicked ? '0' : '-100%')};
 
 `
 
