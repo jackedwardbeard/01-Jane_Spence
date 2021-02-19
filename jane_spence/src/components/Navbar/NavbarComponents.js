@@ -40,7 +40,7 @@ export const NavLogo = styled(LinkRouter)`
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: none;
     position: relative;

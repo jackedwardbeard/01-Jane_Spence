@@ -25,3 +25,21 @@ export const VideoLoop = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
 `
+
+export const LandingText = styled.div`
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+`
+
+export const LandingTitle = styled.div`
+    font-size: 4rem;
+`
+
+export const LandingSubText = styled.div`
+    font-size: 1.5rem;
+`
