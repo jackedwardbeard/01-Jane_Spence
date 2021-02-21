@@ -41,11 +41,16 @@ export const Column1 = styled.div`
     grid-area: col1;
     margin-right: 100px;
 
+    @media screen and (max-width: 1400px) {
+        padding-left: 100px;
+    }
+
     @media screen and (max-width: 1024px) {
         margin-right: 0px;
         display: grid;
         align-items: center;
         margin-right: -10%;
+        padding-left: 0;
        
         outline: 2px solid blue;
     
@@ -106,6 +111,10 @@ export const Img = styled.img`
     height: 100%;
     padding-right: 0px;
     margin: 0 0 10px 0;
+
+    @media screen and (max-width: 1400px) {
+        padding-right: 100px;
+    }
 
     @media screen and (max-width: 1024px) {
         display: none;
