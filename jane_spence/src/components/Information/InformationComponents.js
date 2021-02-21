@@ -39,7 +39,6 @@ export const Column1 = styled.div`
     grid-area: col1;
     margin-right: 100px;
     text-align: center;
-    outline: 2px solid red;
     
     @media screen and (max-width: 1400px) {
         padding-left: 0px;
