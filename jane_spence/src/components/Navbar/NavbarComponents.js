@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    transition: 0.8s all ease;
+    transition: 0.5s all ease;
     
     
 
@@ -111,9 +111,6 @@ export const NavLinks = styled(LinkScroll)`
         border-bottom: 2.5px solid pink;
     }
 
-    &:hover {
-        border-bottom: 2.5px solid pink;
-    }
 `;
 
 export const NavBtn = styled.nav`
