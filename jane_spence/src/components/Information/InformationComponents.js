@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 880px;
+    height: 900px;
     display: flex;
 `
 
@@ -29,7 +29,7 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: -30px;
     margin-left: 70px;
     padding: 0 15px;
     grid-area: col1;
