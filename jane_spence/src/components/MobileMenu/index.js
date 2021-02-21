@@ -25,14 +25,14 @@ const MobileSideMenu = ({clicked, reverseState}) => {
             </Icon>
             <MobileMenuWrapper>
                 <MobileMenu>
-                    <MobileMenuLink to="home">Home</MobileMenuLink>
+                    <MobileMenuLink to="landing">Home</MobileMenuLink>
                     <MobileMenuLink to="about">About</MobileMenuLink>
                     <MobileMenuLink to="faq">FAQ</MobileMenuLink>
                     <MobileMenuLink to="location">Location</MobileMenuLink>
                     <MobileMenuLink to="contact">Contact</MobileMenuLink>
                 </MobileMenu>
                 <MobileBtnWrapper>
-                    <MobileMenuRoute to="/enquire">Enquire Now</MobileMenuRoute>
+                    <MobileMenuRoute to="contact">Enquire Now</MobileMenuRoute>
                 </MobileBtnWrapper>
             </MobileMenuWrapper>
         </MobileMenuContainer>
