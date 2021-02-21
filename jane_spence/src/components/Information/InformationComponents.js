@@ -70,7 +70,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
@@ -81,7 +81,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h1`
     margin-top: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
@@ -92,7 +92,7 @@ export const Subtitle = styled.h1`
 
 export const Body = styled.p`
     margin-top: 15px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')}
 
