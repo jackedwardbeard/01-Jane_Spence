@@ -32,6 +32,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    padding-right: 50px;
 `
 
 export const Title = styled.h1`
@@ -51,22 +52,19 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    padding-right: 50px;
 `
 
-export const TextWrapper = styled.div`
-    max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
+export const Column3 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
 `
 
-export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 100%;
-`
+export const MapWrapper = styled.div`
+    outline: solid 2px blue;
+    height: 500px;
+    width: 350px;
+    
 
-export const Img = styled.img`
-    width: 100%;
-    height: 100%;
-    padding-right: 0px;
-    margin: 0 0 10px 0;
 `
