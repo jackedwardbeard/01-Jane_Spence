@@ -133,9 +133,6 @@ export const ButtonWrapper = styled.div`
     align-items: center;
     font-family: 'Montserrat', sans-serif;
 
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
 `
 
 export const Button = styled(LinkScroll)`
