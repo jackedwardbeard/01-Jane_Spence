@@ -128,6 +128,10 @@ export const NavLinks = styled(LinkScroll)`
         border-bottom: 4px solid pink;
     }
 
+    &:hover {
+        border-bottom: 4px solid pink;
+    }
+
 `;
 
 export const NavBtn = styled.nav`
