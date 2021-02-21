@@ -31,7 +31,7 @@ export const FAQ = {
     showButton: true,
     darkButton: false,
     darkButtonText: true,
-    buttonText: 'Have any more questions?',
+    buttonText: "Can't find what you're looking for?",
     buttonLocation: 'contact',
     title: 'FAQ',
     body: 'Template for FAQ',
