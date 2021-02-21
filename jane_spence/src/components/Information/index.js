@@ -33,19 +33,19 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             {subtext}
                             </Subtitle>
                             <Body darkText={darkText}>
-                                {subbody}
+                                <li> {subbody} </li>
                             </Body>
                             <Body darkText={darkText}>
-                                {subbody2}
+                                <li> {subbody2} </li>
                             </Body>
                             <Body darkText={darkText}>
-                                {subbody3}
+                                <li> {subbody3} </li>
                             </Body>
                             <Body darkText={darkText}>
-                                {subbody4}
+                                <li> {subbody4} </li>
                             </Body>
                             <Body darkText={darkText}>
-                                {subbody5}
+                                <li> {subbody5} </li>
                             </Body>
                             <ButtonWrapper>
                                 <Button 
