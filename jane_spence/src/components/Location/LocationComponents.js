@@ -13,6 +13,7 @@ export const InformationContainer = styled.div`
         width: 100%;
         overflow-x: hidden;
     }
+    
 `
 
 export const InformationWrapper = styled.div`
@@ -30,8 +31,35 @@ export const Row1 = styled.div`
     @media screen and (max-width: 1250px) {
 
         display: block;
+        padding-left: 80px;
 
     }
+
+    @media screen and (max-width: 414px) {
+
+        padding-left: 25px;
+    }
+
+    @media screen and (max-width: 375px) {
+
+        padding-left: 25px;
+    }
+
+    @media screen and (max-width: 360px) {
+
+        padding-left: 15px;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width: 280px) {
+
+        padding-left: 0px;
+    }
+
 `
 
 export const Column1 = styled.div`
@@ -93,6 +121,26 @@ export const MapWrapper = styled.div`
         height: 200px;
     }
     
+    @media screen and (max-width: 414px) {
 
+        width: 300px;
+    }
+
+    @media screen and (max-width: 414px) {
+
+        width: 300px;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        width: 270px;
+    }
+
+    @media screen and (max-width: 280px) {
+
+        width: 250px;
+    }
+
+    
 `
 

@@ -52,7 +52,6 @@ export const Column1 = styled.div`
         margin-right: -10%;
         padding-left: 0;
        
-        outline: 2px solid blue;
     
     }
 
@@ -62,7 +61,6 @@ export const Column1 = styled.div`
         align-items: center;
         
        
-        outline: 2px solid blue;
     
     }
     
