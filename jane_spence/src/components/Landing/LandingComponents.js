@@ -43,14 +43,45 @@ export const LandingText = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 999;
+
 `
 
 export const LandingTitle = styled.div`
     font-size: 4rem;
+
+    @media screen and (max-width: 540px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 1.8rem;
+    }
+
 `
 
 export const LandingSubText = styled.div`
     font-size: 1.5rem;
+    padding-top: 10px;
+
+    @media screen and (max-width: 540px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.88rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
+    }
 `
 
 export const LearnMoreBtnWrapper = styled.nav`
@@ -72,6 +103,18 @@ export const LearnMoreBtn = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     z-index: 999;
+
+    @media screen and (max-width: 540px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;
