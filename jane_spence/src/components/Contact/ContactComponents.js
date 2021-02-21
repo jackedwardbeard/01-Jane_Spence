@@ -14,6 +14,12 @@ export const InformationContainer = styled.div`
         overflow-x: hidden;
     }
 
+    @media screen and (max-width: 414px) {
+        padding: 100px 0px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
 `
 
 export const InformationWrapper = styled.div`
@@ -34,6 +40,26 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
+
+    @media screen and (max-width: 1024px) {
+        margin-right: 0px;
+        display: grid;
+        align-items: center;
+        margin-right: -10%;
+       
+        outline: 2px solid blue;
+    
+    }
+
+    @media screen and (max-width: 280px) {
+        margin-right: 0px;
+        display: grid;
+        align-items: center;
+        
+       
+        outline: 2px solid blue;
+    
+    }
     
 `
 
@@ -49,6 +75,13 @@ export const Body = styled.ul`
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
+
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
+        display: grid;
+        justify-content: center;
+        outline: yellow solid 2px;
+    }
 `
 
 export const Column2 = styled.div`
@@ -73,6 +106,10 @@ export const Img = styled.img`
     height: 100%;
     padding-right: 0px;
     margin: 0 0 10px 0;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 `
 
 export const Item = styled.div`
@@ -111,7 +148,7 @@ export const Label = styled.div`
 
 export const Input = styled.input`
     height: 25px;
-    width: 100%;
+    width: 250px;
 `
 
 export const InputLarge = styled.input`
