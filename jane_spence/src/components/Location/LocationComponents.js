@@ -42,16 +42,21 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    outline: solid 2px yellow;
+    max-width: 350px;
 `
 
 export const Body = styled.p`
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    align-text: center;
+    max-width: 350px;
+    outline: solid 2px blue;
 `
 
 export const Column2 = styled.div`

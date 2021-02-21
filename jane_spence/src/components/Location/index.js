@@ -34,10 +34,16 @@ class Location extends Component {
                     <Row1>
                             <Column1>
                                 <Title>
-                                    Frankston
+                                Barry Dean Pharmacy
                                 </Title>
                                 <Body>
-
+                                53 Beach Street
+                                </Body>
+                                <Body>
+                                Frankston VIC 3199
+                                </Body>
+                                <Body>
+                                97835201
                                 </Body>
                                 <MapWrapper>
                                     <Map
@@ -54,10 +60,16 @@ class Location extends Component {
                             </Column1>
                             <Column2>
                                 <Title>
-                                    Frankston
+                                    Frankston Healthcare
                                 </Title>
                                 <Body>
-
+                                    4/12 Young Street
+                                </Body>
+                                <Body>
+                                    Frankston VIC 3199
+                                </Body>
+                                <Body>
+                                    97700023
                                 </Body>
                                 <MapWrapper>
                                     <Map
@@ -74,10 +86,16 @@ class Location extends Component {
                             </Column2>
                             <Column3>
                                 <Title>
-                                    Skye
+                                    Skye Medical Centre
                                 </Title>
                                 <Body>
-
+                                    80 McCormicks Road
+                                </Body>
+                                <Body>
+                                    Skye VIC 3977
+                                </Body>
+                                <Body>
+                                    97828555
                                 </Body>
                                 <MapWrapper>
                                     <Map
