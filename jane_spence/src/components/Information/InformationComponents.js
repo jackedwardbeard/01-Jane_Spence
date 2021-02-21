@@ -19,6 +19,10 @@ export const InformationWrapper = styled.div`
     z-index: 1;
     height: 900px;
     display: flex;
+    
+    @media screen and (max-width: 375px) {
+        height: 1150px;
+    }
 `
 
 export const Row1 = styled.div`
@@ -34,6 +38,7 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
+    outline: solid 2px red;
     
     @media screen and (max-width: 1400px) {
         padding-left: 0px;
@@ -45,15 +50,18 @@ export const Column1 = styled.div`
         align-items: center;
         justify-content: center;
         padding-left: 0;
-       
-    
+    }
+
+    @media screen and (max-width: 375px) {
+        text-align: center;
+        height: 1100px;
+        padd
     }
 
     @media screen and (max-width: 280px) {
         margin-right: 0px;
         display: grid;
         align-items: center;
-        outline: 2px solid blue;
     
     }
 `
@@ -64,6 +72,7 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
     
+   
 
 `
 
@@ -75,6 +84,7 @@ export const Subtitle = styled.h1`
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
 
+    
 `
 
 export const Body = styled.p`
@@ -82,6 +92,12 @@ export const Body = styled.p`
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')}
+
+    @media screen and (max-width: 375px) {
+        color: ${({darkText}) => (darkText ? 'black' : 'white')}
+        font-size: 1rem;
+
+    }
 
    
 `
