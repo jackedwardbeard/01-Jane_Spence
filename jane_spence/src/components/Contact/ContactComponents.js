@@ -81,6 +81,7 @@ export const Body = styled.ul`
     font-family: 'Montserrat', sans-serif;
     color: white;
 
+
     @media screen and (max-width: 414px) {
         font-size: 1rem;
         display: grid;
@@ -195,8 +196,3 @@ export const SubmitBtn = styled.button`
     
 `
 
-export const SectionFooter = styled.div`
-    background: pink;
-    height: 10px;
-
-`

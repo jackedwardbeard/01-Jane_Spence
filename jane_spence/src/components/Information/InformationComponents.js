@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 900px;
+    height: 880px;
     display: flex;
 `
 
@@ -144,10 +144,4 @@ export const Button = styled(LinkScroll)`
         background: white;
         color: black;
     }
-`
-
-export const SectionFooter = styled.div`
-    background: pink;
-    height: 10px;
-
 `

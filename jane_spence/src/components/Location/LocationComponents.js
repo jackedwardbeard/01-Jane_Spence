@@ -70,9 +70,3 @@ export const Img = styled.img`
     padding-right: 0px;
     margin: 0 0 10px 0;
 `
-
-export const SectionFooter = styled.div`
-    background: pink;
-    height: 10px;
-
-`

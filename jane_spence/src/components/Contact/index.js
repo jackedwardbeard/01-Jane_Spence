@@ -18,7 +18,6 @@ import {
     InputLarge,
     SubmitBtn,
     BtnWrapper,
-    SectionFooter
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
 
@@ -68,7 +67,6 @@ const Contact = ({id}) => {
                     </Column2>
                 </Row1>
             </InformationWrapper>
-            <SectionFooter/>
         </InformationContainer>
     )
 };
