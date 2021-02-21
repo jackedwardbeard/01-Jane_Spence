@@ -36,6 +36,13 @@ export const Row1 = styled.div`
 
     }
 
+    @media screen and (max-width: 770px) {
+
+        display: block;
+        padding-left: 30px;
+
+    }
+
     @media screen and (max-width: 414px) {
 
         padding-left: 25px;
@@ -60,6 +67,7 @@ export const Row1 = styled.div`
 
         padding-left: 0px;
         margin-top: -30px;
+
     }
 
     
