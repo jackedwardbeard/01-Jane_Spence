@@ -25,14 +25,14 @@ const MobileSideMenu = ({clicked, reverseState}) => {
             </Icon>
             <MobileMenuWrapper>
                 <MobileMenu>
-                    <MobileMenuLink to="landing" onClick={reverseState}>Home</MobileMenuLink>
-                    <MobileMenuLink to="about" onClick={reverseState}>About</MobileMenuLink>
-                    <MobileMenuLink to="faq" onClick={reverseState}>FAQ</MobileMenuLink>
-                    <MobileMenuLink to="location" onClick={reverseState}>Location</MobileMenuLink>
-                    <MobileMenuLink to="contact" onClick={reverseState}>Contact</MobileMenuLink>
+                    <MobileMenuLink to="landing" onClick={reverseState} smooth={true} spy={true} offset={-80}>Home</MobileMenuLink>
+                    <MobileMenuLink to="about" onClick={reverseState} smooth={true} spy={true} offset={-80}>About</MobileMenuLink>
+                    <MobileMenuLink to="faq" onClick={reverseState} smooth={true} spy={true} offset={-80}>FAQ</MobileMenuLink>
+                    <MobileMenuLink to="location" onClick={reverseState} smooth={true} spy={true} offset={-80}>Location</MobileMenuLink>
+                    <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Contact</MobileMenuLink>
                 </MobileMenu>
                 <MobileBtnWrapper>
-                    <MobileMenuRoute to="contact" onClick={reverseState}>Enquire Now</MobileMenuRoute>
+                    <MobileMenuRoute to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Enquire Now</MobileMenuRoute>
                 </MobileBtnWrapper>
             </MobileMenuWrapper>
         </MobileMenuContainer>
