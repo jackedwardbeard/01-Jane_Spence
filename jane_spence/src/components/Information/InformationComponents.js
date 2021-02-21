@@ -39,6 +39,7 @@ export const Column1 = styled.div`
     grid-area: col1;
     margin-right: 100px;
     text-align: center;
+    outline: 2px solid red;
     
     @media screen and (max-width: 1400px) {
         padding-left: 0px;
@@ -62,11 +63,18 @@ export const Column1 = styled.div`
         margin-top: -30px;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 375px) { 
         margin-left: 20px;
-
-    
+        margin-right: -25px;
+        margin-top: -30px;
     }
+
+    @media screen and (max-width: 280px) { 
+        margin-left: 0px;
+        margin-right: -45px;
+        margin-top: -30px;
+    }
+
 `
 
 export const Title = styled.h1`
@@ -148,6 +156,10 @@ export const Button = styled(LinkScroll)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+
+    @media screen and (max-width: 320px) { 
+        display: none;
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;
