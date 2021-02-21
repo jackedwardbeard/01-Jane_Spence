@@ -16,7 +16,15 @@ class Location extends Component {
 
     render() {
         const mapStyles = {
-            width: "350px",
+            maxWidth: "350px",
+            height: "500px",
+            overflowX: "hidden",
+            overflowY: "hidden"
+            
+          };
+
+          const containerStyles = {
+            maxWidth: "350px",
             height: "500px",
             
           };
@@ -36,10 +44,12 @@ class Location extends Component {
                                     google={this.props.google}
                                     zoom={18}
                                     style={mapStyles}
+                                    containerStyle={{position: 'relative'}}
                                     initialCenter={{ lat: -38.142076655050225, lng: 145.13012378286646 }}
                                     >
                                         <Marker position={{ lat: -38.142076655050225, lng: 145.13012378286646 }} />
                                     </Map>
+
                                 </MapWrapper>
                             </Column1>
                             <Column2>
@@ -54,6 +64,7 @@ class Location extends Component {
                                     google={this.props.google}
                                     zoom={18}
                                     style={mapStyles}
+                                    containerStyle={{position: 'relative'}}
                                     initialCenter={{ lat: -38.14249285232113, lng: 145.125669697881 }}
                                     >
                                         <Marker position={{ lat: -38.14249285232113, lng: 145.125669697881 }} />
@@ -73,6 +84,7 @@ class Location extends Component {
                                     google={this.props.google}
                                     zoom={18}
                                     style={mapStyles}
+                                    containerStyle={{position: 'relative'}}
                                     initialCenter={{ lat: -38.10979428463753, lng: 145.19578315383433 }}
                                     >
                                         <Marker position={{ lat: -38.10979428463753, lng: 145.19578315383433 }} />

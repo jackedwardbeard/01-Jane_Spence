@@ -26,6 +26,12 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+
+    @media screen and (max-width: 1250px) {
+
+        display: block;
+
+    }
 `
 
 export const Column1 = styled.div`
@@ -65,6 +71,14 @@ export const MapWrapper = styled.div`
     outline: solid 2px blue;
     height: 500px;
     width: 350px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @media screen and (max-width: 1250px) {
+
+        height: 200px;
+    }
     
 
 `
+
