@@ -24,6 +24,7 @@ export const Nav = styled.nav`
         width: 100%;
         overflow-x: hidden;
     }
+    
 ` ;
 
 export const NavbarContainer = styled.div`
@@ -34,6 +35,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px; 
     max-width: 1100px;
+    
 `;
 
 export const NavLogo = styled(LinkScroll)`
@@ -57,14 +59,24 @@ export const NavLogo = styled(LinkScroll)`
     background-position: 100%;
     transition: background-position 275ms ease;
     text-decoration: none; // text decorations are clipped in WebKit browsers
-    
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 1.4rem;
+    }
+
     &:hover {
         background-position: 0 100%;
+
     
 `;
 
 export const MobileIcon = styled.div`
     display: none;
+    margin-top: 4px;
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -75,6 +87,11 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: white;
+    }
+
+    @media screen and (max-width: 280px) {
+        padding-top: 5px;
+        font-size: 1.4rem;
     }
 `;
 
