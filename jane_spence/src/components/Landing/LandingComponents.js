@@ -12,6 +12,13 @@ export const LandingContainer = styled.div`
     height: 900px;
     background: white;
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+    
+
 `
 
 export const LandingBackground = styled.div`

@@ -10,6 +10,8 @@ export const InformationContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        width: 100%;
+        overflow-x: hidden;
     }
 `
 

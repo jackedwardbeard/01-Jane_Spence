@@ -9,8 +9,11 @@ export const InformationContainer = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 100px 0px;
+        width: 100%;
+        overflow-x: hidden;
     }
+
 `
 
 export const InformationWrapper = styled.div`
@@ -108,12 +111,12 @@ export const Label = styled.div`
 
 export const Input = styled.input`
     height: 25px;
-    width: 200%;
+    width: 100%;
 `
 
 export const InputLarge = styled.input`
     height: 80px;
-    width: 200%;
+    width: 100%;
     margin-top: 10px;
 `
 
