@@ -74,6 +74,5 @@ export const Img = styled.img`
 export const SectionFooter = styled.div`
     background: pink;
     height: 10px;
-    border: solid black 2px;
 
 `
