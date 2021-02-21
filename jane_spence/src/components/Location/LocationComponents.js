@@ -8,7 +8,7 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1250px) {
         padding: 100px 0;
         width: 100%;
         overflow-x: hidden;
@@ -46,17 +46,26 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
-    outline: solid 2px yellow;
     max-width: 350px;
+    text-align: center;
+
+    @media screen and (max-width: 1250px) {
+
+        font-size: 1.3rem;
+    }
 `
 
 export const Body = styled.p`
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: black;
-    align-text: center;
     max-width: 350px;
-    outline: solid 2px blue;
+    text-align: center;
+
+    @media screen and (max-width: 1250px) {
+
+        font-size: 1rem;
+    }
 `
 
 export const Column2 = styled.div`
@@ -73,11 +82,11 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    outline: solid 2px blue;
     height: 500px;
     width: 350px;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding-top: 20px;
 
     @media screen and (max-width: 1250px) {
 
