@@ -27,6 +27,7 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+    
 
     @media screen and (max-width: 1250px) {
 
@@ -58,7 +59,10 @@ export const Row1 = styled.div`
     @media screen and (max-width: 280px) {
 
         padding-left: 0px;
+        margin-top: -30px;
     }
+
+    
 
 `
 
@@ -67,6 +71,8 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
+
+
 `
 
 export const Title = styled.h1`
@@ -81,6 +87,13 @@ export const Title = styled.h1`
 
         font-size: 1.3rem;
     }
+
+    @media screen and (max-width: 280px) {
+
+        width: 250px;
+    }
+
+    
 `
 
 export const Body = styled.p`
@@ -93,6 +106,11 @@ export const Body = styled.p`
     @media screen and (max-width: 1250px) {
 
         font-size: 1rem;
+    }
+
+    @media screen and (max-width: 280px) {
+
+        width: 250px;
     }
 `
 

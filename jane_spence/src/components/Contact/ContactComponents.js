@@ -50,15 +50,27 @@ export const Column1 = styled.div`
         display: grid;
         align-items: center;
         margin-right: -10%;
-        padding-left: 0;
+        padding-left: 60px;
        
-    
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 35px;
+    }
+
+    @media screen and (max-width: 414px) {
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width: 360px) {
+        padding-left: 20px;
     }
 
     @media screen and (max-width: 280px) {
         margin-right: 0px;
         display: grid;
         align-items: center;
+        padding-left: 15px;
         
        
     
@@ -71,6 +83,8 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: pink;
+
+    
 `
 
 export const Body = styled.ul`
