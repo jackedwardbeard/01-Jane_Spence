@@ -10,6 +10,7 @@ import {
     Column2,
     Img,
     ImgWrap,
+    SectionFooter
 } from './LocationComponents'
 
 
@@ -35,6 +36,7 @@ const Location = ({id}) => {
                     </Column2>
                 </Row1>
             </InformationWrapper>
+            <SectionFooter/>
         </InformationContainer>
     )
 };

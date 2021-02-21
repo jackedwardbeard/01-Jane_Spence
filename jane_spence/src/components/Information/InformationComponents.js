@@ -145,3 +145,10 @@ export const Button = styled(LinkScroll)`
         color: black;
     }
 `
+
+export const SectionFooter = styled.div`
+    background: pink;
+    height: 10px;
+    border: solid black 2px;
+
+`

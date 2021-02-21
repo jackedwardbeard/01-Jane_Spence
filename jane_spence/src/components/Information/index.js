@@ -12,7 +12,8 @@ import {
     Img,
     ImgWrap,
     ButtonWrapper,
-    Button
+    Button,
+    SectionFooter
 } from './InformationComponents'
 
 
@@ -70,6 +71,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                     </Column2>
                 </Row1>
             </InformationWrapper>
+            <SectionFooter/>
         </InformationContainer>
     )
 };

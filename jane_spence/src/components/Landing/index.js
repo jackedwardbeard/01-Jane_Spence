@@ -7,7 +7,7 @@ import {
     LandingTitle,
     LandingSubText,
     LearnMoreBtnWrapper,
-    LearnMoreBtn
+    LearnMoreBtn,
 } from './LandingComponents'
 import Video from '../../videos/landingVideo.mp4'
 
@@ -29,9 +29,7 @@ const Landing = ({id}) => {
                     Learn More
                     </LearnMoreBtn>
                 </LearnMoreBtnWrapper>
-            </LandingText>
-            
-            
+            </LandingText>  
         </LandingContainer>
         
     )
