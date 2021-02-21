@@ -35,6 +35,27 @@ export const Column1 = styled.div`
     grid-area: col1;
     margin-right: 100px;
     
+    @media screen and (max-width: 1400px) {
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-right: 0px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+       
+    
+    }
+
+    @media screen and (max-width: 280px) {
+        margin-right: 0px;
+        display: grid;
+        align-items: center;
+        outline: 2px solid blue;
+    
+    }
 `
 
 export const Title = styled.h1`
@@ -42,6 +63,8 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')}
+    
+
 `
 
 export const Subtitle = styled.h1`
