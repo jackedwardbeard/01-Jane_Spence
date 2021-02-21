@@ -96,12 +96,6 @@ export const Body = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')}
 
-    @media screen and (max-width: 375px) {
-        color: ${({darkText}) => (darkText ? 'black' : 'white')}
-        font-size: 1rem;
-
-    }
-
    
 `
 
