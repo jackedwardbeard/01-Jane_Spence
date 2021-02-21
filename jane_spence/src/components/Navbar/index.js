@@ -33,10 +33,12 @@ const Navbar = ({reverseState}) => {
         }
      }
 
+
      // listen for the scroll event
      useEffect(() => {
         document.addEventListener('scroll', transparentNavBar)
-     })
+     });
+     
      
 
     return (
