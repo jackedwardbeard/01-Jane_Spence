@@ -71,9 +71,6 @@ export const Column1 = styled.div`
         display: grid;
         align-items: center;
         padding-left: 15px;
-        
-       
-    
     }
     
 `
@@ -98,7 +95,6 @@ export const Body = styled.ul`
         font-size: 1rem;
         display: grid;
         justify-content: center;
-        outline: yellow solid 2px;
     }
 `
 
@@ -138,6 +134,7 @@ export const Item = styled.div`
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+
 `
 
 export const ContactWrap = styled.div`
@@ -166,11 +163,21 @@ export const Label = styled.div`
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
     margin-top: 10px;
+
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
+        
+    }
 `
 
 export const Input = styled.input`
     height: 25px;
     width: 250px;
+
+    @media screen and (max-width: 414px) {
+        width: 240px;
+        
+    }
 `
 
 export const InputLarge = styled.input`

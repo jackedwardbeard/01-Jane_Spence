@@ -38,7 +38,6 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
-    outline: solid 2px red;
     text-align: center;
     
     @media screen and (max-width: 1400px) {
@@ -58,8 +57,14 @@ export const Column1 = styled.div`
         margin-top: -30px;
     }
 
+    @media screen and (max-width: 414px) { 
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+
     @media screen and (max-width: 280px) {
-        margin-left: 15px;
+        margin-left: 20px;
+
     
     }
 `
