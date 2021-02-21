@@ -108,11 +108,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &:active {
-        border-bottom: 4px solid pink;
+        border-bottom: 2.5px solid pink;
     }
 
     &:hover {
-        border-bottom: 4px solid pink;
+        border-bottom: 2.5px solid pink;
     }
 `;
 
