@@ -2,9 +2,8 @@
 // in our xxxxComponents.js file
 // these are the building blocks of our overall component
 
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa' // mobile menu icon
-import { MobileMenu } from '../MobileMenu/MobileMenuComponents'
 import { 
     Nav, 
     NavbarContainer, 
@@ -20,8 +19,28 @@ import {
 // you can pass in state variables and functions to components
 // in this case we pass in reverseState(a function to flip the state when clicked)
 const Navbar = ({reverseState}) => {
+
+    const [navTransparent, setNavTransparent] = useState(false);
+
+    // if at the top of the page, make the navbar background transparent
+    // else make it black
+    const transparentNavBar = () => { 
+        if (window.scrollY <= 80) {
+            setNavTransparent(true);
+        }
+        else {
+            setNavTransparent(false);
+        }
+     }
+
+     // listen for the scroll event
+     useEffect(() => {
+        document.addEventListener('scroll', transparentNavBar)
+     })
+     
+
     return (
-        <Nav>
+        <Nav navTransparent={navTransparent}>
             <NavbarContainer>
                 <NavLogo to="landing" smooth={true} spy={true} offset={-80}>JANE SPENCE</NavLogo>
                 <MobileIcon onClick={reverseState}>

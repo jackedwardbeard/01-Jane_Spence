@@ -9,7 +9,7 @@ export const LandingContainer = styled.div`
     z-index: 1;
     padding: 0 40px;
     position: relative;
-    height: 900px;
+    height: 1000px;
     background: white;
 
     @media screen and (max-width: 768px) {
