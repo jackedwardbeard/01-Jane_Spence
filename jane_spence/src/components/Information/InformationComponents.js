@@ -21,7 +21,7 @@ export const InformationWrapper = styled.div`
     display: flex;
     
     @media screen and (max-width: 375px) {
-        height: 1150px;
+        height: 1000px;
     }
 `
 
@@ -55,7 +55,8 @@ export const Column1 = styled.div`
     @media screen and (max-width: 375px) {
         text-align: center;
         height: 1100px;
-        padd
+        margin-left: 30px;
+        margin-top: -30px;
     }
 
     @media screen and (max-width: 280px) {
