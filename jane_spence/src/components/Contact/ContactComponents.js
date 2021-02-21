@@ -180,10 +180,11 @@ export const Input = styled.input`
     }
 `
 
-export const InputLarge = styled.input`
+export const InputLarge = styled.textarea`
     height: 80px;
     width: 100%;
     margin-top: 10px;
+    type: textarea;
 `
 
 export const BtnWrapper = styled.div`
