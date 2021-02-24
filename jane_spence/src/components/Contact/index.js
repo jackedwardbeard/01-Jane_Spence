@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import {
     InformationContainer,
     InformationWrapper,
@@ -20,28 +20,34 @@ import {
     BtnWrapper,
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Contact = ({id}) => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
+
     return (
         <InformationContainer id={id}>
             <InformationWrapper>
                 <Row1>
                     <Column1>
                         <TextWrapper>
-                            <Title>
+                            <Title data-aos='fade-down'>
                                 Contact
                             </Title>
-                            <Body>
-                                <Item>PO BOX 5049</Item>
-                                <Item>Frankston South 3199</Item>
-                                <Item>T: 0417 389 257</Item>
-                                <Item>F: 5971 4686</Item>
-                                <Item>E: jane.spence@bigpond.com</Item>
+                            <Body data-aos='fade-up'>
+                                <Item data-aos='fade-left'>PO BOX 5049</Item>
+                                <Item data-aos='fade-right'>Frankston South 3199</Item>
+                                <Item data-aos='fade-left'>T: 0417 389 257</Item>
+                                <Item data-aos='fade-right'>F: 5971 4686</Item>
+                                <Item data-aos='fade-left'>E: jane.spence@bigpond.com</Item>
                             </Body>
                         </TextWrapper>
                         <ContactWrap>
-                            <ContactForm>
+                            <ContactForm data-aos='fade-up'>
                                 <Label>
                                 Name
                                 </Label>
@@ -62,7 +68,7 @@ const Contact = ({id}) => {
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={contact}/>
+                            <Img data-aos='fade-up' src={contact}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>
