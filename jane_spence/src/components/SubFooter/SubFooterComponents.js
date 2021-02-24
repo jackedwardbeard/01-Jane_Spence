@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom' 
 
 export const SubFooterContainer = styled.div`
-    background: pink;
+    background: black;
     height: 40px;
     align-items: center;
     padding-top 12px;
@@ -47,7 +47,7 @@ export const SubFooterContainer = styled.div`
 
 
 export const LeftText = styled.span`
-    color: black;
+    color: white;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -56,12 +56,12 @@ export const LeftText = styled.span`
 `
 
 export const RightText = styled(LinkRouter)`
-    color: black;
+    color: white;
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     float: right;
-    background: pink;
+    background: transparent;
     border: none;
     text-decoration: none;
     cursor: pointer;
