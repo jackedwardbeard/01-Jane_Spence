@@ -18,11 +18,11 @@ import 'aos/dist/aos.css'
 class Location extends Component {
 
    componentDidMount() {
-    Aos.init({duration: 1500});
+    Aos.init({duration: 1000});
    }
 
    componentDidUpdate() {
-    Aos.init({duration: 1500});
+    Aos.init({duration: 1000});
    }
    
 

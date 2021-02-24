@@ -21,7 +21,7 @@ import 'aos/dist/aos.css'
 const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext}) => {
     
     useEffect(() => {
-        Aos.init({duration: 1500})
+        Aos.init({duration: 1000})
     }, [])
     
     return (
