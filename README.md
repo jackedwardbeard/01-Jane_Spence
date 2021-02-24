@@ -23,3 +23,6 @@ npm install --save styled-components
 ```bash
 npm install --save google-maps-react
 ```
+```bash
+npm install --save aos
+```
