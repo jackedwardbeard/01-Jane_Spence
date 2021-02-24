@@ -71,12 +71,15 @@ export const NavLogo = styled(LinkScroll)`
     }
 
     @media screen and (max-width: 310px) {
-        font-size: 1.5rem;
         margin-left: 10px;
     }
 
     @media screen and (max-width: 280px) {
         font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 259px) {
+        margin-left: 0px;
     }
 
     &:hover {
