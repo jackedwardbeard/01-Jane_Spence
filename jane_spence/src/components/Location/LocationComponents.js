@@ -137,12 +137,16 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: 250px;
+    height: 350px;
     width: 350px;
     overflow-x: hidden;
     overflow-y: hidden;
     padding-top: 20px;
+    margin-bottom: 20px;
 
+    @media screen and (max-width: 1250px) {
+        height: 250px;
+    }
     
     @media screen and (max-width: 414px) {
 
@@ -166,4 +170,41 @@ export const MapWrapper = styled.div`
 
     
 `
+
+
+export const BodyHours = styled.p`
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    max-width: 350px;
+    text-align: center;
+
+    @media screen and (max-width: 1250px) {
+
+        display: none;
+    }
+
+    @media screen and (max-width: 280px) {
+
+        width: 250px;
+    }
+` 
+
+export const BodyHoursTitle = styled.h4`
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    max-width: 350px;
+    text-align: center;
+
+    @media screen and (max-width: 1250px) {
+
+        display: none;
+    }
+
+    @media screen and (max-width: 280px) {
+
+        width: 250px;
+    }
+` 
 
