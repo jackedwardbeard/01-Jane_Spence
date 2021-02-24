@@ -20,7 +20,7 @@ import {
 // in this case we pass in reverseState(a function to flip the state when clicked)
 const Navbar = ({reverseState}) => {
 
-    const [navTransparent, setNavTransparent] = useState(false);
+    const [navTransparent, setNavTransparent] = useState(true);
 
     // if at the top of the page, make the navbar background transparent
     // else make it black
