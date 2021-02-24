@@ -27,34 +27,34 @@ const Footer = () => {
             <FooterWrapper>
                 <Row1>
                     <Column1>
-                        <Title data-aos='fade-down'>
+                        <Title>
                             PAGES
                         </Title>
-                        <NavLinkScroll data-aos='fade-left' to="landing" smooth={true} spy={true} offset={-80}>Home</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-right' to="about" smooth={true} spy={true} offset={-80}>About</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-left' to="faq" smooth={true} spy={true} offset={-80}>FAQ</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-right' to="location" smooth={true} spy={true} offset={-80}>Location</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-left' to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinkScroll>
+                        <NavLinkScroll to="landing" smooth={true} spy={true} offset={-80}>Home</NavLinkScroll>
+                        <NavLinkScroll to="about" smooth={true} spy={true} offset={-80}>About</NavLinkScroll>
+                        <NavLinkScroll to="faq" smooth={true} spy={true} offset={-80}>FAQ</NavLinkScroll>
+                        <NavLinkScroll to="location" smooth={true} spy={true} offset={-80}>Location</NavLinkScroll>
+                        <NavLinkScroll to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinkScroll>
                     </Column1>
                     <Column2>
-                        <Title data-aos='fade-down'>
+                        <Title>
                             IMPORTANT WEBSITES
                         </Title>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 1</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 2</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 3</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 4</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 5</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 1</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 2</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 3</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 4</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 5</NavLink>
                     </Column2>
                     <Column3>
-                        <Title data-aos='fade-down'>
+                        <Title>
                             OTHER
                         </Title>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 6</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 7</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 8</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 9</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 10</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 6</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 7</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 8</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 9</NavLink>
+                        <NavLink to="//google.com" target="_blank">Website 10</NavLink>
                     </Column3>
                 </Row1>
             </FooterWrapper>
