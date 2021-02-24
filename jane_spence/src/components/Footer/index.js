@@ -27,7 +27,7 @@ const Footer = () => {
             <FooterWrapper>
                 <Row1>
                     <Column1>
-                        <Title data-aos='fade-down'>
+                        <Title data-aos='fade-up'>
                             PAGES
                         </Title>
                         <NavLinkScroll data-aos='fade-up' to="landing" smooth={true} spy={true} offset={-80}>Home</NavLinkScroll>
@@ -37,7 +37,7 @@ const Footer = () => {
                         <NavLinkScroll data-aos='fade-up' to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinkScroll>
                     </Column1>
                     <Column2>
-                        <Title data-aos='fade-down'>
+                        <Title data-aos='fade-up'>
                             KEY WEBSITES
                         </Title>
                         <NavLink data-aos='fade-up' to="//google.com" target="_blank">Website 1</NavLink>
@@ -47,7 +47,7 @@ const Footer = () => {
                         <NavLink data-aos='fade-up' to="//google.com" target="_blank">Website 5</NavLink>
                     </Column2>
                     <Column3>
-                        <Title data-aos='fade-down'>
+                        <Title data-aos='fade-up'>
                             OTHER
                         </Title>
                         <NavLink data-aos='fade-up' to="//google.com" target="_blank">Website 6</NavLink>
