@@ -8,7 +8,9 @@ import {
     Column3,
     SubFooterContainer,
     LeftText,
-    RightText
+    RightText,
+    Title,
+    NavLink
 } from './FooterComponents'
 
 const Footer = () => {
@@ -17,10 +19,29 @@ const Footer = () => {
             <FooterWrapper>
                 <Row1>
                     <Column1>
+                        <Title>
+                            PAGES
+                        </Title>
+                        <NavLink>
+                            
+                        </NavLink>
                     </Column1>
                     <Column2>
+                        <Title>
+                            IMPORTANT WEBSITES
+                        </Title>
+                        <NavLink>
+                            
+                        </NavLink>
                     </Column2>
                     <Column3>
+                        <Title>
+                            OTHER
+                        </Title>
+                        <NavLink>
+                            
+                        </NavLink>
+
                     </Column3>
                 </Row1>
             </FooterWrapper>

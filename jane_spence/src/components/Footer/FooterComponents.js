@@ -9,22 +9,41 @@ export const FooterContainer = styled.div`
 
 export const FooterWrapper = styled.div`
     height: 360px;
+    outline: solid 2px yellow;
+    display: grid;
+    width: 100%;
 `
 
 export const Row1 = styled.div`
-    
+    outline: solid 2px blue;
+    height: 80%;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
 `
 
 export const Column1 = styled.div`
-    
+    outline: solid 2px red;
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
 `
 
 export const Column2 = styled.div`
-    
+    width: 33.33%;
+    height: 100%;
+    outline: solid 2px red;
+    float: left;
+    text-align: center;
 `
 
 export const Column3 = styled.div`
-    
+    width: 33.33%;
+    height: 100%;
+    outline: solid 2px red;
+    float: left;
+    text-align: center;
 `
 
 export const SubFooterContainer = styled.div`
@@ -120,4 +139,14 @@ export const RightText = styled(LinkRouter)`
         display: none;
     }
 
+`
+
+export const Title = styled.h3`
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+`
+
+export const NavLink = styled.p`
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 `
