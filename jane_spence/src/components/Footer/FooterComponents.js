@@ -144,6 +144,8 @@ export const RightText = styled(LinkRouter)`
 
 export const Title = styled.h3`
     color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
 `
@@ -151,6 +153,8 @@ export const Title = styled.h3`
 export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
     margin-top: 20px;
     display: grid;
     cursor: pointer;
@@ -159,6 +163,8 @@ export const NavLinkScroll = styled(LinkScroll)`
 export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
     margin-top: 20px;
     display: grid;
     text-decoration: none;
