@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom' 
 // used for links that redirect using smooth scroll (i.e. all pages except for enquire)
 import { Link as LinkScroll } from 'react-scroll'
 

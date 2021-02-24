@@ -1,7 +1,5 @@
 // styled components involve building components in in-built CSS
 import styled from 'styled-components'
-// used for links that do not use smooth scroll (i.e. enquire)
-import { Link as LinkRouter } from 'react-router-dom' 
 // used for links that redirect using smooth scroll (i.e. all pages except for enquire)
 import { Link as LinkScroll } from 'react-scroll' 
 
