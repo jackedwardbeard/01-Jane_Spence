@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 
 export const FooterContainer = styled.div`
-    background: #111a26;
+    background: rgb(13,16,22);
     height: 400px;
 `
 
@@ -43,7 +43,7 @@ export const Column3 = styled.div`
 `
 
 export const SubFooterContainer = styled.div`
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.2);
     height: 40px;
     align-items: center;
     padding-top 12px;
