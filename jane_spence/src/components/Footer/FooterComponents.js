@@ -10,13 +10,11 @@ export const FooterContainer = styled.div`
 
 export const FooterWrapper = styled.div`
     height: 360px;
-    outline: solid 2px yellow;
     display: grid;
     width: 100%;
 `
 
 export const Row1 = styled.div`
-    outline: solid 2px blue;
     height: 80%;
     justify-content: center;
     margin-top: 36px;
@@ -24,7 +22,6 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    outline: solid 2px red;
     width: 33.33%;
     height: 100%;
     float: left;
@@ -34,7 +31,6 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
     width: 33.33%;
     height: 100%;
-    outline: solid 2px red;
     float: left;
     text-align: center;
 `
@@ -42,7 +38,6 @@ export const Column2 = styled.div`
 export const Column3 = styled.div`
     width: 33.33%;
     height: 100%;
-    outline: solid 2px red;
     float: left;
     text-align: center;
 `
@@ -140,6 +135,10 @@ export const RightText = styled(LinkRouter)`
         display: none;
     }
 
+    &:hover {
+        color: #17d48f;
+    }
+
 `
 
 export const Title = styled.h3`
@@ -147,7 +146,25 @@ export const Title = styled.h3`
     font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
+        margin-top: 35px;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.75rem;
+    }
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
@@ -158,6 +175,18 @@ export const NavLinkScroll = styled(LinkScroll)`
     margin-top: 20px;
     display: grid;
     cursor: pointer;
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.7rem;
+    }
+
+    &:hover {
+        color: pink;
+    }
 `
 
 export const NavLink = styled(LinkRouter)`
@@ -169,4 +198,16 @@ export const NavLink = styled(LinkRouter)`
     display: grid;
     text-decoration: none;
     cursor: pointer;
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.7rem;
+    }
+
+    &:hover {
+        color: pink;
+    }
 `

@@ -38,7 +38,7 @@ const Footer = () => {
                     </Column1>
                     <Column2>
                         <Title>
-                            IMPORTANT WEBSITES
+                            KEY WEBSITES
                         </Title>
                         <NavLink to="//google.com" target="_blank">Website 1</NavLink>
                         <NavLink to="//google.com" target="_blank">Website 2</NavLink>
