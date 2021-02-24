@@ -136,7 +136,8 @@ export const RightText = styled(LinkRouter)`
     }
 
     &:hover {
-        color: #17d48f;
+        color: #ff00da;
+        transition: 0.2s ease-in;
     }
 
 `
