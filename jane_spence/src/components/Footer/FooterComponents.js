@@ -169,7 +169,7 @@ export const Title = styled.h3`
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
-    color: white;
+    color: #708090;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -187,11 +187,12 @@ export const NavLinkScroll = styled(LinkScroll)`
 
     &:hover {
         color: pink;
+        font-size: 1.25rem;
     }
 `
 
 export const NavLink = styled(LinkRouter)`
-    color: white;
+    color: #708090;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -210,5 +211,6 @@ export const NavLink = styled(LinkRouter)`
 
     &:hover {
         color: pink;
+        font-size: 1.25rem;
     }
 `
