@@ -26,6 +26,7 @@ export const Column1 = styled.div`
     height: 100%;
     float: left;
     text-align: center;
+    overflow: hidden;
 `
 
 export const Column2 = styled.div`
@@ -33,6 +34,7 @@ export const Column2 = styled.div`
     height: 100%;
     float: left;
     text-align: center;
+    overflow: hidden;
 `
 
 export const Column3 = styled.div`
@@ -40,6 +42,7 @@ export const Column3 = styled.div`
     height: 100%;
     float: left;
     text-align: center;
+    overflow: hidden;
 `
 
 export const SubFooterContainer = styled.div`
