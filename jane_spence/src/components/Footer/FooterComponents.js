@@ -3,12 +3,12 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 
 export const FooterContainer = styled.div`
-    background: #151429;
+    background: #111a26;
     height: 400px;
 `
 
 export const FooterWrapper = styled.div`
-    
+    height: 360px;
 `
 
 export const Row1 = styled.div`
@@ -27,16 +27,8 @@ export const Column3 = styled.div`
     
 `
 
-export const Sub = styled.div`
-    background: rgba(0,0,0,0.5);
-    height: 600px;
-    position: absolute;
-    bottom: 0;
-    outline: solid 2px red;
-`
-
 export const SubFooterContainer = styled.div`
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.35);
     height: 40px;
     align-items: center;
     padding-top 12px;
