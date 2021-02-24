@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import {
     InformationContainer,
     InformationWrapper,
@@ -14,37 +14,44 @@ import {
     ButtonWrapper,
     Button,
 } from './InformationComponents'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext}) => {
+    
+    useEffect(() => {
+        Aos.init({duration: 1500})
+    }, [])
+    
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
             <InformationWrapper>
                 <Row1>
                     <Column1>
                         <TextWrapper>
-                            <Title darkText={darkText}>
+                            <Title data-aos='fade-down' darkText={darkText}>
                                 {title}
                             </Title>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 {body}
                             </Body>
-                            <Subtitle darkText={darkText} showSubtitle={showSubtitle} >
+                            <Subtitle data-aos='fade-up' darkText={darkText} showSubtitle={showSubtitle} >
                             {subtext}
                             </Subtitle>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 <li> {subbody} </li>
                             </Body>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 <li> {subbody2} </li>
                             </Body>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 <li> {subbody3} </li>
                             </Body>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 <li> {subbody4} </li>
                             </Body>
-                            <Body darkText={darkText}>
+                            <Body data-aos='fade-up' darkText={darkText}>
                                 <li> {subbody5} </li>
                             </Body>
                             <ButtonWrapper>
@@ -65,7 +72,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={img}/>
+                            <Img data-aos='fade-up' src={img}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>
