@@ -136,6 +136,10 @@ export const Item = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
 
+    @media screen and (max-width: 280px) {
+        font-size: 1rem;
+    }
+
 `
 
 export const ContactWrap = styled.div`
