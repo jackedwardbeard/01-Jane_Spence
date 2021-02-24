@@ -1,4 +1,4 @@
-import {React, Component} from 'react'
+import {React, Component, useEffect} from 'react'
 import {
     InformationContainer,
     InformationWrapper,
@@ -11,8 +11,19 @@ import {
     MapWrapper,
 } from './LocationComponents'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 class Location extends Component {
+
+   componentDidMount() {
+    Aos.init({duration: 1500});
+   }
+
+   componentDidUpdate() {
+    Aos.init({duration: 1500});
+   }
+
 
     render() {
         const mapStyles = {
@@ -33,19 +44,19 @@ class Location extends Component {
                 <InformationWrapper>
                     <Row1>
                             <Column1>
-                                <Title>
+                                <Title data-aos='fade-right'>
                                 Barry Dean Pharmacy
                                 </Title>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                 53 Beach Street
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-right'>
                                 Frankston VIC 3199
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                 97835201
                                 </Body>
-                                <MapWrapper>
+                                <MapWrapper data-aos='flip-up'>
                                     <Map
                                     google={this.props.google}
                                     zoom={18}
@@ -59,19 +70,19 @@ class Location extends Component {
                                 </MapWrapper>
                             </Column1>
                             <Column2>
-                                <Title>
+                                <Title data-aos='fade-right'>
                                     Frankston Healthcare
                                 </Title>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                     4/12 Young Street
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-right'>
                                     Frankston VIC 3199
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                     97700023
                                 </Body>
-                                <MapWrapper>
+                                <MapWrapper data-aos='flip-up'>
                                     <Map
                                     google={this.props.google}
                                     zoom={18}
@@ -85,19 +96,19 @@ class Location extends Component {
                                 </MapWrapper>
                             </Column2>
                             <Column3>
-                                <Title>
+                                <Title data-aos='fade-right'>
                                     Skye Medical Centre
                                 </Title>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                     80 McCormicks Road
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-right'>
                                     Skye VIC 3977
                                 </Body>
-                                <Body>
+                                <Body data-aos='fade-left'>
                                     97828555
                                 </Body>
-                                <MapWrapper>
+                                <MapWrapper data-aos='flip-up'>
                                     <Map
                                     google={this.props.google}
                                     zoom={18}
