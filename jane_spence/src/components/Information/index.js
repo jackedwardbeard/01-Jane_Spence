@@ -56,6 +56,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             </Body>
                             <ButtonWrapper>
                                 <Button 
+                                data-aos='fade-up' 
                                 to={buttonLocation} 
                                 darkButton={darkButton}
                                 darkButtonText={darkButtonText} 
