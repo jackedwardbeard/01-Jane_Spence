@@ -15,8 +15,12 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 900px;
+    height: 1000px;
     display: flex;
+
+    @media screen and (max-width: 1250px) {
+        height: 1100px;
+    }
 `
 
 export const Row1 = styled.div`
@@ -133,16 +137,12 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: 500px;
+    height: 250px;
     width: 350px;
     overflow-x: hidden;
     overflow-y: hidden;
     padding-top: 20px;
 
-    @media screen and (max-width: 1250px) {
-
-        height: 200px;
-    }
     
     @media screen and (max-width: 414px) {
 

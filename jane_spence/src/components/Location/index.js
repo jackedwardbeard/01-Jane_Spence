@@ -10,7 +10,6 @@ import {
     Column3,
     MapWrapper,
 } from './LocationComponents'
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -23,22 +22,11 @@ class Location extends Component {
    componentDidUpdate() {
     Aos.init({duration: 1500});
    }
+   
 
 
     render() {
-        const mapStyles = {
-            maxWidth: "350px",
-            height: "500px",
-            overflowX: "hidden",
-            overflowY: "hidden"
-            
-          };
 
-          const containerStyles = {
-            maxWidth: "350px",
-            height: "500px",
-            
-          };
         return (
             <InformationContainer id='location'>
                 <InformationWrapper>
@@ -57,15 +45,9 @@ class Location extends Component {
                                 97835201
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
-                                    <Map
-                                    google={this.props.google}
-                                    zoom={18}
-                                    style={mapStyles}
-                                    containerStyle={{position: 'relative'}}
-                                    initialCenter={{ lat: -38.142076655050225, lng: 145.13012378286646 }}
-                                    >
-                                        <Marker position={{ lat: -38.142076655050225, lng: 145.13012378286646 }} />
-                                    </Map>
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.9188847061473!2d145.1279344153283!3d-38.14207907969426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad674d1a78b391d%3A0x7c22bbe52ae2c55e!2sBarry%20Dean%20Pharmacy!5e0!3m2!1sen!2sau!4v1614170400241!5m2!1sen!2sau" width="350" height="250" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+                                
 
                                 </MapWrapper>
                             </Column1>
@@ -83,15 +65,9 @@ class Location extends Component {
                                     97700023
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
-                                    <Map
-                                    google={this.props.google}
-                                    zoom={18}
-                                    style={mapStyles}
-                                    containerStyle={{position: 'relative'}}
-                                    initialCenter={{ lat: -38.14249285232113, lng: 145.125669697881 }}
-                                    >
-                                        <Marker position={{ lat: -38.14249285232113, lng: 145.125669697881 }} />
-                                    </Map>
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6275.511791798076!2d145.12146862642606!3d-38.14586866877413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad674d992c0c45d%3A0xbdd3f0051709a27f!2sFrankston%20Healthcare%20Medical%20Centre!5e0!3m2!1sen!2sau!4v1614171327851!5m2!1sen!2sau" width="350" height="250" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+
 
                                 </MapWrapper>
                             </Column2>
@@ -109,15 +85,9 @@ class Location extends Component {
                                     97828555
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
-                                    <Map
-                                    google={this.props.google}
-                                    zoom={18}
-                                    style={mapStyles}
-                                    containerStyle={{position: 'relative'}}
-                                    initialCenter={{ lat: -38.10979428463753, lng: 145.19578315383433 }}
-                                    >
-                                        <Marker position={{ lat: -38.10979428463753, lng: 145.19578315383433 }} />
-                                    </Map>
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.4139859699536!2d145.19540835917348!3d-38.10967787772698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad60c44615f3937%3A0x14f06cbcba6d4636!2sSkye%20Medical%20Centre!5e0!3m2!1sen!2sau!4v1614171252514!5m2!1sen!2sau" width="350" height="250" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+
                                 </MapWrapper>
                             </Column3>
 
@@ -129,6 +99,4 @@ class Location extends Component {
 };
 
 
-export default GoogleApiWrapper({
-    apiKey: ("AIzaSyCutWkXPImeE_PWgJYV2vkxSiEqf_yWUWI")
-})(Location)
+export default Location;
