@@ -58,8 +58,21 @@ export const NavLogo = styled(LinkScroll)`
     transition: background-position 275ms ease;
     text-decoration: none; // text decorations are clipped in WebKit browsers
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 806px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 790px) {
         font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 773px) {
+        font-size: 1.45rem;
+    }
+
+    @media screen and (max-width: 310px) {
+        font-size: 1.5rem;
+        margin-left: 10px;
     }
 
     @media screen and (max-width: 280px) {
