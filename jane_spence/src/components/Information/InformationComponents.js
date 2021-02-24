@@ -102,7 +102,7 @@ export const Body = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')}
 
-   
+
 `
 
 export const Column2 = styled.div`
