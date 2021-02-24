@@ -7,7 +7,6 @@ import { About, FAQ } from '../components/Information/pages';
 import Location from '../components/Location'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import SubFooter from '../components/SubFooter'
 
 const Home = ({toggle}) => {
 
@@ -29,8 +28,6 @@ const Home = ({toggle}) => {
         <Location id="location"/>
         <Contact id="contact"/>
         <Footer id="footer"/>
-        <SubFooter id="subfooter"/>
-        
         </>
     )
 };
