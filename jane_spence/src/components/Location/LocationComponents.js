@@ -102,7 +102,7 @@ export const Title = styled.h1`
 `
 
 export const Body = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-family: 'Montserrat', sans-serif;
     color: black;
     max-width: 350px;

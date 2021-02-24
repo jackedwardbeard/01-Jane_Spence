@@ -131,7 +131,7 @@ export const Img = styled.img`
 `
 
 export const Item = styled.div`
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -164,6 +164,7 @@ export const Label = styled.div`
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
     margin-top: 10px;
+    font-size: 1.15rem;
 
     @media screen and (max-width: 414px) {
         font-size: 1rem;
