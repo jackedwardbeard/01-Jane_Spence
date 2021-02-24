@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkScroll } from 'react-scroll'
 import { Link as LinkRouter } from 'react-router-dom' 
 
 
@@ -144,9 +145,22 @@ export const RightText = styled(LinkRouter)`
 export const Title = styled.h3`
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
 `
 
-export const NavLink = styled.p`
+export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    display: grid;
+    cursor: pointer;
+`
+
+export const NavLink = styled(LinkRouter)`
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    display: grid;
+    text-decoration: none;
+    cursor: pointer;
 `
