@@ -88,7 +88,7 @@ export const SubFooterContainer = styled.div`
 
 export const LeftText = styled.span`
     color: white;
-    font-weight: 600;
+    font-weight: 450;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding-top: 15px;
