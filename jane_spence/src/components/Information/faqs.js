@@ -10,17 +10,17 @@ export const faqs = [
     },
 
     {
-        question: 'Question 3?',
-        answer: 'All consultations are bulk-billed with a valid EPC referral.'
+        question: 'What should I bring?',
+        answer: 'TBD.'
     },
 
     {
-        question: 'Question 4?',
-        answer: 'All consultations are bulk-billed with a valid EPC referral.'
+        question: 'TBD.',
+        answer: 'TBD.'
     },
 
     {
-        question: 'Question 5?',
-        answer: 'All consultations are bulk-billed with a valid EPC referral.'
+        question: 'TBD.',
+        answer: 'TBD.'
     },
 ]
