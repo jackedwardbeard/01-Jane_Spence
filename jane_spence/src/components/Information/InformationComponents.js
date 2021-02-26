@@ -91,7 +91,7 @@ export const Subtitle = styled.h1`
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'pink')}
+    color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
 
     
@@ -139,6 +139,10 @@ export const Img = styled.img`
     height: 100%;
     padding-right: 0px;
     margin: 0 0 10px 0;
+
+    @media screen and (max-width: 1270px) {
+        display: none;
+    }
 `
 
 export const ButtonWrapper = styled.div`
@@ -266,6 +270,10 @@ export const QuestionWrapper = styled.div`
 
     @media screen and (max-width: 280px) {
         font-size: 0.6rem;
+    }
+
+    &:hover {
+        color: pink;
     }
     
 `

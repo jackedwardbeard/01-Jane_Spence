@@ -70,7 +70,7 @@ export const Column1 = styled.div`
         margin-right: 0px;
         display: grid;
         align-items: center;
-        padding-left: 15px;
+        padding-left: 20px;
     }
     
 `
@@ -178,7 +178,7 @@ export const Label = styled.div`
 
 export const Input = styled.input`
     height: 25px;
-    width: 250px;
+    width: 280px;
 
     @media screen and (max-width: 414px) {
         width: 240px;

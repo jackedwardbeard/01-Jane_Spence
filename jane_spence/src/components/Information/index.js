@@ -90,7 +90,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                                 <span>{clicked === index ? <FiMinus/> : <FiPlus/>}</span>
                                                 </QuestionWrapper>
                                                 {clicked === index ? (
-                                                <AnswerWrapper>
+                                                <AnswerWrapper data-aos='fade-left'>
                                                 <p>{item.answer}</p>
                                                 </AnswerWrapper>) : false}
                                                 </>
