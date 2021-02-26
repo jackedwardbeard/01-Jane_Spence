@@ -26,6 +26,28 @@ export const InformationWrapper = styled.div`
     z-index: 1;
     height: 900px;
     display: flex;
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        height: 700px;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        height: 650px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        height: 670px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        height: 670px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        height: 670px;
+    }
+
+
 `
 
 export const Row1 = styled.div`

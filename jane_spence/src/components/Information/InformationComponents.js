@@ -39,6 +39,10 @@ export const InformationWrapper = styled.div`
         height: 625px;
     }
 
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        height: 600px;
+    }
+
     @media screen and (max-width: 414px) and (max-height: 736px) {
         height: 625px;
     }
