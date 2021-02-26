@@ -12,17 +12,14 @@ npm start
 ## Required Modules
 
 ```bash
-npm install --save react-scroll
+npm install react-scroll
 ```
 ```bash
-npm install --save react-icons
+npm install react-icons
 ```
 ```bash
-npm install --save styled-components
+npm install styled-components
 ```
 ```bash
-npm install --save google-maps-react
-```
-```bash
-npm install --save aos
+npm install aos
 ```
