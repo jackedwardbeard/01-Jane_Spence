@@ -11,7 +11,8 @@ import {
     RightText,
     Title,
     NavLink,
-    NavLinkScroll
+    NavLinkScroll,
+    PreFooterWrapper
 } from './FooterComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -25,6 +26,9 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrapper>
+                <PreFooterWrapper>
+                    For further information, visit the websites listed below or book a consultation @ 0417 389 257.
+                </PreFooterWrapper>
                 <Row1>
                     <Column1>
                         <Title data-aos='fade-up'>

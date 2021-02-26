@@ -4,14 +4,15 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 
 export const FooterContainer = styled.div`
-    background: rgb(13,16,22);
-    height: 400px;
+    background: rgb(19,24,33);
+    height: 550px;
 `
 
 export const FooterWrapper = styled.div`
-    height: 360px;
+    height: 510px;
     display: grid;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
 `
 
 export const Row1 = styled.div`
@@ -43,6 +44,45 @@ export const Column3 = styled.div`
     float: left;
     text-align: center;
     overflow: hidden;
+`
+
+export const PreFooterWrapper = styled.div`
+    background: rgb(0,0,0, 0.1);
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 414px) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 411px) {
+        font-size: 1.05rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.92rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.7rem;
+    }
 `
 
 export const SubFooterContainer = styled.div`
@@ -91,7 +131,7 @@ export const SubFooterContainer = styled.div`
 
 export const LeftText = styled.span`
     color: white;
-    font-weight: 450;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding-top: 15px;
@@ -101,7 +141,7 @@ export const LeftText = styled.span`
 export const RightText = styled(LinkRouter)`
     color: white;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     float: right;
     background: transparent;
@@ -148,7 +188,7 @@ export const Title = styled.h3`
     color: white;
     font-size: 1.25rem;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
     margin-bottom: 40px;
 
@@ -171,8 +211,8 @@ export const Title = styled.h3`
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
-    color: #708090;
-    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 300;
     margin-top: 20px;
@@ -194,7 +234,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 `
 
 export const NavLink = styled(LinkRouter)`
-    color: #708090;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
