@@ -17,6 +17,50 @@ export const LandingContainer = styled.div`
         overflow-x: hidden;
 
     }
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        height: 1366px;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        height: 1024px;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        height: 640px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        height: 731px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        height: 823px;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        height: 568px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        height: 667px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        height: 736px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        height: 736px;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        height: 720px;
+    }
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        height: 653px;
+    }
     
 
 `
@@ -48,6 +92,7 @@ export const LandingText = styled.div`
 
 export const LandingTitle = styled.div`
     font-size: 4rem;
+    
 
     @media screen and (max-width: 540px) {
         font-size: 2.5rem;
