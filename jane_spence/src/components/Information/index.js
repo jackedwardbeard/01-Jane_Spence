@@ -81,7 +81,11 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                             faqs.map((item, index) => {
                                                 return (
                                                 <>
-                                                <QuestionWrapper onClick={() => reverseState(index)} key={index}>
+                                                <QuestionWrapper 
+                                                onClick={() => reverseState(index)} 
+                                                key={index}
+                                                data-aos='fade-left'
+                                                >
                                                 <h4>{item.question}</h4>
                                                 <span>{clicked === index ? <FiMinus/> : <FiPlus/>}</span>
                                                 </QuestionWrapper>

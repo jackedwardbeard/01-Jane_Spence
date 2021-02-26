@@ -36,6 +36,7 @@ export const Column1 = styled.div`
     margin-left: 70px;
     padding: 0 15px;
     grid-area: col1;
+    overflow: hidden;
     margin-right: 100px;
     text-align: center;
     
@@ -195,6 +196,7 @@ export const AccordionWrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
     height: 400px;
     width: 500px;
+    overflow: hidden;
     margin-top: 60px;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
 
