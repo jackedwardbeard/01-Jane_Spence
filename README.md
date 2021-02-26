@@ -21,8 +21,5 @@ npm install react-icons
 npm install styled-components
 ```
 ```bash
-npm install google-maps-react
-```
-```bash
 npm install aos
 ```
