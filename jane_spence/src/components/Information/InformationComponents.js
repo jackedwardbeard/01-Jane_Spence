@@ -101,7 +101,7 @@ export const Body = styled.p`
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
-    outline: solid 2px red;
+    display: ${({showBody}) => (showBody ? '' : 'none')};
 
     @media screen and (max-width: 280px) {
         padding-left: 10px;
@@ -157,6 +157,7 @@ export const Button = styled(LinkScroll)`
     padding: 10px 22px;
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: 1rem;
+    font-weight: 600;
     outline: none;
     border: none;
     cursor: pointer;
@@ -172,4 +173,45 @@ export const Button = styled(LinkScroll)`
         background: white;
         color: black;
     }
+`
+
+export const AccordionWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 400px;
+    width: 500px;
+    margin-top: 60px;
+    display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
+`
+
+
+export const Accordion = styled.div`
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+`
+
+export const QuestionWrapper = styled.div`
+    
+    background: rgba(10, 10, 10, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+`
+
+export const AnswerWrapper = styled.div`
+    padding-bottom: 20px;
 `

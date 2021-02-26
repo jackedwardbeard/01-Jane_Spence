@@ -21,7 +21,9 @@ export const About = {
     subbody5: 'Consultant Clinical Pharmacist',
     img: about,
     imageLeft: true,
-    showSubtitle: true
+    showSubtitle: true,
+    showBody: true,
+    showAccordion: false
 }
 
 export const FAQ = {
@@ -37,6 +39,8 @@ export const FAQ = {
     body: 'Template for FAQ',
     img: faq,
     imageLeft: false,
-    showSubtitle: false
+    showSubtitle: false,
+    showBody: false,
+    showAccordion: true
 
 }
