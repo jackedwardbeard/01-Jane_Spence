@@ -79,7 +79,7 @@ export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'pink')}
+    color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     
    
 
@@ -100,7 +100,14 @@ export const Body = styled.p`
     margin-top: 15px;
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'white')}
+    color: ${({darkText}) => (darkText ? 'black' : 'white')};
+    outline: solid 2px red;
+
+    @media screen and (max-width: 280px) {
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+    
 
 
 `
@@ -137,6 +144,7 @@ export const ButtonWrapper = styled.div`
     display: flex;
     padding-top: 40px;
     align-items: center;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
 
 `
@@ -147,7 +155,7 @@ export const Button = styled(LinkScroll)`
     background: ${({darkButton}) => (darkButton ? 'black' : 'pink')};
     white-space: nowrap;
     padding: 10px 22px;
-    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};;
+    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: 1rem;
     outline: none;
     border: none;
