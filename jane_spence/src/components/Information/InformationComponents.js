@@ -57,7 +57,7 @@ export const Column1 = styled.div`
     }
 
     @media screen and (max-width: 414px) { 
-        margin-left: 50px;
+        margin-left: 37px;
         margin-top: -30px;
     }
 
@@ -164,8 +164,20 @@ export const Button = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
-    @media screen and (max-width: 320px) { 
-        display: none;
+    @media screen and (max-width: 414px) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.7rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.6rem;
     }
 
     &:hover {
@@ -185,6 +197,30 @@ export const AccordionWrapper = styled.div`
     width: 500px;
     margin-top: 60px;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
+
+    @media screen and (max-width: 575px) {
+        width: 440px;
+    }
+
+    @media screen and (max-width: 414px) {
+        width: 340px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 330px;
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 320px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 280px;
+    }
+
+    @media screen and (max-width: 280px) {
+        width: 250px;
+    }
 `
 
 
@@ -209,9 +245,33 @@ export const QuestionWrapper = styled.div`
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media screen and (max-width: 575px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.81rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.7rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.6rem;
+    }
     
 `
 
 export const AnswerWrapper = styled.div`
     padding-bottom: 20px;
+
+    @media screen and (max-width: 360px) {
+        font-size: 0.8rem;
+    }
 `
