@@ -293,20 +293,28 @@ export const QuestionWrapper = styled.div`
         font-size: 1.2rem;
     }
 
+    @media screen and (max-width: 540px) {
+        font-size: 1.1rem;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 0.85rem;
     }
 
+    @media screen and (max-width: 375px) {
+        font-size: 0.8rem;
+    }
+
     @media screen and (max-width: 360px) {
-        font-size: 0.81rem;
+        font-size: 0.77rem;
     }
 
     @media screen and (max-width: 320px) {
-        font-size: 0.7rem;
+        font-size: 0.67rem;
     }
 
     @media screen and (max-width: 280px) {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     &:hover {
