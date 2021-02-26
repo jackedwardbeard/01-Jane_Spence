@@ -114,7 +114,7 @@ export const Column1 = styled.div`
 export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     
    
@@ -125,7 +125,7 @@ export const Subtitle = styled.h1`
     margin-top: 40px;
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
 
@@ -234,7 +234,7 @@ export const AccordionWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 400px;
     width: 500px;
     overflow: hidden;
