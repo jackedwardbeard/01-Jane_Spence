@@ -59,11 +59,11 @@ const Navbar = ({reverseState}) => {
                         <NavLinks to="location" smooth={true} spy={true} offset={-20}>Location</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinks>
+                        <NavLinks to="contact" smooth={true} spy={true} offset={30}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             <NavBtn>
-                <NavBtnLink to="contact" smooth={true} spy={true} offset={-80}>Enquire Now</NavBtnLink>
+                <NavBtnLink to="contact" smooth={true} spy={true} offset={30}>Enquire Now</NavBtnLink>
             </NavBtn>
             </NavbarContainer>
         </Nav>

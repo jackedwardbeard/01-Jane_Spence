@@ -124,10 +124,10 @@ export const Body = styled.p`
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
+    margin-bottom: -10px;
 `
 
 export const Column3 = styled.div`

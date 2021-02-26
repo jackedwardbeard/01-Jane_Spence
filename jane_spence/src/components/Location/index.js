@@ -94,7 +94,7 @@ class Location extends Component {
                                     Friday: 8am-4pm
                                 </BodyHours>
                                 <BodyHours data-aos='fade-left'>
-                                    Sunday: 9am-3pm
+                                    Saturday: 9am-3pm
                                 </BodyHours>
                                 <BodyHours data-aos='fade-right'>
                                     Sunday: 9am-12pm

@@ -84,7 +84,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                                                 <QuestionWrapper 
                                                 onClick={() => reverseState(index)} 
                                                 key={index}
-                                                data-aos='fade-left'
+                                                data-aos='fade-right'
                                                 >
                                                 <h4>{item.question}</h4>
                                                 <span>{clicked === index ? <FiMinus/> : <FiPlus/>}</span>
@@ -120,7 +120,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img data-aos='fade-up' src={img}/>
+                            <Img data-aos='fade-left' src={img}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>

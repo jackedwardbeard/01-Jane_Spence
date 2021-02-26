@@ -49,25 +49,17 @@ export const NavLogo = styled(LinkScroll)`
     position: relative;
     font-size: 2em;
     overflow: hidden;
-    background: linear-gradient(to right, pink, pink 50%, white 50%);
+    background: linear-gradient(to top, pink, pink 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none; // text decorations are clipped in WebKit browsers
-
-    @media screen and (max-width: 806px) {
-        font-size: 1.75rem;
+    
+    @media screen and (max-width: 905px) {
+        font-size: 1.9rem;
     }
 
-    @media screen and (max-width: 790px) {
+    @media screen and (max-width: 894px) {
         font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 773px) {
-        font-size: 1.45rem;
     }
 
     @media screen and (max-width: 310px) {
@@ -82,8 +74,11 @@ export const NavLogo = styled(LinkScroll)`
         margin-left: 0px;
     }
 
-    &:hover {
-        background-position: 0 100%;
+    @media screen and (max-width: 207px) {
+        font-size: 0.9rem;
+    }
+
+
 
     
 `;
@@ -123,6 +118,9 @@ export const NavItem = styled.li`
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     
+    @media screen and (max-width: 847px) {
+        font-size: 0.7rem;
+    }
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -170,6 +168,10 @@ export const NavBtnLink = styled(LinkScroll)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+
+    @media screen and (max-width: 847px) {
+        font-size: 0.7rem;
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;

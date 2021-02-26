@@ -34,17 +34,15 @@ const Footer = () => {
                         <NavLinkScroll data-aos='fade-left' to="about" smooth={true} spy={true} offset={-80}>About</NavLinkScroll>
                         <NavLinkScroll data-aos='fade-right' to="faq" smooth={true} spy={true} offset={-80}>FAQ</NavLinkScroll>
                         <NavLinkScroll data-aos='fade-left' to="location" smooth={true} spy={true} offset={-20}>Location</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-right' to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-right' to="contact" smooth={true} spy={true} offset={30}>Contact</NavLinkScroll>
                     </Column1>
                     <Column2>
                         <Title data-aos='fade-up'>
-                            KEY WEBSITES
+                            HELPFUL
                         </Title>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 1</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 2</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 3</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 4</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 5</NavLink>
+                        <NavLink data-aos='fade-right' to="//diabetesaustralia.com.au" target="_blank">Diabetes Australia</NavLink>
+                        <NavLink data-aos='fade-left' to="//ndss.com.au" target="_blank">NDSS</NavLink>
+                        <NavLink data-aos='fade-right' to="//baker.edu.au/health-hub/fact-sheets/carbohydrates-gi" target="_blank">Baker Institute</NavLink>
                     </Column2>
                     <Column3>
                         <Title data-aos='fade-up'>

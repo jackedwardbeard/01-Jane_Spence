@@ -11,16 +11,16 @@ export const faqs = [
 
     {
         question: 'What should I bring?',
-        answer: 'TBD.'
+        answer: 'A valid EPC referral from your GP and any pathology results etc.'
     },
 
     {
-        question: 'TBD.',
-        answer: 'TBD.'
+        question: 'What topics are covered?',
+        answer: 'Diet, exercise, medications, blood glucose monitoring, etc.'
     },
 
     {
-        question: 'TBD.',
-        answer: 'TBD.'
+        question: 'How can I obtain a blood glucose meter?',
+        answer: 'Free meters (and training) are provided at all consultations.'
     },
 ]
