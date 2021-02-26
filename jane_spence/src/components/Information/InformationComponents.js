@@ -271,7 +271,20 @@ export const QuestionWrapper = styled.div`
 export const AnswerWrapper = styled.div`
     padding-bottom: 20px;
 
+    @media screen and (max-width: 414px) {
+        font-size: 0.85rem;
+    }
+
     @media screen and (max-width: 360px) {
         font-size: 0.8rem;
     }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.75rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.7rem;
+    }
+
 `
