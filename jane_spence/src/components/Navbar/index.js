@@ -13,7 +13,9 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink, 
+    SubLogo,
+    LogoContainer
 } from './NavbarComponents'
 
 // you can pass in state variables and functions to components
@@ -44,7 +46,10 @@ const Navbar = ({reverseState}) => {
     return (
         <Nav navTransparent={navTransparent}>
             <NavbarContainer>
-                <NavLogo to="landing" smooth={true} spy={true} offset={-80}>JANE SPENCE</NavLogo>
+                <LogoContainer>
+                    <NavLogo to="landing" smooth={true} spy={true} offset={-80}>JANE SPENCE</NavLogo>
+                    <SubLogo to="landing" smooth={true} spy={true} offset={-80}>Diabetes Education</SubLogo>
+                </LogoContainer>
                 <MobileIcon onClick={reverseState}>
                     <FaBars/>
                 </MobileIcon>

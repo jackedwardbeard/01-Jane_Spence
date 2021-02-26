@@ -36,6 +36,14 @@ export const NavbarContainer = styled.div`
     
 `;
 
+export const LogoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+`
+
 export const NavLogo = styled(LinkScroll)`
     color: white;
     justify-self: flex-start;
@@ -47,14 +55,11 @@ export const NavLogo = styled(LinkScroll)`
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    font-size: 2em;
+    font-size: 1.9em;
     overflow: hidden;
-    background: linear-gradient(to top, pink, pink 50%, white 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     
-    @media screen and (max-width: 905px) {
+    
+    @media screen and (max-width: 925px) {
         font-size: 1.9rem;
     }
 
@@ -82,6 +87,14 @@ export const NavLogo = styled(LinkScroll)`
 
     
 `;
+
+export const SubLogo = styled(LinkScroll)`
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    cursor: pointer;
+`
 
 export const MobileIcon = styled.div`
     display: none;

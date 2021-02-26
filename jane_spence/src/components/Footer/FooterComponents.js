@@ -139,8 +139,7 @@ export const RightText = styled(LinkRouter)`
     }
 
     &:hover {
-        color: #ff00da;
-        transition: 0.2s ease-in;
+        color: pink;
     }
 
 `
