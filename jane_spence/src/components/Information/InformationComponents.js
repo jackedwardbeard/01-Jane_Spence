@@ -19,9 +19,40 @@ export const InformationWrapper = styled.div`
     height: 900px;
     display: flex;
     
-    @media screen and (max-width: 375px) {
-        height: 1000px;
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        height: 640px;
     }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        height: 625px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        height: 625px;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        height: 650px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        height: 625px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        height: 625px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        height: 625px;
+    }
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        height: 680px;
+    }
+
+    
+    
 `
 
 export const Row1 = styled.div`
@@ -105,7 +136,9 @@ export const Body = styled.p`
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
     @media screen and (max-width: 280px) {
-        padding-left: 10px;
+        padding-left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 1.2rem;
     }
     
