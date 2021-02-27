@@ -5,14 +5,12 @@ import Home from './pages';
 
 
 // classes are stateful, functions are not (without hooks)
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <Home/>
-      </Router>
-    )
-  }
+function App() {
+  return (
+    <Router>
+      <Home/>
+    </Router>
+  )
 }
 
 
