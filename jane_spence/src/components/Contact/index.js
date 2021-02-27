@@ -24,6 +24,7 @@ import contact from '../../images/contact.svg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import {useForm} from 'react-hook-form'
+import axios from 'axios'
 
 const Contact = ({id}) => {
 
@@ -31,14 +32,44 @@ const Contact = ({id}) => {
         Aos.init({duration: 1000})
     }, [])
 
-    const {register, handleSubmit, errors} = useForm();
+    const {register, errors} = useForm();
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
+    const [enquiry, setEnquiry] = useState('');
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        const data = {
+            name: name,
+            phone: phone,
+            email: email,
+            enquiry: enquiry
+        }
+
+        axios.post("api/sendMail", data)
+
+    }
+
+
+
+    const handleClick = (e) => {
+        e.preventDefault();
+
+        if(e.target.name === "name") {
+            setName(e.target.value)
+        }
+        else if(e.target.name === "phone") {
+            setPhone(e.target.value)
+        }
+        else if(e.target.name === "email") {
+            setEmail(e.target.value)
+        }
+        else {
+            setEnquiry(e.target.value)
+        }
     }
 
     return (
@@ -59,21 +90,44 @@ const Contact = ({id}) => {
                             </Body>
                         </TextWrapper>
                         <ContactWrap>
-                            <ContactForm data-aos='fade-up' onSubmit={handleSubmit(onSubmit)}>
+                            <ContactForm data-aos='fade-up'>
                                 <Label>ENQUIRE NOW</Label>
-                                <Input type='text' placeholder='Name' name='name' ref={register({required: true})}></Input>
+                                <Input onChange={handleClick} 
+                                value={name}
+                                type='text' 
+                                placeholder='Name' 
+                                name='name' 
+                                ref={register({required: true})}>
+                                </Input>
                                 <Error>{errors.name && "Your name is required"}</Error>
-                                <Input type='number' placeholder='Phone' name='phone' ref={register({required: false, maxLength: 10})}></Input>
-                                <Error>{errors.phone && "Invalid phone number"}</Error>
-                                <Input type='text' placeholder='E-mail' name='email' ref={register({required: true})}></Input>
+                                <Input onChange={handleClick} 
+                                value={phone}
+                                type='number' 
+                                placeholder='Phone' 
+                                name='phone' 
+                                ref={register({required: true, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
+                                </Input>
+                                <Error>{errors.phone && errors.phone.message}</Error>
+                                <Input onChange={handleClick}
+                                value={email} 
+                                type='text' 
+                                placeholder='E-mail' 
+                                name='email' 
+                                ref={register({required: true})}>
+                                </Input>
                                 <Error>{errors.email && "Your e-mail is required"}</Error>
-                                <InputLarge type='text' placeholder='Your Enquiry' name='enquiry' ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}></InputLarge>
+                                <InputLarge type='text' 
+                                value={enquiry}
+                                placeholder='Your Enquiry' 
+                                name='enquiry' 
+                                ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
+                                </InputLarge>
                                 <Error>{errors.enquiry && errors.enquiry.message}</Error>
                                 <BtnWrapper>
                                     <SubmitBtn 
                                     type='submit' 
-                                    onClick={}
-                                    onSubmit={handleSubmit(onSubmit)}>Submit {String.fromCharCode(10140)}
+                                    onClick={handleSubmit} 
+                                    >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
                                 </BtnWrapper>
                             </ContactForm>
