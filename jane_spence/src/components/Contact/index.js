@@ -33,6 +33,8 @@ const Contact = ({id}) => {
 
     const {register, handleSubmit, errors} = useForm();
 
+    const []
+
     const onSubmit = (data) => {
         console.log(data);
     }
@@ -66,7 +68,11 @@ const Contact = ({id}) => {
                                 <InputLarge type='text' placeholder='Your Enquiry' name='enquiry' ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}></InputLarge>
                                 <Error>{errors.enquiry && errors.enquiry.message}</Error>
                                 <BtnWrapper>
-                                    <SubmitBtn type='submit' onSubmit={handleSubmit(onSubmit)}>Submit {String.fromCharCode(10140)}</SubmitBtn>
+                                    <SubmitBtn 
+                                    type='submit' 
+                                    onClick={}
+                                    onSubmit={handleSubmit(onSubmit)}>Submit {String.fromCharCode(10140)}
+                                    </SubmitBtn>
                                 </BtnWrapper>
                             </ContactForm>
                         </ContactWrap>
