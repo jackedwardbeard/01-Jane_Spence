@@ -48,9 +48,9 @@ npm install express
 npm install nodemailer
 ```
 ```bash
-npm install concurrently
+npm install concurrently **OPTIONAL**
 ```
 ```bash
-npm install nodemon
+npm install nodemon **OPTIONAL**
 ```
 
