@@ -114,7 +114,7 @@ export const Column1 = styled.div`
 export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     
    

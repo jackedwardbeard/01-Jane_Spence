@@ -46,7 +46,7 @@ export const Row1 = styled.div`
 
     @media screen and (max-width: 414px) {
 
-        padding-left: 25px;
+        padding-left: 40px;
     }
 
     @media screen and (max-width: 375px) {
@@ -88,18 +88,34 @@ export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 750;
+    font-weight: 800;
     color: black;
     max-width: 350px;
     text-align: center;
 
     @media screen and (max-width: 1250px) {
 
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 414px) {
+
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 375px) {
+
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 320px) {
+
         font-size: 1.3rem;
     }
 
     @media screen and (max-width: 280px) {
 
+        font-size: 1.3rem;
         width: 250px;
     }
 
@@ -133,9 +149,10 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-    margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    padding-right: 50px;
+    margin-bottom: -10px;
 `
 
 export const MapWrapper = styled.div`
