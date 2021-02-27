@@ -42,7 +42,7 @@ const Footer = () => {
                     </Column1>
                     <Column2>
                         <Title data-aos='fade-up'>
-                            HELPFUL
+                            HELPFUL WEBSITES
                         </Title>
                         <NavLink data-aos='fade-right' to="//diabetesaustralia.com.au" target="_blank">Diabetes Australia</NavLink>
                         <NavLink data-aos='fade-left' to="//ndss.com.au" target="_blank">NDSS</NavLink>
@@ -50,7 +50,7 @@ const Footer = () => {
                     </Column2>
                     <Column3>
                         <Title data-aos='fade-up'>
-                            OTHER
+                            TOPICS
                         </Title>
                         <NavLink data-aos='fade-right' to="//diabetesaustralia.com.au/about-diabetes/what-is-diabetes/" target="_blank">What Is Diabetes?</NavLink>
                         <NavLink data-aos='fade-left' to="//ndss.com.au/about-diabetes/newly-diagnosed/" target="_blank">Newly Diagnosed?</NavLink>
