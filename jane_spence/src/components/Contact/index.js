@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import {React, useEffect, useState} from 'react'
 import {
     InformationContainer,
     InformationWrapper,
@@ -33,7 +33,9 @@ const Contact = ({id}) => {
 
     const {register, handleSubmit, errors} = useForm();
 
-    const []
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
 
     const onSubmit = (data) => {
         console.log(data);
