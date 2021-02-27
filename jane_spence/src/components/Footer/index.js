@@ -52,11 +52,11 @@ const Footer = () => {
                         <Title data-aos='fade-up'>
                             OTHER
                         </Title>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 6</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 7</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 8</NavLink>
-                        <NavLink data-aos='fade-left' to="//google.com" target="_blank">Website 9</NavLink>
-                        <NavLink data-aos='fade-right' to="//google.com" target="_blank">Website 10</NavLink>
+                        <NavLink data-aos='fade-right' to="//diabetesaustralia.com.au/about-diabetes/what-is-diabetes/" target="_blank">What Is Diabetes?</NavLink>
+                        <NavLink data-aos='fade-left' to="//ndss.com.au/about-diabetes/newly-diagnosed/" target="_blank">Newly Diagnosed?</NavLink>
+                        <NavLink data-aos='fade-right' to="//ndss.com.au/living-with-diabetes/managing-diabetes/blood-glucose-monitoring/" target="_blank">Blood Glucose Monitoring</NavLink>
+                        <NavLink data-aos='fade-left' to="//baker.edu.au/-/media/documents/fact-sheets/baker-institute-factsheet-carbohydrates-and-glycaemic-index.pdf" target="_blank">Low GI Carbohydrates</NavLink>
+                        <NavLink data-aos='fade-right' to="//baker.edu.au/health-hub/fact-sheets/shopping-guide" target="_blank">Supermarket Shopping Guide</NavLink>
                     </Column3>
                 </Row1>
             </FooterWrapper>

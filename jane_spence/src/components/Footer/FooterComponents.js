@@ -23,7 +23,8 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    width: 33.33%;
+    width: 30%;
+    margin-left: 14px;
     height: 100%;
     float: left;
     text-align: center;
@@ -31,15 +32,17 @@ export const Column1 = styled.div`
 `
 
 export const Column2 = styled.div`
-    width: 33.33%;
+    width: 30%;
     height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
     float: left;
     text-align: center;
     overflow: hidden;
 `
 
 export const Column3 = styled.div`
-    width: 33.33%;
+    width: 30%;
     height: 100%;
     float: left;
     text-align: center;
