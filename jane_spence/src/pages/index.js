@@ -7,6 +7,7 @@ import { About, FAQ } from '../components/Information/pages';
 import Location from '../components/Location'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import {Helmet} from "react-helmet"
 
 const Home = ({toggle}) => {
 
@@ -20,6 +21,10 @@ const Home = ({toggle}) => {
 
     return (
         <>
+        <Helmet>
+                <meta name="Home" content="Welcome to Jane Spence Diabetes Education!"/>
+                <title>Jane Spence Diabetes Education</title>
+        </Helmet>
         <MobileMenu clicked={clicked} reverseState={reverseState}/>
         <Navbar reverseState={reverseState}/>
         <LandingBackground id="landing"/>
