@@ -8,6 +8,7 @@ import {
     Title,
     Subtitle,
     Body,
+    SubBody,
     Column2,
     Img,
     ImgWrap,
@@ -59,21 +60,21 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             <Subtitle data-aos='fade-up' darkText={darkText} showSubtitle={showSubtitle} >
                             {subtext}
                             </Subtitle>
-                            <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                <li> {subbody} </li>
-                            </Body>
-                            <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                <li> {subbody2} </li>
-                            </Body>
-                            <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                <li> {subbody3} </li>
-                            </Body>
-                            <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                <li> {subbody4} </li>
-                            </Body>
-                            <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                <li> {subbody5} </li>
-                            </Body>
+                            <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
+                                ✔ {subbody}
+                            </SubBody>
+                            <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
+                                ✔ {subbody2}
+                            </SubBody>
+                            <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
+                                ✔ {subbody3}
+                            </SubBody>
+                            <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
+                                ✔ {subbody4} 
+                            </SubBody>
+                            <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
+                                ✔ {subbody5} 
+                            </SubBody>
                             <IconContext.Provider value={{ color: 'pink', size: '20px'}}>
                                 <AccordionWrapper showAccordion={showAccordion}>
                                     <Accordion>

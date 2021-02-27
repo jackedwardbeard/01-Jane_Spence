@@ -145,6 +145,23 @@ export const Body = styled.p`
         margin-right: 10px;
         font-size: 1.2rem;
     }
+
+`
+
+export const SubBody = styled.p`
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    color: ${({darkText}) => (darkText ? 'black' : 'white')};
+    display: ${({showBody}) => (showBody ? '' : 'none')};
+
+
+    @media screen and (max-width: 280px) {
+        padding-left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
     
 
 
