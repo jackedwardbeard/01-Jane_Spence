@@ -61,7 +61,7 @@ const Contact = ({id}) => {
                                 </Label>
                                 <InputLarge></InputLarge>
                                 <BtnWrapper>
-                                    <SubmitBtn>Submit</SubmitBtn>
+                                    <SubmitBtn>Submit {String.fromCharCode(10140)}</SubmitBtn>
                                 </BtnWrapper>
                             </ContactForm>
                         </ContactWrap>
