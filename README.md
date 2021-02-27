@@ -23,3 +23,6 @@ npm install styled-components
 ```bash
 npm install aos
 ```
+```bash
+npm install react-hook-form
+```
