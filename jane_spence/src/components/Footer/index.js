@@ -66,7 +66,7 @@ const Footer = () => {
                 </LeftText>
             
                 <RightText to="//linkedin.com/in/jack-beard/" target="_blank">
-                    Created By JACK BEARD
+                    ♨ Created By JACK BEARD
                 </RightText>
                 
             </SubFooterContainer>
