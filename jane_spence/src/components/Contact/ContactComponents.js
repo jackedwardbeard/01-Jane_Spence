@@ -63,7 +63,6 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
@@ -153,7 +152,7 @@ export const Img = styled.img`
         padding-right: 100px;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1270px) {
         display: none;
     }
 `
