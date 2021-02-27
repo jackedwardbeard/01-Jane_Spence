@@ -27,6 +27,7 @@ export const InformationWrapper = styled.div`
     height: 1100px;
     display: flex;
 
+
     @media screen and (max-width: 280px) and (max-height: 653px) {
         height: 700px;
     }
@@ -271,5 +272,13 @@ export const SubmitBtn = styled.button`
         color: black;
     }
     
+`
+
+export const Error = styled.p`
+color: red;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+padding-top: 5px;
+
 `
 

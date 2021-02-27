@@ -18,16 +18,24 @@ import {
     InputLarge,
     SubmitBtn,
     BtnWrapper,
+    Error
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import {useForm} from 'react-hook-form'
 
 const Contact = ({id}) => {
 
     useEffect(() => {
         Aos.init({duration: 1000})
     }, [])
+
+    const {register, handleSubmit, errors} = useForm();
+
+    const onSubmit = (data) => {
+        console.log(data);
+    }
 
     return (
         <InformationContainer id={id}>
@@ -47,21 +55,18 @@ const Contact = ({id}) => {
                             </Body>
                         </TextWrapper>
                         <ContactWrap>
-                            <ContactForm data-aos='fade-up'>
-                                <Label>
-                                Name
-                                </Label>
-                                <Input></Input>
-                                <Label>
-                                Phone
-                                </Label>
-                                <Input></Input>
-                                <Label>
-                                Enquiry
-                                </Label>
-                                <InputLarge></InputLarge>
+                            <ContactForm data-aos='fade-up' onSubmit={handleSubmit(onSubmit)}>
+                                <Label>ENQUIRE NOW</Label>
+                                <Input type='text' placeholder='Name' name='name' ref={register({required: true})}></Input>
+                                <Error>{errors.name && "Your name is required"}</Error>
+                                <Input type='number' placeholder='Phone' name='phone' ref={register({required: false, maxLength: 10})}></Input>
+                                <Error>{errors.phone && "Invalid phone number"}</Error>
+                                <Input type='text' placeholder='E-mail' name='email' ref={register({required: true})}></Input>
+                                <Error>{errors.email && "Your e-mail is required"}</Error>
+                                <InputLarge type='text' placeholder='Your Enquiry' name='enquiry' ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}></InputLarge>
+                                <Error>{errors.enquiry && errors.enquiry.message}</Error>
                                 <BtnWrapper>
-                                    <SubmitBtn>Submit {String.fromCharCode(10140)}</SubmitBtn>
+                                    <SubmitBtn type='submit' onSubmit={handleSubmit(onSubmit)}>Submit {String.fromCharCode(10140)}</SubmitBtn>
                                 </BtnWrapper>
                             </ContactForm>
                         </ContactWrap>
