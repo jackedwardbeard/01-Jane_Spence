@@ -32,13 +32,16 @@ const Contact = ({id}) => {
         Aos.init({duration: 1000})
     }, [])
 
+    // state used for form validation (react hook form)
     const {register, errors} = useForm();
 
+    // state used for keeping track of contact form values/inputs
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [enquiry, setEnquiry] = useState('');
 
+    // on submitting the form, send a POST request to our backend
     const handleSubmit = (e) => {
         e.preventDefault();
         
@@ -49,13 +52,12 @@ const Contact = ({id}) => {
             enquiry: enquiry
         }
 
-        axios.post("api/sendMail", data)
+        axios.post("/api/sendMail", data)
 
     }
 
-
-
-    const handleClick = (e) => {
+    // on changing an input field on the contact form, update its value
+    const handleChange = (e) => {
         e.preventDefault();
 
         if(e.target.name === "name") {
@@ -92,7 +94,7 @@ const Contact = ({id}) => {
                         <ContactWrap>
                             <ContactForm data-aos='fade-up'>
                                 <Label>ENQUIRE NOW</Label>
-                                <Input onChange={handleClick} 
+                                <Input onChange={handleChange} 
                                 value={name}
                                 type='text' 
                                 placeholder='Name' 
@@ -100,7 +102,7 @@ const Contact = ({id}) => {
                                 ref={register({required: true})}>
                                 </Input>
                                 <Error>{errors.name && "Your name is required"}</Error>
-                                <Input onChange={handleClick} 
+                                <Input onChange={handleChange} 
                                 value={phone}
                                 type='number' 
                                 placeholder='Phone' 
@@ -108,7 +110,7 @@ const Contact = ({id}) => {
                                 ref={register({required: true, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
                                 </Input>
                                 <Error>{errors.phone && errors.phone.message}</Error>
-                                <Input onChange={handleClick}
+                                <Input onChange={handleChange}
                                 value={email} 
                                 type='text' 
                                 placeholder='E-mail' 
@@ -117,6 +119,7 @@ const Contact = ({id}) => {
                                 </Input>
                                 <Error>{errors.email && "Your e-mail is required"}</Error>
                                 <InputLarge type='text' 
+                                onChange={handleChange} 
                                 value={enquiry}
                                 placeholder='Your Enquiry' 
                                 name='enquiry' 

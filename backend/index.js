@@ -1,9 +1,55 @@
+// our .env (environment variables) file stores our private email login details
+require('dotenv').config()
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const mailer = require("nodemailer");
 
+// create the express app/backend/server
 const app = express();
 
-app.listen(5000, () => {
-    console.log("Server running on port 5000!")
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
+app.use(cookieParser());
+
+
+// our server side POST, used to send an email with data received from the client side (contact form)
+app.post("/api/sendMail", (req, res) => {
+
+    // the data received from the client side POST request (using axios)
+    const data = req.body;
+
+    // the email to reply from
+    const smtpTransport = mailer.createTransport({
+        service: "Gmail", // hostname
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
+        }
+    });
+
+    // the mail options
+    const mail = {
+        from: `${data.name} (${data.email})`, // sender address (who sends)
+        to: 'nodemailertesting123456@gmail.com', // list of receivers (who receives)
+        subject: `Message from ${data.name}`, // Subject line
+        text: `${data.name} (${data.phone}) (${data.email}) says: ${data.enquiry}`
+    }
+
+    // the sending of the e-mail
+    smtpTransport.sendMail(mail, function(error, response) {
+        if(error) {
+            console.log(error)
+        } else {
+            console.log( "E-mail sent successfully!")
+        }
+        smtpTransport.close();
+    })
+
+})
+
+// the express server is running on PORT 5000
+app.listen(5000,  () => {
+    console.log("The backend is running on PORT 5000!");
 })
