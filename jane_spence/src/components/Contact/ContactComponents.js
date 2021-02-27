@@ -224,10 +224,10 @@ export const BtnWrapper = styled.div`
 
 export const SubmitBtn = styled.button`
     
-    border-radius: 50px;
+    border-radius: 30px;
     background: pink;
     white-space: nowrap;
-    padding: 10px 50px;
+    padding: 10px 30px;
     color: black;
     font-size: 1rem;
     font-weight: 600;
