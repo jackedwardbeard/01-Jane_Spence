@@ -9,7 +9,7 @@ This project is an interactive React.js website built for a client Jane Spence. 
 npm start
 ```
 
-## Required Modules
+## Required Modules (Front-end)
 
 ```bash
 npm install react-scroll
@@ -26,3 +26,31 @@ npm install aos
 ```bash
 npm install react-hook-form
 ```
+```bash
+npm install axios
+```
+```bash
+npm install http-server-proxy
+```
+
+## Required Modules (Back-end)
+
+```bash
+npm install body-parser
+```
+```bash
+npm install cookie-parser
+```
+```bash
+npm install express
+```
+```bash
+npm install nodemailer
+```
+```bash
+npm install concurrently
+```
+```bash
+npm install nodemon
+```
+
