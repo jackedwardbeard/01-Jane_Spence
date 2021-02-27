@@ -111,6 +111,7 @@ export const Body = styled.ul`
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin-bottom: 5px;
 
 
     @media screen and (max-width: 414px) {
@@ -129,7 +130,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 `
 
 export const ImgWrap = styled.div`
@@ -158,6 +159,12 @@ export const Item = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
 
+    @media screen and (max-width: 320px) {
+        font-size: 1rem;
+        margin-left: -40px;
+        
+    }
+
     @media screen and (max-width: 280px) {
         font-size: 1rem;
     }
@@ -167,15 +174,12 @@ export const Item = styled.div`
 export const ContactWrap = styled.div`
     display: flex;
     justify-content: left;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
 `
 
-export const ContactForm = styled.div`
+export const ContactForm = styled.form`
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 `
 
 
@@ -189,30 +193,54 @@ export const Label = styled.div`
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
-    margin-top: 10px;
-    font-size: 1.15rem;
+    width: 280px;
+    font-weight: 500;
+    font-size: 1.7rem;
 
     @media screen and (max-width: 414px) {
-        font-size: 1rem;
+        font-size: 1.4rem;
         
     }
 `
 
 export const Input = styled.input`
-    height: 25px;
+    height: 40px;
     width: 280px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    margin-top: 10px;
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 320px) {
+        width: 250px;
+        
+    }
+
+    @media screen and (max-width: 280px) {
         width: 240px;
         
     }
 `
 
 export const InputLarge = styled.textarea`
-    height: 80px;
-    width: 100%;
+    height: 100px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 280px;
     margin-top: 10px;
     type: textarea;
+
+    @media screen and (max-width: 320px) {
+        width: 250px;
+        
+    }
+
+    @media screen and (max-width: 280px) {
+        width: 240px;
+        
+    }
 `
 
 export const BtnWrapper = styled.div`
