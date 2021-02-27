@@ -4,13 +4,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages';
 
 
-// classes are stateful, functions are not
-function App() {
-  return (
-    <Router>
-      <Home/>
-    </Router>
-  )
+// classes are stateful, functions are not (without hooks)
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Home/>
+      </Router>
+    )
+  }
 }
 
 
