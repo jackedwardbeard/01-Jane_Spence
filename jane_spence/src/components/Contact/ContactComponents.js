@@ -66,6 +66,7 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     margin-right: 100px;
+    margin-left: -10px;
 
     @media screen and (max-width: 1400px) {
         padding-left: 100px;
@@ -81,22 +82,26 @@ export const Column1 = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        padding-left: 35px;
+        padding-left: 45px;
     }
 
     @media screen and (max-width: 414px) {
-        padding-left: 20px;
+        padding-left: 25px;
     }
 
     @media screen and (max-width: 360px) {
-        padding-left: 20px;
+        padding-left: 25px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding-left: 30px;
     }
 
     @media screen and (max-width: 280px) {
         margin-right: 0px;
         display: grid;
         align-items: center;
-        padding-left: 20px;
+        padding-left: 30px;
     }
     
 `
