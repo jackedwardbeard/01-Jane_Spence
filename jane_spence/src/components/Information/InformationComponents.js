@@ -54,7 +54,6 @@ export const InformationWrapper = styled.div`
     @media screen and (max-width: 360px) and (max-height: 640px) {
         height: 560px;
     }
-    
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
         height: 620px;
@@ -148,6 +147,10 @@ export const Body = styled.p`
         font-size: 1.75rem;
     }
 
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
+
     @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 1.2rem;
     }
@@ -191,6 +194,10 @@ export const SubBody = styled.p`
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
