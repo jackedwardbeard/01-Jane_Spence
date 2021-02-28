@@ -3,7 +3,7 @@
 
 ## Project Description
 
-This project is an interactive React.js website built for client Jane Spence. The front-end uses React/javascript and uses styled components. The back-end server is made from Express.js/Node.js, and several other dependencies are listed below. This was my first time building a website. I have learned A LOT.
+This project is an interactive React.js website built for client Jane Spence. The front-end uses React/JavaScript styled components. The back-end server uses Express.js/Node.js, and several other dependencies are listed below. The back-end server is needed for our contact page, where our contact form is to send an e-mail upon submission. This was my first time building a website, and my first time building a full-stack (minus the DB) application. I have learned A LOT.
 
 
 ## Stack
