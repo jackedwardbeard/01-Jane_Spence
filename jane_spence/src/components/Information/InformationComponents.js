@@ -18,44 +18,49 @@ export const InformationWrapper = styled.div`
     z-index: 1;
     height: 900px;
     display: flex;
-    
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 640px;
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        height: 1300px;
     }
 
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 625px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 625px;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 650px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        height: 625px;
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        height: 800px;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
-        height: 600px;
+        height: 530px;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 625px;
+        height: 550px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        height: 550px;
+    }
+    
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        height: 550px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
-        height: 625px;
+        height: 550px;
     }
 
-    @media screen and (max-width: 280px) and (max-height: 653px) {
-        height: 680px;
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        height: 515px;
     }
 
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        height: 560px;
+    }
     
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        height: 620px;
+    }
+
+
     
 `
 
@@ -97,6 +102,7 @@ export const Column1 = styled.div`
         margin-top: -30px;
     }
 
+
     @media screen and (max-width: 375px) { 
         margin-left: 20px;
         margin-right: -25px;
@@ -117,7 +123,6 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     
-   
 
 `
 
@@ -139,11 +144,39 @@ export const Body = styled.p`
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 1.13rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 1.13rem;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        font-size: 1.13rem;
+    }
+
     @media screen and (max-width: 280px) {
         padding-left: 0px;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 `
@@ -156,14 +189,41 @@ export const SubBody = styled.p`
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
 
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 1.13rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        font-size: 1.1rem;
+    }
+
     @media screen and (max-width: 280px) {
         padding-left: 0px;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
-
 
 `
 
@@ -223,8 +283,24 @@ export const Button = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 1rem;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 0.6rem;
     }
 
     @media screen and (max-width: 360px) {
@@ -258,6 +334,7 @@ export const AccordionWrapper = styled.div`
     margin-top: 60px;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
 
+
     @media screen and (max-width: 575px) {
         width: 440px;
     }
@@ -281,6 +358,7 @@ export const AccordionWrapper = styled.div`
     @media screen and (max-width: 280px) {
         width: 250px;
     }
+
 `
 
 
@@ -305,6 +383,14 @@ export const QuestionWrapper = styled.div`
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        font-size: 1.3rem;
+    }
 
     @media screen and (max-width: 575px) {
         font-size: 1.2rem;
@@ -342,6 +428,10 @@ export const QuestionWrapper = styled.div`
 
 export const AnswerWrapper = styled.div`
     padding-bottom: 20px;
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.2rem;
+    }
 
     @media screen and (max-width: 414px) {
         font-size: 0.85rem;

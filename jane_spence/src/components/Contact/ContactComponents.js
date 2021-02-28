@@ -24,6 +24,14 @@ export const InformationWrapper = styled.div`
     height: 1100px;
     display: flex;
 
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        height: 1275px;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        height: 700px;
+    }
+
     @media screen and (max-width: 360px) and (max-height: 640px) {
         height: 780px;
     }
@@ -34,6 +42,10 @@ export const InformationWrapper = styled.div`
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
         height: 780px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        height: 700px;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
