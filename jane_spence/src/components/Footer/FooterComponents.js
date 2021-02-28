@@ -134,7 +134,7 @@ export const SubFooterContainer = styled.div`
 
 export const LeftText = styled.span`
     color: white;
-    font-weight: 300;
+    font-weight: 350;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding-top: 15px;
@@ -144,7 +144,7 @@ export const LeftText = styled.span`
 export const RightText = styled(LinkRouter)`
     color: white;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 350;
     font-family: 'Montserrat', sans-serif;
     float: right;
     background: transparent;
@@ -217,7 +217,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 350;
     margin-top: 20px;
     display: grid;
     cursor: pointer;
@@ -240,7 +240,7 @@ export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 350;
     margin-top: 20px;
     display: grid;
     text-decoration: none;
