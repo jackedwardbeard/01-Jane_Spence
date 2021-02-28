@@ -1,5 +1,5 @@
 # Jane Spence Diabetes Education
-## By Jack Beard - www.github.com/JackBeard1
+## By Jack Beard - www.github.com/jackedwardbeard
 
 ## Project Description
 
