@@ -31,7 +31,7 @@ app.post("/api/sendMail", (req, res) => {
     // the mail options
     const mail = {
         from: `${data.name} (${data.email})`, // sender address (who sends)
-        to: 'nodemailertesting123456@gmail.com', // list of receivers (who receives)
+        to: process.env.DEST_EMAIL, // list of receivers (who receives)
         subject: `Message from ${data.name}`, // Subject line
         text: `${data.name} (${data.phone}) (${data.email}) says: ${data.enquiry}`
     }
