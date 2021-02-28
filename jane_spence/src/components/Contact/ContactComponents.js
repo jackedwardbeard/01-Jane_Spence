@@ -32,35 +32,37 @@ export const InformationWrapper = styled.div`
         height: 700px;
     }
 
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 780px;
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        height: 700px;
     }
 
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 780px;
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        height: 720px;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 780px;
+        height: 700px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        height: 700px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
         height: 700px;
     }
 
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        height: 700px;
+    }
+
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 780px;
+        height: 700px;
     }
 
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 780px;
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        height: 700px;
     }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        height: 780px;
-    }
-
-
 
 `
 
