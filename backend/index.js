@@ -19,7 +19,7 @@ app.post("/api/sendMail", (req, res) => {
     // the data received from the client side POST request (using axios)
     const data = req.body;
 
-    // the email to reply from
+    // the email address that will send the email from our contact form
     const smtpTransport = mailer.createTransport({
         service: "Gmail", // hostname
         auth: {
@@ -28,7 +28,8 @@ app.post("/api/sendMail", (req, res) => {
         }
     });
 
-    // the mail options
+    // the data we wish to send in our e-mail
+    // these will be delivered to whichever inbox we choose to use
     const mail = {
         from: `${data.name} (${data.email})`, // sender address (who sends)
         to: process.env.DEST_EMAIL, // list of receivers (who receives)
@@ -48,7 +49,7 @@ app.post("/api/sendMail", (req, res) => {
 
 })
 
-// the express server is running on PORT 5000
+// the express server is running & listening for requests on PORT 5000
 app.listen(5000,  () => {
     console.log("The backend is running on PORT 5000!");
 })
