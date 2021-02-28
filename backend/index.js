@@ -3,16 +3,15 @@ require('dotenv').config()
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
 const mailer = require("nodemailer");
 
 // create the express app/backend/server
 const app = express();
 
+// body parser is used to receive our POST request as req.body
+// we can then easily extract our data from tis req.body variable
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
-app.use(cookieParser());
-
 
 // our server side POST, used to send an email with data received from the client side (contact form)
 app.post("/api/sendMail", (req, res) => {
