@@ -9,7 +9,7 @@ const mailer = require("nodemailer");
 const app = express();
 
 // body parser is used to receive our POST request as req.body
-// we can then easily extract our data from tis req.body variable
+// we can then easily extract our data from this req.body variable
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
