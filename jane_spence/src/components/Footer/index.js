@@ -65,7 +65,7 @@ const Footer = () => {
                     Jane Spence Diabetes Education © 2021
                 </LeftText>
             
-                <RightText to="//linkedin.com/in/jack-beard/" target="_blank">
+                <RightText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
                     ♨ Created By JACK BEARD
                 </RightText>
                 
