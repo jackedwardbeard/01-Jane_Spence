@@ -2,20 +2,19 @@ import React from 'react'
 import {
     LandingContainer,
     LandingBackground,
-    VideoLoop,
+    LandingImg,
     LandingText,
     LandingTitle,
     LandingSubText,
     LearnMoreBtnWrapper,
     LearnMoreBtn,
 } from './LandingComponents'
-import Video from '../../videos/landingVideo.mp4'
 
 const Landing = ({id}) => {
     return (
         <LandingContainer id={id}>
             <LandingBackground>
-                <VideoLoop autoPlay loop muted src={Video} type='video/mp4'></VideoLoop>
+                <LandingImg></LandingImg>
             </LandingBackground>
             <LandingText>
                 <LandingTitle>

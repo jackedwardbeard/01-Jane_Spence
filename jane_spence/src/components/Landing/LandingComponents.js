@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkScroll} from 'react-scroll'
+import image from '../../images/landingImg.jpg'
 
 export const LandingContainer = styled.div`
     display: flex;
@@ -72,11 +73,13 @@ export const LandingBackground = styled.div`
     position: absolute;
 `
 
-export const VideoLoop = styled.video`
+export const LandingImg = styled.div`
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    background-image: url(${image});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `
 
 export const LandingText = styled.div`
