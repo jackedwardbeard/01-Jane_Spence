@@ -113,7 +113,7 @@ class Locations extends Component {
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
                                 
-                                <iframe title="map3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.4139859699536!2d145.19540835917348!3d-38.10967787772698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad60c44615f3937%3A0x14f06cbcba6d4636!2sSkye%20Medical%20Centre!5e0!3m2!1sen!2sau!4v1614171252514!5m2!1sen!2sau" width="350" height="350" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+                                <iframe title="map3" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3139.2858942368903!2d145.1945969!3d-38.1102827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad60c44615f3937%3A0x14f06cbcba6d4636!2sSkye%20Medical%20Centre!5e0!3m2!1sen!2sau!4v1614568730209!5m2!1sen!2sau" width="350" height="350" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
 
                                 </MapWrapper>
                                 <BodyHoursTitle data-aos='fade-right'>
