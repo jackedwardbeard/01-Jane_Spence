@@ -32,31 +32,31 @@ export const InformationWrapper = styled.div`
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 550px;
+        height: 650px;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 550px;
+        height: 650px;
     }
     
     @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 550px;
+        height: 650px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
-        height: 550px;
+        height: 650px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 667px) {
-        height: 515px;
+        height: 600px;
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 560px;
+        height: 630px;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 620px;
+        height: 670px;
     }
 
 
