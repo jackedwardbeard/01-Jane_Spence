@@ -96,6 +96,16 @@ npm install axios
 ```bash
 npm install http-server-proxy
 ```
+### react-helmet
+##### allows us to modify the tab logo/description.
+```bash
+npm install react-helmet
+```
+### react/react-dom/react-router-dom
+##### allows us to modify the tab logo/description.
+```bash
+npm install react/react-dom/react-router/dom
+```
 
 ## Required Modules (Back-End)
 
@@ -114,6 +124,16 @@ npm install express
 ```bash
 npm install nodemailer
 ```
+### cors
+##### cors provides express middleware.
+```bash
+npm install cors
+```
+### dotenv
+##### dotenv lets us use process environmental variables to store private information.
+```bash
+npm install dotenv
+```
 ### concurrently
 ##### concurrently allows us to run multiple npm commands at the same time (i.e. npm start in our front-end folder (which runs react-scripts-start and boots up our react front-end app), and npm run backend (which runs nodemon index.js and boots up our back-end express server with nodemon refreshing)
 ```bash
@@ -124,4 +144,5 @@ npm install concurrently **OPTIONAL**
 ```bash
 npm install nodemon **OPTIONAL**
 ```
+
 
