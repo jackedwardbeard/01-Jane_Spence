@@ -33,7 +33,7 @@ const Contact = ({id}) => {
     }, [])
 
     // state used for form validation (react hook form)
-    const {register, errors} = useForm();
+    const {register, handleSubmit, errors} = useForm();
 
     // state used for keeping track of contact form values/inputs
     const [name, setName] = useState('');
@@ -42,8 +42,7 @@ const Contact = ({id}) => {
     const [enquiry, setEnquiry] = useState('');
 
     // on submitting the form, send a POST request to our backend
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const onSubmit = (e) => {
         
         const data = {
             name: name,
@@ -53,7 +52,12 @@ const Contact = ({id}) => {
         }
 
         axios.post("/api/sendMail", data)
-
+        
+        // clear the form upon submitting
+        setName('');
+        setPhone('');
+        setEmail('');
+        setEnquiry('');
     }
 
     // on changing an input field on the contact form, update its value
@@ -129,7 +133,7 @@ const Contact = ({id}) => {
                                 <BtnWrapper>
                                     <SubmitBtn 
                                     type='submit' 
-                                    onClick={handleSubmit} 
+                                    onClick={handleSubmit(onSubmit)} 
                                     >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
                                 </BtnWrapper>
