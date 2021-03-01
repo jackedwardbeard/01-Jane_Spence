@@ -1,9 +1,11 @@
 // our .env (environment variables) file stores our private email login details
 require('dotenv').config()
 
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mailer = require("nodemailer");
+const cors = require("cors");
 
 // create the express app/backend/server
 const app = express();
@@ -13,21 +15,15 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-// other heroku things
-const whitelist = ['http://localhost:3000'​, 'http://localhost:5000'​, 'https://shrouded-journey-38552.heroku.com']
-const corsOptions = {
-  origin: function (origin, callback) {
-    console.log("** Origin of request " + origin)
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      console.log("Origin acceptable")
-      callback(null, true)
-    } else {
-      console.log("Origin rejected")
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
-app.use(cors(corsOptions))
+app.use(cors());
+app.use(express.static(path.join(__dirname, 'jane_spence/build')));
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/jane_spence/build/index.html'));
+  });
+  // --------------------------------
 
 // our server side POST, used to send an email with data received from the client side (contact form)
 app.post("/api/sendMail", (req, res) => {
@@ -64,17 +60,6 @@ app.post("/api/sendMail", (req, res) => {
     })
 
 })
-
-// shows the react app in the browser upon visiting index.html in our build folder
-const path = require('path');
-if (process.env.NODE_ENV === 'production') {
-  // Serve any static files
-  app.use(express.static(path.join(__dirname, 'jane_spence/build')));
-// Handle React routing, return all requests to React app
-  app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'jane_spence/build', 'index.html'));
-  });
-}
 
 // the express server is running & listening for requests on PORT 5000
 app.listen(5000,  () => {
