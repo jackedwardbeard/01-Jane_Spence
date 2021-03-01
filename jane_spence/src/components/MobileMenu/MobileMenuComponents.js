@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa' // exit symbol
 import {Link as LinkScroll} from 'react-scroll' // router for smooth scroll
-import {Link as LinkRouter} from 'react-router-dom' // router for regular page changes
 
 export const MobileMenuContainer = styled.aside`
     position: fixed;
@@ -84,7 +83,7 @@ export const MobileBtnWrapper = styled.div`
     
 `
 
-export const MobileMenuRoute = styled(LinkRouter)`
+export const MobileMenuBtn = styled(LinkScroll)`
     border-radius: 30px;
     background: pink;
     white-space: nowrap;

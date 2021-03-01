@@ -10,7 +10,7 @@ import {
     MobileMenuWrapper,
     MobileMenuLink,
     MobileBtnWrapper,
-    MobileMenuRoute,
+    MobileMenuBtn,
     MobileMenu
 } 
 from './MobileMenuComponents'
@@ -28,11 +28,11 @@ const MobileSideMenu = ({clicked, reverseState}) => {
                     <MobileMenuLink to="landing" onClick={reverseState} smooth={true} spy={true} offset={-80}>Home</MobileMenuLink>
                     <MobileMenuLink to="about" onClick={reverseState} smooth={true} spy={true} offset={-80}>About</MobileMenuLink>
                     <MobileMenuLink to="faq" onClick={reverseState} smooth={true} spy={true} offset={-80}>FAQ</MobileMenuLink>
-                    <MobileMenuLink to="location" onClick={reverseState} smooth={true} spy={true} offset={-20}>Location</MobileMenuLink>
+                    <MobileMenuLink to="locations" onClick={reverseState} smooth={true} spy={true} offset={-20}>Locations</MobileMenuLink>
                     <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Contact</MobileMenuLink>
                 </MobileMenu>
                 <MobileBtnWrapper>
-                    <MobileMenuRoute to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Enquire Now</MobileMenuRoute>
+                    <MobileMenuBtn to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Enquire Now</MobileMenuBtn>
                 </MobileBtnWrapper>
             </MobileMenuWrapper>
         </MobileMenuContainer>
