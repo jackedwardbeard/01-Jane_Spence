@@ -174,21 +174,20 @@ export const Img = styled.img`
 `
 
 export const Item = styled.div`
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 
     @media screen and (max-width: 320px) {
-        font-size: 1rem;
-        
-        
+        font-size: 0.95rem;
+        margin-left: -45px;
     }
 
     @media screen and (max-width: 280px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-left: -55px;
     }
-
 `
 
 export const ContactWrap = styled.div`

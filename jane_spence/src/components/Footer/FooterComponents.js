@@ -135,7 +135,9 @@ export const PreFooterWrapper = styled.div`
 export const SubFooterContainer = styled.div`
     background: rgba(0,0,0,0.2);
     height: 40px;
+    display: space-between;
     align-items: center;
+    justify-content: center;
     padding-top 12px;
     padding-left: 20px;
     padding-right: 20px;
@@ -143,6 +145,11 @@ export const SubFooterContainer = styled.div`
     @media screen and (max-width: 600px) {
         font-size: 0.8rem;
     }
+
+    @media screen and (max-width: 540px) {
+        padding-top: 13px;
+    }
+
 
     @media screen and (max-width: 414px) {
         font-size: 0.65rem;
@@ -152,26 +159,26 @@ export const SubFooterContainer = styled.div`
 
     @media screen and (max-width: 375px) {
         font-size: 0.6rem;
-        padding-top: 17px;
+        padding-top: 15px;
 
     }
 
     @media screen and (max-width: 360px) {
         font-size: 0.55rem;
-        padding-top: 17px;
+        padding-top: 15px;
 
     }
 
     @media screen and (max-width: 320px) {
         font-size: 0.5rem;
-        padding-top: 17px;
+        padding-top: 15px;
 
     }
 
     @media screen and (max-width: 280px) {
         font-size: 0.7rem;
-        padding-left: 24px;
-        padding-top: 14px;
+        padding-left: 28px;
+        padding-top: 13px;
 
     }
 `
@@ -181,18 +188,15 @@ export const LeftText = styled.span`
     font-weight: 350;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    padding-top: 15px;
 
-    @media screen and (max-width: 320px) and (max-height: 653px) {
-        font-size: 0.7rem;
-        padding-left: 5px;
-    }
     
 `
 
 export const RightText = styled(LinkRouter)`
     color: white;
     font-size: 1rem;
+    margin-top: -3px;
+    outline: solid 2px red;
     font-weight: 350;
     font-family: 'Montserrat', sans-serif;
     float: right;
@@ -208,6 +212,7 @@ export const RightText = styled(LinkRouter)`
 
     @media screen and (max-width: 414px) {
         font-size: 0.65rem;
+        padding-top: 2px;
 
     }
 
@@ -218,12 +223,11 @@ export const RightText = styled(LinkRouter)`
 
     @media screen and (max-width: 360px) {
         font-size: 0.6rem;
-
+        padding-top: 3px;
     }
 
     @media screen and (max-width: 320px) {
         font-size: 0.5rem;
-
     }
 
     @media screen and (max-width: 280px) {
