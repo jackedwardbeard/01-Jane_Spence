@@ -34,7 +34,7 @@ const Contact = ({id}) => {
     }, [])
 
     // state used for form validation (react hook form)
-    const {register, handleSubmit, errors} = useForm();
+    const {register, handleSubmit, errors} = useForm({ mode: 'onBlur' });
 
     // state used for keeping track of contact form values/inputs
     const [name, setName] = useState('');
