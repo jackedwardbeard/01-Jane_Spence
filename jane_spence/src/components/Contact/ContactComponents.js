@@ -181,7 +181,7 @@ export const Item = styled.div`
 
     @media screen and (max-width: 320px) {
         font-size: 1rem;
-        margin-left: -30px;
+        
         
     }
 

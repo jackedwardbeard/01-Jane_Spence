@@ -19,38 +19,78 @@ export const FooterWrapper = styled.div`
 export const Row1 = styled.div`
     height: 80%;
     justify-content: center;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+
 `
 
 export const Column1 = styled.div`
     width: 30%;
-    margin-left: 14px;
-    margin-top: -30px;
-    height: 100%;
+    height: 400px;
     float: left;
     text-align: center;
     overflow: hidden;
+    margin-top: 80px;
 `
 
 export const Column2 = styled.div`
     width: 30%;
-    height: 100%;
+    height: 400px;
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: -30px;
     float: left;
     text-align: center;
     overflow: hidden;
+    margin-top: 80px;
 `
 
 export const Column3 = styled.div`
     width: 30%;
-    height: 100%;
-    margin-top: -30px;
+    height: 400px;
     float: left;
+    margin-top: 80px;
     text-align: center;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 `
 
 export const PreFooterWrapper = styled.div`
@@ -142,6 +182,11 @@ export const LeftText = styled.span`
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding-top: 15px;
+
+    @media screen and (max-width: 320px) and (max-height: 653px) {
+        font-size: 0.7rem;
+        padding-left: 5px;
+    }
     
 `
 
@@ -199,6 +244,11 @@ export const Title = styled.h3`
     margin-top: 20px;
     margin-bottom: 40px;
 
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 0.9rem;
+        margin-top: 30px;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 1rem;
         margin-top: 35px;
@@ -226,13 +276,22 @@ export const NavLinkScroll = styled(LinkScroll)`
     display: grid;
     cursor: pointer;
 
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 0.8rem;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 0.8rem;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 320px) {
         font-size: 0.7rem;
     }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.6rem;
+    }
+
 
     &:hover {
         color: pink;
@@ -250,13 +309,27 @@ export const NavLink = styled(LinkRouter)`
     text-decoration: none;
     cursor: pointer;
 
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 0.8rem;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 0.8rem;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 0.75rem;
+    }
+
+    @media screen and (max-width: 320px) {
         font-size: 0.7rem;
     }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.6rem;
+    }
+
+    
 
     &:hover {
         color: pink;
