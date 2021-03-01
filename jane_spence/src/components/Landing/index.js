@@ -22,7 +22,7 @@ const Landing = ({id}) => {
                 Jane Spence Diabetes Education
                 </LandingTitle>
                 <LandingSubText>
-                Seek professional advice from a Certified Pharmacist and Diabetes Educator
+                Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
                 <LearnMoreBtnWrapper>
                     <LearnMoreBtn to="about" smooth={true} spy={true} offset={-80}>
