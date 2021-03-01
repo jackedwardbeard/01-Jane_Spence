@@ -149,14 +149,14 @@ export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
-    margin-bottom: -10px;
+    margin-bottom: 15px;
 `
 
 export const Column3 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
-    margin-bottom: -10px;
+    margin-bottom: 15px;
 `
 
 export const MapWrapper = styled.div`

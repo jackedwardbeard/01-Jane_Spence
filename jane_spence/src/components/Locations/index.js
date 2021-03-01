@@ -44,7 +44,7 @@ class Locations extends Component {
                                 Frankston VIC 3199
                                 </Body>
                                 <Body data-aos='fade-left'>
-                                97835201
+                                9783 5201
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
                                 
@@ -70,13 +70,13 @@ class Locations extends Component {
                                     Frankston Healthcare
                                 </Title>
                                 <Body data-aos='fade-left'>
-                                    4/12 Young Street
+                                    4/42 Young Street
                                 </Body>
                                 <Body data-aos='fade-right'>
                                     Frankston VIC 3199
                                 </Body>
                                 <Body data-aos='fade-left'>
-                                    97700023
+                                    0417 389 257
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
                                 
@@ -96,9 +96,6 @@ class Locations extends Component {
                                 <BodyHours data-aos='fade-left'>
                                     Saturday: 9am-3pm
                                 </BodyHours>
-                                <BodyHours data-aos='fade-right'>
-                                    Sunday: 9am-12pm
-                                </BodyHours>
                                 
                             </Column2>
                             <Column3>
@@ -112,7 +109,7 @@ class Locations extends Component {
                                     Skye VIC 3977
                                 </Body>
                                 <Body data-aos='fade-left'>
-                                    97828555
+                                    9782 8555
                                 </Body>
                                 <MapWrapper data-aos='flip-up'>
                                 
