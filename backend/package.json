@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "backend": "nodemon index.js",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix ../jane_spence\""
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix ../jane_spence\"",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "Jack",
   "license": "ISC",
