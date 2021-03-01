@@ -307,4 +307,14 @@ export const SubmissionMessage = styled.p`
     width: 280px;
     font-family: 'Montserrat', sans-serif;
     color: white;
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        width: 240px;
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        width: 240px;
+        font-size: 0.9rem;
+    }
 `
