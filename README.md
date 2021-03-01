@@ -82,7 +82,7 @@ npm install styled-components
 npm install aos
 ```
 ### react-hook-form
-##### react-ook-orm lets us easily add validation to our contact form fields.
+##### react-hook-form lets us easily add validation to our contact form fields.
 ```bash
 npm install react-hook-form
 ```
