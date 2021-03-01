@@ -11,11 +11,11 @@ import {
     MapWrapper,
     BodyHours,
     BodyHoursTitle
-} from './LocationComponents'
+} from './LocationsComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-class Location extends Component {
+class Locations extends Component {
 
    componentDidMount() {
     Aos.init({duration: 1000});
@@ -30,7 +30,7 @@ class Location extends Component {
     render() {
 
         return (
-            <InformationContainer id='location'>
+            <InformationContainer id='locations'>
                 <InformationWrapper>
                     <Row1>
                             <Column1>
@@ -141,4 +141,4 @@ class Location extends Component {
 };
 
 
-export default Location;
+export default Locations;

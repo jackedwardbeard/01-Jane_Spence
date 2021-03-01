@@ -11,7 +11,7 @@ export const faqs = [
 
     {
         question: 'What should I bring?',
-        answer: 'A valid EPC referral from your GP and any pathology results etc.'
+        answer: 'A valid EPC referral from your GP and any pathology results, etc.'
     },
 
     {

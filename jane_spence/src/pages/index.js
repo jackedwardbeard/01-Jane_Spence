@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import LandingBackground from '../components/Landing';
 import Information from '../components/Information';
 import { About, FAQ } from '../components/Information/pages';
-import Location from '../components/Location'
+import Locations from '../components/Locations'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import {Helmet} from "react-helmet"
@@ -30,7 +30,7 @@ const Home = ({toggle}) => {
         <LandingBackground id="landing"/>
         <Information {...About}/>
         <Information {...FAQ}/>
-        <Location id="location"/>
+        <Locations id="locations"/>
         <Contact id="contact"/>
         <Footer id="footer"/>
         </>
