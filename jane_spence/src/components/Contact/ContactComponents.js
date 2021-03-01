@@ -301,3 +301,10 @@ padding-top: 5px;
 
 `
 
+export const SubmissionMessage = styled.p`
+    margin-top: 10px;
+    height: 30px;
+    width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+`

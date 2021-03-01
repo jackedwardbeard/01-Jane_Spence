@@ -18,7 +18,8 @@ import {
     InputLarge,
     SubmitBtn,
     BtnWrapper,
-    Error
+    Error,
+    SubmissionMessage
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
 import Aos from 'aos'
@@ -41,6 +42,9 @@ const Contact = ({id}) => {
     const [email, setEmail] = useState('');
     const [enquiry, setEnquiry] = useState('');
 
+    // state used to display a 'thanks for your enquiry' message after form submission
+    const [thanks, setThanks] = useState('');
+
     // on submitting the form, send a POST request to our backend
     const onSubmit = (e) => {
         
@@ -58,6 +62,8 @@ const Contact = ({id}) => {
         setPhone('');
         setEmail('');
         setEnquiry('');
+
+        setThanks('Thanks for your enquiry! I will get back to you as soon as I can.')
     }
 
     // on changing an input field on the contact form, update its value
@@ -130,6 +136,7 @@ const Contact = ({id}) => {
                                 ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
                                 </InputLarge>
                                 <Error>{errors.enquiry && errors.enquiry.message}</Error>
+                                <SubmissionMessage>{thanks}</SubmissionMessage>
                                 <BtnWrapper>
                                     <SubmitBtn 
                                     type='submit' 
