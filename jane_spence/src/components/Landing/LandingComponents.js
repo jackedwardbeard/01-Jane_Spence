@@ -12,6 +12,7 @@ export const LandingContainer = styled.div`
     position: relative;
     height: 1000px;
     background: white;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -100,42 +101,42 @@ export const LandingTitle = styled.div`
     
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 5.4rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 4rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 540px) {
         font-size: 2.7rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 414px) {
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 375px) {
-        font-size: 1.85rem;
-        font-weight: 400;
+        font-size: 1.8rem;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 360px) {
         font-size: 1.75rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 320px) {
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 280px) {
-        font-size: 2.4rem;
-        font-weight: 400;
+        font-size: 1.25rem;
+        font-weight: 500;
     }
 
 `
@@ -178,7 +179,7 @@ export const LandingSubText = styled.div`
     }
 
     @media screen and (max-width: 280px) {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 295px;
     }
 `

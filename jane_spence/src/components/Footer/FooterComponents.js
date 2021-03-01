@@ -6,6 +6,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 export const FooterContainer = styled.div`
     background: rgb(19,24,33);
     height: 550px;
+    overflow: hidden;
 `
 
 export const FooterWrapper = styled.div`
@@ -25,6 +26,7 @@ export const Row1 = styled.div`
 export const Column1 = styled.div`
     width: 30%;
     margin-left: 14px;
+    margin-top: -30px;
     height: 100%;
     float: left;
     text-align: center;
@@ -36,6 +38,7 @@ export const Column2 = styled.div`
     height: 100%;
     padding-left: 8px;
     padding-right: 8px;
+    margin-top: -30px;
     float: left;
     text-align: center;
     overflow: hidden;
@@ -44,6 +47,7 @@ export const Column2 = styled.div`
 export const Column3 = styled.div`
     width: 30%;
     height: 100%;
+    margin-top: -30px;
     float: left;
     text-align: center;
     overflow: hidden;

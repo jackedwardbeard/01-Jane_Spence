@@ -186,7 +186,7 @@ export const Body = styled.p`
 
 export const SubBody = styled.p`
     margin-top: 15px;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
@@ -284,6 +284,7 @@ export const Button = styled(LinkScroll)`
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: 1rem;
     font-weight: 600;
+    margin-top: -50px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -291,7 +292,7 @@ export const Button = styled(LinkScroll)`
     text-decoration: none;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
@@ -338,7 +339,6 @@ export const AccordionWrapper = styled.div`
     height: 400px;
     width: 500px;
     overflow: hidden;
-    margin-top: 60px;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
 
 
@@ -378,7 +378,7 @@ export const Accordion = styled.div`
 
 export const QuestionWrapper = styled.div`
     
-    background: rgba(10, 10, 10, 1);
+    background: rgb(13,16,22,0.4);
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.25rem;
