@@ -63,7 +63,7 @@ const Contact = ({id}) => {
         setEmail('');
         setEnquiry('');
 
-        setThanks('Thanks for your enquiry! I will get back to you as soon as I can.')
+        setThanks('Thanks for your enquiry! I will be in touch shortly.')
     }
 
     // on changing an input field on the contact form, update its value
