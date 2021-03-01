@@ -9,6 +9,7 @@ const cors = require("cors");
 
 // create the express app/backend/server
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 // body parser is used to receive our POST request as req.body
 // we can then easily extract our data from this req.body variable
@@ -61,7 +62,11 @@ app.post("/api/sendMail", (req, res) => {
 
 })
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('jane_spence/build'));
+}
+
 // the express server is running & listening for requests on PORT 5000
-app.listen(5000,  () => {
+app.listen(PORT,  () => {
     console.log("The backend is running on PORT 5000!");
 })
