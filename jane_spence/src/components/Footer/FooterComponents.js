@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 
 export const FooterContainer = styled.div`
-    background: rgb(19,24,33);
+    background: lavender;
     height: 490px;
     overflow: hidden;
 `
@@ -13,7 +13,7 @@ export const FooterWrapper = styled.div`
     height: 450px;
     display: grid;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     overflow: hidden;
 `
 
@@ -133,13 +133,13 @@ export const Column3 = styled.div`
 export const PreFooterWrapper = styled.div`
     background: rgb(0,0,0, 0.1);
     height: 80px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.5rem;
     padding-left: 20px;
     padding-right: 20px;
@@ -188,9 +188,9 @@ export const SubFooterContainer = styled.div`
 `
 
 export const Title = styled.h3`
-    color: white;
+    color: black;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     margin-top: 25px;
 
@@ -229,10 +229,10 @@ export const Title = styled.h3`
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 350;
+    font-weight: 600;
     margin-top: 20px;
     display: grid;
     cursor: pointer;
@@ -263,15 +263,15 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        color: pink;
+        color: mediumorchid;
     }
 `
 
 export const NavLink = styled(LinkRouter)`
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 350;
+    font-weight: 600;
     margin-top: 20px;
     display: grid;
     text-decoration: none;
@@ -308,14 +308,14 @@ export const NavLink = styled(LinkRouter)`
     
 
     &:hover {
-        color: pink;
+        color: mediumorchid;
     }
 `
 
 export const LeftText = styled.span`
-    color: white;
-    font-weight: 350;
-    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     padding-right: 20px;
     margin-left: 20px;
@@ -394,10 +394,10 @@ export const LeftText = styled.span`
 `
 
 export const RightText = styled(LinkRouter)`
-    color: white;
+    color: black;
     font-size: 1rem;
-    font-weight: 350;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     background: transparent;
     border: none;
     text-decoration: none;
@@ -482,7 +482,10 @@ export const RightText = styled(LinkRouter)`
     }
 
     &:hover {
-        color: pink;
+        font-weight: 700;
+        background: -webkit-linear-gradient(red, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     }
 
 `

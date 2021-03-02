@@ -75,7 +75,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
                                 ✔ {subbody5} 
                             </SubBody>
-                            <IconContext.Provider value={{ color: 'pink', size: '20px'}}>
+                            <IconContext.Provider value={{ color: 'plum', size: '20px'}}>
                                 <AccordionWrapper showAccordion={showAccordion}>
                                     <Accordion>
                                         {

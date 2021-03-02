@@ -151,11 +151,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid pink;
+        border-bottom: 3px solid thistle;
     }
 
     &:hover {
-        border-bottom: 3px solid pink;
+        border-bottom: 3px solid thistle;
     }
 
 `;
@@ -172,7 +172,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkScroll)`
     border-radius: 50px;
-    background: pink;
+    background: thistle;
     white-space: nowrap;
     padding: 10px 22px;
     color: black;

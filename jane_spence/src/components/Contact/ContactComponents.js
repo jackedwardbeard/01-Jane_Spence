@@ -121,7 +121,7 @@ export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: pink;
+    color: thistle;
 
     
 `
@@ -195,7 +195,7 @@ export const ContactForm = styled.form`
 
 
 export const ContactTitle = styled.h2`
-    color: pink;
+    color: thistle;
     margin-top: 10px;
     margin-bottom: 10px;
 `
@@ -264,7 +264,7 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: 30px;
-    background: pink;
+    background: thistle;
     white-space: nowrap;
     padding: 10px 30px;
     color: black;

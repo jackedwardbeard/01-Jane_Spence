@@ -32,7 +32,7 @@ export const CloseIcon = styled(FaTimes)`
     cursor: pointer;
 
     &:hover {
-        color: pink;
+        color: thistle;
         transition: 0.2s ease-in-out;
     }
 `
@@ -72,7 +72,7 @@ export const MobileMenuLink = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover {
-        color: pink;
+        color: thistle;
         transition: 0.2s ease-in-out;
     }
 `
@@ -85,7 +85,7 @@ export const MobileBtnWrapper = styled.div`
 
 export const MobileMenuBtn = styled(LinkScroll)`
     border-radius: 30px;
-    background: pink;
+    background: thistle;
     white-space: nowrap;
     padding: 16px 64px;
     color: black;

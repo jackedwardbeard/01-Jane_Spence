@@ -113,7 +113,7 @@ export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'pink')};
+    color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     
     @media screen and (max-width: 540px) and (max-height: 720px) {
         margin-top: 20px;
@@ -141,7 +141,7 @@ export const Subtitle = styled.h1`
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'pink')};
+    color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
 
     
@@ -300,7 +300,7 @@ export const ButtonWrapper = styled.div`
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
     border-radius: 50px;
-    background: ${({darkButton}) => (darkButton ? 'black' : 'pink')};
+    background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
     padding: 10px 22px;
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
@@ -450,7 +450,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
-        color: pink;
+        color: thistle;
     }
     
 `
