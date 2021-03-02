@@ -319,7 +319,7 @@ export const LeftText = styled.span`
     font-size: 1rem;
     padding-right: 20px;
     margin-left: 20px;
-    margin-top: 12px;
+    margin-top: 10px;
     float: left;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
