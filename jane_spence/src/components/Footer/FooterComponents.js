@@ -318,6 +318,8 @@ export const LeftText = styled.span`
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     padding-right: 20px;
+    margin-left: 20px;
+    margin-top: 12px;
     float: left;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
@@ -330,6 +332,11 @@ export const LeftText = styled.span`
         font-size: 0.8rem;
         margin-left: 20px;
         margin-top: 11px;
+    }
+
+    @media screen and (max-width: 520px) {
+        font-size: 0.6rem;
+        margin-top: 14px;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
@@ -348,6 +355,11 @@ export const LeftText = styled.span`
         font-size: 0.6rem;
         margin-left: 20px;
         margin-top: 14px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 0.4rem;
+        margin-top: 17px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
@@ -391,8 +403,9 @@ export const RightText = styled(LinkRouter)`
     text-decoration: none;
     cursor: pointer;
     outline: none;
-    padding-left: 20px;
     float: right;
+    margin-right: 20px;
+    margin-top: 9px;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.1rem;
@@ -412,6 +425,11 @@ export const RightText = styled(LinkRouter)`
         margin-top: 10px;
     }
 
+    @media screen and (max-width: 520px) {
+        font-size: 0.6rem;
+        margin-top: 14px;
+    }
+
     @media screen and (max-width: 414px) and (max-height: 736px) {
         font-size: 0.6rem;
         margin-right: 20px;
@@ -428,6 +446,11 @@ export const RightText = styled(LinkRouter)`
         font-size: 0.6rem;
         margin-right: 20px;
         margin-top: 14px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 0.4rem;
+        margin-top: 15px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
