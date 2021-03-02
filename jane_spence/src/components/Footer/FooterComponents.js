@@ -35,6 +35,7 @@ export const Column1 = styled.div`
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: -60px;
 
     @media screen and (max-width: 1024px) {
         margin-left: -40px;
@@ -145,7 +146,11 @@ export const PreFooterWrapper = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
     }
 
     @media screen and (max-width: 414px) {
@@ -162,6 +167,10 @@ export const PreFooterWrapper = styled.div`
 
     @media screen and (max-width: 360px) {
         font-size: 0.92rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
     }
 
     @media screen and (max-width: 280px) {
