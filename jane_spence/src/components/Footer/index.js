@@ -13,7 +13,6 @@ import {
     NavLink,
     NavLinkScroll,
     PreFooterWrapper,
-    TextContainer
 } from './FooterComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -62,15 +61,15 @@ const Footer = () => {
                 </Row1>
             </FooterWrapper>
             <SubFooterContainer>
-                <TextContainer>
-                    <LeftText>
-                        Jane Spence Diabetes Education © 2021
-                    </LeftText>
                 
-                    <RightText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
-                        ♨ Created By JACK BEARD
-                    </RightText>
-                </TextContainer>
+                <LeftText>
+                    Jane Spence Diabetes Education © 2021
+                </LeftText>
+                
+                <RightText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
+                    ♨ Created By JACK BEARD
+                </RightText>
+               
             </SubFooterContainer>
         </FooterContainer>
     )

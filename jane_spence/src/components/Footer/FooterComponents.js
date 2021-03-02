@@ -312,17 +312,6 @@ export const NavLink = styled(LinkRouter)`
     }
 `
 
-export const TextContainer = styled.div`
-    display: space-between;
-    align-items: center;
-    height: 40px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-
-`
-
 export const LeftText = styled.span`
     color: white;
     font-weight: 350;
@@ -331,7 +320,65 @@ export const LeftText = styled.span`
     padding-right: 20px;
     float: left;
 
-    
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.1rem;
+        margin-left: 20px;
+        margin-top: 8px;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        margin-top: 11px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        font-size: 0.6rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        font-size: 0.6rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 0.6rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 0.55rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 0.55rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        font-size: 0.5rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        font-size: 0.45rem;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        font-size: 0.7rem;
+        margin-left: 28px;
+        margin-top: 12px;
+    }
 `
 
 export const RightText = styled(LinkRouter)`
@@ -346,6 +393,70 @@ export const RightText = styled(LinkRouter)`
     outline: none;
     padding-left: 20px;
     float: right;
+
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        font-size: 1.1rem;
+        margin-right: 20px;
+        margin-top: 8px;
+    }
+
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
+        font-size: 0.8rem;
+        margin-right: 20px;
+        margin-top: 11px;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        font-size: 0.75rem;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        font-size: 0.6rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        font-size: 0.6rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 0.6rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 0.55rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 0.55rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        font-size: 0.5rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        font-size: 0.45rem;
+        margin-right: 20px;
+        margin-top: 14px;
+    }
+
+    @media screen and (max-width: 280px) {
+        display: none;
+    }
 
     &:hover {
         color: pink;
