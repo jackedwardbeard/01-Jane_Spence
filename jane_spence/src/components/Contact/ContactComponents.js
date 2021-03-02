@@ -309,3 +309,35 @@ export const SubmissionMessage = styled.p`
         font-size: 0.9rem;
     }
 `
+
+export const DescriptionWrapper = styled.div`
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 550px;
+`
+
+export const Description = styled.p`
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+`
+
+export const SubTitleWrapper = styled.div`
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 550px;
+`
+
+export const SubTitle = styled.h3`
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+`

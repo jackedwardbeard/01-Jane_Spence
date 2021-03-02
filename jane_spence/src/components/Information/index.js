@@ -17,7 +17,9 @@ import {
     AccordionWrapper,
     Accordion,
     QuestionWrapper,
-    AnswerWrapper
+    AnswerWrapper,
+    DescriptionWrapper,
+    Description
 } from './InformationComponents'
 import {faqs} from './faqs'
 import {IconContext} from 'react-icons'
@@ -26,7 +28,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 
-const Information = ({darkBackground, darkText, darkButton, showButton, darkButtonText, buttonText, buttonLocation, id, title, body, showBody, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext, showAccordion}) => {
+const Information = ({darkBackground, darkText, darkButton, showButton, showDescription, description, darkButtonText, buttonText, buttonLocation, id, title, body, showBody, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext, showAccordion}) => {
     
     useEffect(() => {
         Aos.init({duration: 1000})
@@ -75,6 +77,11 @@ const Information = ({darkBackground, darkText, darkButton, showButton, darkButt
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
                                 ✔ {subbody5} 
                             </SubBody>
+                            <DescriptionWrapper showDescription={showDescription}>
+                                <Description>
+                                    {description}
+                                </Description>
+                            </DescriptionWrapper>
                             <IconContext.Provider value={{ color: 'plum', size: '20px'}}>
                                 <AccordionWrapper showAccordion={showAccordion}>
                                     <Accordion>

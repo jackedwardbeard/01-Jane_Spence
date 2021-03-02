@@ -11,7 +11,7 @@ export const About = {
     darkButtonText: false,
     buttonText: 'Return To Home',
     buttonLocation: 'contact',
-    title: 'About',
+    title: 'Who am I?',
     subtext: 'Credentials',
     body: 'Jane Spence is an Accredited Consultant Pharmacist and Credentialled Diabetes Educator who has been a part of the industry for over 10 years. Services include Diabetes Education and Home Medicine Reviews (HMRs). Jane is available and ready to assist you with all aspects of managing your diabetes.',
     subbody: 'Bachelor of Pharmacy (Monash University)',
@@ -23,7 +23,8 @@ export const About = {
     imageLeft: true,
     showSubtitle: true,
     showBody: true,
-    showAccordion: false
+    showAccordion: false,
+    showDescription: false
 }
 
 export const FAQ = {
@@ -35,12 +36,15 @@ export const FAQ = {
     darkButtonText: true,
     buttonText: "Can't find what you're looking for?",
     buttonLocation: 'contact',
-    title: 'FAQ',
+    title: 'Questions',
+    subtext: 'Click each question to see its answer!',
     body: 'Template for FAQ',
     img: faq,
     imageLeft: false,
     showSubtitle: false,
     showBody: false,
-    showAccordion: true
+    showAccordion: true,
+    description: 'You can click on a question to see its answer. If your question cannot be answered, please do not hesitate to get in touch.',
+    showDescription: true
 
 }

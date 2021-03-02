@@ -479,3 +479,22 @@ export const AnswerWrapper = styled.div`
     }
 
 `
+
+export const DescriptionWrapper = styled.div`
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: ${({showDescription}) => (showDescription ? '' : 'none')};
+`
+
+export const Description = styled.p`
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+`

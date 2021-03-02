@@ -19,7 +19,11 @@ import {
     SubmitBtn,
     BtnWrapper,
     Error,
-    SubmissionMessage
+    SubmissionMessage,
+    DescriptionWrapper,
+    Description,
+    SubTitleWrapper,
+    SubTitle
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
 import Aos from 'aos'
@@ -134,7 +138,7 @@ const Contact = ({id}) => {
                                 <InputLarge type='text' 
                                 onChange={handleChange} 
                                 value={enquiry}
-                                placeholder='Your Enquiry' 
+                                placeholder='Enquiry' 
                                 name='enquiry' 
                                 data-aos='fade-right'
                                 ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
@@ -156,6 +160,18 @@ const Contact = ({id}) => {
                         <ImgWrap>
                             <Img data-aos='fade-left' src={contact}/>
                         </ImgWrap>
+                        <SubTitleWrapper>
+                            <SubTitle>
+                                How Do I Book An Appointment?
+                            </SubTitle>
+                        </SubTitleWrapper>
+                        <DescriptionWrapper>
+                            <Description>
+                                If you would like to book a consultation or speak to me regarding another topic, you can either contact me via phone, fax or e-mail. 
+                                You can also book an appointment by calling Barry Dean Pharmacy on 9783 5201, Skye Medical Centre on 9782 8555, or myself directly on 0417 389 257.
+                                Alternatively, you can use the contact form to send me an enquiry. I will do my best to respond as soon as possible.
+                            </Description>
+                        </DescriptionWrapper>
                     </Column2>
                 </Row1>
             </InformationWrapper>
