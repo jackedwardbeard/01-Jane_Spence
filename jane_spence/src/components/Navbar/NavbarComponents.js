@@ -8,13 +8,13 @@ export const Nav = styled.nav`
     height: 80px;
     margin-top: -80px;
     overflow: hidden;
-    display: flex;
+    display: ${({showNav}) => (showNav ? 'flex' : 'none')};
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: ${({stickyNav}) => (stickyNav ? 'sticky' : 'absolute')}
+    position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 999;
     transition: 0.5s all ease;
     
     

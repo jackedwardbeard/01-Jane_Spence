@@ -23,8 +23,8 @@ import {
 const Navbar = ({reverseState}) => {
 
     const [navTransparent, setNavTransparent] = useState(true);
-    const [stickyNav, setStickyNav] = useState(false);
-
+    const [showNav, setShowNav] = useState(true)
+    
     // if at the top of the page, make the navbar background transparent
     // else make it black
     const transparentNavBar = () => { 
@@ -34,28 +34,27 @@ const Navbar = ({reverseState}) => {
         else {
             setNavTransparent(false);
         }
+     };
+
+     // mainly for mobile. don't show navbar if we scroll past the top of the webpage.
+     const displayNavBar = () => {
+        if (window.scrollY < 0) {
+            setShowNav(false);
+        }
+        else {
+            setShowNav(true);
+        }
      }
-
-     // to avoid navbar from scrolling too high on mobile up-swipe
-     const stickyNavBar = () => {
-         if (window.scrollY <= 80) {
-             setStickyNav(false);
-         }
-         else {
-             setStickyNav(true);
-         }
-     }
-
-
      // listen for the scroll event
      useEffect(() => {
-        document.addEventListener('scroll', transparentNavBar)
+        document.addEventListener('scroll', transparentNavBar);
+        document.addEventListener('scroll', displayNavBar);
      }, []);
      
      
 
     return (
-        <Nav navTransparent={navTransparent} stickyNav={stickyNav}>
+        <Nav navTransparent={navTransparent} showNav={showNav}>
             <NavbarContainer>
                 <LogoContainer>
                     <NavLogo to="landing">JANE SPENCE</NavLogo>
