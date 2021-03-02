@@ -14,6 +14,7 @@ export const FooterWrapper = styled.div`
     display: grid;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 `
 
 export const Row1 = styled.div`
@@ -106,6 +107,7 @@ export const PreFooterWrapper = styled.div`
     font-size: 1.5rem;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 
     @media screen and (max-width: 1024px) {
         font-size: 1.3rem;
@@ -141,6 +143,7 @@ export const SubFooterContainer = styled.div`
     padding-top 12px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 
     @media screen and (max-width: 600px) {
         font-size: 0.8rem;

@@ -11,7 +11,7 @@ export const LandingContainer = styled.div`
     padding: 0 40px;
     position: relative;
     height: 1000px;
-    background: white;
+    background: black;
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
