@@ -5,12 +5,12 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 export const FooterContainer = styled.div`
     background: rgb(19,24,33);
-    height: 550px;
+    height: 490px;
     overflow: hidden;
 `
 
 export const FooterWrapper = styled.div`
-    height: 510px;
+    height: 450px;
     display: grid;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -18,11 +18,10 @@ export const FooterWrapper = styled.div`
 `
 
 export const Row1 = styled.div`
-    height: 80%;
+    height: 100%;
     justify-content: center;
     display: flex;
     align-items: center;
-
 `
 
 export const Column1 = styled.div`
@@ -31,27 +30,63 @@ export const Column1 = styled.div`
     float: left;
     text-align: center;
     overflow: hidden;
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+        margin-left: -40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: -35px;
+    }
+
+    @media screen and (max-width: 414px) {
+        margin-left: -20px;
+    }
+
+    @media screen and (max-width: 411px) {
+        margin-left: -20px;
+    }
+
+    @media screen and (max-width: 360px) {
+        margin-left: -20px;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-left: -15px;
+    }
 `
 
 export const Column2 = styled.div`
     width: 30%;
     height: 400px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     float: left;
     text-align: center;
     overflow: hidden;
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 `
 
 export const Column3 = styled.div`
     width: 30%;
     height: 400px;
     float: left;
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         padding-left: 60px;
@@ -69,8 +104,8 @@ export const Column3 = styled.div`
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     @media screen and (max-width: 411px) and (max-height: 731px) {
@@ -89,8 +124,8 @@ export const Column3 = styled.div`
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 `
 
@@ -137,109 +172,9 @@ export const PreFooterWrapper = styled.div`
 export const SubFooterContainer = styled.div`
     background: rgba(0,0,0,0.2);
     height: 40px;
-    display: space-between;
-    align-items: center;
-    justify-content: center;
-    padding-top 12px;
-    padding-left: 20px;
-    padding-right: 20px;
     overflow: hidden;
+    display: space-between;
 
-    @media screen and (max-width: 600px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 540px) {
-        padding-top: 13px;
-    }
-
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.65rem;
-        padding-top: 15px;
-
-    }
-
-    @media screen and (max-width: 375px) {
-        font-size: 0.6rem;
-        padding-top: 15px;
-
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 0.55rem;
-        padding-top: 15px;
-
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.5rem;
-        padding-top: 15px;
-
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.7rem;
-        padding-left: 28px;
-        padding-top: 13px;
-
-    }
-`
-
-export const LeftText = styled.span`
-    color: white;
-    font-weight: 350;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-
-    
-`
-
-export const RightText = styled(LinkRouter)`
-    color: white;
-    font-size: 1rem;
-    margin-top: -3px;
-    outline: solid 2px red;
-    font-weight: 350;
-    font-family: 'Montserrat', sans-serif;
-    float: right;
-    background: transparent;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-
-    @media screen and (max-width: 600px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.65rem;
-        padding-top: 2px;
-
-    }
-
-    @media screen and (max-width: 375px) {
-        font-size: 0.6rem;
-
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 0.6rem;
-        padding-top: 3px;
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.5rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        display: none;
-    }
-
-    &:hover {
-        color: pink;
-    }
 
 `
 
@@ -248,29 +183,39 @@ export const Title = styled.h3`
     font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 25px;
 
-    @media screen and (max-width: 540px) and (max-height: 720px) {
+    @media screen and (max-width: 1024px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 25px;
+    }
+
+    @media screen and (max-width: 540px) {
         font-size: 0.9rem;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     @media screen and (max-width: 414px) {
-        font-size: 1rem;
-        margin-top: 35px;
+        font-size: 0.8rem;
+        margin-top: 0px;
     }
 
     @media screen and (max-width: 360px) {
         font-size: 0.9rem;
+        margin-top: 5px;
     }
 
     @media screen and (max-width: 320px) {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
+
     }
 
     @media screen and (max-width: 280px) {
         font-size: 0.75rem;
+        margin-top: 20px;
     }
 `
 
@@ -283,6 +228,14 @@ export const NavLinkScroll = styled(LinkScroll)`
     display: grid;
     cursor: pointer;
 
+    @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
+
     @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 0.8rem;
     }
@@ -302,7 +255,6 @@ export const NavLinkScroll = styled(LinkScroll)`
 
     &:hover {
         color: pink;
-        font-size: 1.25rem;
     }
 `
 
@@ -315,6 +267,14 @@ export const NavLink = styled(LinkRouter)`
     display: grid;
     text-decoration: none;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 0.8rem;
@@ -340,6 +300,46 @@ export const NavLink = styled(LinkRouter)`
 
     &:hover {
         color: pink;
-        font-size: 1.25rem;
     }
+`
+
+export const TextContainer = styled.div`
+    display: space-between;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+
+`
+
+export const LeftText = styled.span`
+    color: white;
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding-right: 20px;
+    float: left;
+
+    
+`
+
+export const RightText = styled(LinkRouter)`
+    color: white;
+    font-size: 1rem;
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    float: right;
+
+    &:hover {
+        color: pink;
+    }
+
 `
