@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: ${({stickyNav}) => (stickyNav ? 'sticky' : 'absolute')}
     top: 0;
     z-index: 10;
     transition: 0.5s all ease;
