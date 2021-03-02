@@ -57,8 +57,8 @@ const Navbar = ({reverseState}) => {
         <Nav navTransparent={navTransparent} showNav={showNav}>
             <NavbarContainer>
                 <LogoContainer>
-                    <NavLogo to="landing">JANE SPENCE</NavLogo>
-                    <SubLogo to="landing">Diabetes Education</SubLogo>
+                    <NavLogo to="landing" smooth={true} spy={true} offset={0}>JANE SPENCE</NavLogo>
+                    <SubLogo to="landing" smooth={true} spy={true} offset={0}>Diabetes Education</SubLogo>
                 </LogoContainer>
                 <MobileIcon onClick={reverseState}>
                     <FaBars/>
