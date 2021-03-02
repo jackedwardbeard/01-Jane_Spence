@@ -32,6 +32,7 @@ class Locations extends Component {
         return (
             <InformationContainer id='locations'>
                 <InformationWrapper>
+                    
                     <Row1>
                             <Column1>
                                 <Title data-aos='fade-right'>

@@ -115,7 +115,7 @@ export const LandingTitle = styled.div`
     }
 
     @media screen and (max-width: 414px) {
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: 500;
     }
 

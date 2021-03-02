@@ -19,45 +19,39 @@ export const InformationWrapper = styled.div`
     height: 900px;
     display: flex;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        height: 1300px;
-    }
-
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         height: 800px;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
-        height: 530px;
+        height: 500px;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 650px;
+        height: 600px;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 650px;
+        height: 600px;
     }
-    
+
     @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 650px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        height: 650px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
         height: 600px;
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 630px;
+        height: 600px;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 670px;
+        height: 640px;
     }
+
+    @media screen and (max-width: 280px) and (max-height: 653px) {
+        height: 620px;
+    }
+    
+
 
 
     
@@ -105,7 +99,6 @@ export const Column1 = styled.div`
     @media screen and (max-width: 375px) { 
         margin-left: 20px;
         margin-right: -25px;
-        margin-top: -30px;
     }
 
     @media screen and (max-width: 280px) { 
@@ -122,7 +115,25 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'pink')};
     
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        margin-top: 20px;
+    }
 
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        margin-top: 12px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        margin-top: 15px;
+    }
 `
 
 export const Subtitle = styled.h1`
@@ -142,44 +153,51 @@ export const Body = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 1.25rem;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 1.15rem;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 1.13rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 1.13rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 1.13rem;
+        font-size: 0.95rem;
     }
 
     @media screen and (max-width: 280px) {
-        padding-left: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
 `
@@ -190,10 +208,11 @@ export const SubBody = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.75rem;
+        font-size: 1.2rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -201,34 +220,37 @@ export const SubBody = styled.p`
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 1.15rem;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 1.13rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     @media screen and (max-width: 280px) {
-        padding-left: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     
 
