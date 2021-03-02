@@ -109,6 +109,7 @@ const Contact = ({id}) => {
                                 type='text' 
                                 placeholder='Name' 
                                 name='name' 
+                                data-aos='fade-left'
                                 ref={register({required: true})}>
                                 </Input>
                                 <Error>{errors.name && "Your name is required"}</Error>
@@ -117,6 +118,7 @@ const Contact = ({id}) => {
                                 type='number' 
                                 placeholder='Phone' 
                                 name='phone' 
+                                data-aos='fade-right'
                                 ref={register({required: true, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
                                 </Input>
                                 <Error>{errors.phone && errors.phone.message}</Error>
@@ -125,6 +127,7 @@ const Contact = ({id}) => {
                                 type='text' 
                                 placeholder='E-mail' 
                                 name='email' 
+                                data-aos='fade-left'
                                 ref={register({required: true})}>
                                 </Input>
                                 <Error>{errors.email && "Your e-mail is required"}</Error>
@@ -133,6 +136,7 @@ const Contact = ({id}) => {
                                 value={enquiry}
                                 placeholder='Your Enquiry' 
                                 name='enquiry' 
+                                data-aos='fade-right'
                                 ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
                                 </InputLarge>
                                 <Error>{errors.enquiry && errors.enquiry.message}</Error>
@@ -141,6 +145,7 @@ const Contact = ({id}) => {
                                     <SubmitBtn 
                                     type='submit' 
                                     onClick={handleSubmit(onSubmit)} 
+                                    data-aos='fade-up'
                                     >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
                                 </BtnWrapper>
@@ -149,7 +154,7 @@ const Contact = ({id}) => {
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img data-aos='fade-up' src={contact}/>
+                            <Img data-aos='fade-left' src={contact}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>
