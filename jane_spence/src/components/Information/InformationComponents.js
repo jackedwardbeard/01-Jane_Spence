@@ -16,7 +16,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 91.93054136874362vh;
+    height: 100vh;
     min-height: 650px;
     display: flex;
 
@@ -179,7 +179,7 @@ export const Body = styled.p`
     }
 
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -246,7 +246,7 @@ export const SubBody = styled.p`
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     @media screen and (max-height: 720px) {

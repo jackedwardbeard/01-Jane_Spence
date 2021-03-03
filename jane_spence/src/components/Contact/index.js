@@ -149,7 +149,6 @@ const Contact = ({id}) => {
                                     <SubmitBtn 
                                     type='submit' 
                                     onClick={handleSubmit(onSubmit)} 
-                                    data-aos='fade-up'
                                     >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
                                 </BtnWrapper>

@@ -21,7 +21,8 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 1100px;
+    height: 112.35955056179775vh;
+    min-height: 900px;
     display: flex;
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
@@ -71,6 +72,7 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+    height: 81.71603677221655vh;
 `
 
 export const Column1 = styled.div`
@@ -83,11 +85,14 @@ export const Column1 = styled.div`
         padding-left: 100px;
     }
 
+    @media screen and (max-width: 1280px) {
+        margin-top: -60px;
+    }
+
     @media screen and (max-width: 1024px) {
         margin-right: 0px;
         display: grid;
         align-items: center;
-        margin-right: -10%;
         padding-left: 60px;
        
     }
@@ -105,7 +110,7 @@ export const Column1 = styled.div`
     }
 
     @media screen and (max-width: 320px) {
-        padding-left: 30px;
+        padding-left: 45px;
     }
 
     @media screen and (max-width: 280px) {
@@ -123,7 +128,14 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: thistle;
 
-    
+    @media screen and (max-width: 1366px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 40px;
+        font-size: 2rem;
+    }
 `
 
 export const Body = styled.ul`
@@ -136,8 +148,21 @@ export const Body = styled.ul`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 15px;
     grid-area: col1;
+    width: 30vw;
+
+    @media screen and (max-width: 1280px) {
+        margin-top: -60px;
+    }
+
+    @media screen and (max-width: 1270px) {
+        display: none;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -156,10 +181,7 @@ export const Img = styled.img`
     height: 100%;
     padding-right: 0px;
     margin: 0 0 10px 0;
-
-    @media screen and (max-width: 1400px) {
-        padding-right: 100px;
-    }
+    margin-top: 30px;
 
     @media screen and (max-width: 1270px) {
         display: none;
@@ -172,6 +194,14 @@ export const Item = styled.div`
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 1366px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.1rem;
+    }
 
     @media screen and (max-width: 320px) {
         font-size: 1rem;
@@ -208,6 +238,19 @@ export const Label = styled.div`
     font-weight: 500;
     font-size: 1.7rem;
 
+    @media screen and (max-width: 1366px) {
+        font-size: 1.2rem;
+        margin-top: -10px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.7rem;
+    }
+
     @media screen and (max-width: 414px) {
         font-size: 1.4rem;
         
@@ -221,6 +264,16 @@ export const Input = styled.input`
     font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
     margin-top: 10px;
+
+    @media screen and (max-width: 1600px) {
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 40px;
+        font-size: 1.2rem;
+    }
 
     @media screen and (max-width: 320px) {
         width: 250px;
@@ -243,14 +296,27 @@ export const InputLarge = styled.textarea`
     margin-top: 10px;
     type: textarea;
 
+    @media screen and (max-width: 1600px) {
+        height: 75px;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 100px;
+        font-size: 1.2rem;
+    }
+
     @media screen and (max-width: 320px) {
-        width: 250px;
-        
+        width: 250px; 
     }
 
     @media screen and (max-width: 280px) {
-        width: 240px;
-        
+        width: 240px; 
     }
 `
 
@@ -276,6 +342,10 @@ export const SubmitBtn = styled.button`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
+    @media screen and (max-width: 1280px) {
+        font-size: 0.8rem;
+    }
+
     &:hover {
         transition: all 0.2s ease-in-out;
         background: white;
@@ -293,7 +363,7 @@ padding-top: 5px;
 `
 
 export const SubmissionMessage = styled.p`
-    margin-top: 10px;
+    margin-top: 5px;
     height: 30px;
     width: 280px;
     font-family: 'Montserrat', sans-serif;
@@ -315,7 +385,7 @@ export const DescriptionWrapper = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 100%;
 
     @media screen and (max-width: 1270px) {
         display: none;
@@ -328,6 +398,16 @@ export const Description = styled.p`
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1600px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1280px) {
+        margin-bottom: 10px;
+    }
+
+    
 `
 
 export const SubTitleWrapper = styled.div`
@@ -335,7 +415,6 @@ export const SubTitleWrapper = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 550px;
 
     @media screen and (max-width: 1270px) {
         display: none;
@@ -347,6 +426,14 @@ export const SubTitle = styled.h3`
     font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1600px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+        margin-bottom: 10px;
+    }
 `

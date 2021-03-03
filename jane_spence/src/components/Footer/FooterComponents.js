@@ -192,14 +192,14 @@ export const Title = styled.h3`
     font-size: 1.25rem;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 25px;
+    margin-top: 30px;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     @media screen and (max-width: 685px) {
@@ -209,12 +209,16 @@ export const Title = styled.h3`
 
     @media screen and (max-width: 540px) {
         font-size: 0.9rem;
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
     @media screen and (max-width: 414px) {
         font-size: 0.8rem;
         margin-top: 0px;
+    }
+
+    @media screen and (max-width: 411px) {
+        margin-top: 5px;
     }
 
     @media screen and (max-width: 360px) {
@@ -224,12 +228,13 @@ export const Title = styled.h3`
 
     @media screen and (max-width: 320px) {
         font-size: 0.7rem;
+        margin-top: 15px;
 
     }
 
     @media screen and (max-width: 280px) {
         font-size: 0.75rem;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 `
 
@@ -238,7 +243,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 10px;
     display: grid;
     cursor: pointer;
 
@@ -277,7 +282,7 @@ export const NavLink = styled(LinkRouter)`
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 15px;
     display: grid;
     text-decoration: none;
     cursor: pointer;
@@ -380,20 +385,20 @@ export const LeftText = styled.span`
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
         margin-left: 20px;
         margin-top: 14px;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        font-size: 0.45rem;
+        font-size: 0.5rem;
         margin-left: 20px;
         margin-top: 14px;
     }
 
     @media screen and (max-width: 280px) and (max-height: 653px) {
         font-size: 0.7rem;
-        margin-left: 28px;
+        margin-left: 33px;
         margin-top: 12px;
     }
 `
@@ -427,7 +432,7 @@ export const RightText = styled(LinkRouter)`
     @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 0.75rem;
         margin-right: 20px;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     @media screen and (max-width: 520px) {
@@ -471,13 +476,13 @@ export const RightText = styled(LinkRouter)`
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
         margin-right: 20px;
         margin-top: 14px;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
-        font-size: 0.45rem;
+        font-size: 0.5rem;
         margin-right: 20px;
         margin-top: 14px;
     }
