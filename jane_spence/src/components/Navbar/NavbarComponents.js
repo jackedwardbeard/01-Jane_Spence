@@ -5,19 +5,21 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
-    height: 80px;
-    margin-top: -80px;
+    height: 9vh;
+    margin-top: -9vh;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
     
-    
+    @media screen and (max-width: 1024px) {
+        height: 80px;
+        margin-top: -80px;
+    }
 
     @media screen and (max-width: 960px) {
         width: 100%;
@@ -29,11 +31,16 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 9vh;
     z-index; 1;
     width: 100%;
-    padding: 0 24px; 
-    max-width: 1100px;
+    padding: 0 0.5vw; 
+
+    @media screen and (max-width: 1024px) {
+        height: 80px;
+        padding: 0 24px; 
+        max-width: 1100px;
+    }
     
 `;
 
@@ -42,7 +49,12 @@ export const LogoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -5px;
+    margin-top: -0.5vh;
+    margin-left: 3vw;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: -5px;
+    }
     
 `
 
@@ -50,51 +62,32 @@ export const NavLogo = styled(LinkScroll)`
     color: white;
     justify-self: flex-start;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    font-size: 1.9em;
+    font-size: 3.5vh;
     overflow: hidden;
-    
-    @media screen and (max-width: 925px) {
-        font-size: 1.9rem;
-    }
 
-    @media screen and (max-width: 894px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
     }
 
-    @media screen and (max-width: 310px) {
-        margin-left: 10px;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 1.4rem;
-    }
-
-    @media screen and (max-width: 259px) {
-        margin-left: 0px;
-    }
-
-    @media screen and (max-width: 207px) {
-        font-size: 0.9rem;
-    }
-
-
-
-    
 `;
 
 export const SubLogo = styled(LinkScroll)`
     color: white;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 20px;
+    justify-self: flex-start;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.3vh;
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 0.8rem;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -123,17 +116,18 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
-    margin: 30px;
-    font-size: 1rem;
+    height: 8vh;
+    margin: 2vw;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     
-    @media screen and (max-width: 847px) {
-        font-size: 0.7rem;
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+        height: 80px;
+        margin: 30px;
     }
 
     @media screen and (max-width: 768px) {
@@ -151,11 +145,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid thistle;
+        border-bottom: 0.35vh solid thistle;
     }
 
     &:hover {
-        border-bottom: 3px solid thistle;
+        border-bottom: 0.35vh solid thistle;
     }
 
 `;
@@ -171,12 +165,13 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkScroll)`
-    border-radius: 50px;
+    border-radius: 3vh;
+    margin-right: 3vw;
     background: thistle;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 1.1vh 2.2vh;
     color: black;
-    font-size: 1rem;
+    font-size: 1.9vh;
     font-weight: 450;
     outline: none;
     border: none;
@@ -184,8 +179,9 @@ export const NavBtnLink = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
-    @media screen and (max-width: 847px) {
-        font-size: 0.7rem;
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+        padding: 0.65vh 1.5vh;
+        font-size: 1.2vh;
     }
 
     &:hover {
