@@ -492,7 +492,7 @@ export const RightText = styled(LinkRouter)`
     }
 
     &:hover {
-        font-weight: 900;
+        color: #068481;
     }
 
 `
