@@ -184,7 +184,7 @@ export const Body = styled.p`
         margin-bottom: 40px;
     }
 
-    @media screen and (min-height: 720px) {
+    @media screen and (max-height: 720px) {
         font-size: 1rem;
     }
 
@@ -249,7 +249,7 @@ export const SubBody = styled.p`
         font-size: 1.2rem;
     }
 
-    @media screen and (min-height: 720px) {
+    @media screen and (max-height: 720px) {
         font-size: 1rem;
     }
 

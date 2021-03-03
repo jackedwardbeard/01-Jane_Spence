@@ -87,8 +87,6 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
-
-
 `
 
 export const Title = styled.h1`
