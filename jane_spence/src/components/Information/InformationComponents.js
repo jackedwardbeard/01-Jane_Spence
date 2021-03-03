@@ -361,10 +361,12 @@ export const Button = styled(LinkScroll)`
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.3rem;
+        margin-top: -30px;
     }
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 1.2rem;
+        margin-top: -30px;
     }
 
     @media screen and (max-height: 806px) {
@@ -377,26 +379,32 @@ export const Button = styled(LinkScroll)`
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 1rem;
+        margin-top: -30px;
     }
 
     @media screen and (max-width: 414px) {
         font-size: 0.9rem;
+        margin-top: -50px;
     }
 
     @media screen and (max-width: 375px) and (max-height: 667px) {
         font-size: 0.6rem;
+        margin-top: -50px;
     }
 
     @media screen and (max-width: 360px) {
         font-size: 0.8rem;
+        margin-top: -50px;
     }
 
     @media screen and (max-width: 320px) {
         font-size: 0.7rem;
+        margin-top: -50px;
     }
 
     @media screen and (max-width: 280px) {
         font-size: 0.6rem;
+        margin-top: -50px;
     }
 
     &:hover {
