@@ -44,7 +44,7 @@ export const FAQ = {
     showSubtitle: false,
     showBody: false,
     showAccordion: true,
-    description: 'You can click on a question to see its answer. If your question cannot be answered, please do not hesitate to get in touch.',
+    description: 'You can click on a question to view its answer. If your question cannot be answered, please do not hesitate to get in touch.',
     showDescription: true
 
 }

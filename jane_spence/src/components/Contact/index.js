@@ -157,21 +157,23 @@ const Contact = ({id}) => {
                         </ContactWrap>
                     </Column1>
                     <Column2>
-                        <ImgWrap>
-                            <Img data-aos='fade-left' src={contact}/>
-                        </ImgWrap>
-                        <SubTitleWrapper>
+                        <SubTitleWrapper data-aos='fade-down'>
                             <SubTitle>
-                                How Do I Book An Appointment?
+                                How Can I Book A Consultation?
                             </SubTitle>
                         </SubTitleWrapper>
-                        <DescriptionWrapper>
+                        <DescriptionWrapper data-aos='fade-left'>
                             <Description>
-                                If you would like to book a consultation or speak to me regarding another topic, you can either contact me via phone, fax or e-mail. 
-                                You can also book an appointment by calling Barry Dean Pharmacy on 9783 5201, Skye Medical Centre on 9782 8555, or myself directly on 0417 389 257.
-                                Alternatively, you can use the contact form to send me an enquiry. I will do my best to respond as soon as possible.
+                                If you would like to book a consultation or speak to me regarding another topic, you can contact me via phone, fax or e-mail. <br></br><br></br>
+                                You can also book an appointment by calling Barry Dean Pharmacy on 9783 5201, Skye Medical Centre on 9782 8555, or by calling me directly on 0417 389 257.
+                                <br></br><br></br>Alternatively, you can use the contact form to send me an enquiry. I will do my best to respond as soon as possible. <br></br><br></br>
+
+                                If you wish to book for a consultation at Frankston Healthcare, please ring 0417 389 257. I look forward to hearing from you!
                             </Description>
                         </DescriptionWrapper>
+                        <ImgWrap>
+                            <Img data-aos='fade-up' src={contact}/>
+                        </ImgWrap>
                     </Column2>
                 </Row1>
             </InformationWrapper>

@@ -315,15 +315,19 @@ export const DescriptionWrapper = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     width: 550px;
+
+    @media screen and (max-width: 1270px) {
+        display: none;
+    }
 `
 
 export const Description = styled.p`
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 200;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
 `
 
 export const SubTitleWrapper = styled.div`
@@ -331,8 +335,11 @@ export const SubTitleWrapper = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     width: 550px;
+
+    @media screen and (max-width: 1270px) {
+        display: none;
+    }
 `
 
 export const SubTitle = styled.h3`
@@ -340,4 +347,5 @@ export const SubTitle = styled.h3`
     font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
 `

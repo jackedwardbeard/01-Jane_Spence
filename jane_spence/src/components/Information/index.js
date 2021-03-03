@@ -78,7 +78,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                 ✔ {subbody5} 
                             </SubBody>
                             <DescriptionWrapper showDescription={showDescription}>
-                                <Description>
+                                <Description data-aos='fade-left'>
                                     {description}
                                 </Description>
                             </DescriptionWrapper>

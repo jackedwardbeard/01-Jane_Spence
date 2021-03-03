@@ -85,9 +85,14 @@ export const Column1 = styled.div`
         padding-left: 0;
     }
 
+
     @media screen and (max-width: 768px) { 
         margin-left: 30px;
         margin-top: -30px;
+    }
+
+    @media screen and (max-width: 540px) and (min-height: 720px) {
+        margin-left: 40px;
     }
 
     @media screen and (max-width: 414px) { 
@@ -114,6 +119,10 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.75rem;
+    }
     
     @media screen and (max-width: 540px) and (max-height: 720px) {
         margin-top: 20px;
@@ -156,7 +165,7 @@ export const Body = styled.p`
     padding-left: 20px;
     padding-right: 20px;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 1.3rem;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -266,6 +275,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 export const ImgWrap = styled.div`
@@ -490,6 +503,54 @@ export const DescriptionWrapper = styled.div`
     padding-left: 50px;
     padding-right: 50px;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 540px) and (max-height: 720px) {
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        width: 85%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.9rem;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 `
 
 export const Description = styled.p`
@@ -497,4 +558,8 @@ export const Description = styled.p`
     font-size: 0.9rem;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
+
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+        font-size: 1.2rem;
+    }
 `
