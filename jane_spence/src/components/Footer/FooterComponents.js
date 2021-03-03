@@ -202,6 +202,11 @@ export const Title = styled.h3`
         margin-top: 25px;
     }
 
+    @media screen and (max-width: 685px) {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
     @media screen and (max-width: 540px) {
         font-size: 0.9rem;
         margin-top: 0px;

@@ -15,15 +15,18 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 1000px;
+    height: 102.14504596527068vh;
+    min-height: 600px;
     display: flex;
 
     @media screen and (max-width: 1250px) {
+        min-height: 0;
         height: 1100px;
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         height: 1200px;
+        min-height: 0;
     }
 `
 
@@ -83,7 +86,7 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
-    padding-right: 50px;
+    padding-left: 50px;
 
 
 `
@@ -96,6 +99,11 @@ export const Title = styled.h1`
     color: black;
     max-width: 350px;
     text-align: center;
+
+    @media screen and (max-width: 1600px) {
+
+        font-size: 1.6rem;
+    }
 
     @media screen and (max-width: 1250px) {
 
@@ -134,6 +142,11 @@ export const Body = styled.p`
     max-width: 350px;
     text-align: center;
 
+    @media screen and (max-width: 1600px) {
+
+        font-size: 1.1rem;
+    }
+
     @media screen and (max-width: 1250px) {
 
         font-size: 1rem;
@@ -149,6 +162,7 @@ export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     padding-right: 50px;
+    padding-left: 50px;
     margin-bottom: 15px;
 `
 
@@ -160,7 +174,7 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: 350px;
+    height: 35.75076608784474vh;
     width: 350px;
     overflow-x: hidden;
     overflow-y: hidden;

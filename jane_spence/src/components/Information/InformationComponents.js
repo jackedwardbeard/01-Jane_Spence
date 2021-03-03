@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 export const InformationWrapper = styled.div`
     z-index: 1;
     height: 91.93054136874362vh;
-    min-height: 700px;
+    min-height: 650px;
     display: flex;
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
@@ -125,6 +125,10 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 
+    @media screen and (min-height: 720px) {
+        margin-top: 0px;
+    }
+
     @media screen and (max-width: 768px) {
         font-size: 1.75rem;
     }
@@ -178,6 +182,10 @@ export const Body = styled.p`
         font-size: 1.3rem;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    @media screen and (min-height: 720px) {
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
@@ -239,6 +247,10 @@ export const SubBody = styled.p`
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.2rem;
+    }
+
+    @media screen and (min-height: 720px) {
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 768px) {

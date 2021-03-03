@@ -347,5 +347,6 @@ export const SubTitle = styled.h3`
     font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
     margin-bottom: 30px;
 `
