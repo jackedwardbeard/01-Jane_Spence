@@ -11,7 +11,7 @@ export const About = {
     darkButtonText: false,
     buttonText: 'Return To Home',
     buttonLocation: 'contact',
-    title: 'Who am I?',
+    title: 'About',
     subtext: 'Credentials',
     body: 'Jane Spence is an Accredited Consultant Pharmacist and Credentialled Diabetes Educator who has been a part of the industry for over 10 years. Services include Diabetes Education and Home Medicine Reviews (HMRs). Jane is available and ready to assist you with all aspects of managing your diabetes.',
     subbody: 'Bachelor of Pharmacy (Monash University)',
