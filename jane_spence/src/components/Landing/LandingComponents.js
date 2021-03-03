@@ -96,24 +96,8 @@ export const LandingText = styled.div`
 `
 
 export const LandingTitle = styled.div`
-    font-size: 4rem;
+    font-size: 6.5vh;
     font-weight: 375;
-
-    @media screen and (max-width: 1600px) {
-        font-size: 3.5rem;
-    }
-
-    @media screen and (max-width: 1440px) {
-        font-size: 3.25rem;
-    }
-
-    @media screen and (max-width: 1366px) {
-        font-size: 3rem;
-    }
-
-    @media screen and (max-width: 1280px) {
-        font-size: 3rem;
-    }
     
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 6rem;
@@ -123,14 +107,6 @@ export const LandingTitle = styled.div`
     @media screen and (max-width: 768px) and (min-height: 1024px) {
         font-size: 4.5rem;
         font-weight: 500;
-    }
-
-    @media screen and (max-width: 710px) {
-        font-size: 3.7rem;
-    }
-
-    @media screen and (max-width: 664px) {
-        font-size: 3rem;
     }
 
     @media screen and (max-width: 540px) {
@@ -166,61 +142,55 @@ export const LandingTitle = styled.div`
 `
 
 export const LandingSubText = styled.div`
-    font-size: 1.5rem;
+    font-size: 2.2vh;
     font-weight: 300;
     padding-top: 10px;
 
-    @media screen and (max-width: 1600px) {
-        font-size: 1.25rem;
-    }
-
-    @media screen and (max-width: 1440px) {
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 1366px) {
-        font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 1280px) {
-        font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.8rem;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 1.3rem;
         font-weight: 300;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 540px) and (max-height: 720px) {
         font-size: 1rem;
     }
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 414px) and (max-height: 736px) {
         font-size: 1rem;
         font-weight: 290;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 411px) and (max-height: 823px) {
+        font-size: 1rem;
+        font-weight: 290;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 1rem;
+        font-weight: 290;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
         font-size: 0.88rem;
         font-weight: 350;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) and (max-height: 568px) {
         font-size: 0.8rem;
-        font-weight: 280px;
+        font-weight: 280;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 280px) and (max-height: 653px) {
         font-size: 0.7rem;
-        font-weight: 295px;
+        font-weight: 295;
     }
 `
 
@@ -238,7 +208,7 @@ export const LearnMoreBtn = styled(LinkScroll)`
     white-space: nowrap;
     padding: 10px 22px;
     color: black;
-    font-size: 1rem;
+    font-size: 1.75vh;
     font-weight: 450;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
