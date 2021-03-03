@@ -162,7 +162,7 @@ export const LearnMoreBtn = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     z-index: 999;
-    margin-top: 10px;
+    margin-top: 3vh;
     
     @media screen and (max-width: 414px) and (max-height: 736px) {
         font-size: 2.6vh;
