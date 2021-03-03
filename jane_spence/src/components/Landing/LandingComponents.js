@@ -10,7 +10,7 @@ export const LandingContainer = styled.div`
     z-index: 1;
     padding: 0 40px;
     position: relative;
-    height: 1000px;
+    height: 100vh;
     background: black;
     overflow: hidden;
 
@@ -98,6 +98,22 @@ export const LandingText = styled.div`
 export const LandingTitle = styled.div`
     font-size: 4rem;
     font-weight: 375;
+
+    @media screen and (max-width: 1600px) {
+        font-size: 3.5rem;
+    }
+
+    @media screen and (max-width: 1440px) {
+        font-size: 3.25rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 3rem;
+    }
     
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 6rem;
@@ -153,6 +169,22 @@ export const LandingSubText = styled.div`
     font-size: 1.5rem;
     font-weight: 300;
     padding-top: 10px;
+
+    @media screen and (max-width: 1600px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 1440px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 1.15rem;
+    }
 
     @media screen and (max-width: 1024px) {
         font-size: 1.8rem;
@@ -213,6 +245,10 @@ export const LearnMoreBtn = styled(LinkScroll)`
     text-decoration: none;
     z-index: 999;
     margin-top: 10px;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 0.9rem;
+    }
 
     @media screen and (max-width: 540px) {
         font-size: 1rem;
