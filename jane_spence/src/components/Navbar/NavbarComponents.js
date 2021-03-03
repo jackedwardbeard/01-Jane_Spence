@@ -5,8 +5,8 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
-    height: 9vh;
-    margin-top: -9vh;
+    height: 8vh;
+    margin-top: -8vh;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
     justify-content: center;
@@ -15,10 +15,15 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
+
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+        height: 8vh;
+        margin-top: -8vh;
+    }
     
-    @media screen and (max-width: 1024px) {
-        height: 80px;
-        margin-top: -80px;
+    @media screen and (max-width: 1024px) and (max-height: 1365px) {
+        height: 70px;
+        margin-top: -70px;
     }
 
     @media screen and (max-width: 960px) {
@@ -30,14 +35,18 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-    height: 9vh;
+    justify-content: space-around;
+    height: 8vh;
     z-index; 1;
     width: 100%;
     padding: 0 0.5vw; 
 
-    @media screen and (max-width: 1024px) {
-        height: 80px;
+    @media screen and (max-width:768px) {
+        justify-content: start;
+    }
+
+    @media screen and (max-width: 1024px) and (max-height: 1365px) {
+        height: 70px;
         padding: 0 24px; 
         max-width: 1100px;
     }
@@ -50,10 +59,11 @@ export const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: -0.5vh;
-    margin-left: 3vw;
+    margin-left: 15vw;
 
     @media screen and (max-width: 1024px) {
         margin-top: -5px;
+        margin-left: 3.5vw;
     }
     
 `
@@ -69,8 +79,28 @@ export const NavLogo = styled(LinkScroll)`
     font-size: 3.5vh;
     overflow: hidden;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+        font-size: 1.75vh;
+    }
+
+    @media screen and (max-width: 1024px) and (max-height: 1365px) {
         font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 906px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 797px) {
+        font-size: 0.75rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        margin-left: -10px;
     }
 
 `;
@@ -85,14 +115,30 @@ export const SubLogo = styled(LinkScroll)`
     font-size: 1.3vh;
     overflow: hidden;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+        font-size: 1vh;
+    }
+
+    @media screen and (max-width: 1024px) and (max-height: 1365px) {
         font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 906px) {
+        font-size: 0.6rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.3vh;
+    }
+
+    @media screen and (max-width: 280px) {
+        margin-left: -10px;
     }
 `
 
 export const MobileIcon = styled.div`
     display: none;
-    margin-top: 4px;
+    margin-top: -0.2vh;
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -106,8 +152,8 @@ export const MobileIcon = styled.div`
     }
 
     @media screen and (max-width: 280px) {
-        padding-top: 5px;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        padding-top: 0px;
     }
 `;
 
@@ -120,14 +166,18 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 8vh;
-    margin: 2vw;
-    font-size: 2vh;
+    margin: 1.5vw;
+    font-size: 1.75vh;
     font-family: 'Montserrat', sans-serif;
     
     @media screen and (max-width: 1024px) {
         font-size: 1rem;
         height: 80px;
         margin: 30px;
+    }
+
+    @media screen and (max-width: 906px) {
+        font-size: 1.5vh;
     }
 
     @media screen and (max-width: 768px) {
@@ -145,11 +195,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 0.35vh solid thistle;
+        border-bottom: 0.4vh solid thistle;
     }
 
     &:hover {
-        border-bottom: 0.35vh solid thistle;
+        border-bottom: 0.4vh solid thistle;
     }
 
 `;
@@ -166,7 +216,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkScroll)`
     border-radius: 3vh;
-    margin-right: 3vw;
+    margin-right: 15vw;
     background: thistle;
     white-space: nowrap;
     padding: 1.1vh 2.2vh;
@@ -178,6 +228,10 @@ export const NavBtnLink = styled(LinkScroll)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+
+    @media screen and (max-width: 1024px) {
+        margin-right: 3.5vw;
+    }
 
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         padding: 0.65vh 1.5vh;

@@ -57,32 +57,32 @@ export const LandingTitle = styled.div`
         font-weight: 500;
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 540px) and (min-height: 720px) {
         font-size: 3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 414px) and (min-height: 736px) {
         font-size: 2.3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 375px) and (min-height: 667px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 360px) and (min-height: 640px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) and (min-height: 568px) {
         font-size: 1.7rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 280px) and (min-height: 653px) {
         font-size: 1.4rem;
         font-weight: 500;
     }
@@ -151,18 +151,42 @@ export const LearnMoreBtnWrapper = styled.nav`
 `
 
 export const LearnMoreBtn = styled(LinkScroll)`
-    border-radius: 50px;
+    border-radius: 3vh;
     background: thistle;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 1.1vh 2.2vh;
     color: black;
-    font-size: 1.75vh;
+    font-size: 1.85vh;
     font-weight: 450;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     z-index: 999;
     margin-top: 10px;
+    
+    @media screen and (max-width: 414px) and (max-height: 736px) {
+        font-size: 2.6vh;
+    }
+
+    @media screen and (max-width: 411px) and (max-height: 731px) {
+        font-size: 2.6vh;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 812px) {
+        font-size: 2vh;
+    }
+
+    @media screen and (max-width: 375px) and (max-height: 667px) {
+        font-size: 2.6vh;
+    }
+
+    @media screen and (max-width: 320px) and (max-height: 568px) {
+        font-size: 2.6vh;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+        font-size: 2.3vh;
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;
