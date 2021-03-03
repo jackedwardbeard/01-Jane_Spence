@@ -16,31 +16,38 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 900px;
+    height: 91.93054136874362vh;
+    min-height: 700px;
     display: flex;
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         height: 800px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
         height: 500px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 414px) and (max-height: 736px) {
         height: 600px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 411px) and (max-height: 823px) {
         height: 600px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 411px) and (max-height: 731px) {
         height: 600px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
         height: 600px;
+        min-height: 0;
     }
 
     @media screen and (max-width: 320px) and (max-height: 568px) {
@@ -50,9 +57,6 @@ export const InformationWrapper = styled.div`
     @media screen and (max-width: 280px) and (max-height: 653px) {
         height: 620px;
     }
-    
-
-
 
     
 `
@@ -117,6 +121,7 @@ export const Column1 = styled.div`
 export const Title = styled.h1`
     font-size: 2rem;
     text-transform: uppercase;
+    margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 
@@ -165,6 +170,10 @@ export const Body = styled.p`
     padding-left: 20px;
     padding-right: 20px;
 
+    @media screen and (max-width: 1440px) {
+        font-size: 1.1rem;
+    }
+
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 1.3rem;
         margin-top: 40px;
@@ -173,6 +182,10 @@ export const Body = styled.p`
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 550px) {
+        font-size: 1.15rem;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
@@ -219,6 +232,10 @@ export const SubBody = styled.p`
     display: ${({showBody}) => (showBody ? '' : 'none')};
     padding-left: 20px;
     padding-right: 20px;
+    
+    @media screen and (max-width: 1440px) {
+        font-size: 1.1rem;
+    }
 
     @media screen and (max-width: 1024px) and (max-height: 1366px) {
         font-size: 1.2rem;
@@ -226,6 +243,10 @@ export const SubBody = styled.p`
 
     @media screen and (max-width: 768px) {
         font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 550px) {
+        font-size: 1.15rem;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
@@ -282,10 +303,10 @@ export const TextWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 100%;
+    width: 30vw;
+    height: 30vw;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `
@@ -296,7 +317,7 @@ export const Img = styled.img`
     padding-right: 0px;
     margin: 0 0 10px 0;
 
-    @media screen and (max-width: 1270px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `
@@ -332,6 +353,14 @@ export const Button = styled(LinkScroll)`
 
     @media screen and (max-width: 768px) and (max-height: 1024px) {
         font-size: 1.2rem;
+    }
+
+    @media screen and (max-height: 806px) {
+        margin-top: -60px;
+    }
+
+    @media screen and (max-height: 768px) {
+        margin-top: -75px;
     }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
@@ -434,8 +463,12 @@ export const QuestionWrapper = styled.div`
         font-size: 1.3rem;
     }
 
+    @media screen and (max-height: 806px) {
+        font-size: 1.15rem;
+    }
+
     @media screen and (max-width: 575px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     @media screen and (max-width: 540px) {
@@ -499,14 +532,9 @@ export const DescriptionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 500px;
     padding-left: 50px;
     padding-right: 50px;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.25rem;
-    }
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
         width: 90%;
@@ -532,13 +560,6 @@ export const DescriptionWrapper = styled.div`
         padding-right: 5px;
     }
 
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 1rem;
-    }
 
     @media screen and (max-width: 360px) and (max-height: 640px) {
         width: 90%;
@@ -558,6 +579,15 @@ export const Description = styled.p`
     font-size: 0.9rem;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
+
+    @media screen and (max-height: 806px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-height: 806px) {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
 
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 1.2rem;
