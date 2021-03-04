@@ -228,7 +228,7 @@ export const AnswerWrapper = styled.div`
 export const DescriptionWrapper = styled.div`
     display: flex;
     text-align: center;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
@@ -240,7 +240,7 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: white;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 `
