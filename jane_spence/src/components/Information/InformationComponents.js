@@ -33,7 +33,7 @@ export const Column1 = styled.div`
     grid-area: col1;
     display: flex;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -49,7 +49,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h1`
-    margin-top: 3vh;
+    margin-top: 2vh;
     font-size: 3.5vh;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -59,18 +59,16 @@ export const Subtitle = styled.h1`
 
 export const Body = styled.p`
     margin-top: 1.5vh;
-    font-size: 2.2vh;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
-
-
 `
 
 export const SubBody = styled.p`
     margin-top: 1.5vh;
-    font-size: 2.2vh;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
@@ -80,7 +78,7 @@ export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5vw;
+    margin-right: 7vw;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -89,7 +87,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     display: flex;
-    padding: 0 1.5vw;
+    padding: 0 2.5vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -189,7 +187,6 @@ export const AnswerWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: solid 2px red;
     margin-bottom: 2vh;
     font-size: 2vh;
 
