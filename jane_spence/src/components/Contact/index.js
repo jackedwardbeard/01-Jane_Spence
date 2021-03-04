@@ -141,7 +141,7 @@ const Contact = ({id}) => {
                                 placeholder='Enquiry' 
                                 name='enquiry' 
                                 data-aos='fade-right'
-                                ref={register({required: "Enquiry Required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
+                                ref={register({required: "Enquiry required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
                                 </InputLarge>
                                 <Error>{errors.enquiry && errors.enquiry.message}</Error>
                                 <SubmissionMessage>{thanks}</SubmissionMessage>
