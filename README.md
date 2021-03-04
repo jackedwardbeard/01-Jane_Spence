@@ -3,7 +3,7 @@
 
 ## Project Description
 
-This project is an interactive React.js website built for client Jane Spence. The front-end uses React/JavaScript styled components. The back-end server uses Express.js/Node.js, and several other dependencies are listed below. The back-end server is needed for our contact page, where our contact form is to send an e-mail upon submission. This was my first time building a website, and my first time building a full-stack (minus the DB) application. I have learned A LOT.
+This project is an interactive React.js website built for client Jane Spence. The front-end uses React/JavaScript styled components. The front-end is also fully responsive. I started not knowing anything about vh/vw/vmin/vmax units, and started my first iterations using px. I soon learned that px simply didn't cut it when it came to having a fully responsive design, so I made the switch and re-factored the website using primarily vh/vw units. It now works on all google mobile view mobiles, as well as scaling up and down for most (if not all) common screen sizes. The back-end server uses Express.js/Node.js, and several other dependencies are listed below. The back-end server is needed for our contact page, where our contact form is to send an e-mail upon submission. This was my first time building a website, and my first time building a full-stack (minus the DB) application. I have learned A LOT. Feel free to message me if you're interested in any part of this project.
 
 
 ## Stack
@@ -28,7 +28,7 @@ OR
 npm run start
 ```
 
-## To Start Back-End (cd backend)
+## To Start Back-End (cd root folder // 01-Jane_Spence)
 
 ```bash
 ### Without nodemon server refreshing on code change
@@ -53,7 +53,7 @@ npm run backend
 
 ```
 
-## To Start Front-End AND Back-End Concurrently (cd backend)
+## To Start Front-End AND Back-End Concurrently (cd root folder // 01-Jane_Spence)
 
 ```bash
 npm run dev
