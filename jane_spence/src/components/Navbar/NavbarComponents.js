@@ -6,7 +6,7 @@ import { Link as LinkScroll } from 'react-scroll'
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
     height: 8.171603677221654vh;
-    margin-top: -8.171603677221654vh;
+    margin-top: min(-80px, -8.171603677221654vh);
     min-height: 80px;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
@@ -16,11 +16,6 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
-    
-    @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        height: 80px;
-        margin-top: -80px;
-    }
 
     @media screen and (max-width: 960px) {
         width: 100%;
