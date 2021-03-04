@@ -4,6 +4,7 @@ export const InformationContainer = styled.div`
     background: white;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     @media screen and (max-width: 1250px) {
         padding: 100px 0;
