@@ -6,6 +6,7 @@ export const InformationContainer = styled.div`
     background: ${({darkBackground}) => (darkBackground ? 'black' : 'white')};
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -17,48 +18,7 @@ export const InformationContainer = styled.div`
 export const InformationWrapper = styled.div`
     z-index: 1;
     height: 100vh;
-    min-height: 650px;
     display: flex;
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        height: 800px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        height: 500px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 600px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 600px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 600px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 600px;
-        min-height: 0;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 640px;
-    }
-
-    @media screen and (max-width: 280px) and (max-height: 653px) {
-        height: 620px;
-    }
-
-    
 `
 
 export const Row1 = styled.div`
