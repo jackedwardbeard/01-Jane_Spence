@@ -63,7 +63,7 @@ export const MobileMenuLink = styled(LinkScroll)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 3vh;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -84,12 +84,13 @@ export const MobileBtnWrapper = styled.div`
 `
 
 export const MobileMenuBtn = styled(LinkScroll)`
-    border-radius: 30px;
+    border-radius: 3vh;
     background: thistle;
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 1.6vh 5vw;
     color: black;
-    font-size: 1rem;
+    font-size: 2.5vh;
+    font-weight: 450;
     font-family: 'Montserrat', sans-serif;
     outline: none;
     border: none;

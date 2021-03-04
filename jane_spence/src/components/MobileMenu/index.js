@@ -29,10 +29,10 @@ const MobileSideMenu = ({clicked, reverseState}) => {
                     <MobileMenuLink to="about" onClick={reverseState} smooth={true} spy={true} offset={-80}>About</MobileMenuLink>
                     <MobileMenuLink to="faq" onClick={reverseState} smooth={true} spy={true} offset={-80}>FAQ</MobileMenuLink>
                     <MobileMenuLink to="locations" onClick={reverseState} smooth={true} spy={true} offset={-80}>Locations</MobileMenuLink>
-                    <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Contact</MobileMenuLink>
+                    <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={-20}>Contact</MobileMenuLink>
                 </MobileMenu>
                 <MobileBtnWrapper>
-                    <MobileMenuBtn to="contact" onClick={reverseState} smooth={true} spy={true} offset={-80}>Enquire Now</MobileMenuBtn>
+                    <MobileMenuBtn to="contact" onClick={reverseState} smooth={true} spy={true} offset={-20}>Enquire Now</MobileMenuBtn>
                 </MobileBtnWrapper>
             </MobileMenuWrapper>
         </MobileMenuContainer>

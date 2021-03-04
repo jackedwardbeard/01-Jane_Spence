@@ -81,7 +81,7 @@ export const NavLogo = styled(LinkScroll)`
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     @media screen and (max-width: 906px) {
@@ -117,7 +117,7 @@ export const SubLogo = styled(LinkScroll)`
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     @media screen and (max-width: 906px) {
@@ -222,7 +222,7 @@ export const NavBtnLink = styled(LinkScroll)`
     white-space: nowrap;
     padding: 1.1vh 2.2vh;
     color: black;
-    font-size: 1.9vh;
+    font-size: 1.85vh;
     font-weight: 450;
     outline: none;
     border: none;

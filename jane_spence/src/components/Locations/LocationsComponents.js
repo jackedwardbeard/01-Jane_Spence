@@ -63,7 +63,7 @@ export const Column1 = styled.div`
 export const Title = styled.h1`
     font-size: 3.5vh;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: black;
     margin-bottom: 0.5vh;
@@ -72,7 +72,7 @@ export const Title = styled.h1`
 export const Body = styled.p`
     font-size: 2.25vh;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
     text-align: center;
 
@@ -157,7 +157,7 @@ export const MapWrapper = styled.div`
 
 export const BodyHours = styled.p`
     font-size: 2.25vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: black;
     text-align: center;

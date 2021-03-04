@@ -110,7 +110,6 @@ export const Img = styled.img`
 
 export const ButtonWrapper = styled.div`
     display: flex;
-    padding-top: 5vh;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -122,11 +121,10 @@ export const Button = styled(LinkScroll)`
     border-radius: 5vh;
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: 2vh 3vw;
+    padding: 1vh 2vw;
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: 2vh;
     font-weight: 600;
-    margin-top: -5vh;
     outline: none;
     border: none;
     cursor: pointer;
@@ -167,7 +165,7 @@ export const QuestionWrapper = styled.div`
     border-radius: 5vh;
     padding: 2vh;
     cursor: pointer;
-    font-size: 1.75vh;
+    font-size: 2.5vh;
     height: 5vh;
     display: flex;
     justify-content: space-between;
@@ -175,7 +173,7 @@ export const QuestionWrapper = styled.div`
     margin-bottom: 2vh;
 
     @media screen and (max-width: 1024px) {
-        font-size: 1.4vh;
+        font-size: 1.8vh;
     }
 
     &:hover {
@@ -199,7 +197,8 @@ export const DescriptionWrapper = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     padding-left: 2vw;
     padding-right: 2vw;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
@@ -207,7 +206,7 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: white;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 `

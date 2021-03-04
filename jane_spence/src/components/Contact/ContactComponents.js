@@ -6,66 +6,18 @@ export const InformationContainer = styled.div`
     flex-direction: column;
     overflow: hidden;
 
-    @media screen and (max-width: 768px) {
-        padding: 100px 0px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    @media screen and (max-width: 414px) {
-        padding: 100px 0px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
 `
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 90vh;
-    min-height: 900px;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        height: 1275px;
+    @media screen and (max-width: 1024px) {
+        height: 130vh;
     }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        height: 850px;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        height: 820px;
-    }
-
-    @media screen and (max-width: 280px) and (max-height: 653px) {
-        height: 820px;
-    }
-
 `
 
 export const Row1 = styled.div`
@@ -73,71 +25,32 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 5vh;
-    height: 81.71603677221655vh;
+    height: 70vh;
+    width: 90vw;
 `
 
 export const Column1 = styled.div`
-    padding: 0 15px;
-    grid-area: col1;
-    margin-right: 100px;
-    margin-left: -10px;
-
-    @media screen and (max-width: 1400px) {
-        padding-left: 100px;
-    }
-
-    @media screen and (max-width: 1280px) {
-        margin-top: -60px;
-    }
+    padding: 0 1vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 1024px) {
-        margin-right: 0px;
-        display: grid;
-        align-items: center;
-        padding-left: 60px;
-       
+        margin-right: 0vw;
+        margin-top: 0vh;
     }
 
-    @media screen and (max-width: 768px) {
-        padding-left: 45px;
-    }
-
-    @media screen and (max-width: 414px) {
-        padding-left: 25px;
-    }
-
-    @media screen and (max-width: 360px) {
-        padding-left: 25px;
-    }
-
-    @media screen and (max-width: 320px) {
-        padding-left: 45px;
-    }
-
-    @media screen and (max-width: 280px) {
-        margin-right: 0px;
-        display: grid;
-        align-items: center;
-        padding-left: 30px;
-    }
     
 `
 
 export const Title = styled.h1`
-    font-size: 2rem;
+    font-size: 5vh;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: thistle;
-
-    @media screen and (max-width: 1366px) {
-        font-size: 1.75rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: 40px;
-        font-size: 2rem;
-    }
 `
 
 export const Body = styled.ul`
@@ -149,32 +62,26 @@ export const Body = styled.ul`
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 0.75vw;
     grid-area: col1;
-    width: 30vw;
+    width: 50vw;
 
-    @media screen and (max-width: 1280px) {
-        margin-top: -60px;
-    }
-
-    @media screen and (max-width: 1270px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
     padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 3vh;
 `
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
     height: 100%;
 `
 
@@ -184,39 +91,25 @@ export const Img = styled.img`
     padding-right: 0px;
     margin: 0 0 10px 0;
     margin-top: 30px;
-
-    @media screen and (max-width: 1270px) {
-        display: none;
-    }
 `
 
 export const Item = styled.div`
-    font-size: 1.1rem;
-    margin-left: 0px;
+    font-size: 2vh;
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: 1366px) {
-        font-size: 1rem;
-    }
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 
     @media screen and (max-width: 1024px) {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 768px) {
         font-size: 1rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.95rem;
     }
 `
 
 export const ContactWrap = styled.div`
     display: flex;
-    justify-content: left;
 `
 
 export const ContactForm = styled.form`
@@ -228,17 +121,15 @@ export const ContactForm = styled.form`
 
 export const ContactTitle = styled.h2`
     color: thistle;
-    margin-top: 10px;
-    margin-bottom: 10px;
 `
 
 export const Label = styled.div`
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 5px;
-    width: 280px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 2.5vh;
 
     @media screen and (max-width: 1366px) {
         font-size: 1.2rem;
@@ -260,20 +151,16 @@ export const Label = styled.div`
 `
 
 export const Input = styled.input`
-    height: 40px;
-    width: 280px;
-    font-size: 1.2rem;
+    height: 4vh;
+    width: 14.6vw;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 10px;
-    margin-top: 10px;
-
-    @media screen and (max-width: 1600px) {
-        height: 30px;
-        font-size: 1rem;
-    }
+    padding-left: 0.5vw;
+    margin-top: 1vh;
 
     @media screen and (max-width: 1024px) {
         height: 40px;
+        width: 280px;
         font-size: 1.2rem;
     }
 
@@ -289,28 +176,19 @@ export const Input = styled.input`
 `
 
 export const InputLarge = styled.textarea`
-    height: 100px;
-    font-size: 1.2rem;
+    height: 12vh;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 280px;
-    margin-top: 10px;
+    padding-left: 0.5vw;
+    padding-top: 1vh;
+    width: 14.6vw;
+    margin-top: 1vh;
     type: textarea;
-
-    @media screen and (max-width: 1600px) {
-        height: 75px;
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 1366px) {
-        height: 60px;
-        font-size: 1rem;
-    }
 
     @media screen and (max-width: 1024px) {
         height: 100px;
         font-size: 1.2rem;
+        width: 280px;
     }
 
     @media screen and (max-width: 320px) {
@@ -325,27 +203,33 @@ export const InputLarge = styled.textarea`
 export const BtnWrapper = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 30px;
 `
 
 export const SubmitBtn = styled.button`
     
-    border-radius: 30px;
+    border-radius: 5vh;
     background: thistle;
     white-space: nowrap;
-    padding: 10px 30px;
+    padding: 0.75vh 2.25vw;
     color: black;
-    font-size: 1rem;
-    font-weight: 550;
+    font-size: 2.5vh;
+    font-weight: 545;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
-    @media screen and (max-width: 1280px) {
-        font-size: 0.8rem;
+    @media screen and (max-width: 1024px) {
+        padding: 1vh 4vw;
+        font-size: 2vh;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 10px 20px;
+        font-size: 1.2rem;
     }
 
     &:hover {
@@ -357,29 +241,80 @@ export const SubmitBtn = styled.button`
 `
 
 export const Error = styled.p`
-color: red;
-font-family: 'Open Sans', sans-serif;
-font-weight: 700;
-padding-top: 5px;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 5px;
+    font-size: 1.75vh;
+    max-width: 14.6vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        max-width: 100%;
+        width: 280px;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 250px;
+        
+    }
+
+    @media screen and (max-width: 280px) {
+        width: 240px;
+        
+    }
 
 `
 
 export const SubmissionMessage = styled.p`
-    margin-top: 5px;
-    height: 30px;
-    width: 280px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: 100%;
+    max-width: 14.6vw;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vh;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        width: 240px;
-        font-size: 0.9rem;
+    @media screen and (max-width: 1024px) {
+        max-width: 100%;
+        width: 280px;
+        font-size: 1.25rem;
     }
 
-    @media screen and (max-width: 280px) and (max-height: 653px) {
-        width: 240px;
-        font-size: 0.9rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
     }
+
+    @media screen and (max-width: 767px) {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 250px;
+        
+    }
+
+    @media screen and (max-width: 280px) {
+        width: 240px;
+        
+    }
+
 `
 
 export const DescriptionWrapper = styled.div`
@@ -388,6 +323,7 @@ export const DescriptionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    line-height: 1;
 
     @media screen and (max-width: 1270px) {
         display: none;
@@ -396,20 +332,9 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: white;
-    font-size: 1rem;
-    font-weight: 200;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 1600px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 1280px) {
-        margin-bottom: 10px;
-    }
-
-    
+    font-size: 1.8vh;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 `
 
 export const SubTitleWrapper = styled.div`
@@ -425,11 +350,11 @@ export const SubTitleWrapper = styled.div`
 
 export const SubTitle = styled.h3`
     color: white;
-    font-size: 1.1rem;
+    font-size: 2.5vh;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 
     @media screen and (max-width: 1600px) {
         font-size: 1rem;
