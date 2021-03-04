@@ -63,6 +63,7 @@ export const Body = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
+    white-space: pre-wrap;
 
 
 `

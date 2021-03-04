@@ -13,7 +13,7 @@ export const About = {
     buttonLocation: 'contact',
     title: 'About',
     subtext: 'Credentials',
-    body: 'Jane Spence is an Accredited Consultant Pharmacist and Credentialled Diabetes Educator who has been a part of the industry for over 10 years. Services include Diabetes Education and Home Medicine Reviews (HMRs). Jane is available and ready to assist you with all aspects of managing your diabetes.',
+    body: 'Jane Spence is an Accredited Consultant Pharmacist and Credentialled Diabetes Educator who has been a part of the industry for over 10 years. Primary services include Diabetes Education and Home Medicine Reviews (HMRs). \n\nJane is available and ready to assist you with all aspects of managing your diabetes, be it Prediabetes, Type 2 Diabetes, Gestational Diabetes or Type 1 Diabetes (adults). \n\nOther services include signing of NDSS membership forms and Libre application forms (for eligible T1DM patients).',
     subbody: 'Bachelor of Pharmacy (Monash University)',
     subbody2: 'Graduate Certificate of Diabetes Education',
     subbody3: 'Credentialled Diabetes Educator (CDE)',
