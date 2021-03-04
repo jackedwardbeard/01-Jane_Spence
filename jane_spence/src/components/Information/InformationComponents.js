@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 95vh;
+    height: 100vh;
     display: flex;
 `
 
@@ -27,18 +27,16 @@ export const Row1 = styled.div`
     justify-content: center;
     margin: auto;
     overflow-x: hidden;
-    outline: solid 2px red;
 `
 
 export const Column1 = styled.div`
     grid-area: col1;
     display: flex;
     overflow: hidden;
-    height: 100%;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     text-align: center;
-    outline: solid 2px red;
     margin-left: 5vw;
     margin-right: 5vw;
 `
@@ -75,69 +73,12 @@ export const SubBody = styled.p`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-    
-    @media screen and (max-width: 1440px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.5rem;
-    }
-
-    @media screen and (max-height: 720px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.25rem;
-    }
-
-    @media screen and (max-width: 550px) {
-        font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.95rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.9rem;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    
-
 `
 
 export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: solid 2px yellow;
     margin-right: 5vw;
 
     @media screen and (max-width: 1024px) {
@@ -169,7 +110,7 @@ export const Img = styled.img`
 
 export const ButtonWrapper = styled.div`
     display: flex;
-    padding-top: 40px;
+    padding-top: 5vh;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -178,67 +119,19 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
-    border-radius: 50px;
+    border-radius: 5vh;
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 2vh 3vw;
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: 1rem;
+    font-size: 2vh;
     font-weight: 600;
-    margin-top: -50px;
+    margin-top: -5vh;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.3rem;
-        margin-top: -30px;
-    }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        font-size: 1.2rem;
-        margin-top: -30px;
-    }
-
-    @media screen and (max-height: 806px) {
-        margin-top: -60px;
-    }
-
-    @media screen and (max-height: 768px) {
-        margin-top: -75px;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 1rem;
-        margin-top: -30px;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.9rem;
-        margin-top: -50px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 0.6rem;
-        margin-top: -50px;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 0.8rem;
-        margin-top: -50px;
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.7rem;
-        margin-top: -50px;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.6rem;
-        margin-top: -50px;
-    }
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -253,99 +146,36 @@ export const AccordionWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    height: 400px;
-    width: 500px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     overflow: hidden;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
-
-
-    @media screen and (max-width: 575px) {
-        width: 440px;
-    }
-
-    @media screen and (max-width: 414px) {
-        width: 340px;
-    }
-
-    @media screen and (max-width: 375px) {
-        width: 330px;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 320px;
-    }
-
-    @media screen and (max-width: 320px) {
-        width: 280px;
-    }
-
-    @media screen and (max-width: 280px) {
-        width: 250px;
-    }
-
 `
 
 
 export const Accordion = styled.div`
     color: white;
     width: 100%;
-    justify-content: center;
-    align-items: center;
 `
 
 export const QuestionWrapper = styled.div`
     
     background: rgb(13,16,22,0.4);
-    border-radius: 10px;
+    border-radius: 5vh;
+    padding: 2vh;
     cursor: pointer;
-    font-size: 1.25rem;
-    height: 50px;
-    width: 100%;
+    font-size: 1.75vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 2vh;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-height: 806px) {
-        font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 575px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 540px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.85rem;
-    }
-
-    @media screen and (max-width: 375px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 0.77rem;
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.67rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.5rem;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.4vh;
     }
 
     &:hover {
@@ -355,95 +185,30 @@ export const QuestionWrapper = styled.div`
 `
 
 export const AnswerWrapper = styled.div`
-    padding-bottom: 20px;
-
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.85rem;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.75rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.7rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid 2px red;
+    margin-bottom: 2vh;
+    font-size: 2vh;
 
 `
 
 export const DescriptionWrapper = styled.div`
     display: flex;
     text-align: center;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5vh;
-    padding-left: 50px;
-    padding-right: 50px;
-    outline: solid 2px red;
+    margin-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        width: 90%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        width: 85%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        width: 90%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        width: 90%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        width: 90%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.9rem;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 `
 
 export const Description = styled.p`
     color: white;
-    font-size: 0.9rem;
+    font-size: 2vh;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
-
-    @media screen and (max-height: 806px) {
-        font-size: 0.85rem;
-    }
-
-    @media screen and (max-height: 806px) {
-        margin-top: -10px;
-        margin-bottom: -10px;
-    }
-
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 1.2rem;
-    }
 `
