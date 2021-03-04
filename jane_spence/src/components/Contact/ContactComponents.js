@@ -162,6 +162,7 @@ export const Input = styled.input`
         height: 40px;
         width: 280px;
         font-size: 1.2rem;
+        padding-left: 5px;
     }
 
     @media screen and (max-width: 320px) {
@@ -189,6 +190,7 @@ export const InputLarge = styled.textarea`
         height: 100px;
         font-size: 1.2rem;
         width: 280px;
+        padding-left: 5px;
     }
 
     @media screen and (max-width: 320px) {
