@@ -7,6 +7,7 @@ export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
     height: 8vh;
     margin-top: -8vh;
+    min-height: 80px;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
     justify-content: center;
@@ -22,8 +23,8 @@ export const Nav = styled.nav`
     }
     
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        height: 70px;
-        margin-top: -70px;
+        height: 80px;
+        margin-top: -80px;
     }
 
     @media screen and (max-width: 960px) {
@@ -37,6 +38,7 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-around;
     height: 8vh;
+    min-height: 80px;
     z-index; 1;
     width: 100%;
     padding: 0 0.5vw; 
@@ -46,7 +48,7 @@ export const NavbarContainer = styled.div`
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        height: 70px;
+        height: 80px;
         padding: 0 24px; 
         max-width: 1100px;
     }
@@ -147,7 +149,7 @@ export const SubLogo = styled(LinkScroll)`
 
 export const MobileIcon = styled.div`
     display: none;
-    margin-top: -0.2vh;
+    margin-top: 0.5vh;
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -162,7 +164,7 @@ export const MobileIcon = styled.div`
 
     @media screen and (max-width: 280px) {
         font-size: 1.6rem;
-        padding-top: 0px;
+        padding-top: 2.5px;
     }
 `;
 
