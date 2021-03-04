@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 100vh;
+    height: 95vh;
     display: flex;
 `
 
@@ -26,180 +26,55 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+    overflow-x: hidden;
+    outline: solid 2px red;
 `
 
 export const Column1 = styled.div`
-    margin-bottom: -30px;
-    margin-left: 70px;
-    padding: 0 15px;
     grid-area: col1;
+    display: flex;
     overflow: hidden;
-    margin-right: 100px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
-    @media screen and (max-width: 1400px) {
-        padding-left: 0px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        margin-right: 0px;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0;
-    }
-
-
-    @media screen and (max-width: 768px) { 
-        margin-left: 30px;
-        margin-top: -30px;
-    }
-
-    @media screen and (max-width: 540px) and (min-height: 720px) {
-        margin-left: 40px;
-    }
-
-    @media screen and (max-width: 414px) { 
-        margin-left: 37px;
-        margin-top: -30px;
-    }
-
-
-    @media screen and (max-width: 375px) { 
-        margin-left: 20px;
-        margin-right: -25px;
-    }
-
-    @media screen and (max-width: 280px) { 
-        margin-left: 0px;
-        margin-right: -45px;
-        margin-top: -30px;
-    }
-
+    outline: solid 2px red;
+    margin-left: 5vw;
+    margin-right: 5vw;
 `
 
 export const Title = styled.h1`
-    font-size: 2rem;
+    font-size: 5vh;
     text-transform: uppercase;
-    margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
-
-    @media screen and (min-height: 720px) {
-        margin-top: 0px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.75rem;
-    }
-    
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        margin-top: 20px;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        margin-top: 12px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        margin-top: 10px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        margin-top: 10px;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        margin-top: 15px;
-    }
 `
 
 export const Subtitle = styled.h1`
-    margin-top: 40px;
-    font-size: 1.5rem;
+    margin-top: 3vh;
+    font-size: 3.5vh;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
-    display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')};
-
-    
+    display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
 `
 
 export const Body = styled.p`
-    margin-top: 15px;
-    font-size: 1.25rem;
+    margin-top: 1.5vh;
+    font-size: 2.2vh;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-    padding-left: 20px;
-    padding-right: 20px;
 
-    @media screen and (max-width: 1440px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 1.5rem;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    @media screen and (max-height: 720px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        font-size: 1.25rem;
-    }
-
-    @media screen and (max-width: 550px) {
-        font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.95rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.9rem;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 
 `
 
 export const SubBody = styled.p`
-    margin-top: 15px;
-    font-size: 1.3rem;
+    margin-top: 1.5vh;
+    font-size: 2.2vh;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-    padding-left: 20px;
-    padding-right: 20px;
     
     @media screen and (max-width: 1440px) {
         font-size: 1.1rem;
@@ -259,35 +134,33 @@ export const SubBody = styled.p`
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col1;
-`
-
-export const TextWrapper = styled.div`
-    max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-`
-
-export const ImgWrap = styled.div`
-    width: 30vw;
-    height: 30vw;
+    align-items: center;
+    outline: solid 2px yellow;
+    margin-right: 5vw;
 
     @media screen and (max-width: 1024px) {
         display: none;
     }
 `
 
+export const TextWrapper = styled.div`
+    display: flex;
+    padding: 0 1.5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
+
+export const ImgWrap = styled.div`
+    width: 40vw;
+    height: 40vw;
+`
+
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    padding-right: 0px;
-    margin: 0 0 10px 0;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -511,9 +384,10 @@ export const DescriptionWrapper = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.5vh;
     padding-left: 50px;
     padding-right: 50px;
+    outline: solid 2px red;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
 
     @media screen and (max-width: 540px) and (max-height: 720px) {
