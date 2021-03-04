@@ -47,42 +47,42 @@ export const LandingTitle = styled.div`
     font-size: 6.5vh;
     font-weight: 375;
     
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
+    @media screen and (max-width: 1024px) {
         font-size: 6rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 768px) and (min-height: 1024px) {
+    @media screen and (max-width: 768px) {
         font-size: 4.5rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 540px) and (min-height: 720px) {
+    @media screen and (max-width: 540px) {
         font-size: 3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 414px) and (min-height: 736px) {
+    @media screen and (max-width: 414px) {
         font-size: 2.3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 375px) and (min-height: 667px) {
+    @media screen and (max-width: 375px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 360px) and (min-height: 640px) {
+    @media screen and (max-width: 360px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 320px) and (min-height: 568px) {
+    @media screen and (max-width: 320px) {
         font-size: 1.7rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 280px) and (min-height: 653px) {
+    @media screen and (max-width: 280px) {
         font-size: 1.4rem;
         font-weight: 500;
     }
@@ -94,49 +94,49 @@ export const LandingSubText = styled.div`
     font-weight: 300;
     padding-top: 10px;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.8rem;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
+    @media screen and (max-width: 768px) {
         font-size: 1.3rem;
         font-weight: 300;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    @media screen and (max-width: 540px) and (max-height: 720px) {
+    @media screen and (max-width: 540px) {
         font-size: 1rem;
     }
 
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 1rem;
-        font-weight: 290;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
+    @media screen and (max-width: 414px) {
         font-size: 1rem;
         font-weight: 290;
     }
 
-    @media screen and (max-width: 411px) and (max-height: 731px) {
+    @media screen and (max-width: 411px) {
         font-size: 1rem;
         font-weight: 290;
     }
 
-    @media screen and (max-width: 360px) and (max-height: 640px) {
+    @media screen and (max-width: 411px) {
+        font-size: 1rem;
+        font-weight: 290;
+    }
+
+    @media screen and (max-width: 360px) {
         font-size: 0.88rem;
         font-weight: 350;
     }
 
-    @media screen and (max-width: 320px) and (max-height: 568px) {
+    @media screen and (max-width: 320px) {
         font-size: 0.8rem;
         font-weight: 280;
     }
 
-    @media screen and (max-width: 280px) and (max-height: 653px) {
+    @media screen and (max-width: 280px) {
         font-size: 0.7rem;
         font-weight: 295;
     }
@@ -164,28 +164,8 @@ export const LearnMoreBtn = styled(LinkScroll)`
     z-index: 999;
     margin-top: 3vh;
     
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 2.6vh;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        font-size: 2.6vh;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 2vh;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 2.6vh;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        font-size: 2.6vh;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 2.3vh;
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
     }
 
     &:hover {

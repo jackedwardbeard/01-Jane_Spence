@@ -65,6 +65,11 @@ export const LogoContainer = styled.div`
         margin-top: -5px;
         margin-left: 3.5vw;
     }
+
+    @media screen and (max-width: 768px) {
+        margin-top: -2px;
+        margin-left: 3.5vw;
+    }
     
 `
 
@@ -80,7 +85,7 @@ export const NavLogo = styled(LinkScroll)`
     overflow: hidden;
 
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 1.75vh;
+        font-size: 2.4vh;
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
@@ -129,6 +134,10 @@ export const SubLogo = styled(LinkScroll)`
 
     @media screen and (max-width: 768px) {
         font-size: 1.3vh;
+    }
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.7rem;
     }
 
     @media screen and (max-width: 280px) {
