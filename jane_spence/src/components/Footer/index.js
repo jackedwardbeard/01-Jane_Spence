@@ -73,7 +73,7 @@ const Footer = () => {
             <SubFooterContainer>
                 
                 <SubText>
-                    JANE SPENCE Diabetes Education © 2021 | All Rights Reserved
+                    Jane Spence Diabetes Education © 2021 | All Rights Reserved
                 </SubText>
                
             </SubFooterContainer>

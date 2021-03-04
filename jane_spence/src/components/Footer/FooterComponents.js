@@ -408,4 +408,16 @@ export const SubText = styled.span`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5vh;
     float: left;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.6rem;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.5rem;
+    }
 `
