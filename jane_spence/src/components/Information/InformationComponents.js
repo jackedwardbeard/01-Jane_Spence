@@ -202,6 +202,10 @@ export const QuestionWrapper = styled.div`
         font-size: 1.8vh;
     }
 
+    @media screen and (max-width: 411px) and (min-height: 823px) {
+        font-size: 1.6vh;
+    }
+
     @media screen and (max-width: 375px) and (min-height: 812px) {
         font-size: 1.5vh;
     }
