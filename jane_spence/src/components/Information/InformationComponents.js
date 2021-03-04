@@ -50,6 +50,7 @@ export const Column1 = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: -3vh;
     margin-left: 5vw;
     margin-right: 5vw;
 
