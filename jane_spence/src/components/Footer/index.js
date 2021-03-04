@@ -7,8 +7,9 @@ import {
     Column2,
     Column3,
     SubFooterContainer,
-    LeftText,
-    RightText,
+    SubSubFooterContainer,
+    SubText,
+    SubSubText,
     Title,
     NavLink,
     NavLinkScroll,
@@ -60,17 +61,23 @@ const Footer = () => {
                     </Column3>
                 </Row1>
             </FooterWrapper>
+
+            <SubSubFooterContainer>
+
+                <SubSubText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
+                    Design By JACK BEARD
+                </SubSubText>
+
+            </SubSubFooterContainer>
+
             <SubFooterContainer>
                 
-                <LeftText>
-                    Jane Spence Diabetes Education © 2021
-                </LeftText>
-                
-                <RightText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
-                    Design By JACK BEARD
-                </RightText>
+                <SubText>
+                    JANE SPENCE Diabetes Education © 2021 | All Rights Reserved
+                </SubText>
                
             </SubFooterContainer>
+            
         </FooterContainer>
     )
 }

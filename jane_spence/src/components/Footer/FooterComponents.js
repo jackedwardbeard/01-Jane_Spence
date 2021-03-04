@@ -5,16 +5,24 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 export const FooterContainer = styled.div`
     background: rgb(230,230,250);
-    height: 490px;
+    height: 57vh;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        height: 570px;
+    }
 `
 
 export const FooterWrapper = styled.div`
-    height: 450px;
+    height: 45vh;
     display: grid;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        height: 450px;
+    }
 `
 
 export const Row1 = styled.div`
@@ -26,19 +34,23 @@ export const Row1 = styled.div`
 
 export const Column1 = styled.div`
     width: 30%;
-    height: 400px;
+    height: 40vh;
     float: left;
     text-align: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: -60px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: -3vw;
 
     @media screen and (max-width: 1024px) {
         margin-left: -40px;
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: -60px;
     }
 
     @media screen and (max-width: 768px) {
@@ -64,32 +76,46 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     width: 30%;
-    height: 400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 40vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
     float: left;
     text-align: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+    @media screen and (max-width: 1024px) {
+        height: 400px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 `
 
 export const Column3 = styled.div`
     width: 30%;
-    height: 400px;
+    height: 40vh;
     float: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
+    @media screen and (max-width: 1024px) {
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -132,7 +158,7 @@ export const Column3 = styled.div`
 
 export const PreFooterWrapper = styled.div`
     background: rgb(0,0,0, 0.1);
-    height: 80px;
+    height: 8vh;
     color: black;
     display: flex;
     justify-content: center;
@@ -140,13 +166,16 @@ export const PreFooterWrapper = styled.div`
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 2.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
         font-size: 1.4rem;
+        height: 80px;
+        font-size: 1.5rem;
+        padding: 0 20px;
     }
 
     @media screen and (max-width: 768px) {
@@ -179,23 +208,43 @@ export const PreFooterWrapper = styled.div`
 `
 
 export const SubFooterContainer = styled.div`
-    background: rgba(0,0,0,0.2);
-    height: 40px;
+    background: thistle;
+    height: 4vh;
     overflow: hidden;
-    display: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @media screen and (max-width: 1024px) {
+        height: 40px;
+    }
+
+`
+
+export const SubSubFooterContainer = styled.div`
+    background: rgb(0,0,0,0.9);
+    height: 8vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        height: 80px;
+    }
 
 `
 
 export const Title = styled.h3`
     color: black;
-    font-size: 1.25rem;
+    font-size: 2.5vh;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     margin-top: 30px;
 
     @media screen and (max-width: 1024px) {
         margin-top: 15px;
+        font-size: 1.25rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -241,11 +290,16 @@ export const Title = styled.h3`
 export const NavLinkScroll = styled(LinkScroll)`
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.75vh;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 1vh;
     display: grid;
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: 0.85rem;
@@ -280,12 +334,17 @@ export const NavLinkScroll = styled(LinkScroll)`
 export const NavLink = styled(LinkRouter)`
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.75vh;
     font-weight: 400;
-    margin-top: 15px;
+    margin-top: 1.5vh;
     display: grid;
     text-decoration: none;
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: 0.85rem;
@@ -322,177 +381,31 @@ export const NavLink = styled(LinkRouter)`
     }
 `
 
-export const LeftText = styled.span`
-    color: black;
+export const SubSubText = styled(LinkRouter)`
+    color: white;
+    font-size: 2.5vh;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-    float: left;
-
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.1rem;
-        margin-left: 20px;
-        margin-top: 8px;
-    }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        font-size: 0.8rem;
-        margin-left: 20px;
-        margin-top: 11px;
-    }
-
-    @media screen and (max-width: 520px) {
-        font-size: 0.6rem;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 0.6rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 0.6rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        font-size: 0.6rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 400px) {
-        font-size: 0.4rem;
-        margin-top: 17px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 0.55rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 0.55rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.55rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        font-size: 0.5rem;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 280px) and (max-height: 653px) {
-        font-size: 0.7rem;
-        margin-left: 33px;
-        margin-top: 12px;
-    }
-`
-
-export const RightText = styled(LinkRouter)`
-    color: black;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: transparent;
     border: none;
     text-decoration: none;
     cursor: pointer;
     outline: none;
     float: right;
-    margin-right: 20px;
-    margin-top: 9px;
 
-    @media screen and (max-width: 1024px) and (max-height: 1366px) {
-        font-size: 1.1rem;
-        margin-right: 20px;
-        margin-top: 8px;
-    }
-
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
-        font-size: 0.8rem;
-        margin-right: 20px;
-        margin-top: 11px;
-    }
-
-    @media screen and (max-width: 540px) and (max-height: 720px) {
-        font-size: 0.75rem;
-        margin-right: 20px;
-        margin-top: 12px;
-    }
-
-    @media screen and (max-width: 520px) {
-        font-size: 0.6rem;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 414px) and (max-height: 736px) {
-        font-size: 0.6rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 823px) {
-        font-size: 0.6rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 411px) and (max-height: 731px) {
-        font-size: 0.6rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 400px) {
-        font-size: 0.4rem;
-        margin-top: 15px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 812px) {
-        font-size: 0.55rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
-        font-size: 0.55rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 360px) and (max-height: 640px) {
-        font-size: 0.55rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 320px) and (max-height: 568px) {
-        font-size: 0.5rem;
-        margin-right: 20px;
-        margin-top: 14px;
-    }
-
-    @media screen and (max-width: 280px) {
-        display: none;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.25rem;
     }
 
     &:hover {
-        color: #068481;
+        color: thistle;
     }
+`
 
+export const SubText = styled.span`
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vh;
+    float: left;
 `
