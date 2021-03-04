@@ -19,6 +19,18 @@ export const InformationWrapper = styled.div`
     z-index: 1;
     height: 90vh;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        height: 70vh;
+    }
+
+    @media screen and (max-width: 280px) {
+        height: 90vh;
+    }
+
+    @media screen and (max-width: 375px) and (min-height: 812px) {
+        height: 90vh;
+    }
 `
 
 export const Row1 = styled.div`
@@ -40,6 +52,19 @@ export const Column1 = styled.div`
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
+
+    @media screen and (max-width: 767px) {
+        margin-top: -10.5vh;
+    }
+
+    @media screen and (max-width: 375px) and (min-height: 812px) {
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 280px) {
+        margin-top: 0vh;
+    }
+
 `
 
 export const Title = styled.h1`
@@ -174,6 +199,14 @@ export const QuestionWrapper = styled.div`
 
     @media screen and (max-width: 1024px) {
         font-size: 1.8vh;
+    }
+
+    @media screen and (max-width: 375px) and (min-height: 812px) {
+        font-size: 1.5vh;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 1.4vh;
     }
 
     &:hover {
