@@ -17,7 +17,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 100vh;
+    height: 90vh;
     display: flex;
 `
 
@@ -26,6 +26,7 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-top: -5vh;
     overflow-x: hidden;
 `
 

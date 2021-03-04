@@ -24,7 +24,7 @@ const Landing = ({id}) => {
                 Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
                 <LearnMoreBtnWrapper>
-                    <LearnMoreBtn to="about" smooth={true} spy={true} offset={-40}>
+                    <LearnMoreBtn to="about" smooth={true} spy={true} offset={-80}>
                     Learn More {String.fromCharCode(10140)}
                     </LearnMoreBtn>
                 </LearnMoreBtnWrapper>
