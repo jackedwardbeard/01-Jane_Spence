@@ -102,7 +102,7 @@ npm install http-server-proxy
 npm install react-helmet
 ```
 ### react/react-dom/react-router-dom
-##### allows us to modify the tab logo/description.
+#### allows us to route to external links in the footer.
 ```bash
 npm install react/react-dom/react-router/dom
 ```
