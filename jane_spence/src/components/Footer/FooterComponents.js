@@ -240,50 +240,60 @@ export const Title = styled.h3`
     font-size: 2.5vh;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 30px;
+    margin-top: 1.5vh;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 1.25rem;
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     @media screen and (max-width: 685px) {
         font-size: 1rem;
-        margin-top: 8px;
+        margin-top: 6px;
     }
 
     @media screen and (max-width: 540px) {
         font-size: 0.9rem;
-        margin-top: 5px;
+        margin-top: 2px;
     }
 
     @media screen and (max-width: 414px) {
         font-size: 0.8rem;
-        margin-top: 0px;
+        margin-top: -1px;
     }
 
     @media screen and (max-width: 411px) {
-        margin-top: 5px;
+        margin-top: 3px;
+    }
+
+    @media screen and (max-width: 375px) and (min-height: 667px) {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 375px) and (min-height: 812px) {
+        font-size: 0.9rem;
+        margin-top: 8px;
     }
 
     @media screen and (max-width: 360px) {
         font-size: 0.9rem;
-        margin-top: 5px;
+        margin-top: 3px;
     }
 
     @media screen and (max-width: 320px) {
         font-size: 0.7rem;
-        margin-top: 15px;
+        margin-top: 13px;
 
     }
 
     @media screen and (max-width: 280px) {
         font-size: 0.75rem;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 `
 
