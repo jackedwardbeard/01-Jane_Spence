@@ -52,7 +52,12 @@ export const Column1 = styled.div`
     text-align: center;
     margin-top: -3vh;
     margin-left: 5vw;
-    margin-right: 5vw;
+    margin-right: 2vw;
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     @media screen and (max-width: 767px) {
         margin-top: -10.5vh;
@@ -105,7 +110,7 @@ export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 7vw;
+    margin-right: 10vw;
 
     @media screen and (max-width: 1024px) {
         display: none;
