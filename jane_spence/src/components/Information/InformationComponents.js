@@ -159,8 +159,12 @@ export const Button = styled(LinkScroll)`
 
     @media screen and (max-width: 1024px) {
         font-size: 0.8rem;
-        padding: 10px 25px;
+        padding: 10px 20px;
         border-radius: 40px;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.7rem;
     }
 
     @media screen and (max-width: 280px) {
