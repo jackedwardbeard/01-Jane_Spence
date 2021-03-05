@@ -157,6 +157,16 @@ export const Button = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+        border-radius: 40px;
+    }
+
+    @media screen and (max-width: 280px) {
+        font-size: 0.65rem;
+    }
+
     &:hover {
         transition: all 0.2s ease-in-out;
         background: white;

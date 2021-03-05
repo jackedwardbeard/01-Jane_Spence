@@ -163,9 +163,11 @@ export const LearnMoreBtn = styled(LinkScroll)`
     text-decoration: none;
     z-index: 999;
     margin-top: 3vh;
-    
-    @media screen and (max-width: 414px) {
-        font-size: 1rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.25rem;
+        padding: 10px 15px;
+        border-radius: 40px;
     }
 
     &:hover {
