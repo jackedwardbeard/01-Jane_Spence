@@ -126,6 +126,10 @@ export const MapWrapper = styled.div`
     padding-top: 2.5vh;
     margin-bottom: 2.5vh;
 
+    @media screen and (max-width: 1600px) {
+        height: 30vh;
+    }
+
     @media screen and (max-width: 1250px) {
         height: 250px;
         width: 350px;

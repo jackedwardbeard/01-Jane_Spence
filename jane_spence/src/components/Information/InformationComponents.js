@@ -38,7 +38,7 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: -5vh;
+    margin-top: -4vh;
     overflow-x: hidden;
 `
 
@@ -51,7 +51,7 @@ export const Column1 = styled.div`
     align-items: center;
     text-align: center;
     margin-top: -3vh;
-    margin-left: 5vw;
+    margin-left: 6vw;
     margin-right: 2vw;
 
     @media screen and (max-width: 1024px) {
@@ -74,7 +74,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 5vh;
+    font-size: 4.5vh;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -110,7 +110,7 @@ export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10vw;
+    margin-right: 8vw;
 
     @media screen and (max-width: 1024px) {
         display: none;

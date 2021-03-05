@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
-    height: 8.171603677221654vh;
+    height: 80px;
     margin-top: min(-80px, -8.171603677221654vh);
     min-height: 80px;
     overflow: hidden;
@@ -17,6 +17,10 @@ export const Nav = styled.nav`
     z-index: 999;
     transition: 0.5s all ease;
 
+    @media screen and (min-width: 1920px) {
+        height: 8.171603677221654vh;
+    }
+
     @media screen and (max-width: 960px) {
         width: 100%;
         overflow-x: hidden;
@@ -27,7 +31,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    height: 8.171603677221654vh;
+    height: 80px;
     min-height: 80px;
     z-index; 1;
     width: 100%;
@@ -35,6 +39,10 @@ export const NavbarContainer = styled.div`
 
     @media screen and (max-width:768px) {
         justify-content: start;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 8.171603677221654vh;
     }
 
     @media screen and (max-width: 1024px) and (max-height: 1365px) {
@@ -166,10 +174,16 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 8vh;
-    margin: 1.5vw;
-    font-size: 1.75vh;
+    height: 80px;
+    margin: 30px;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 1.75vh;
+        height: 8.171603677221654vh;
+        margin: 3.0643513789581207vh;
+    }
     
     @media screen and (max-width: 1024px) {
         font-size: 1rem;
