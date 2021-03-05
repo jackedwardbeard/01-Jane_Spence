@@ -225,13 +225,9 @@ export const SubmitBtn = styled.button`
     text-decoration: none;
 
     @media screen and (max-width: 1024px) {
-        padding: 1vh 4vw;
-        font-size: 2vh;
-    }
-
-    @media screen and (max-width: 767px) {
-        padding: 10px 20px;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        padding: 10px 35px;
+        border-radius: 40px;
     }
 
     &:hover {

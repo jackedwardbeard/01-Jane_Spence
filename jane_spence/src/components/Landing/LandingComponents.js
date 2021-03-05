@@ -166,7 +166,7 @@ export const LearnMoreBtn = styled(LinkScroll)`
 
     @media screen and (max-width: 1024px) {
         font-size: 1.25rem;
-        padding: 10px 15px;
+        padding: 10px 35px;
         border-radius: 40px;
     }
 
