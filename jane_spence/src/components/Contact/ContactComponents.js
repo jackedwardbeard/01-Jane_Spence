@@ -31,7 +31,7 @@ export const Row1 = styled.div`
 
 export const Column1 = styled.div`
     padding: 0 1vw;
-    margin-right: 5vw;
+    margin-right: 2.5vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -56,13 +56,12 @@ export const Title = styled.h1`
 export const Body = styled.ul`
     
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     margin-bottom: 5px;
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +89,7 @@ export const Img = styled.img`
     height: 100%;
     padding-right: 0px;
     margin: 0 0 10px 0;
-    margin-top: 30px;
+    margin-top: 3vh;
 `
 
 export const Item = styled.div`
@@ -330,7 +329,7 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: white;
-    font-size: 1.8vh;
+    font-size: 1.9vh;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 `

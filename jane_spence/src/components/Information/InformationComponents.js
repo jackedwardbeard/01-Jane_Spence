@@ -79,7 +79,7 @@ export const Subtitle = styled.h1`
     margin-top: 2vh;
     font-size: 3.5vh;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
 `
@@ -87,7 +87,7 @@ export const Subtitle = styled.h1`
 export const Body = styled.p`
     margin-top: 1.5vh;
     font-size: 2vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
@@ -96,7 +96,7 @@ export const Body = styled.p`
 export const SubBody = styled.p`
     margin-top: 1.5vh;
     font-size: 2vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
 `
@@ -138,7 +138,7 @@ export const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
 `
 
@@ -208,6 +208,7 @@ export const QuestionWrapper = styled.div`
     font-size: 2.5vh;
     height: 5vh;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2vh;
@@ -249,7 +250,7 @@ export const DescriptionWrapper = styled.div`
     width: 90%;
     justify-content: center;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-bottom: 1vh;
     padding-left: 2vw;
     padding-right: 2vw;
