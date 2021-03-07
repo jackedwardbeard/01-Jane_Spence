@@ -16,11 +16,7 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
-
-    @media screen and (max-width: 960px) {
-        width: 100%;
-        overflow-x: hidden;
-    }
+    width: 100%;
     
 ` ;
 
@@ -102,7 +98,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     font-size: max(0.8rem, 1.75vmin);
     height: max(80px, 8.171603677221654vmin);
-    margin: 3.0643513789581207vmin;
+    margin: max(40px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 768px) {
@@ -115,7 +111,7 @@ export const NavLinks = styled(LinkScroll)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding; 0 1vmin;
+    padding; 0 max(10px, 1vmin);
     height: 100%;
     cursor: pointer;
 
@@ -140,12 +136,12 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkScroll)`
-    border-radius: 3vmin;
+    border-radius: max(30px, 3vmin);
     background: thistle;
     white-space: nowrap;
-    padding: 1.1vmin 2.2vmin;
+    padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
     color: black;
-    font-size: 1.85vmin;
+    font-size: max(1rem, 1.85vmin);
     font-weight: 450;
     outline: none;
     border: none;
