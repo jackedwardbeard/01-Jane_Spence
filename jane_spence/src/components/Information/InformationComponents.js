@@ -32,7 +32,11 @@ export const Row1 = styled.div`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    
+    margin-top: -3vmin;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 0;
+    }
 `
 
 export const Column1 = styled.div`
@@ -45,7 +49,6 @@ export const Column1 = styled.div`
     width: 100%;
     margin-left: 3vmin;
     margin-right:  0;
-    margin-top: -5vmin;
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
@@ -116,12 +119,14 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%:
-    outline: solid 2px blue;
 `
 
 export const ImgWrap = styled.div`
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -130,7 +135,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 100%;
+    height: 80%;
 `
 
 export const ButtonWrapper = styled.div`
@@ -157,6 +162,11 @@ export const Button = styled(LinkScroll)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none; 
+
+    @media screen and (max-width: 320px) {
+        font-size: 0.7rem;
+        padding: max(10px, 1vmin) max(10px, 2vmin);
+    }
 
     &:hover {
         transition: all 0.2s ease-in-out;

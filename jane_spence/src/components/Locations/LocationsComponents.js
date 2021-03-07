@@ -38,7 +38,6 @@ export const Row1 = styled.div`
     justify-content: center;
     margin: auto;
     width: 100%;
-    outline: solid 2px green;
 
     @media screen and (max-width: 1250px) {
         display: flex;
@@ -88,13 +87,15 @@ export const Column2 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 4vmin;
-    margin-left: 4vmin;
+    margin-right: -4vmin;
+    margin-left: -4vmin;
     text-align: center;
     width: 30%;
 
     @media screen and (max-width: 1250px) {
         width: 90%;
+        margin-right: 0;
+        margin-left: 0;
     }
 `
 
@@ -119,9 +120,8 @@ export const MapWrapper = styled.div`
     height: max(250px, 40vh);
     width: 22.5vw;
     overflow: hidden;
-    margin-top: max(20px, 5vmin);
+    margin-top: max(10px, 2.5vmin);
     margin-bottom: max(10px, 2.5vmin);
-    outline: solid 2px red;
 
     @media screen and (max-width: 1250px) {
         width: 90%;

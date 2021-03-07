@@ -158,7 +158,7 @@ const Contact = ({id}) => {
                     <Column2>
                         <SubTitleWrapper data-aos='fade-down'>
                             <SubTitle>
-                                How Can I Book A Consultation?
+                                Consultation Booking
                             </SubTitle>
                         </SubTitleWrapper>
                         <DescriptionWrapper data-aos='fade-left'>
