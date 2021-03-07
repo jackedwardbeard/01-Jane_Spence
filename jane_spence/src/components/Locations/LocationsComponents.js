@@ -20,10 +20,14 @@ export const InformationWrapper = styled.div`
     display: flex;
 
     @media screen and (max-width: 1250px) {
-        height: max(90vh, 1550px);
+        height: max(90vh, 1300px);
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1024px) {
+        height: max(90vh, 1500px);
+    }
+
+    @media screen and (max-width: 768px) {
         height: max(90vh, 1300px);
     }
 
