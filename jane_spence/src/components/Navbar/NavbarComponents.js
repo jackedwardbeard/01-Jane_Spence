@@ -75,7 +75,6 @@ export const SubLogo = styled(LinkScroll)`
 export const MobileIcon = styled.div`
     display: none;
     margin-top: max(6.5px, 0.5vmin);
-    outline: solid 2px orange;
 
     @media screen and (max-width: 768px) {
         display: flex;

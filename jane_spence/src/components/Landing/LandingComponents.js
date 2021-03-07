@@ -60,7 +60,6 @@ export const LearnMoreBtnWrapper = styled.nav`
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     margin-top: max(20px, 2vmin);
-    outline: solid 2px red;
 `
 
 export const LearnMoreBtn = styled(LinkScroll)`
