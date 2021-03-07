@@ -32,10 +32,6 @@ export const Row1 = styled.div`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-
-    @media screen and (max-width: 1366px) {
-        margin-top: -10vmin;
-    }
     
 `
 
@@ -49,6 +45,7 @@ export const Column1 = styled.div`
     width: 100%;
     margin-left: 3vmin;
     margin-right:  2vmin;
+    margin-top: -5vmin;
 
     @media screen and (max-width: 1024px) {
         margin-left: 15px;
@@ -74,27 +71,19 @@ export const Subtitle = styled.h1`
 
 export const Body = styled.p`
     margin-top: 1vh;
-    font-size: max(1.2rem, 1.8vmin);
+    font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
-
-    @media screen and (max-width: 1500px) {
-        font-size: max(0.9rem, 1.8vmin);
-    }
 `
 
 export const SubBody = styled.p`
     margin-top: 1vh;
-    font-size: max(1.2rem, 1.8vmin);
+    font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-
-    @media screen and (max-width: 1500px) {
-        font-size: max(0.9rem, 1.8vmin);
-    }
 `
 
 export const Column2 = styled.div`
@@ -140,17 +129,18 @@ export const ButtonWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+    width: 80%;
 
 `
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
-    border-radius: max(30px, 5vmin);
+    border-radius: max(20px, 5vmin);
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: max(10px, 1vmin) max(20px, 2vmin);
+    padding: max(10px, 1vmin) max(15px, 2vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: max(0.8rem, 2vmin);
+    font-size: max(0.75rem, 2vmin);
     font-weight: 600;
     outline: none;
     border: none;
@@ -192,22 +182,19 @@ export const QuestionWrapper = styled.div`
     
     background: rgb(13,16,22,0.4);
     border-radius: 5vmin;
-    padding: 20px;
+    padding: 25px;
     cursor: pointer;
-    font-size: 2.75vmin;
+    font-size: max(1rem, 1.25vw);
     height: 5vmin;
     display: flex;
     font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
+    text-align: left;
     align-items: center;
-    margin-bottom: 2vmin;
-
-    @media screen and (max-width: 768px) {
-        font-size: 3.1vmin;
-    }
+    margin-bottom: max(20px, 2vmin);
 
     @media screen and (max-width: 280px) {
-        font-size: 3vmin;
+        font-size: max(0.8rem, 1.25vw);
     }
 
     &:hover {
@@ -220,7 +207,7 @@ export const AnswerWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vmin;
+    margin-bottom: max(20px, 2vmin);
     font-size: max(0.8rem, 2vmin);
 
 `
