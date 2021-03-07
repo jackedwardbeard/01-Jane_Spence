@@ -48,21 +48,22 @@ export const Column1 = styled.div`
     margin-top: -5vmin;
 
     @media screen and (max-width: 1024px) {
+        margin-top: 0;
         margin-left: 15px;
         margin-right: 15px;
     }
 `
 
 export const Title = styled.h1`
-    font-size: max(1.75rem, 4.5vmin);
+    font-size: max(2rem, 4.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 `
 
 export const Subtitle = styled.h1`
-    margin-top: 2vh;
-    font-size: max(1.5rem, 3.5vmin);
+    margin-top: 2.5vh;
+    font-size: max(1.75rem, 3.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -76,6 +77,10 @@ export const Body = styled.p`
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
+
+    @media screen and (max-width: 1024px) {
+        font-size: max(0.85rem, 2vmin);
+    }
 `
 
 export const SubBody = styled.p`
@@ -84,6 +89,10 @@ export const SubBody = styled.p`
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
+
+    @media screen and (max-width: 1024px) {
+        font-size: max(0.85rem, 2vmin);
+    }
 `
 
 export const Column2 = styled.div`
@@ -129,7 +138,7 @@ export const ButtonWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    width: 80%;
+    width: 100%;
 
 `
 
@@ -140,15 +149,13 @@ export const Button = styled(LinkScroll)`
     white-space: nowrap;
     padding: max(10px, 1vmin) max(15px, 2vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: max(0.75rem, 2vmin);
+    font-size: max(0.85rem, 2vmin);
     font-weight: 600;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    text-decoration: none;
-
-    
+    text-decoration: none; 
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -163,8 +170,8 @@ export const AccordionWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 3vmin;
-    margin-bottom: 3vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
     overflow: hidden;
     padding-left: 2vmin;
     padding-right: 2vmin;
