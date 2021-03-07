@@ -98,7 +98,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     font-size: max(0.8rem, 1.75vmin);
     height: max(80px, 8.171603677221654vmin);
-    margin: max(40px, 3.0643513789581207vmin);
+    margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 768px) {
