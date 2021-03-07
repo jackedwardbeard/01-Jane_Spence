@@ -7,6 +7,8 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -17,30 +19,30 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: max(90vh, 400px);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max(90vh, 700px);
 `
 
 export const Row1 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    height: max(80vh, 300px);
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
 
-    @media screen and (max-width: 767px) {
-        height: max(100vh, 400px);
-        margin-top: min(-40px, -10vmin);
+    @media screen and (max-width: 1366px) {
+        margin-top: -10vmin;
     }
+    
 `
 
 export const Column1 = styled.div`
     grid-area: col1;
     display: flex;
     overflow: hidden;
-    height: max(80vh, 300px);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -52,22 +54,18 @@ export const Column1 = styled.div`
         margin-left: 15px;
         margin-right: 15px;
     }
-
-    @media screen and (max-width: 767px) {
-        height: max(100vh, 400px);
-    }
 `
 
 export const Title = styled.h1`
-    font-size: max(2rem, 4.5vmin);
+    font-size: max(1.75rem, 4.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 `
 
 export const Subtitle = styled.h1`
-    margin-top: max(20px, 2vh);
-    font-size: max(1.75rem, 3.5vmin);
+    margin-top: 2vh;
+    font-size: max(1.5rem, 3.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -75,27 +73,27 @@ export const Subtitle = styled.h1`
 `
 
 export const Body = styled.p`
-    margin-top: max(20px, 1.75vh);
-    font-size: max(1.25rem, 2vmin);
+    margin-top: 1vh;
+    font-size: max(1.2rem, 1.8vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
 
-    @media screen and (max-width: 767px) {
-        font-size: max(0.75rem, 1vmin);
+    @media screen and (max-width: 1500px) {
+        font-size: max(0.9rem, 1.8vmin);
     }
 `
 
 export const SubBody = styled.p`
-    margin-top: max(20px, 1.5vh);
-    font-size: max(1.25rem, 2vmin);
+    margin-top: 1vh;
+    font-size: max(1.2rem, 1.8vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
-    
-    @media screen and (max-width: 767px) {
-        font-size: max(0.75rem, 1vmin);
+
+    @media screen and (max-width: 1500px) {
+        font-size: max(0.9rem, 1.8vmin);
     }
 `
 
@@ -103,9 +101,10 @@ export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: max(80px, 3vmin);
-    height: max(70vh, 250px);
+    margin-right: 3vmin;
+    height: 80%;
     width: 100%;
+    padding-right: max(15px, 2.5vw);
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -118,6 +117,8 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%:
+    outline: solid 2px blue;
 `
 
 export const ImgWrap = styled.div`
@@ -144,12 +145,12 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
-    border-radius: 5vh;
+    border-radius: max(30px, 5vmin);
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: 1vh 2vw;
+    padding: max(10px, 1vmin) max(20px, 2vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: 2vh;
+    font-size: max(0.8rem, 2vmin);
     font-weight: 600;
     outline: none;
     border: none;
@@ -157,19 +158,7 @@ export const Button = styled(LinkScroll)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
-    @media screen and (max-width: 1024px) {
-        font-size: 0.8rem;
-        padding: 10px 20px;
-        border-radius: 40px;
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.7rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.65rem;
-    }
+    
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -184,11 +173,11 @@ export const AccordionWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
     overflow: hidden;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
     width: 100%;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
 `
@@ -202,31 +191,23 @@ export const Accordion = styled.div`
 export const QuestionWrapper = styled.div`
     
     background: rgb(13,16,22,0.4);
-    border-radius: 5vh;
-    padding: 2vh;
+    border-radius: 5vmin;
+    padding: 20px;
     cursor: pointer;
-    font-size: 2.5vh;
-    height: 5vh;
+    font-size: 2.75vmin;
+    height: 5vmin;
     display: flex;
     font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2vh;
+    margin-bottom: 2vmin;
 
-    @media screen and (max-width: 1024px) {
-        font-size: 1.8vh;
-    }
-
-    @media screen and (max-width: 411px) and (min-height: 823px) {
-        font-size: 1.6vh;
-    }
-
-    @media screen and (max-width: 375px) and (min-height: 812px) {
-        font-size: 1.5vh;
+    @media screen and (max-width: 768px) {
+        font-size: 3.1vmin;
     }
 
     @media screen and (max-width: 280px) {
-        font-size: 1.4vh;
+        font-size: 3vmin;
     }
 
     &:hover {
@@ -239,8 +220,8 @@ export const AnswerWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vh;
-    font-size: 2vh;
+    margin-bottom: 2vmin;
+    font-size: max(0.8rem, 2vmin);
 
 `
 
@@ -250,16 +231,16 @@ export const DescriptionWrapper = styled.div`
     width: 90%;
     justify-content: center;
     align-items: center;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    margin-top: 2vmin;
+    margin-bottom: 1vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
 `
 
 export const Description = styled.p`
     color: white;
-    font-size: 2vh;
+    font-size: max(0.8rem, 2vmin);
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 `

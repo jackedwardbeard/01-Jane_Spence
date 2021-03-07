@@ -82,7 +82,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                     {description}
                                 </Description>
                             </DescriptionWrapper>
-                            <IconContext.Provider value={{ color: 'plum', size: '3vh'}}>
+                            <IconContext.Provider value={{ color: 'plum', size: 'max(1rem, 2.5vmin'}}>
                                 <AccordionWrapper showAccordion={showAccordion}>
                                     <Accordion>
                                         {
