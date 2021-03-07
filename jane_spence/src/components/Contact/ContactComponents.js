@@ -10,14 +10,10 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 100vh;
+    height: max(90vh, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media screen and (max-width: 1024px) {
-        height: 130vh;
-    }
 `
 
 export const Row1 = styled.div`
@@ -25,13 +21,11 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 70vh;
-    width: 90vw;
 `
 
 export const Column1 = styled.div`
-    padding: 0 1vw;
-    margin-right: 2.5vw;
+    padding: 0 1vmin;
+    margin-right: 2.5vmin;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -39,15 +33,15 @@ export const Column1 = styled.div`
     align-items: center;
 
     @media screen and (max-width: 1024px) {
-        margin-right: 0vw;
-        margin-top: 0vh;
+        margin-right: 0;
+        margin-top: 0;
     }
 
     
 `
 
 export const Title = styled.h1`
-    font-size: 5vh;
+    font-size: max(2rem, 4.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: thistle;
@@ -55,7 +49,7 @@ export const Title = styled.h1`
 
 export const Body = styled.ul`
     
-    font-size: 1.5rem;
+    font-size: max(0.75rem, 1.5vmin);
     font-family: 'Open Sans', sans-serif;
     color: white;
     margin-bottom: 5px;
@@ -93,18 +87,10 @@ export const Img = styled.img`
 `
 
 export const Item = styled.div`
-    font-size: 2vh;
+    font-size: max(1rem, 2vmin);
     color: white;
     margin-top: 1vh;
     margin-bottom: 1vh;
-
-    @media screen and (max-width: 1024px) {
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 1rem;
-    }
 `
 
 export const ContactWrap = styled.div`
@@ -125,80 +111,30 @@ export const ContactTitle = styled.h2`
 export const Label = styled.div`
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-top: max(30px, 1vmin);
+    margin-bottom: max(20px, 1vh);
     font-weight: 500;
-    font-size: 2.5vh;
-
-    @media screen and (max-width: 1366px) {
-        font-size: 1.2rem;
-        margin-top: -10px;
-    }
-
-    @media screen and (max-width: 1280px) {
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-        font-size: 1.7rem;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 1.4rem;
-        
-    }
+    font-size: max(1.25rem, 2.5vh);
 `
 
 export const Input = styled.input`
-    height: 4vh;
-    width: 14.6vw;
-    font-size: 2vh;
+    height: max(40px, 4vmin);
+    width: max(280px, 14.6vmin);
+    font-size: (1.2rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
-    padding-left: 0.5vw;
-    margin-top: 1vh;
-
-    @media screen and (max-width: 1024px) {
-        height: 40px;
-        width: 280px;
-        font-size: 1.2rem;
-        padding-left: 5px;
-    }
-
-    @media screen and (max-width: 320px) {
-        width: 250px;
-        
-    }
-
-    @media screen and (max-width: 280px) {
-        width: 240px;
-        
-    }
+    padding-left: max(5px, 0.5vmin);
+    margin-top: max(5px, 1vmin);
 `
 
 export const InputLarge = styled.textarea`
-    height: 12vh;
-    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 0.5vw;
-    padding-top: 1vh;
-    width: 14.6vw;
-    margin-top: 1vh;
+    padding-top: max(5px, 1vmin);
     type: textarea;
-
-    @media screen and (max-width: 1024px) {
-        height: 100px;
-        font-size: 1.2rem;
-        width: 280px;
-        padding-left: 5px;
-    }
-
-    @media screen and (max-width: 320px) {
-        width: 250px; 
-    }
-
-    @media screen and (max-width: 280px) {
-        width: 240px; 
-    }
+    height: max(100px, 10vmin);
+    font-size: (1.2rem, 2vmin);
+    width: max(280px, 14.6vmin);
+    padding-left: max(5px, 0.5vmin);
+    margin-top: max(5px, 1vmin);
 `
 
 export const BtnWrapper = styled.div`
@@ -322,7 +258,7 @@ export const DescriptionWrapper = styled.div`
     width: 100%;
     line-height: 1;
 
-    @media screen and (max-width: 1270px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `
@@ -340,7 +276,7 @@ export const SubTitleWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 1270px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `

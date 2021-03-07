@@ -118,7 +118,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                 showButton={showButton}
                                 smooth={true} 
                                 spy={true} 
-                                offset={-30}
+                                offset={-80}
                                 >
                                 {buttonText}
                                 </Button>

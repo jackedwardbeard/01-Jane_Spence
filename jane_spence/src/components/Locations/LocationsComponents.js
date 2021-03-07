@@ -20,7 +20,11 @@ export const InformationWrapper = styled.div`
     display: flex;
 
     @media screen and (max-width: 1250px) {
-        height: max(90vh, 1250px);
+        height: max(90vh, 1550px);
+    }
+
+    @media screen and (max-width: 767px) {
+        height: max(90vh, 1300px);
     }
 
     @media screen and (max-width: 320px) {
@@ -34,10 +38,11 @@ export const Row1 = styled.div`
     justify-content: center;
     margin: auto;
     width: 100%;
-    
+    outline: solid 2px green;
 
     @media screen and (max-width: 1250px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 `
 
@@ -50,6 +55,11 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     text-align: center;
+    width: 30%;
+
+    @media screen and (max-width: 1250px) {
+        width: 90%;
+    }
 `
 
 export const Title = styled.h1`
@@ -81,6 +91,11 @@ export const Column2 = styled.div`
     margin-right: 4vmin;
     margin-left: 4vmin;
     text-align: center;
+    width: 30%;
+
+    @media screen and (max-width: 1250px) {
+        width: 90%;
+    }
 `
 
 export const Column3 = styled.div`
@@ -93,18 +108,29 @@ export const Column3 = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 30%;
+
+    @media screen and (max-width: 1250px) {
+        width: 90%;
+    }
 `
 
 export const MapWrapper = styled.div`
     height: max(250px, 40vh);
     width: 22.5vw;
     overflow: hidden;
-    margin-top: max(20px, 2.5vmin);
+    margin-top: max(20px, 5vmin);
     margin-bottom: max(10px, 2.5vmin);
+    outline: solid 2px red;
 
     @media screen and (max-width: 1250px) {
         width: 90%;
         height: max(250px, 30vh);
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+        height: max(250px, 20vh);
     }
 
     

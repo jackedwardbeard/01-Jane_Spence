@@ -39,7 +39,7 @@ const Footer = () => {
                         <NavLinkScroll data-aos='fade-right' to="about" smooth={true} spy={true} offset={-80}>About</NavLinkScroll>
                         <NavLinkScroll data-aos='fade-left' to="faq" smooth={true} spy={true} offset={-80}>FAQ</NavLinkScroll>
                         <NavLinkScroll data-aos='fade-right' to="locations" smooth={true} spy={true} offset={-80}>Locations</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-left' to="contact" smooth={true} spy={true} offset={-30}>Contact</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-left' to="contact" smooth={true} spy={true} offset={-80}>Contact</NavLinkScroll>
                     </Column1>
                     <Column2>
                         <Title data-aos='fade-right'>
