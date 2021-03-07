@@ -5,8 +5,8 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
-    height: 80px;
-    margin-top: min(-80px, -8.171603677221654vh);
+    height: max(80px, 8.171603677221654vmin);
+    margin-top: min(-80px, -8.171603677221654vmin);
     min-height: 80px;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
@@ -16,10 +16,6 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
-
-    @media screen and (min-width: 1920px) {
-        height: 8.171603677221654vh;
-    }
 
     @media screen and (max-width: 960px) {
         width: 100%;
@@ -31,26 +27,16 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: max(80px, 8.171603677221654vmin);
     min-height: 80px;
     z-index; 1;
     width: 100%;
-    padding: 0 0.5vw; 
+    padding: 0 0.5vmin; 
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         justify-content: start;
+        margin-left: 25px;
     }
-
-    @media screen and (min-width: 1920px) {
-        height: 8.171603677221654vh;
-    }
-
-    @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        height: 80px;
-        padding: 0 24px; 
-        max-width: 1100px;
-    }
-    
 `;
 
 export const LogoContainer = styled.div`
@@ -58,19 +44,7 @@ export const LogoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -0.5vh;
-    margin-left: 15vw;
-
-    @media screen and (max-width: 1024px) {
-        margin-top: -5px;
-        margin-left: 3.5vw;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-top: -2px;
-        margin-left: 3.5vw;
-    }
-    
+    margin-top: -0.5vmin;
 `
 
 export const NavLogo = styled(LinkScroll)`
@@ -81,33 +55,12 @@ export const NavLogo = styled(LinkScroll)`
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    font-size: 3.5vh;
+    font-size: max(1.6rem, 3.5vmin);
     overflow: hidden;
 
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 2.4vh;
-    }
-
-    @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 906px) {
-        font-size: 1rem;
-    }
-
-    @media screen and (max-width: 797px) {
-        font-size: 0.75rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.5rem;
-    }
-
     @media screen and (max-width: 280px) {
-        margin-left: -10px;
+        font-size: max(1.3rem, 3vmin);
     }
-
 `;
 
 export const SubLogo = styled(LinkScroll)`
@@ -117,37 +70,15 @@ export const SubLogo = styled(LinkScroll)`
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     position: relative;
-    font-size: 1.3vh;
+    font-size: max(0.75rem, 1.3vmin);
     overflow: hidden;
 
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        font-size: 1vh;
-    }
-
-    @media screen and (max-width: 1024px) and (max-height: 1365px) {
-        font-size: 0.7rem;
-    }
-
-    @media screen and (max-width: 906px) {
-        font-size: 0.6rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.3vh;
-    }
-
-    @media screen and (max-width: 414px) {
-        font-size: 0.7rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        margin-left: -10px;
-    }
+    
 `
 
 export const MobileIcon = styled.div`
     display: none;
-    margin-top: 0.5vh;
+    margin-top: max(3px, 0.5vmin);
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -159,11 +90,6 @@ export const MobileIcon = styled.div`
         cursor: pointer;
         color: white;
     }
-
-    @media screen and (max-width: 280px) {
-        font-size: 1.6rem;
-        padding-top: 2.5px;
-    }
 `;
 
 export const NavMenu = styled.ul`
@@ -174,26 +100,10 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
-    margin: 30px;
-    font-size: 1rem;
+    font-size: max(0.8rem, 1.75vmin);
+    height: max(80px, 8.171603677221654vmin);
+    margin: 3.0643513789581207vmin;
     font-family: 'Montserrat', sans-serif;
-
-    @media screen and (min-width: 1920px) {
-        font-size: 1.75vh;
-        height: 8.171603677221654vh;
-        margin: 3.0643513789581207vh;
-    }
-    
-    @media screen and (max-width: 1024px) {
-        font-size: 1rem;
-        height: 80px;
-        margin: 30px;
-    }
-
-    @media screen and (max-width: 906px) {
-        font-size: 1.5vh;
-    }
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -205,16 +115,16 @@ export const NavLinks = styled(LinkScroll)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding; 0 1rem;
+    padding; 0 1vmin;
     height: 100%;
     cursor: pointer;
 
     &.active {
-        border-bottom: 0.4vh solid thistle;
+        border-bottom: 0.4vmin solid thistle;
     }
 
     &:hover {
-        border-bottom: 0.4vh solid thistle;
+        border-bottom: 0.4vmin solid thistle;
     }
 
 `;
@@ -230,28 +140,18 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkScroll)`
-    border-radius: 3vh;
-    margin-right: 15vw;
+    border-radius: 3vmin;
     background: thistle;
     white-space: nowrap;
-    padding: 1.1vh 2.2vh;
+    padding: 1.1vmin 2.2vmin;
     color: black;
-    font-size: 1.85vh;
+    font-size: 1.85vmin;
     font-weight: 450;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
-    @media screen and (max-width: 1024px) {
-        margin-right: 3.5vw;
-    }
-
-    @media screen and (max-width: 1024px) and (min-height: 1366px) {
-        padding: 0.65vh 1.5vh;
-        font-size: 1.2vh;
-    }
 
     &:hover {
         transition: all 0.2s ease-in-out;
