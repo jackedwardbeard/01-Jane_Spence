@@ -47,42 +47,42 @@ export const LandingTitle = styled.div`
     font-size: 6.5vh;
     font-weight: 375;
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) and (min-height: 1366px) {
         font-size: 6rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) and (min-height: 1024px) {
         font-size: 4.5rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 540px) and (min-height: 720px) {
         font-size: 3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 414px) and (min-height: 736px) {
         font-size: 2.3rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 375px) and (max-height: 812px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 360px) and (min-height: 640px) {
         font-size: 2rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) and (min-height: 568px) {
         font-size: 1.7rem;
         font-weight: 500;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 280px) and (min-height: 653px) {
         font-size: 1.4rem;
         font-weight: 500;
     }
