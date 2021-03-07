@@ -17,20 +17,8 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: 90vh;
+    height: max(90vh, 400px);
     display: flex;
-
-    @media screen and (max-width: 767px) {
-        height: 70vh;
-    }
-
-    @media screen and (max-width: 280px) {
-        height: 90vh;
-    }
-
-    @media screen and (max-width: 375px) and (min-height: 812px) {
-        height: 90vh;
-    }
 `
 
 export const Row1 = styled.div`
@@ -38,21 +26,27 @@ export const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: -4vh;
+    height: max(80vh, 300px);
+    width: 100%;
     overflow-x: hidden;
+
+    @media screen and (max-width: 767px) {
+        height: max(100vh, 400px);
+        margin-top: min(-40px, -10vmin);
+    }
 `
 
 export const Column1 = styled.div`
     grid-area: col1;
     display: flex;
     overflow: hidden;
-    height: 100vh;
+    height: max(80vh, 300px);
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -3vh;
-    margin-left: 6vw;
-    margin-right: 2vw;
+    width: 100%;
+    margin-left: 3vmin;
+    margin-right:  2vmin;
 
     @media screen and (max-width: 1024px) {
         margin-left: 15px;
@@ -60,29 +54,20 @@ export const Column1 = styled.div`
     }
 
     @media screen and (max-width: 767px) {
-        margin-top: -10.5vh;
+        height: max(100vh, 400px);
     }
-
-    @media screen and (max-width: 375px) and (min-height: 812px) {
-        margin-top: 0;
-    }
-
-    @media screen and (max-width: 280px) {
-        margin-top: 0vh;
-    }
-
 `
 
 export const Title = styled.h1`
-    font-size: 4.5vh;
+    font-size: max(2rem, 4.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 `
 
 export const Subtitle = styled.h1`
-    margin-top: 2vh;
-    font-size: 3.5vh;
+    margin-top: max(20px, 2vh);
+    font-size: max(1.75rem, 3.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -90,27 +75,37 @@ export const Subtitle = styled.h1`
 `
 
 export const Body = styled.p`
-    margin-top: 1.5vh;
-    font-size: 2vh;
+    margin-top: max(20px, 1.75vh);
+    font-size: max(1.25rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
+
+    @media screen and (max-width: 767px) {
+        font-size: max(0.75rem, 1vmin);
+    }
 `
 
 export const SubBody = styled.p`
-    margin-top: 1.5vh;
-    font-size: 2vh;
+    margin-top: max(20px, 1.5vh);
+    font-size: max(1.25rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
+    
+    @media screen and (max-width: 767px) {
+        font-size: max(0.75rem, 1vmin);
+    }
 `
 
 export const Column2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8vw;
+    margin-right: max(80px, 3vmin);
+    height: max(70vh, 250px);
+    width: 100%;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -126,17 +121,17 @@ export const TextWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    width: 40vw;
-    height: 40vw;
-`
-
-export const Img = styled.img`
     width: 100%;
     height: 100%;
 
     @media screen and (max-width: 1024px) {
         display: none;
     }
+`
+
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
 `
 
 export const ButtonWrapper = styled.div`

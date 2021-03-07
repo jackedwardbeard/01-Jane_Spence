@@ -27,11 +27,10 @@ export const NavbarContainer = styled.div`
     min-height: 80px;
     z-index; 1;
     width: 100%;
-    padding: 0 0.5vmin; 
+    padding: 0 max(20px, 0.5vmin); 
 
     @media screen and (max-width: 768px) {
         justify-content: start;
-        margin-left: 25px;
     }
 `;
 
@@ -53,6 +52,7 @@ export const NavLogo = styled(LinkScroll)`
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
     overflow: hidden;
+    margin-left: 10px;
 
     @media screen and (max-width: 280px) {
         font-size: max(1.3rem, 3vmin);
@@ -74,10 +74,10 @@ export const SubLogo = styled(LinkScroll)`
 
 export const MobileIcon = styled.div`
     display: none;
-    margin-top: max(6.5px, 0.5vmin);
+    margin-top: max(4.5px, 0.5vmin);
 
     @media screen and (max-width: 768px) {
-        display: flex;
+        display: block;
         position: absolute;
         top: 0;
         right: 0;

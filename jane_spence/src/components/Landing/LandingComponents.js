@@ -49,9 +49,13 @@ export const LandingTitle = styled.div`
 `
 
 export const LandingSubText = styled.div`
-    font-size: max(1rem, 2.2vmin);
+    font-size: max(0.7rem, 2.2vmin);
     font-weight: 300;
     padding-top: max(10px, 1vmin);
+
+    @media screen and (max-width: 768px) {
+        font-size: max(1rem, 2.2vmin);
+    }
 `
 
 export const LearnMoreBtnWrapper = styled.nav`
