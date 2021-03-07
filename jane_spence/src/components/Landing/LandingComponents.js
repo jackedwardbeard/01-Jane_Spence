@@ -51,7 +51,7 @@ export const LandingTitle = styled.div`
 export const LandingSubText = styled.div`
     font-size: max(1rem, 2.2vmin);
     font-weight: 300;
-    padding-top: 10px;
+    padding-top: max(10px, 1vmin);
 `
 
 export const LearnMoreBtnWrapper = styled.nav`
