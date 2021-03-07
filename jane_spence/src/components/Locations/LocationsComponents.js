@@ -87,8 +87,6 @@ export const Column2 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: -4vmin;
-    margin-left: -4vmin;
     text-align: center;
     width: 30%;
 

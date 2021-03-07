@@ -80,7 +80,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 88%;
+    height: 86.5%;
     margin-top: 3vmin;
 `
 
