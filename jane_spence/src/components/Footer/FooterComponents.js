@@ -164,7 +164,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
     font-weight: 400;
-    margin-top: max(10px, 1.5vmin);
+    margin-top: max(15px, 1.5vmin);
     display: grid;
     cursor: pointer;
 
