@@ -44,7 +44,7 @@ export const Column1 = styled.div`
     text-align: center;
     width: 100%;
     margin-left: 3vmin;
-    margin-right:  2vmin;
+    margin-right:  0;
     margin-top: -5vmin;
 
     @media screen and (max-width: 1024px) {
@@ -139,6 +139,7 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
+    margin-top: max(10px, 2vmin);
 
 `
 

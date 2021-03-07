@@ -22,6 +22,10 @@ export const InformationWrapper = styled.div`
     @media screen and (max-width: 1250px) {
         height: max(90vh, 1250px);
     }
+
+    @media screen and (max-width: 320px) {
+        height: max(90vh, 1350px);
+    }    
 `
 
 export const Row1 = styled.div`
