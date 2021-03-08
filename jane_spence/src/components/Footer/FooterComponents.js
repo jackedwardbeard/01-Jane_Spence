@@ -134,7 +134,7 @@ export const SubFooterContainer = styled.div`
 `
 
 export const SubSubFooterContainer = styled.div`
-    background: rgb(0,0,0,0.9);
+    background: rgb(0,0,0,0.3);
     height: max(80px, 8vmin);
     overflow: hidden;
     display: flex;
