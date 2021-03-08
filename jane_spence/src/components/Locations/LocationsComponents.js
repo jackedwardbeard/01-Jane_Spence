@@ -78,7 +78,7 @@ export const Body = styled.p`
     font-size: max(1rem, 2vmin);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: black;
+    color: #696969;
     text-align: center;
 `
 
@@ -143,7 +143,7 @@ export const BodyHours = styled.p`
     font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: black;
+    color: #696969;
     text-align: center;
 
     @media screen and (max-width: 1250px) {

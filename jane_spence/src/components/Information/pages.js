@@ -4,7 +4,7 @@ import faq from '../../images/faq.svg'
 
 export const About = {
     id: 'about',
-    darkBackground: false,
+    darkBackground: true,
     darkText: true,
     showButton: false,
     darkButton: true,
@@ -29,8 +29,8 @@ export const About = {
 
 export const FAQ = {
     id: 'faq',
-    darkBackground: true,
-    darkText: false,
+    darkBackground: false,
+    darkText: true,
     showButton: true,
     darkButton: false,
     darkButtonText: true,

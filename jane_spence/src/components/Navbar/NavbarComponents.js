@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Link as LinkScroll } from 'react-scroll' 
 
 export const Nav = styled.nav`
-    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'black')};
+    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(0,0,0,0.75)')};
     height: max(80px, 8.171603677221654vmin);
     margin-top: min(-80px, -8.171603677221654vmin);
     min-height: 80px;

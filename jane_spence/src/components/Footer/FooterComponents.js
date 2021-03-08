@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 
 
 export const FooterContainer = styled.div`
-    background: rgb(19,24,33);
+    background: rgb(37,36,42);
     height: max(570px, 57vmin);
     overflow: hidden;
 `
@@ -120,7 +120,7 @@ export const PreFooterWrapper = styled.div`
 `
 
 export const SubFooterContainer = styled.div`
-    background: thistle;
+    background: rgb(0,0,0, 0.5);
     height: max(40px, 4vmin);
     overflow: hidden;
     display: flex;
@@ -166,6 +166,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     font-weight: 400;
     margin-top: max(15px, 1.5vmin);
     display: grid;
+    text-decoration: none;
     cursor: pointer;
 
 
@@ -187,7 +188,8 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        font-weight: 700;
+        font-weight: 500;
+        color: #98FB98;
     }
 `
 
@@ -219,7 +221,8 @@ export const NavLink = styled(LinkRouter)`
     }
 
     &:hover {
-        font-weight: 700;
+        font-weight: 500;
+        color: #98FB98;
     }
 `
 
@@ -233,14 +236,16 @@ export const SubSubText = styled(LinkRouter)`
     text-decoration: none;
     cursor: pointer;
     outline: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-        color: thistle;
+        transition: all 0.2s ease-in-out;
+        color: #98FB98;
     }
 `
 
 export const SubText = styled.span`
-    color: black;
+    color: white;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);

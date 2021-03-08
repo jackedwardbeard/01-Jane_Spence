@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InformationContainer = styled.div`
-    background: black;
+    background: rgb(245,245,245);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -26,6 +26,7 @@ export const Row1 = styled.div`
 export const Column1 = styled.div`
     padding: 0 1vmin;
     margin-right: 5vmin;
+    margin-left: 5vmin;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -44,14 +45,14 @@ export const Title = styled.h1`
     font-size: max(2rem, 4.5vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: thistle;
+    color: black;
 `
 
 export const Body = styled.ul`
     
     font-size: max(0.75rem, 1.5vmin);
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #696969;
     margin-bottom: max(0.5vmin, 5px);
 `
 
@@ -80,13 +81,14 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 86.5%;
+    height: 90%;
     margin-top: 3vmin;
 `
 
 export const Item = styled.div`
     font-size: max(1rem, 2vmin);
-    color: white;
+    color: black;
+    font-weight: 500;
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
 `
@@ -96,7 +98,7 @@ export const ContactWrap = styled.div`
 `
 
 export const ContactForm = styled.form`
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,11 +111,11 @@ export const ContactTitle = styled.h2`
 `
 
 export const Label = styled.div`
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     margin-top: max(20px, 2vmin);
     margin-bottom: max(10px, 1vmin);
-    font-weight: 500;
+    font-weight: 700;
     font-size: max(1.25rem, 2.5vmin);
 `
 
@@ -121,9 +123,21 @@ export const Input = styled.input`
     height: max(40px, 4vmin);
     width: max(265px, 20vmin);
     font-size: max(1.2rem, 2vmin);
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     padding-left: max(5px, 0.5vmin);
     margin-top: max(5px, 1vmin);
+    outline: none;
+    border: none;
+    
+    ::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    ::-webkit-outer-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }  
 
     @media screen and (max-width: 280px) {
         width: max(250px, 13.1vmin);
@@ -134,11 +148,14 @@ export const InputLarge = styled.textarea`
     font-family: 'Montserrat', sans-serif;
     padding-top: max(5px, 1vmin);
     type: textarea;
+    font-weight: 600;
     height: max(100px, 10vmin);
     font-size: max(1.2rem, 2vmin);
     width: max(265px, 20vmin);
     padding-left: max(5px, 0.5vmin);
     margin-top: max(5px, 1vmin);
+    outline: none;
+    border: none;
 
     @media screen and (max-width: 280px) {
         width: max(250px, 13.1vmin);
@@ -157,7 +174,7 @@ export const SubmitBtn = styled.button`
     border-radius: max(30px, 5vmin);
     background: thistle;
     white-space: nowrap;
-    padding: max(5px, 0.75vmin) max(2.25vmin, 20px);
+    padding: max(10px, 0.75vmin) max(2.25vmin, 20px);
     color: black;
     font-size: max(1.25rem, 2.5vmin);
     font-weight: 450;
@@ -169,20 +186,19 @@ export const SubmitBtn = styled.button`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: white;
-        color: black;
+        background: black;
+        color: white;
     }
     
 `
 
 export const Error = styled.p`
-    color: red;
+    color: rgb(190,0,50);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     padding-top: 5px;
     font-size: max(0.825rem, 1.75vmin);
     width: max(265px, 20vmin);
-    margin-left: 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +214,8 @@ export const SubmissionMessage = styled.p`
     width: max(265px, 20vmin);
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.75rem, 1.5vmin);
-    color: white;
+    font-weight: 500;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,9 +236,9 @@ export const DescriptionWrapper = styled.div`
 `
 
 export const Description = styled.p`
-    color: white;
+    color: #696969;
+    font-weight: 400;
     font-size: max(1.1rem, 2.2vmin);
-    font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 `
 
@@ -237,9 +254,9 @@ export const SubTitleWrapper = styled.div`
 `
 
 export const SubTitle = styled.h3`
-    color: white;
+    color: black;
     font-size: max(1.3rem, 2.6vmin);
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
     margin-top: max(30px, 3vmin);

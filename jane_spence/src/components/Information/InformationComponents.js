@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const InformationContainer = styled.div`
-    background: ${({darkBackground}) => (darkBackground ? 'black' : 'white')};
+    background: ${({darkBackground}) => (darkBackground ? 'white' : 'rgb(245,245,245)')};
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -48,7 +48,7 @@ export const Column1 = styled.div`
     text-align: center;
     width: 100%;
     margin-left: 3vmin;
-    margin-right:  0;
+    margin-right:  -2vmin;
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
@@ -58,7 +58,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2rem, 4.5vmin);
+    font-size: max(2.2rem, 4.8vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -77,7 +77,8 @@ export const Body = styled.p`
     margin-top: 1vh;
     font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'white')};
+    font-weight: 400;
+    color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
 
@@ -87,10 +88,11 @@ export const Body = styled.p`
 `
 
 export const SubBody = styled.p`
-    margin-top: 1vh;
+    margin-top: max(10px, 1vmin);
     font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'white')};
+    font-weight: 400;
+    color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
     @media screen and (max-width: 1024px) {
@@ -150,11 +152,11 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
-    border-radius: max(20px, 5vmin);
+    border-radius: max(30px, 5vmin);
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: max(10px, 1vmin) max(15px, 2vmin);
-    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
+    padding: max(15px, 1.5vmin) max(25px, 2.5vmin);
+    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'thistle')};
     font-size: max(0.85rem, 2vmin);
     font-weight: 600;
     outline: none;
@@ -164,14 +166,17 @@ export const Button = styled(LinkScroll)`
     text-decoration: none; 
 
     @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 280px) {
         font-size: 0.7rem;
-        padding: max(10px, 1vmin) max(10px, 2vmin);
     }
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: white;
-        color: black;
+        background: black;
+        color: white;
     }
 `
 
@@ -198,25 +203,26 @@ export const Accordion = styled.div`
 
 export const QuestionWrapper = styled.div`
     
-    background: rgb(13,16,22,0.4);
+    background: rgb(13,16,22,0.05);
     border-radius: 5vmin;
-    padding: 25px;
+    padding: max(2.5vmin, 25px);
     cursor: pointer;
     font-size: max(1rem, 1.25vw);
-    height: 5vmin;
+    height: max(60px, 6vmin);
     display: flex;
     font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
     text-align: left;
     align-items: center;
     margin-bottom: max(20px, 2vmin);
+    color: black;
 
     @media screen and (max-width: 280px) {
         font-size: max(0.8rem, 1.25vw);
     }
 
     &:hover {
-        color: thistle;
+        background: rgb(13,16,22,0.1);
     }
     
 `
@@ -227,25 +233,31 @@ export const AnswerWrapper = styled.div`
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     font-size: max(0.8rem, 2vmin);
+    color: black;
+    font-weight: 500;
 
 `
 
 export const DescriptionWrapper = styled.div`
     display: flex;
     text-align: center;
-    width: 90%;
+    width: 80%;
     justify-content: center;
     align-items: center;
-    margin-top: 2vmin;
-    margin-bottom: 1vmin;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
+    margin-top: max(20px, 2vmin);
+    margin-bottom: max(20px, 2vmin);
+    padding-left: max(20px, 2vmin);
+    padding-right: max(20px, 2vmin);
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
 `
 
 export const Description = styled.p`
-    color: white;
+    color: #696969;
     font-size: max(0.8rem, 2vmin);
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 `
