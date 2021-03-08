@@ -35,6 +35,7 @@ export const Column1 = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-right: 0;
+        margin-left: 0;
         margin-top: 0;
     }
 
@@ -111,7 +112,8 @@ export const ContactTitle = styled.h2`
 `
 
 export const Label = styled.div`
-    color: black;
+    color: #696969;
+    text-decoration: solid underline max(2px, 0.2vmin);
     font-family: 'Montserrat', sans-serif;
     margin-top: max(20px, 2vmin);
     margin-bottom: max(10px, 1vmin);

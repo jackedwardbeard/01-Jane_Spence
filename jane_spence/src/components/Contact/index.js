@@ -97,7 +97,7 @@ const Contact = ({id}) => {
                             <Title data-aos='fade-down'>
                                 Contact
                             </Title>
-                            <Body data-aos='fade-up'>
+                            <Body>
                                 <Item data-aos='fade-left'>PO BOX 5049</Item>
                                 <Item data-aos='fade-right'>Frankston South 3199</Item>
                                 <Item data-aos='fade-left'>📞 0417 389 257</Item>
@@ -106,8 +106,8 @@ const Contact = ({id}) => {
                             </Body>
                         </TextWrapper>
                         <ContactWrap>
-                            <ContactForm data-aos='fade-up'>
-                                <Label>ENQUIRE NOW</Label>
+                            <ContactForm>
+                                <Label data-aos='fade-right'>ENQUIRE NOW</Label>
                                 <Input onChange={handleChange} 
                                 value={name}
                                 type='text' 
@@ -116,7 +116,7 @@ const Contact = ({id}) => {
                                 data-aos='fade-left'
                                 ref={register({required: true})}>
                                 </Input>
-                                <Error>{errors.name && "Your name is required"}</Error>
+                                <Error data-aos='fade'>{errors.name && "Your name is required"}</Error>
                                 <Input onChange={handleChange} 
                                 value={phone}
                                 type='number' 
@@ -125,7 +125,7 @@ const Contact = ({id}) => {
                                 data-aos='fade-right'
                                 ref={register({required: true, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
                                 </Input>
-                                <Error>{errors.phone && errors.phone.message}</Error>
+                                <Error data-aos='fade'>{errors.phone && errors.phone.message}</Error>
                                 <Input onChange={handleChange}
                                 value={email} 
                                 type='text' 
@@ -134,7 +134,7 @@ const Contact = ({id}) => {
                                 data-aos='fade-left'
                                 ref={register({required: true})}>
                                 </Input>
-                                <Error>{errors.email && "Your e-mail is required"}</Error>
+                                <Error data-aos='fade'>{errors.email && "Your e-mail is required"}</Error>
                                 <InputLarge type='text' 
                                 onChange={handleChange} 
                                 value={enquiry}
@@ -143,11 +143,12 @@ const Contact = ({id}) => {
                                 data-aos='fade-right'
                                 ref={register({required: "Enquiry required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
                                 </InputLarge>
-                                <Error>{errors.enquiry && errors.enquiry.message}</Error>
+                                <Error data-aos='fade'>{errors.enquiry && errors.enquiry.message}</Error>
                                 <SubmissionMessage>{thanks}</SubmissionMessage>
                                 <BtnWrapper>
                                     <SubmitBtn 
                                     type='submit' 
+                                    data-aos='fade-right'
                                     onClick={handleSubmit(onSubmit)} 
                                     >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
@@ -171,7 +172,7 @@ const Contact = ({id}) => {
                             </Description>
                         </DescriptionWrapper>
                         <ImgWrap>
-                            <Img data-aos='fade-up' src={contact}/>
+                            <Img data-aos='fade-left' src={contact}/>
                         </ImgWrap>
                     </Column2>
                 </Row1>

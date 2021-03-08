@@ -16,14 +16,10 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: max(90vh, 700px);
+    height: max(90vh, 800px);
     display: flex;
 
     @media screen and (max-width: 1250px) {
-        height: max(90vh, 1300px);
-    }
-
-    @media screen and (max-width: 1024px) {
         height: max(90vh, 1500px);
     }
 
@@ -131,7 +127,7 @@ export const MapWrapper = styled.div`
     }
 
     @media screen and (max-width: 1024px) {
-        width: 90%;
+        width: 100%;
         height: max(250px, 20vh);
     }
 
