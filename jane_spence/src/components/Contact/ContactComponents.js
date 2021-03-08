@@ -44,6 +44,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(2rem, 4.5vmin);
+    font-weight: 800;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -112,13 +113,12 @@ export const ContactTitle = styled.h2`
 `
 
 export const Label = styled.div`
-    color: #696969;
-    text-decoration: solid underline max(2px, 0.2vmin);
+    color: black;
     font-family: 'Montserrat', sans-serif;
     margin-top: max(20px, 2vmin);
     margin-bottom: max(10px, 1vmin);
-    font-weight: 700;
-    font-size: max(1.25rem, 2.5vmin);
+    font-weight: 725;
+    font-size: max(1.4rem, 2.8vmin);
 `
 
 export const Input = styled.input`
@@ -174,22 +174,19 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 5vmin);
-    background: thistle;
+    background: black;
     white-space: nowrap;
-    padding: max(10px, 0.75vmin) max(2.25vmin, 20px);
-    color: black;
+    padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
+    color: white;
     font-size: max(1.25rem, 2.5vmin);
     font-weight: 450;
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: black;
-        color: white;
+        color: thistle;
     }
     
 `
@@ -257,8 +254,9 @@ export const SubTitleWrapper = styled.div`
 
 export const SubTitle = styled.h3`
     color: black;
-    font-size: max(1.3rem, 2.6vmin);
-    font-weight: 700;
+    font-size: max(1.4rem, 2.8vmin);
+    font-weight: 725;
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
     margin-top: max(30px, 3vmin);

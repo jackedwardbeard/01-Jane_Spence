@@ -159,7 +159,7 @@ const Contact = ({id}) => {
                     <Column2>
                         <SubTitleWrapper data-aos='fade-down'>
                             <SubTitle>
-                                Consultation Booking
+                                Booking A Consultation
                             </SubTitle>
                         </SubTitleWrapper>
                         <DescriptionWrapper data-aos='fade-left'>

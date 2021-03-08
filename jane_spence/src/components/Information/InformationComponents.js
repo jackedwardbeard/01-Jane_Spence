@@ -32,7 +32,6 @@ export const Row1 = styled.div`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    margin-top: -3vmin;
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
@@ -47,6 +46,7 @@ export const Column1 = styled.div`
     align-items: center;
     text-align: center;
     width: 100%;
+    height: 100%;
     margin-left: 3vmin;
     margin-right:  -2vmin;
 
@@ -54,13 +54,14 @@ export const Column1 = styled.div`
         margin-top: 0;
         margin-left: 15px;
         margin-right: 15px;
+        padding: 0 max(5px, 0.5vw);
     }
 `
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
+    font-weight: 800;
     text-transform: uppercase;
-    text-decoration: solid max(2px, 0.2vmin) underline;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
 `
@@ -68,7 +69,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h1`
     margin-top: 2.5vh;
     font-size: max(1.75rem, 3.5vmin);
-    text-decoration: solid max(2px, 0.2vmin) underline;
+    font-weight: 800;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -90,7 +91,7 @@ export const Body = styled.p`
 `
 
 export const SubBody = styled.p`
-    margin-top: max(10px, 1vmin);
+    margin-top: max(20px, 2vmin);
     font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -99,6 +100,7 @@ export const SubBody = styled.p`
 
     @media screen and (max-width: 1024px) {
         font-size: max(0.85rem, 2vmin);
+        margin-top: max(10px, 1vmin);
     }
 `
 
@@ -157,15 +159,18 @@ export const Button = styled(LinkScroll)`
     border-radius: max(30px, 5vmin);
     background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
     white-space: nowrap;
-    padding: max(15px, 1.5vmin) max(25px, 2.5vmin);
-    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'thistle')};
+    padding: max(12.5px, 1.15vmin) max(25px, 2.4vmin);
+    color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: max(0.85rem, 2vmin);
-    font-weight: 600;
+    font-weight: 700;
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     text-decoration: none; 
+
+    &:hover {
+        color: thistle;
+    }
 
     @media screen and (max-width: 320px) {
         font-size: 0.8rem;
@@ -175,11 +180,7 @@ export const Button = styled(LinkScroll)`
         font-size: 0.7rem;
     }
 
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: black;
-        color: white;
-    }
+    
 `
 
 export const AccordionWrapper = styled.div`
@@ -188,11 +189,11 @@ export const AccordionWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 1.5vmin;
-    margin-bottom: 1.5vmin;
+    margin-top: max(15px, 1.5vmin);
+    margin-bottom: max(15px, 1.5vmin);
     overflow: hidden;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
+    padding-left: max(10px, 2vmin);
+    padding-right: max(10px, 2vmin);
     width: 100%;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
 `
@@ -259,7 +260,7 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: #696969;
-    font-size: max(0.8rem, 2vmin);
+    font-size: max(0.85rem, 2vmin);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 `

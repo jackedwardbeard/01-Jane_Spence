@@ -62,9 +62,9 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(1.6rem, 3.5vmin);
+    font-size: max(1.7rem, 3.4vmin);
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: black;
     margin-bottom: max(10px, 0.5vmin);
