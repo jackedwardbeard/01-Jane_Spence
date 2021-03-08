@@ -213,7 +213,7 @@ export const SubmissionMessage = styled.p`
     width: max(265px, 20vmin);
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.75rem, 1.5vmin);
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     display: flex;
     justify-content: center;

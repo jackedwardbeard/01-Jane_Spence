@@ -123,7 +123,7 @@ const Contact = ({id}) => {
                                 placeholder='Phone' 
                                 name='phone' 
                                 data-aos='fade-right'
-                                ref={register({required: true, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
+                                ref={register({required: false, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
                                 </Input>
                                 <Error data-aos='fade'>{errors.phone && errors.phone.message}</Error>
                                 <Input onChange={handleChange}
