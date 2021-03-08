@@ -43,11 +43,15 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2rem, 4.5vmin);
+    font-size: max(2.2rem, 4.8vmin);
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
+
+    @media screen and (max-width: 768px) {
+        font-size: max(2.5rem, 5.4vmin);
+    }
 `
 
 export const Body = styled.ul`
@@ -93,6 +97,10 @@ export const Item = styled.div`
     font-weight: 500;
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
+
+    @media screen and (max-width: 768px) {
+        max(1.2rem, 2.4vmin);
+    }
 `
 
 export const ContactWrap = styled.div`

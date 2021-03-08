@@ -68,6 +68,10 @@ export const Title = styled.h1`
     font-weight: 800;
     color: black;
     margin-bottom: max(10px, 0.5vmin);
+
+    @media screen and (max-width: 768px) {
+        font-size: max(2rem, 4vmin);
+    }
 `
 
 export const Body = styled.p`

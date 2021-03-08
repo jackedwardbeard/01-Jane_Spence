@@ -64,6 +64,10 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
+
+    @media screen and (max-width: 768px) {
+        font-size: max(2.5rem, 5.4vmin);
+    }
 `
 
 export const Subtitle = styled.h1`
@@ -74,6 +78,10 @@ export const Subtitle = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
+
+    @media screen and (max-width: 768px) {
+        font-size: max(2rem, 4vmin);
+    }
 `
 
 export const Body = styled.p`
@@ -172,6 +180,10 @@ export const Button = styled(LinkScroll)`
         color: rgb(231,120,90);
     }
 
+    @media screen and (max-width: 768px) {
+        font-size: max(1rem, 2.4vmin);
+    }
+
     @media screen and (max-width: 320px) {
         font-size: 0.8rem;
     }
@@ -264,4 +276,8 @@ export const Description = styled.p`
     font-size: max(0.85rem, 2vmin);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+
+    @media screen and (max-width: 768px) {
+        font-size: max(1.1rem, 2.5vmin);
+    }
 `
