@@ -87,7 +87,7 @@ export const Img = styled.img`
 
 export const Item = styled.div`
     font-size: max(1rem, 2vmin);
-    color: black;
+    color: #696969;
     font-weight: 500;
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
