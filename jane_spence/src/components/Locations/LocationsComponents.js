@@ -58,7 +58,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(1.7rem, 3.4vmin);
+    font-size: max(1.5rem, 3vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
