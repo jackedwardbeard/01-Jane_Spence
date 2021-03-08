@@ -71,7 +71,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h1`
-    margin-top: 2.5vh;
+    margin-top: max(25px, 2.5vmin);
     font-size: max(1.75rem, 3.5vmin);
     font-weight: 800;
     text-transform: uppercase;
@@ -85,7 +85,7 @@ export const Subtitle = styled.h1`
 `
 
 export const Body = styled.p`
-    margin-top: 1vh;
+    margin-top: max(10px, 1vmin);
     font-size: max(1rem, 2vmin);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -278,6 +278,6 @@ export const Description = styled.p`
     font-family: 'Open Sans', sans-serif;
 
     @media screen and (max-width: 768px) {
-        font-size: max(1.1rem, 2.5vmin);
+        font-size: max(0.95rem, 2.2vmin);
     }
 `

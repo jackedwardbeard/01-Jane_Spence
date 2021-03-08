@@ -24,12 +24,8 @@ export const InformationWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        height: max(90vh, 1300px);
+        height: max(90vh, 1400px);
     }
-
-    @media screen and (max-width: 320px) {
-        height: max(90vh, 1350px);
-    }    
 `
 
 export const Row1 = styled.div`
@@ -122,7 +118,7 @@ export const MapWrapper = styled.div`
     height: max(250px, 40vh);
     width: 22.5vw;
     overflow: hidden;
-    margin-top: max(10px, 2.5vmin);
+    margin-top: max(20px, 2.5vmin);
     margin-bottom: max(10px, 2.5vmin);
 
     @media screen and (max-width: 1250px) {
