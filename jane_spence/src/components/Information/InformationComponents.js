@@ -150,7 +150,7 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    margin-top: max(10px, 2vmin);
+    margin-top: max(5px, 1vmin);
 
 `
 
@@ -161,15 +161,15 @@ export const Button = styled(LinkScroll)`
     white-space: nowrap;
     padding: max(12.5px, 1.15vmin) max(25px, 2.4vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: max(0.85rem, 2vmin);
-    font-weight: 700;
+    font-size: max(0.9rem, 2.2vmin);
+    font-weight: 500;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none; 
 
     &:hover {
-        color: thistle;
+        color: rgb(231,120,90);
     }
 
     @media screen and (max-width: 320px) {
@@ -226,6 +226,7 @@ export const QuestionWrapper = styled.div`
 
     &:hover {
         background: rgb(13,16,22,0.1);
+        color: rgb(231,120,90)
     }
     
 `

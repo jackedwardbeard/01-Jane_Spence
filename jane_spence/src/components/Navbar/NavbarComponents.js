@@ -128,11 +128,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 0.4vmin solid thistle;
+        border-bottom: max(4px, 0.4vmin) solid thistle;
     }
 
     &:hover {
-        border-bottom: 0.4vmin solid thistle;
+        border-bottom: max(4px, 0.4vmin) solid thistle;
     }
 
 `;

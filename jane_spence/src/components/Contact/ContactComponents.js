@@ -186,7 +186,7 @@ export const SubmitBtn = styled.button`
     text-decoration: none;
 
     &:hover {
-        color: thistle;
+        color: rgb(231,120,90);
     }
     
 `
