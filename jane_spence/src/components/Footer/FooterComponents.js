@@ -7,6 +7,10 @@ export const FooterContainer = styled.div`
     background: rgb(37,36,42);
     height: max(570px, 57vmin);
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        height: max(530px, 53vmin);
+    }
 `
 
 export const FooterWrapper = styled.div`
@@ -87,7 +91,7 @@ export const PreFooterWrapper = styled.div`
         font-size: 1.4rem;
         height: 80px;
         font-size: 1.5rem;
-        padding: 0 20px;
+        padding: 30px 20px;
         font-weight: 500;
     }
 
@@ -143,7 +147,7 @@ export const SubSubFooterContainer = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 1024px) {
-        height: 80px;
+        height: 40px;
     }
 
 `
