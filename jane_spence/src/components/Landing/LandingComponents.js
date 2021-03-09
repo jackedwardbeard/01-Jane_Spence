@@ -28,7 +28,7 @@ export const LandingImg = styled.div`
     background-image: url(${image});
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 `
 
 export const LandingText = styled.div`
