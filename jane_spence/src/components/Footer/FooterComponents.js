@@ -76,8 +76,8 @@ export const PreFooterWrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
     font-size: max(1.25rem, 2.5vmin);
     padding-left: max(10vw, 200px);
     padding-right: max(10vw, 200px);
@@ -88,6 +88,7 @@ export const PreFooterWrapper = styled.div`
         height: 80px;
         font-size: 1.5rem;
         padding: 0 20px;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 768px) {
@@ -150,9 +151,13 @@ export const SubSubFooterContainer = styled.div`
 export const Title = styled.h3`
     color: white;
     font-size: max(1.1rem, 2.5vmin);
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     margin-top: max(20px, 1.5vmin);
+
+    @media screen and (max-width: 1024px) {
+        font-weight: 600;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: max(0.8rem, 2.5vmin);
@@ -163,11 +168,15 @@ export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 400;
+    font-weight: 350;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        font-weight: 450;
+    }
 
 
     @media screen and (max-width: 767px) {
@@ -189,7 +198,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
     &:hover {
         font-weight: 500;
-        color: rgb(213,144,66);
+        color: rgb(241,167,82);
     }
 `
 
@@ -197,12 +206,15 @@ export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 400;
+    font-weight: 350;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
     cursor: pointer;
 
+    @media screen and (max-width: 1024px) {
+        font-weight: 450;
+    }
 
     @media screen and (max-width: 767px) {
         font-size: max(0.9rem, 1.75vmin);
@@ -217,19 +229,19 @@ export const NavLink = styled(LinkRouter)`
     }
 
     @media screen and (max-width: 280px) {
-        font-size: max(0.65rem, 1.75vmin);
+        font-size: max(0.65rem, 1.5vmin);
     }
 
     &:hover {
         font-weight: 500;
-        color: rgb(213,144,66);
+        color: rgb(241,167,82);
     }
 `
 
 export const SubSubText = styled(LinkRouter)`
     color: white;
     font-size: max(1.25rem, 2.5vmin);
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     background: transparent;
     border: none;
@@ -238,19 +250,32 @@ export const SubSubText = styled(LinkRouter)`
     outline: none;
     transition: all 0.2s ease-in-out;
 
+    @media screen and (max-width: 1024px) {
+        font-weight: 450;
+    }
+
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: rgb(213,144,66);
+        color: rgb(241,167,82);
+        font-size: max(1.4rem, 2.7vmin);
     }
 `
 
 export const SubText = styled.span`
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);
 
+    @media screen and (max-width: 1024px) {
+        font-weight: 450;
+    }
+
     @media screen and (max-width: 320px) {
+        font-size: max(0.55rem, 1.5vmin);
+    }
+
+    @media screen and (max-width: 280px) {
         font-size: max(0.5rem, 1.5vmin);
     }
 `

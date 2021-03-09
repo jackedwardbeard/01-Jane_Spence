@@ -23,6 +23,10 @@ export const InformationWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: max(90vh, 700px);
+
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    }
 `
 
 export const Row1 = styled.div`
@@ -52,15 +56,14 @@ export const Column1 = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 0 max(5px, 0.5vw);
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -72,8 +75,9 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
+    margin-bottom: max(10px, 1vmin);
     font-size: max(1.75rem, 3.5vmin);
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -87,13 +91,14 @@ export const Subtitle = styled.h1`
 export const Body = styled.p`
     margin-top: max(10px, 1vmin);
     font-size: max(1rem, 2vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
 
     @media screen and (max-width: 1024px) {
+        line-height: 25px;
         font-size: max(0.85rem, 2vmin);
     }
 `
@@ -101,12 +106,13 @@ export const Body = styled.p`
 export const SubBody = styled.p`
     margin-top: max(20px, 2vmin);
     font-size: max(1rem, 2vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
     @media screen and (max-width: 1024px) {
+        line-height: 25px;
         font-size: max(0.85rem, 2vmin);
         margin-top: max(10px, 1vmin);
     }
@@ -156,32 +162,35 @@ export const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
     width: 100%;
     margin-top: max(5px, 1vmin);
-
 `
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
     border-radius: max(30px, 5vmin);
-    background: ${({darkButton}) => (darkButton ? 'black' : 'thistle')};
+    background: ${({darkButton}) => (darkButton ? 'rgb(64,64,64)' : 'thistle')};
     white-space: nowrap;
-    padding: max(12.5px, 1.15vmin) max(25px, 2.4vmin);
+    padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: max(0.9rem, 2.2vmin);
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none; 
 
     &:hover {
-        color: rgb(231,120,90);
+        color: rgb(241,167,82);
     }
 
     @media screen and (max-width: 768px) {
         font-size: max(1rem, 2.4vmin);
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: max(13px, 1.2vmin) max(20px, 2vmin);
     }
 
     @media screen and (max-width: 320px) {
@@ -200,7 +209,7 @@ export const AccordionWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: max(15px, 1.5vmin);
     margin-bottom: max(15px, 1.5vmin);
     overflow: hidden;
@@ -222,23 +231,27 @@ export const QuestionWrapper = styled.div`
     border-radius: 5vmin;
     padding: max(2.5vmin, 25px);
     cursor: pointer;
-    font-size: max(1rem, 1.25vw);
-    height: max(60px, 6vmin);
+    font-size: max(1.5rem, 1vw);
+    height: max(40px, 6vmin);
     display: flex;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     text-align: left;
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     color: black;
 
+    @media screen and (max-width: 767px) {
+        font-size: max(0.9rem, 1.25vw);
+    }
+
     @media screen and (max-width: 280px) {
         font-size: max(0.8rem, 1.25vw);
     }
 
     &:hover {
-        background: rgb(13,16,22,0.1);
-        color: rgb(231,120,90)
+        background: rgb(64,64,64);
+        color: rgb(241,167,82);
     }
     
 `
@@ -260,8 +273,8 @@ export const DescriptionWrapper = styled.div`
     width: 80%;
     justify-content: center;
     align-items: center;
-    margin-top: max(20px, 2vmin);
-    margin-bottom: max(20px, 2vmin);
+    margin-top: max(10px, 1vmin);
+    margin-bottom: max(10px, 1vmin);
     padding-left: max(20px, 2vmin);
     padding-right: max(20px, 2vmin);
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
@@ -275,7 +288,7 @@ export const Description = styled.p`
     color: #696969;
     font-size: max(0.85rem, 2vmin);
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 768px) {
         font-size: max(0.95rem, 2.2vmin);

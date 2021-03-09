@@ -14,6 +14,10 @@ export const InformationWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        height: 100%;
+    }
 `
 
 export const Row1 = styled.div`
@@ -36,7 +40,8 @@ export const Column1 = styled.div`
     @media screen and (max-width: 1024px) {
         margin-right: 0;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: max(100px, 10vmin);
+        margin-bottom: max(100px, 10vmin);
     }
 
     
@@ -44,7 +49,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -69,7 +74,7 @@ export const Column2 = styled.div`
     align-items: center;
     padding: 0 0.75vw;
     width: 50%;
-    height: 700px;
+    height: 100%;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -94,7 +99,8 @@ export const Img = styled.img`
 export const Item = styled.div`
     font-size: max(1rem, 2vmin);
     color: #696969;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'Montserrat';
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
 
@@ -125,7 +131,7 @@ export const Label = styled.div`
     font-family: 'Montserrat', sans-serif;
     margin-top: max(20px, 2vmin);
     margin-bottom: max(10px, 1vmin);
-    font-weight: 725;
+    font-weight: 400;
     font-size: max(1.4rem, 2.8vmin);
 `
 
@@ -133,7 +139,7 @@ export const Input = styled.input`
     height: max(40px, 4vmin);
     width: max(265px, 20vmin);
     font-size: max(1.2rem, 2vmin);
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     padding-left: max(5px, 0.5vmin);
     margin-top: max(5px, 1vmin);
@@ -158,7 +164,7 @@ export const InputLarge = styled.textarea`
     font-family: 'Montserrat', sans-serif;
     padding-top: max(5px, 1vmin);
     type: textarea;
-    font-weight: 600;
+    font-weight: 400;
     height: max(100px, 10vmin);
     font-size: max(1.2rem, 2vmin);
     width: max(265px, 20vmin);
@@ -182,19 +188,20 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 5vmin);
-    background: black;
+    background: rgb(64,64,64);
     white-space: nowrap;
-    padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
+    padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
     color: white;
     font-size: max(1.25rem, 2.5vmin);
-    font-weight: 450;
+    font-family: 'Montserrat';
+    font-weight: 300;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-        color: rgb(231,120,90);
+        color: rgb(241,167,82);
     }
     
 `
@@ -246,7 +253,7 @@ export const Description = styled.p`
     color: #696969;
     font-weight: 400;
     font-size: max(1.1rem, 2.2vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 `
 
 export const SubTitleWrapper = styled.div`
@@ -263,7 +270,7 @@ export const SubTitleWrapper = styled.div`
 export const SubTitle = styled.h3`
     color: black;
     font-size: max(1.4rem, 2.8vmin);
-    font-weight: 725;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);

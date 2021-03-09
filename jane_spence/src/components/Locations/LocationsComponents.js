@@ -19,12 +19,8 @@ export const InformationWrapper = styled.div`
     height: max(90vh, 800px);
     display: flex;
 
-    @media screen and (max-width: 1250px) {
-        height: max(90vh, 1500px);
-    }
-
     @media screen and (max-width: 768px) {
-        height: max(90vh, 1400px);
+        height: 100%;
     }
 `
 
@@ -61,7 +57,7 @@ export const Title = styled.h1`
     font-size: max(1.5rem, 3vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     color: black;
     margin-bottom: max(10px, 0.5vmin);
 
@@ -73,7 +69,7 @@ export const Title = styled.h1`
 export const Body = styled.p`
     font-size: max(1rem, 2vmin);
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #696969;
     text-align: center;
 `
@@ -137,7 +133,7 @@ export const MapWrapper = styled.div`
 
 export const BodyHours = styled.p`
     font-size: max(1rem, 2vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #696969;
     text-align: center;
@@ -158,6 +154,8 @@ export const BodyHoursTitle = styled.h4`
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-align: center;
+    font-weight: 450;
+    margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {
 
