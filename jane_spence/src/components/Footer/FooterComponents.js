@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-        height: max(530px, 53vmin);
+        height: max(550px, 55vmin);
     }
 `
 
@@ -147,7 +147,7 @@ export const SubSubFooterContainer = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 1024px) {
-        height: 40px;
+        height: 60px;
     }
 
 `
