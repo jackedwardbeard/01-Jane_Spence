@@ -57,7 +57,6 @@ export const NavLogo = styled(LinkScroll)`
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
     overflow: hidden;
-    margin-left: 10px;
 
     @media screen and (max-width: 805px) {
         font-size: max(1.1rem, 3vmin);
@@ -85,8 +84,6 @@ export const SubLogo = styled(LinkScroll)`
     position: relative;
     font-size: max(0.75rem, 1.3vmin);
     overflow: hidden;
-
-    
 `
 
 export const MobileIcon = styled.div`
