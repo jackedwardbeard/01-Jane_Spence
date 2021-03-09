@@ -14,6 +14,7 @@ import {
     NavLink,
     NavLinkScroll,
     PreFooterWrapper,
+    GlobalStyle
 } from './FooterComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -26,6 +27,7 @@ const Footer = () => {
 
     return (
         <FooterContainer>
+            <GlobalStyle/>
             <FooterWrapper>
                 <PreFooterWrapper data-aos='fade'>
                     For further information, visit the websites listed below or book a consultation @ 0417 389 257.

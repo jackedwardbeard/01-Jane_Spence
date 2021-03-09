@@ -11,7 +11,8 @@ import {
     MobileMenuLink,
     MobileBtnWrapper,
     MobileMenuBtn,
-    MobileMenu
+    MobileMenu,
+    GlobalStyle
 } 
 from './MobileMenuComponents'
 
@@ -20,6 +21,7 @@ from './MobileMenuComponents'
 const MobileSideMenu = ({clicked, reverseState}) => {
     return (
         <MobileMenuContainer clicked={clicked} onClick={reverseState}>
+            <GlobalStyle/>
             <Icon onClick={reverseState}>
                 <CloseIcon/>
             </Icon>

@@ -19,7 +19,8 @@ import {
     QuestionWrapper,
     AnswerWrapper,
     DescriptionWrapper,
-    Description
+    Description,
+    GlobalStyle
 } from './InformationComponents'
 import {faqs} from './faqs'
 import {IconContext} from 'react-icons'
@@ -49,6 +50,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
     
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
+            <GlobalStyle/>
             <InformationWrapper>
                 <Row1>
                     <Column1>

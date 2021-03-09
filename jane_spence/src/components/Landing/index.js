@@ -8,11 +8,13 @@ import {
     LandingSubText,
     LearnMoreBtnWrapper,
     LearnMoreBtn,
+    GlobalStyle
 } from './LandingComponents'
 
 const Landing = ({id}) => {
     return (
         <LandingContainer id={id}>
+            <GlobalStyle/>
             <LandingBackground>
                 <LandingImg></LandingImg>
             </LandingBackground>
