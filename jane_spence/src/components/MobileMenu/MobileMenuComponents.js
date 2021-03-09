@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa' // exit symbol
 import {Link as LinkScroll} from 'react-scroll' // router for smooth scroll
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+`
 
 export const MobileMenuContainer = styled.aside`
     position: fixed;

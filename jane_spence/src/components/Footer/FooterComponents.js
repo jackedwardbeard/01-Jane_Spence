@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import { Link as LinkScroll } from 'react-scroll'
 import { Link as LinkRouter } from 'react-router-dom' 
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+`
 
 
 export const FooterContainer = styled.div`
