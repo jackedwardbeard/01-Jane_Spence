@@ -189,7 +189,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
     &:hover {
         font-weight: 500;
-        color: rgb(231,120,90);
+        color: rgb(213,144,66);
     }
 `
 
@@ -222,7 +222,7 @@ export const NavLink = styled(LinkRouter)`
 
     &:hover {
         font-weight: 500;
-        color: rgb(231,120,90);
+        color: rgb(213,144,66);
     }
 `
 
@@ -240,7 +240,7 @@ export const SubSubText = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: rgb(231,120,90);
+        color: rgb(213,144,66);
     }
 `
 
