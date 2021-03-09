@@ -55,8 +55,9 @@ const Navbar = ({reverseState}) => {
      
 
     return (
+        <React.Fragment>
+        <GlobalStyle/>
         <Nav navTransparent={navTransparent} showNav={showNav}>
-            <GlobalStyle/>
             <NavbarContainer>
                 <LogoContainer>
                     <NavLogo to="landing" smooth={true} spy={true} offset={0}>JANE SPENCE</NavLogo>
@@ -84,6 +85,7 @@ const Navbar = ({reverseState}) => {
             </NavBtn>
             </NavbarContainer>
         </Nav>
+        </React.Fragment>
     )
 }
 
