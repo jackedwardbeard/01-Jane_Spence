@@ -31,10 +31,10 @@ class Locations extends Component {
     render() {
 
         return (
-            <React.Fragment>
-            <GlobalStyle/>
             <InformationContainer id='locations'>
+                <GlobalStyle/>
                 <InformationWrapper>
+                    
                     <Row1>
                             <Column1>
                                 <Title data-aos='fade-right'>
@@ -132,7 +132,6 @@ class Locations extends Component {
                     </Row1>
                 </InformationWrapper>
             </InformationContainer>
-            </React.Fragment>
         )
     }
 };

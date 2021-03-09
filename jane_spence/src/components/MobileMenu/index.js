@@ -20,9 +20,8 @@ from './MobileMenuComponents'
 // in this case we pass in clicked (the state), and reverseState (a function to flip the state when clicked)
 const MobileSideMenu = ({clicked, reverseState}) => {
     return (
-        <React.Fragment>
-        <GlobalStyle/>
         <MobileMenuContainer clicked={clicked} onClick={reverseState}>
+            <GlobalStyle/>
             <Icon onClick={reverseState}>
                 <CloseIcon/>
             </Icon>
@@ -39,7 +38,6 @@ const MobileSideMenu = ({clicked, reverseState}) => {
                 </MobileBtnWrapper>
             </MobileMenuWrapper>
         </MobileMenuContainer>
-        </React.Fragment>
     )
 }
 

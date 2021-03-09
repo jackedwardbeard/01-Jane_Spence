@@ -49,9 +49,8 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
     }
     
     return (
-        <React.Fragment>
-        <GlobalStyle/>
         <InformationContainer darkBackground={darkBackground} id={id}>
+            <GlobalStyle/>
             <InformationWrapper>
                 <Row1>
                     <Column1>
@@ -137,7 +136,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                 </Row1>
             </InformationWrapper>
         </InformationContainer>
-        </React.Fragment>
     )
 };
 

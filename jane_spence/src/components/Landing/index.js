@@ -13,9 +13,8 @@ import {
 
 const Landing = ({id}) => {
     return (
-        <React.Fragment>
-        <GlobalStyle/>
         <LandingContainer id={id}>
+            <GlobalStyle/>
             <LandingBackground>
                 <LandingImg></LandingImg>
             </LandingBackground>
@@ -33,7 +32,7 @@ const Landing = ({id}) => {
                 </LearnMoreBtnWrapper>
             </LandingText>  
         </LandingContainer>
-        </React.Fragment>
+        
     )
 }
 
