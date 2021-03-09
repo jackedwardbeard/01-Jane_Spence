@@ -45,6 +45,7 @@ export const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: -0.5vmin;
+    margin-left: 10px;
 `
 
 export const NavLogo = styled(LinkScroll)`
