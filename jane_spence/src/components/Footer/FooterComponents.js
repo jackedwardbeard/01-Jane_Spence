@@ -10,16 +10,16 @@ export const GlobalStyle = createGlobalStyle`
 
 export const FooterContainer = styled.div`
     background: rgb(37,36,42);
-    height: max(570px, 57vmin);
+    height: max(590px, 59vmin);
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-        height: max(550px, 55vmin);
+        height: max(570px, 57vmin);
     }
 `
 
 export const FooterWrapper = styled.div`
-    height: max(450px, 45vmin);
+    height: max(470px, 47vmin);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -94,9 +94,9 @@ export const PreFooterWrapper = styled.div`
 
     @media screen and (max-width: 1024px) {
         font-size: 1.4rem;
-        height: 80px;
+        height: 100px;
         font-size: 1.5rem;
-        padding: 30px 20px;
+        padding: 20px 20px;
         font-weight: 500;
     }
 
@@ -261,6 +261,10 @@ export const SubSubText = styled(LinkRouter)`
 
     @media screen and (max-width: 1024px) {
         font-weight: 400;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: max(1rem, 2vmin);
     }
 
     &:hover {
