@@ -32,6 +32,7 @@ class Locations extends Component {
 
         return (
             <InformationContainer id='locations'>
+                <GlobalStyle/>
                 <InformationWrapper>
                     <Row1>
                             <Column1>
