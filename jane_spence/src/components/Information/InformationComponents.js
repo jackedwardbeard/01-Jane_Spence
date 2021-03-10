@@ -143,7 +143,6 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    outline: solid 2px orange;
 `
 
 export const ImgWrap = styled.div`
