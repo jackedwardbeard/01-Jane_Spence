@@ -9,7 +9,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import {Helmet} from "react-helmet"
 
-const Home = ({toggle}) => {
+const Home = () => {
 
     // react hooks to use state without needing a class
 

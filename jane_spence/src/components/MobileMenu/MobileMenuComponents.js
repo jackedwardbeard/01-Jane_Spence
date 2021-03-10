@@ -13,7 +13,9 @@ export const MobileMenuContainer = styled.aside`
     z-index: 1000; // puts this menu in front of everything else
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center:
     top: 0;
     left: 0;
@@ -21,6 +23,7 @@ export const MobileMenuContainer = styled.aside`
     background: black;
     opacity: ${({clicked}) => (clicked ? '100%' : '0%')}; // show menu if its been opened, else do not show it
     top: ${({clicked}) => (clicked ? '0' : '-100%')};
+    outline: solid 2px red;
 
 `
 
@@ -52,16 +55,17 @@ export const MobileMenuWrapper = styled.div`
 `
 
 export const MobileMenu = styled.ul`
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(6, 30px);
     
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
+        grid-template-rows: repeat(6, 15px);
     }
 `
 
@@ -76,6 +80,7 @@ export const MobileMenuLink = styled(LinkScroll)`
     transition: 0.2s ease-in-out;
     color: white;
     cursor: pointer;
+    margin-bottom: 25%;
 
     &:hover {
         color: thistle;
@@ -86,7 +91,7 @@ export const MobileMenuLink = styled(LinkScroll)`
 export const MobileBtnWrapper = styled.div`
     display: flex;
     justify-content: center;
-    
+    margin-top: 10%;
 `
 
 export const MobileMenuBtn = styled(LinkScroll)`
@@ -96,7 +101,7 @@ export const MobileMenuBtn = styled(LinkScroll)`
     padding: 1.6vh 5vw;
     color: black;
     font-size: 2.5vh;
-    font-weight: 500;
+    font-weight: 00;
     font-family: 'Montserrat', sans-serif;
     outline: none;
     border: none;
