@@ -145,6 +145,7 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%:
+    width: 100%;
 `
 
 export const ImgWrap = styled.div`
