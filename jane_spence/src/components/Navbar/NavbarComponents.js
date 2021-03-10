@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(0,0,0,0.75)')};
-    height: max(80px, 8.171603677221654vmin);
-    margin-top: min(-80px, -8.171603677221654vmin);
+    height: max(80px, 8.171603677221654vh);
+    margin-top: min(-80px, -8.171603677221654vh);
     min-height: 80px;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
@@ -29,7 +29,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    height: max(80px, 8.171603677221654vmin);
+    height: max(80px, 8.171603677221654vh);
     min-height: 80px;
     z-index; 1;
     width: 100%;
@@ -113,7 +113,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     font-size: max(0.8rem, 1.75vmin);
-    height: max(80px, 8.171603677221654vmin);
+    height: max(80px, 8.5vh);
     margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
