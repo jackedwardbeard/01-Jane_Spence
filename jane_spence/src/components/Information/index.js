@@ -23,7 +23,6 @@ import {
     GlobalStyle
 } from './InformationComponents'
 import {faqs} from './faqs'
-import {IconContext} from 'react-icons'
 import {FiPlus, FiMinus} from 'react-icons/fi'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -84,7 +83,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                     {description}
                                 </Description>
                             </DescriptionWrapper>
-                            <IconContext.Provider value={{ color: 'plum', size: 'max(1rem, 2.5vmin'}}>
                                 <AccordionWrapper showAccordion={showAccordion}>
                                     <Accordion>
                                         {
@@ -110,7 +108,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                         }
                                     </Accordion>
                                 </AccordionWrapper>
-                            </IconContext.Provider>
                             <ButtonWrapper>
                                 <Button 
                                 data-aos='fade-up' 
