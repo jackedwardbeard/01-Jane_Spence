@@ -169,7 +169,15 @@ export const Title = styled.h3`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: max(0.8rem, 2.5vmin);
+        font-size: max(1rem, 2.5vmin);
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: max(1rem, 2.5vmin);
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: max(0.85rem, 2.5vmin);
     }
 `
 
@@ -188,8 +196,8 @@ export const NavLinkScroll = styled(LinkScroll)`
     }
 
 
-    @media screen and (max-width: 767px) {
-        font-size: max(0.9rem, 1.75vmin);
+    @media screen and (max-width: 768px) {
+        font-size: max(0.9rem, 2vmin);
     }
 
     @media screen and (max-width: 539px) {
@@ -225,8 +233,8 @@ export const NavLink = styled(LinkRouter)`
         font-weight: 400;
     }
 
-    @media screen and (max-width: 767px) {
-        font-size: max(0.9rem, 1.75vmin);
+    @media screen and (max-width: 768px) {
+        font-size: max(0.9rem, 2vmin);
     }
 
     @media screen and (max-width: 539px) {
