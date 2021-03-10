@@ -55,11 +55,12 @@ export const LandingTitle = styled.div`
 `
 
 export const LandingSubText = styled.div`
-    font-size: max(0.7rem, 2.2vmin);
+    font-size: max(0.8rem, 2.2vmin);
     font-weight: 300;
     margin-top: max(10px, 1vmin);
 
     @media screen and (max-width: 1024px) {
+        line-height: max(17.5px, 3vmin);
         padding-left: max(4vw, 20px);
         padding-right: max(4vw, 20px);
     }
