@@ -5,7 +5,7 @@ import Home from './pages';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat|Open+Sans');
 `
 
 // classes are stateful, functions are not (without hooks)

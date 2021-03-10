@@ -48,6 +48,7 @@ export const NavLogo = styled(LinkScroll)`
     justify-self: flex-start;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
