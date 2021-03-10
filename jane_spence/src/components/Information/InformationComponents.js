@@ -62,8 +62,8 @@ export const Column1 = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `
 
