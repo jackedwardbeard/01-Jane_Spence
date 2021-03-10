@@ -55,7 +55,7 @@ export const NavLogo = styled(LinkScroll)`
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
     overflow: hidden;
@@ -132,11 +132,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: max(4px, 0.4vmin) solid thistle;
+        border-bottom: max(6.5px, 0.65vmin) solid thistle;
     }
 
     &:hover {
-        border-bottom: max(4px, 0.4vmin) solid thistle;
+        border-bottom: max(6.5px, 0.65vmin) solid thistle;
     }
 
 `;
