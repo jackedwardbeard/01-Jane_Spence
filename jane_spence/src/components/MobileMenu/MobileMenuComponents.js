@@ -23,7 +23,6 @@ export const MobileMenuContainer = styled.aside`
     background: black;
     opacity: ${({clicked}) => (clicked ? '100%' : '0%')}; // show menu if its been opened, else do not show it
     top: ${({clicked}) => (clicked ? '0' : '-100%')};
-    outline: solid 2px red;
 
 `
 
