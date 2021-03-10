@@ -55,6 +55,8 @@ export const Column1 = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    height: 100%;
     margin-left: 3vmin;
     margin-right:  -2vmin;
 
@@ -118,6 +120,7 @@ export const SubBody = styled.p`
     @media screen and (max-width: 1024px) {
         line-height: 25px;
         font-size: max(0.85rem, 2vmin);
+        margin-top: max(10px, 1vmin);
     }
 `
 
@@ -141,7 +144,7 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    height: 100%:
 `
 
 export const ImgWrap = styled.div`
