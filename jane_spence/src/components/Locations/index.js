@@ -11,6 +11,7 @@ import {
     MapWrapper,
     BodyHours,
     BodyHoursTitle,
+    GlobalStyle
 } from './LocationsComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'

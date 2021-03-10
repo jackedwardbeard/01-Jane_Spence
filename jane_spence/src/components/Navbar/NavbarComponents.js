@@ -2,6 +2,11 @@
 import styled from 'styled-components'
 // used for links that redirect using smooth scroll (i.e. all pages except for enquire)
 import { Link as LinkScroll } from 'react-scroll' 
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+`
 
 export const Nav = styled.nav`
     background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(0,0,0,0.75)')};
@@ -48,7 +53,6 @@ export const NavLogo = styled(LinkScroll)`
     justify-self: flex-start;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     text-decoration: none;
     position: relative;
     font-size: max(1.6rem, 3.3vmin);

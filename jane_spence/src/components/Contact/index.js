@@ -24,6 +24,7 @@ import {
     Description,
     SubTitleWrapper,
     SubTitle,
+    GlobalStyle
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
 import Aos from 'aos'
@@ -90,6 +91,7 @@ const Contact = ({id}) => {
 
     return (
         <InformationContainer id={id}>
+            <GlobalStyle/>
             <InformationWrapper>
                 <Row1>
                     <Column1>
