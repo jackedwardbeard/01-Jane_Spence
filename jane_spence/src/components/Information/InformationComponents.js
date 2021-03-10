@@ -116,7 +116,7 @@ export const SubBody = styled.p`
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
     @media screen and (max-width: 1024px) {
-        line-height: 15px;
+        line-height: 25px;
         font-size: max(0.85rem, 2vmin);
     }
 `
