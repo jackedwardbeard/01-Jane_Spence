@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkScroll} from 'react-scroll'
 import image from '../../images/landingImg.jpg'
-import { createGlobalStyle } from 'styled-components';
-
-export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
-`
 
 export const LandingContainer = styled.div`
     display: flex;

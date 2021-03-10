@@ -11,7 +11,6 @@ import {
     MapWrapper,
     BodyHours,
     BodyHoursTitle,
-    GlobalStyle
 } from './LocationsComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -32,9 +31,7 @@ class Locations extends Component {
 
         return (
             <InformationContainer id='locations'>
-                <GlobalStyle/>
                 <InformationWrapper>
-                    
                     <Row1>
                             <Column1>
                                 <Title data-aos='fade-right'>

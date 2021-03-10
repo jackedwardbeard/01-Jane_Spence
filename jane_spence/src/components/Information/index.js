@@ -20,7 +20,6 @@ import {
     AnswerWrapper,
     DescriptionWrapper,
     Description,
-    GlobalStyle
 } from './InformationComponents'
 import {faqs} from './faqs'
 import {IconContext} from 'react-icons'
@@ -50,7 +49,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
     
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
-            <GlobalStyle/>
             <InformationWrapper>
                 <Row1>
                     <Column1>
@@ -106,7 +104,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                                 </>
                                                 );
                                             })
-
                                         }
                                     </Accordion>
                                 </AccordionWrapper>
@@ -125,7 +122,6 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                 {buttonText}
                                 </Button>
                             </ButtonWrapper>
-                            
                         </TextWrapper>
                     </Column1>
                     <Column2>
