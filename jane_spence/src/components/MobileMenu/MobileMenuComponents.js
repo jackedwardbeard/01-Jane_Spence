@@ -4,7 +4,8 @@ import {Link as LinkScroll} from 'react-scroll' // router for smooth scroll
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const MobileMenuContainer = styled.aside`
@@ -95,7 +96,7 @@ export const MobileMenuBtn = styled(LinkScroll)`
     padding: 1.6vh 5vw;
     color: black;
     font-size: 2.5vh;
-    font-weight: 450;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     outline: none;
     border: none;

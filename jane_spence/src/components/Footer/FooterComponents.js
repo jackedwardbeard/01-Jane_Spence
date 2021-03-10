@@ -4,7 +4,8 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const FooterContainer = styled.div`
@@ -85,7 +86,7 @@ export const PreFooterWrapper = styled.div`
     align-items: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 450;
+    font-weight: 400;
     font-size: max(1.25rem, 2.5vmin);
     padding-left: max(10vw, 200px);
     padding-right: max(10vw, 200px);
@@ -176,14 +177,14 @@ export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 350;
+    font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
     cursor: pointer;
 
     @media screen and (max-width: 1024px) {
-        font-weight: 450;
+        font-weight: 400;
     }
 
 
@@ -214,14 +215,14 @@ export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 350;
+    font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
     cursor: pointer;
 
     @media screen and (max-width: 1024px) {
-        font-weight: 450;
+        font-weight: 400;
     }
 
     @media screen and (max-width: 767px) {
@@ -259,7 +260,7 @@ export const SubSubText = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
 
     @media screen and (max-width: 1024px) {
-        font-weight: 450;
+        font-weight: 400;
     }
 
     &:hover {
@@ -276,7 +277,7 @@ export const SubText = styled.span`
     font-size: max(0.6rem, 1.5vmin);
 
     @media screen and (max-width: 1024px) {
-        font-weight: 450;
+        font-weight: 400;
     }
 
     @media screen and (max-width: 320px) {

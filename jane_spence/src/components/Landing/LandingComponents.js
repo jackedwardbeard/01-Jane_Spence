@@ -4,7 +4,8 @@ import image from '../../images/landingImg.jpg'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const LandingContainer = styled.div`
@@ -50,12 +51,12 @@ export const LandingText = styled.div`
 
 export const LandingTitle = styled.div`
     font-size: max(6.5vmin, 2rem);
-    font-weight: 350;
+    font-weight: 300;
 `
 
 export const LandingSubText = styled.div`
     font-size: max(0.7rem, 2.2vmin);
-    font-weight: 340;
+    font-weight: 300;
     margin-top: max(10px, 1vmin);
 
     @media screen and (max-width: 1024px) {
@@ -79,7 +80,7 @@ export const LearnMoreBtn = styled(LinkScroll)`
     padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
     color: black;
     font-size: max(1rem, 1.85vmin);
-    font-weight: 450;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;

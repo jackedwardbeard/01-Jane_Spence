@@ -4,7 +4,8 @@ import { Link as LinkScroll } from 'react-scroll'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const InformationContainer = styled.div`
@@ -68,7 +69,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -82,7 +83,7 @@ export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
     margin-bottom: max(10px, 1vmin);
     font-size: max(1.75rem, 3.5vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
@@ -214,7 +215,6 @@ export const AccordionWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
     margin-top: max(15px, 1.5vmin);
     margin-bottom: max(15px, 1.5vmin);
     overflow: hidden;
@@ -222,6 +222,7 @@ export const AccordionWrapper = styled.div`
     padding-right: max(10px, 2vmin);
     width: 100%;
     display: ${({showAccordion}) => (showAccordion ? '' : 'none')};
+    font-family: 'Montserrat', sans-serif;
 `
 
 
@@ -239,7 +240,6 @@ export const QuestionWrapper = styled.div`
     font-size: max(1.5rem, 1vw);
     height: max(40px, 6vmin);
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     text-align: left;
     align-items: center;
@@ -268,7 +268,7 @@ export const AnswerWrapper = styled.div`
     margin-bottom: max(20px, 2vmin);
     font-size: max(0.8rem, 2vmin);
     color: black;
-    font-weight: 500;
+    font-weight: 400;
 
 `
 

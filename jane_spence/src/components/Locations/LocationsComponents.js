@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const InformationContainer = styled.div`
@@ -159,7 +160,7 @@ export const BodyHoursTitle = styled.h4`
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-align: center;
-    font-weight: 450;
+    font-weight: 400;
     margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {

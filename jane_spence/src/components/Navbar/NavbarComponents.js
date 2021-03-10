@@ -5,7 +5,8 @@ import { Link as LinkScroll } from 'react-scroll'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const Nav = styled.nav`
@@ -54,6 +55,7 @@ export const NavLogo = styled(LinkScroll)`
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    font-weight: 400;
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
     overflow: hidden;

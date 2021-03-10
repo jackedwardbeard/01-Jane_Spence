@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 `
 
 export const InformationContainer = styled.div`
@@ -54,7 +55,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -214,7 +215,7 @@ export const SubmitBtn = styled.button`
 export const Error = styled.p`
     color: rgb(190,0,50);
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 5px;
     font-size: max(0.825rem, 1.75vmin);
     width: max(265px, 20vmin);
@@ -233,7 +234,7 @@ export const SubmissionMessage = styled.p`
     width: max(265px, 20vmin);
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.75rem, 1.5vmin);
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     display: flex;
     justify-content: center;
