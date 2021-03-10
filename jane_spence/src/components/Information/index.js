@@ -20,7 +20,7 @@ import {
     AnswerWrapper,
     DescriptionWrapper,
     Description,
-    GlobalStyle
+    GlobalStyle,
 } from './InformationComponents'
 import {faqs} from './faqs'
 import {FiPlus, FiMinus} from 'react-icons/fi'
@@ -94,7 +94,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                                 key={index}
                                                 data-aos='fade-right'
                                                 >
-                                                <h4>{item.question}</h4>
+                                                <p>{item.question}</p>
                                                 <span>{clicked === index ? <FiMinus/> : <FiPlus/>}</span>
                                                 </QuestionWrapper>
                                                 {clicked === index ? (
