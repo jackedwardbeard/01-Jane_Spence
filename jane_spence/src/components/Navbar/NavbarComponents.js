@@ -55,10 +55,14 @@ export const NavLogo = styled(LinkScroll)`
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     position: relative;
     font-size: max(1.6rem, 3.3vmin);
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        font-weight: 400;
+    }
 
     @media screen and (max-width: 805px) {
         font-size: max(1.1rem, 3vmin);
