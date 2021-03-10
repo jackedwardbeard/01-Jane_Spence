@@ -17,7 +17,7 @@ export const About = {
     subbody: 'Bachelor of Pharmacy (Monash University)',
     subbody2: 'Graduate Certificate of Diabetes Education',
     subbody3: 'Credentialled Diabetes Educator (CDE)',
-    subbody4: 'Australian Association of Consultation Pharmacy',
+    subbody4: 'Accreditation: Australian Association of Consultation Pharmacy',
     subbody5: 'Consultant Clinical Pharmacist',
     img: about,
     imageLeft: true,

@@ -55,8 +55,6 @@ export const Column1 = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
     margin-left: 3vmin;
     margin-right:  -2vmin;
 
@@ -144,6 +142,8 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    outline: solid 2px orange;
 `
 
 export const ImgWrap = styled.div`
