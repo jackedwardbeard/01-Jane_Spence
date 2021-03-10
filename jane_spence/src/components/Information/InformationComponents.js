@@ -62,8 +62,8 @@ export const Column1 = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 `
 
@@ -144,8 +144,6 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%:
-    width: 100%;
 `
 
 export const ImgWrap = styled.div`
