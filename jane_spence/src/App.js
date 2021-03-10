@@ -5,18 +5,16 @@ import Home from './pages';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat|Open+Sans');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 `
 
 // classes are stateful, functions are not (without hooks)
 function App() {
   return (
-    <>
-    <GlobalStyle/>
     <Router>
+      <GlobalStyle/>
       <Home/>
     </Router>
-    </>
   )
 }
 

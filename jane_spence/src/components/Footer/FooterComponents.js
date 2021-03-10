@@ -200,7 +200,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        font-weight: 500;
+        font-size: max(1.1rem, 1.8vmin);
         color: rgb(241,167,82);
     }
 `
@@ -236,7 +236,7 @@ export const NavLink = styled(LinkRouter)`
     }
 
     &:hover {
-        font-weight: 500;
+        font-size: max(1.1rem, 1.8vmin);
         color: rgb(241,167,82);
     }
 `
