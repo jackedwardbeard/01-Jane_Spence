@@ -81,7 +81,6 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
-    margin-bottom: max(10px, 1vmin);
     font-size: max(1.75rem, 3.5vmin);
     font-weight: 400;
     text-transform: uppercase;
@@ -110,7 +109,7 @@ export const Body = styled.p`
 `
 
 export const SubBody = styled.p`
-    margin-top: max(20px, 2vmin);
+    margin-top: max(15px, 1.5vmin);
     font-size: max(1rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;

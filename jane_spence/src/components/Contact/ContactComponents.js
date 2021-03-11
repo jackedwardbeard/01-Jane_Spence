@@ -258,7 +258,7 @@ export const DescriptionWrapper = styled.div`
 export const Description = styled.p`
     color: #696969;
     font-weight: 400;
-    font-size: max(1.1rem, 2.2vmin);
+    font-size: max(1rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
 `
 
@@ -280,5 +280,5 @@ export const SubTitle = styled.h3`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
-    margin-top: max(30px, 3vmin);
+    margin-top: max(20px, 2vmin);
 `

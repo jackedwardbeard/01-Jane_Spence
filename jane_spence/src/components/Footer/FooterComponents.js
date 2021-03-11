@@ -258,7 +258,7 @@ export const NavLink = styled(LinkRouter)`
 export const SubSubText = styled(LinkRouter)`
     color: white;
     font-size: max(1.25rem, 2.5vmin);
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     background: transparent;
     border: none;
@@ -284,7 +284,7 @@ export const SubSubText = styled(LinkRouter)`
 
 export const SubText = styled.span`
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);
 
