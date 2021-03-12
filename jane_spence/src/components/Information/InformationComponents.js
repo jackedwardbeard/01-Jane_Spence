@@ -254,7 +254,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
-        background: rgb(33,39,51);
+        background: rgb(70,75,87);
         color: rgb(241,167,82);
     }
     
