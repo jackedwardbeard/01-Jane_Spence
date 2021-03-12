@@ -122,6 +122,7 @@ export const MapWrapper = styled.div`
     overflow: hidden;
     margin-top: max(20px, 2.5vmin);
     margin-bottom: max(10px, 2.5vmin);
+    border-radius: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {
         width: 90%;
