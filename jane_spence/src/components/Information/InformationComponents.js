@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const InformationContainer = styled.div`
-    background: ${({darkBackground}) => (darkBackground ? 'white' : 'rgb(245,245,245)')};
+    background: ${({darkBackground}) => (darkBackground ? 'white' : 'rgb(242,243,244)')};
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -57,7 +57,7 @@ export const Column1 = styled.div`
     text-align: center;
     width: 100%;
     height: 100%;
-    margin-left: 3vmin;
+    margin-left: 6vmin;
     margin-right:  -2vmin;
 
     @media screen and (max-width: 1024px) {
@@ -159,7 +159,7 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 90%;
 `
 
 export const ButtonWrapper = styled.div`
