@@ -50,8 +50,24 @@ export const LandingText = styled.div`
 `
 
 export const LandingTitle = styled.div`
-    font-size: max(6.5vmin, 2rem);
-    font-weight: 400;
+    font-size: max(6.5vmin, 1.75rem);
+    font-weight: 300;
+
+    @media screen and (max-width: 1024px) {
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 540px) {
+        font-size: max(8vmin, 2.5rem);
+    }
+
+    @media screen and (max-width: 414px) {
+        font-size: max(6.5vmin, 2rem);
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: max(6.5vmin, 1.75rem);
+    }
 `
 
 export const LandingSubText = styled.div`

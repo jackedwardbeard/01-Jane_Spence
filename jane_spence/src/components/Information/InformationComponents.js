@@ -237,7 +237,7 @@ export const QuestionWrapper = styled.div`
     padding: max(2.5vmin, 25px);
     cursor: pointer;
     font-size: max(1.25rem, 2.5vmin);
-    height: max(65px, 6.5vmin);
+    height: max(40px, 6vmin);
     display: flex;
     justify-content: space-between;
     text-align: left;
