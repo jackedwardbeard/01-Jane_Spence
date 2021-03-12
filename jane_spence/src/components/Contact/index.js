@@ -107,9 +107,9 @@ const Contact = ({id}) => {
                                 <Item data-aos='fade-left'>📧 jane.spence@bigpond.com</Item>
                             </Body>
                         </TextWrapper>
+                        <Label data-aos='fade-right'>ENQUIRE NOW</Label>
                         <ContactWrap>
                             <ContactForm>
-                                <Label data-aos='fade-right'>ENQUIRE NOW</Label>
                                 <Input onChange={handleChange} 
                                 value={name}
                                 type='text' 
@@ -147,16 +147,16 @@ const Contact = ({id}) => {
                                 </InputLarge>
                                 <Error data-aos='fade'>{errors.enquiry && errors.enquiry.message}</Error>
                                 <SubmissionMessage>{thanks}</SubmissionMessage>
-                                <BtnWrapper>
+                            </ContactForm>
+                        </ContactWrap>
+                        <BtnWrapper>
                                     <SubmitBtn 
                                     type='submit' 
                                     data-aos='fade-right'
                                     onClick={handleSubmit(onSubmit)} 
                                     >Submit {String.fromCharCode(10140)}
                                     </SubmitBtn>
-                                </BtnWrapper>
-                            </ContactForm>
-                        </ContactWrap>
+                        </BtnWrapper>
                     </Column1>
                     <Column2>
                         <SubTitleWrapper data-aos='fade-down'>

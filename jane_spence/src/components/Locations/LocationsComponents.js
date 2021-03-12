@@ -22,7 +22,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: max(90vh, 800px);
+    height: max(90vh, 700px);
     display: flex;
 
     @media screen and (max-width: 1250px) {

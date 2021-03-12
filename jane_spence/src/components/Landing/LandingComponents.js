@@ -51,7 +51,7 @@ export const LandingText = styled.div`
 
 export const LandingTitle = styled.div`
     font-size: max(6.5vmin, 2rem);
-    font-weight: 300;
+    font-weight: 400;
 `
 
 export const LandingSubText = styled.div`

@@ -28,15 +28,15 @@ export const InformationWrapper = styled.div`
 
 export const Row1 = styled.div`
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     margin: auto;
 `
 
 export const Column1 = styled.div`
     padding: 0 1vmin;
-    margin-right: 5vmin;
-    margin-left: 5vmin;
+    margin-right: 7vmin;
+    margin-left: 3vmin;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -68,7 +68,7 @@ export const Title = styled.h1`
 export const Body = styled.ul`
     
     font-size: max(0.75rem, 1.5vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #696969;
     margin-bottom: max(0.5vmin, 5px);
 `
@@ -80,7 +80,7 @@ export const Column2 = styled.div`
     align-items: center;
     padding: 0 0.75vw;
     width: 50%;
-    height: 100%;
+    height: max(77.5vh, 700px);
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -98,8 +98,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 90%;
-    margin-top: 3vmin;
+    height: 100%;
 `
 
 export const Item = styled.div`
@@ -111,7 +110,7 @@ export const Item = styled.div`
     margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
-        max(1.2rem, 2.4vmin);
+        font-size: max(1rem, 2vmin);
     }
 `
 
@@ -135,7 +134,7 @@ export const ContactTitle = styled.h2`
 export const Label = styled.div`
     color: black;
     font-family: 'Montserrat', sans-serif;
-    margin-top: max(20px, 2vmin);
+    margin-top: max(6px, 0.6vmin);
     margin-bottom: max(10px, 1vmin);
     font-weight: 400;
     font-size: max(1.4rem, 2.8vmin);
@@ -143,15 +142,20 @@ export const Label = styled.div`
 
 export const Input = styled.input`
     height: max(40px, 4vmin);
-    width: max(265px, 20vmin);
+    width: max(300px, 30vmin);
     font-size: max(1.2rem, 2vmin);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    padding-left: max(5px, 0.5vmin);
+    padding-left: max(10px, 1vmin);
     margin-top: max(5px, 1vmin);
     outline: none;
     border: none;
+    border-radius: 10px;
     
+    @media screen and (max-width: 767px) {
+        width: max(265px, 20vmin);
+    }
+
     ::-webkit-inner-spin-button{
         -webkit-appearance: none; 
         margin: 0; 
@@ -173,11 +177,17 @@ export const InputLarge = styled.textarea`
     font-weight: 400;
     height: max(100px, 10vmin);
     font-size: max(1.2rem, 2vmin);
-    width: max(265px, 20vmin);
-    padding-left: max(5px, 0.5vmin);
+    width: max(300px, 30vmin);
+    padding-left: max(10px, 1vmin);
     margin-top: max(5px, 1vmin);
     outline: none;
     border: none;
+    resize: none;
+    border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+        width: max(265px, 20vmin);
+    }
 
     @media screen and (max-width: 280px) {
         width: max(250px, 13.1vmin);
@@ -194,8 +204,9 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 5vmin);
-    background: rgb(64,64,64);
+    background: rgb(70,75,87);
     white-space: nowrap;
+    margin-top: max(10px, 1vmin);
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
     color: white;
     font-size: max(1.25rem, 2.5vmin);
@@ -214,7 +225,7 @@ export const SubmitBtn = styled.button`
 
 export const Error = styled.p`
     color: rgb(190,0,50);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding-top: 5px;
     font-size: max(0.825rem, 1.75vmin);
@@ -230,16 +241,19 @@ export const SubmissionMessage = styled.p`
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
     height: max(50px, 5vmin);
-    width: 100%;
-    width: max(265px, 20vmin);
+    width: 80%;
     font-family: 'Montserrat', sans-serif;
-    font-size: max(0.75rem, 1.5vmin);
+    font-size: max(1rem, 2vmin);
     font-weight: 400;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        font-size: max(0.75rem, 1.5vmin);
+    }
 `
 
 export const DescriptionWrapper = styled.div`

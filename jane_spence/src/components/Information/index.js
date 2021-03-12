@@ -47,6 +47,18 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
         }
     }
     
+    // to make our smooth scroll offset responsive,
+    // we need to use the window height to calculate the responsive height of the navbar, and then calculate
+    // the respective offset from said height 
+    function calcNavOffset() {
+        const height = window.innerHeight;
+
+        return height;
+    }
+
+    const height = calcNavOffset();
+    const calculatedOffset = -(height*0.08171603677221654);
+
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>
             <GlobalStyle/>
@@ -117,7 +129,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
                                 showButton={showButton}
                                 smooth={true} 
                                 spy={true} 
-                                offset={-80}
+                                offset={calculatedOffset}
                                 >
                                 {buttonText}
                                 </Button>

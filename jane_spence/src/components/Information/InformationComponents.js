@@ -174,7 +174,7 @@ export const ButtonWrapper = styled.div`
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
     border-radius: max(30px, 5vmin);
-    background: ${({darkButton}) => (darkButton ? 'rgb(64,64,64)' : 'thistle')};
+    background: ${({darkButton}) => (darkButton ? 'rgb(70,75,87)' : 'thistle')};
     white-space: nowrap;
     padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
@@ -236,8 +236,8 @@ export const QuestionWrapper = styled.div`
     border-radius: 5vmin;
     padding: max(2.5vmin, 25px);
     cursor: pointer;
-    font-size: max(1.5rem, 1vw);
-    height: max(40px, 6vmin);
+    font-size: max(1.25rem, 2.5vmin);
+    height: max(65px, 6.5vmin);
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -254,7 +254,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
-        background: rgb(64,64,64);
+        background: rgb(33,39,51);
         color: rgb(241,167,82);
     }
     

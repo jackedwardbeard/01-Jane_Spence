@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Nav = styled.nav`
-    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(0,0,0,0.75)')};
+    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(12,19,35,0.75)')};
     height: max(80px, 8.171603677221654vh);
     margin-top: min(-80px, -8.171603677221654vh);
     min-height: 80px;
@@ -31,6 +31,7 @@ export const NavbarContainer = styled.div`
     justify-content: space-around;
     height: max(80px, 8.171603677221654vh);
     min-height: 80px;
+    align-items: center;
     z-index; 1;
     width: 100%;
     padding: 0 max(20px, 0.5vmin); 
@@ -45,7 +46,7 @@ export const LogoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -0.5vmin;
+    margin-top: min(-5px, -0.5vmin);
     margin-left: 10px;
 `
 
@@ -113,7 +114,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     font-size: max(0.8rem, 1.75vmin);
-    height: max(80px, 8.5vh);
+    height: max(80px, 8.171603677221654vh);
     margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
@@ -132,11 +133,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: max(6.5px, 0.65vmin) solid thistle;
+        border-bottom: max(4px, 0.4vmin) solid thistle;
     }
 
     &:hover {
-        border-bottom: max(6.5px, 0.65vmin) solid thistle;
+        border-bottom: max(4px, 0.4vmin) solid thistle;
     }
 
 `;
