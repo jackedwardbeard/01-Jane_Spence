@@ -10,9 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Nav = styled.nav`
-    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(12,19,35,0.75)')};
-    height: max(80px, 8.171603677221654vh);
-    margin-top: min(-80px, -8.171603677221654vh);
+    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(11,18,36,0.75)')};
+    height: max(80px, 9vh);
+    margin-top: min(-80px, -9vh);
     min-height: 80px;
     overflow: hidden;
     display: ${({showNav}) => (showNav ? 'flex' : 'none')};
@@ -29,7 +29,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    height: max(80px, 8.171603677221654vh);
+    height: max(80px, 9vh);
     min-height: 80px;
     align-items: center;
     z-index; 1;
@@ -85,7 +85,7 @@ export const SubLogo = styled(LinkScroll)`
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     position: relative;
-    font-size: max(0.75rem, 1.3vmin);
+    font-size: max(0.8rem, 1.35vmin);
     overflow: hidden;
 `
 
@@ -114,7 +114,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     font-size: max(0.8rem, 1.75vmin);
-    height: max(80px, 8.171603677221654vh);
+    height: max(80px, 9vh);
     margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
@@ -133,11 +133,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: max(4px, 0.4vmin) solid thistle;
+        border-bottom: max(3px, 0.3vmin) solid thistle;
     }
 
     &:hover {
-        border-bottom: max(4px, 0.4vmin) solid thistle;
+        border-bottom: max(3px, 0.3vmin) solid thistle;
     }
 
 `;

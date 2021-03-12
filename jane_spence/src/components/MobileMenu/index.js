@@ -26,7 +26,7 @@ function calcNavOffset() {
 }
 
 const height = calcNavOffset();
-const calculatedOffset = -(height*0.08171603677221654);
+const calculatedOffset = -(height*0.09);
 
 // you can pass in state variables and functions to components
 // in this case we pass in clicked (the state), and reverseState (a function to flip the state when clicked)

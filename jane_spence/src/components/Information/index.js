@@ -57,7 +57,7 @@ const Information = ({darkBackground, darkText, darkButton, showButton, showDesc
     }
 
     const height = calcNavOffset();
-    const calculatedOffset = -(height*0.08171603677221654);
+    const calculatedOffset = -(height*0.09);
 
     return (
         <InformationContainer darkBackground={darkBackground} id={id}>

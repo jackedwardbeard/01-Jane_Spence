@@ -61,7 +61,7 @@ const Navbar = ({reverseState, navOffset}) => {
     }
 
     const height = calcNavOffset();
-    const calculatedOffset = -(height*0.08171603677221654);
+    const calculatedOffset = -(height*0.09);
 
     return (
         <Nav navTransparent={navTransparent} showNav={showNav}>

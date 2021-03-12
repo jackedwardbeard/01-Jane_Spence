@@ -160,7 +160,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 80%;
 `
 
 export const ButtonWrapper = styled.div`
@@ -174,7 +173,7 @@ export const ButtonWrapper = styled.div`
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
     border-radius: max(30px, 5vmin);
-    background: ${({darkButton}) => (darkButton ? 'rgb(70,75,87)' : 'thistle')};
+    background: ${({darkButton}) => (darkButton ? 'rgb(69,74,88)' : 'thistle')};
     white-space: nowrap;
     padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
@@ -254,7 +253,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
-        background: rgb(70,75,87);
+        background: rgb(69,74,88);
         color: rgb(241,167,82);
     }
     

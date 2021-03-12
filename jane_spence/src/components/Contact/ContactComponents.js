@@ -204,7 +204,7 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 5vmin);
-    background: rgb(70,75,87);
+    background: rgb(69,74,88);
     white-space: nowrap;
     margin-top: max(10px, 1vmin);
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);

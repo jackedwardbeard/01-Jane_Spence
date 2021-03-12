@@ -29,7 +29,7 @@ const Landing = ({id}) => {
     }
 
     const height = calcNavOffset();
-    const calculatedOffset = -(height*0.08171603677221654);
+    const calculatedOffset = -(height*0.09);
 
     return (
         <LandingContainer id={id}>
