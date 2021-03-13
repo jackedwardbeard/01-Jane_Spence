@@ -47,7 +47,10 @@ export const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: min(-5px, -0.5vmin);
-    margin-left: 10px;
+    
+    @media screen and (max-width: 1024px) {
+        margin-left: 10px;
+    }
 `
 
 export const NavLogo = styled(LinkScroll)`
@@ -58,7 +61,7 @@ export const NavLogo = styled(LinkScroll)`
     text-decoration: none;
     font-weight: 700;
     position: relative;
-    font-size: max(1.6rem, 3.3vmin);
+    font-size: max(1.8rem, 3.6vmin);
     overflow: hidden;
 
     @media screen and (max-width: 805px) {
@@ -85,7 +88,7 @@ export const SubLogo = styled(LinkScroll)`
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     position: relative;
-    font-size: max(0.8rem, 1.35vmin);
+    font-size: max(0.85rem, 1.4vmin);
     overflow: hidden;
 `
 

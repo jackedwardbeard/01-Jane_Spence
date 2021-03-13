@@ -59,6 +59,8 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -70,7 +72,9 @@ export const Body = styled.ul`
     font-size: max(0.75rem, 1.5vmin);
     font-family: 'Montserrat', sans-serif;
     color: #696969;
-    margin-bottom: max(0.5vmin, 5px);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px black;
 `
 
 export const Column2 = styled.div`
@@ -134,7 +138,7 @@ export const ContactTitle = styled.h2`
 export const Label = styled.div`
     color: black;
     font-family: 'Montserrat', sans-serif;
-    margin-top: max(6px, 0.6vmin);
+    margin-top: -10px;
     margin-bottom: max(10px, 1vmin);
     font-weight: 400;
     font-size: max(1.4rem, 2.8vmin);

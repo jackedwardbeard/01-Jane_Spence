@@ -22,7 +22,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: max(90vh, 700px);
+    height: max(85vh, 700px);
     display: flex;
 
     @media screen and (max-width: 1250px) {
@@ -66,6 +66,10 @@ export const Title = styled.h1`
     font-weight: 400;
     color: black;
     margin-bottom: max(10px, 0.5vmin);
+
+    @media screen and (max-width: 1024px) {
+        border-bottom: none;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
@@ -158,7 +162,7 @@ export const BodyHours = styled.p`
 
 export const BodyHoursTitle = styled.h4`
     font-size: max(1rem, 2vmin);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
     text-align: center;
     font-weight: 400;

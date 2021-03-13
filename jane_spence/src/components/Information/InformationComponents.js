@@ -28,7 +28,7 @@ export const InformationWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: max(90vh, 700px);
+    height: max(85vh, 700px);
 
     @media screen and (max-width: 768px) {
         height: 100%;
