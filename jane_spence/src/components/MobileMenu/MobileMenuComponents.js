@@ -71,7 +71,7 @@ export const MobileMenu = styled.ul`
 export const MobileMenuLink = styled(LinkScroll)`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 3vh;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;

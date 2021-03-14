@@ -15,6 +15,7 @@ import {
     GlobalStyle
 } 
 from './MobileMenuComponents'
+import * as FaIcons from 'react-icons/fa'
 
 // to make our smooth scroll offset responsive,
 // we need to use the window height to calculate the responsive height of the navbar, and then calculate
@@ -39,11 +40,11 @@ const MobileSideMenu = ({clicked, reverseState}) => {
             </Icon>
             <MobileMenuWrapper>
                 <MobileMenu>
-                    <MobileMenuLink to="landing" onClick={reverseState} smooth={true} spy={true} offset={0}>Home</MobileMenuLink>
-                    <MobileMenuLink to="about" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}>About</MobileMenuLink>
-                    <MobileMenuLink to="faq" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}>FAQ</MobileMenuLink>
-                    <MobileMenuLink to="locations" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}>Locations</MobileMenuLink>
-                    <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}>Contact</MobileMenuLink>
+                    <MobileMenuLink to="landing" onClick={reverseState} smooth={true} spy={true} offset={0}><FaIcons.FaHome/>&nbsp;&nbsp;Home</MobileMenuLink>
+                    <MobileMenuLink to="about" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}><FaIcons.FaInfo/>&nbsp;&nbsp;About</MobileMenuLink>
+                    <MobileMenuLink to="faq" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}><FaIcons.FaQuestion/>&nbsp;&nbsp;FAQ</MobileMenuLink>
+                    <MobileMenuLink to="locations" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}><FaIcons.FaMapMarkerAlt/>&nbsp;&nbsp;Locations</MobileMenuLink>
+                    <MobileMenuLink to="contact" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}><FaIcons.FaPhoneSquare/>&nbsp;&nbsp;Contact</MobileMenuLink>
                 </MobileMenu>
                 <MobileBtnWrapper>
                     <MobileMenuBtn to="contact" onClick={reverseState} smooth={true} spy={true} offset={calculatedOffset}>Enquire Now</MobileMenuBtn>
