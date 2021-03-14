@@ -68,6 +68,10 @@ export const NavLogo = styled(LinkScroll)`
         font-size: max(1.1rem, 3vmin);
     }
 
+    @media screen and (max-width: 775px) {
+        font-size: max(1.1rem, 2.8vmin);
+    }
+
     @media screen and (max-width: 768px) {
         font-size: max(1.6rem, 3.3vmin);
     }
