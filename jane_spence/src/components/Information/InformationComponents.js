@@ -255,6 +255,10 @@ export const QuestionWrapper = styled.div`
     margin-bottom: max(20px, 2vmin);
     color: black;
 
+    @media screen and (max-width: 1470px) and (min-height: 800px) {
+        font-size: max(0.9rem, 1.25vw);
+    }
+
     @media screen and (max-width: 767px) {
         font-size: max(0.9rem, 1.25vw);
     }
