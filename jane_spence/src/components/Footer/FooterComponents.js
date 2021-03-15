@@ -209,7 +209,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        font-size: max(1.1rem, 1.8vmin);
+        font-weight: 600;
         color: rgb(241,167,82);
     }
 `
@@ -241,7 +241,7 @@ export const NavLink = styled(LinkRouter)`
     }
 
     &:hover {
-        font-size: max(1.1rem, 1.8vmin);
+        font-weight: 600;
         color: rgb(241,167,82);
     }
 `
@@ -265,7 +265,7 @@ export const SubSubText = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         color: rgb(241,167,82);
-        font-size: max(1.4rem, 2.7vmin);
+        font-size: max(1.3rem, 2.6vmin);
     }
 `
 
