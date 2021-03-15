@@ -74,7 +74,6 @@ export const Body = styled.ul`
     color: #696969;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-bottom: solid 1px black;
 `
 
 export const Column2 = styled.div`
