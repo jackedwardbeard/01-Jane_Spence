@@ -73,8 +73,6 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
-    border-bottom: solid 1px black;
-    margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -89,9 +87,6 @@ export const Subtitle = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
-    border-bottom: solid 1px black;
-    padding-bottom: max(5px, 0.5vmin);
-    margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);

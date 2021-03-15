@@ -65,7 +65,7 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: black;
-    margin-bottom: max(15px, 1.5vmin);
+    margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
@@ -117,11 +117,11 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: max(250px, 37.5vh);
+    height: max(250px, 40vh);
     width: 22.5vw;
     overflow: hidden;
-    margin-top: max(30px, 3vmin);
-    margin-bottom: max(30px, 3vmin);
+    margin-top: max(25px, 2.5vmin);
+    margin-bottom: max(25px, 2.5vmin);
     border-radius: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {
