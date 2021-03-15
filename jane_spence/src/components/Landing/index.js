@@ -19,17 +19,25 @@ const Landing = ({id}) => {
         Aos.init({duration: 1000})
     }, [])
 
-    // to make our smooth scroll offset responsive,
-    // we need to use the window height to calculate the responsive height of the navbar, and then calculate
-    // the respective offset from said height 
-    function calcNavOffset() {
-        const height = window.innerHeight;
-
-        return height;
+    // calculates converts our input value (vh) to px
+    // so we can use it in our calcNavOffset function (for responsive smooth scrolling)
+    function vh(v) {
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        return (v * h) / 100;
     }
+    
+    // calculate the height of our responsive navbar
+    function calcNavOffset() {
+        // nav height is either 80px or 9vh, determine which
+        const navHeight = Math.max(80, vh(9));
+        // offset for smooth scroll is the negative of this
+        const offset = -(navHeight);
 
-    const height = calcNavOffset();
-    const calculatedOffset = -(height*0.09);
+        return offset; 
+    }
+    
+    // calculate the offset needed for our responsive navbar
+    const navOffset = calcNavOffset();
 
     return (
         <LandingContainer id={id}>
@@ -45,7 +53,7 @@ const Landing = ({id}) => {
                 Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
                 <LearnMoreBtnWrapper>
-                    <LearnMoreBtn to="about" smooth={true} spy={true} offset={calculatedOffset} data-aos='fade-up'>
+                    <LearnMoreBtn to="about" smooth={true} spy={true} offset={navOffset} data-aos='fade-up'>
                     Learn More {String.fromCharCode(10140)}
                     </LearnMoreBtn>
                 </LearnMoreBtnWrapper>

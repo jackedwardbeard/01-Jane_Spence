@@ -25,17 +25,25 @@ const Footer = () => {
         Aos.init({duration: 1000})
     }, [])
 
-    // to make our smooth scroll offset responsive,
-    // we need to use the window height to calculate the responsive height of the navbar, and then calculate
-    // the respective offset from said height 
-    function calcNavOffset() {
-        const height = window.innerHeight;
-
-        return height;
+    // calculates converts our input value (vh) to px
+    // so we can use it in our calcNavOffset function (for responsive smooth scrolling)
+    function vh(v) {
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        return (v * h) / 100;
     }
+    
+    // calculate the height of our responsive navbar
+    function calcNavOffset() {
+        // nav height is either 80px or 9vh, determine which
+        const navHeight = Math.max(80, vh(9));
+        // offset for smooth scroll is the negative of this
+        const offset = -(navHeight);
 
-    const height = calcNavOffset();
-    const calculatedOffset = -(height*0.09);
+        return offset; 
+    }
+    
+    // calculate the offset needed for our responsive navbar
+    const navOffset = calcNavOffset();
     
     return (
         <FooterContainer>
@@ -49,11 +57,11 @@ const Footer = () => {
                         <Title data-aos='fade-right'>
                             PAGES
                         </Title>
-                        <NavLinkScroll data-aos='fade-left' to="landing" smooth={true} spy={true} offset={calculatedOffset}>Home</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-right' to="about" smooth={true} spy={true} offset={calculatedOffset}>About</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-left' to="faq" smooth={true} spy={true} offset={calculatedOffset}>FAQ</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-right' to="locations" smooth={true} spy={true} offset={calculatedOffset}>Locations</NavLinkScroll>
-                        <NavLinkScroll data-aos='fade-left' to="contact" smooth={true} spy={true} offset={calculatedOffset}>Contact</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-left' to="landing" smooth={true} spy={true} offset={navOffset}>Home</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-right' to="about" smooth={true} spy={true} offset={navOffset}>About</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-left' to="faq" smooth={true} spy={true} offset={navOffset}>FAQ</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-right' to="locations" smooth={true} spy={true} offset={navOffset}>Locations</NavLinkScroll>
+                        <NavLinkScroll data-aos='fade-left' to="contact" smooth={true} spy={true} offset={navOffset}>Contact</NavLinkScroll>
                     </Column1>
                     <Column2>
                         <Title data-aos='fade-right'>
