@@ -60,7 +60,7 @@ export const Title = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: black;
     border-bottom: solid 1px black;
-    padding-bottom: 10px;
+    padding-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
