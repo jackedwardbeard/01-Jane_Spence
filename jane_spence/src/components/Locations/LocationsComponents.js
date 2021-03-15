@@ -66,7 +66,6 @@ export const Title = styled.h1`
     font-weight: 400;
     color: black;
     margin-bottom: max(15px, 1.5vmin);
-    border-bottom: solid 0.2px black;
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
@@ -118,7 +117,7 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: max(250px, 35vh);
+    height: max(250px, 37.5vh);
     width: 22.5vw;
     overflow: hidden;
     margin-top: max(30px, 3vmin);

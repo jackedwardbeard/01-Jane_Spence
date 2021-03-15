@@ -90,6 +90,7 @@ export const Subtitle = styled.h1`
     color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
     border-bottom: solid 1px black;
+    padding-bottom: max(5px, 0.5vmin);
     margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {

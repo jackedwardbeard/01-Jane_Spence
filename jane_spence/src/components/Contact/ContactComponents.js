@@ -61,6 +61,7 @@ export const Title = styled.h1`
     color: black;
     border-bottom: solid 1px black;
     padding-bottom: max(10px, 1vmin);
+    width: 80%;
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -93,6 +94,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     padding-top: 0;
     padding-bottom: max(30px, 3vmin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 export const ImgWrap = styled.div`
