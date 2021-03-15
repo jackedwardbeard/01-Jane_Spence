@@ -102,6 +102,10 @@ export const Body = styled.p`
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
 
+    @media screen and (max-width: 1450px) and (min-height: 800px) {
+        font-size: max(0.65rem, 1.7vmin);
+    }
+
     @media screen and (max-width: 1024px) {
         line-height: 25px;
         font-size: max(0.85rem, 2vmin);
@@ -116,9 +120,16 @@ export const SubBody = styled.p`
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
 
+    @media screen and (max-width: 1450px) and (min-height: 800px) {
+        font-size: max(0.65rem, 1.7vmin);
+    }
+
     @media screen and (max-width: 1024px) {
         line-height: 25px;
         font-size: max(0.85rem, 2vmin);
+    }
+
+    @media screen and (max-width: 768px) {
         margin-top: max(10px, 1vmin);
     }
 `
