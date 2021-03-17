@@ -11,7 +11,8 @@ import {
     MapWrapper,
     BodyHours,
     BodyHoursTitle,
-    GlobalStyle
+    GlobalStyle,
+    MainTitle
 } from './LocationsComponents'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -36,6 +37,7 @@ class Locations extends Component {
                 <InformationWrapper>
                     <Row1>
                             <Column1>
+                                <MainTitle>LOCATIONS</MainTitle>
                                 <Title data-aos='fade-right'>
                                 Barry Dean Pharmacy
                                 </Title>

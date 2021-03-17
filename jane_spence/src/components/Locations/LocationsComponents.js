@@ -59,6 +59,29 @@ export const Column1 = styled.div`
     }
 `
 
+export const MainTitle = styled.h1`
+    display: none;
+    font-size: max(2.2rem, 4.8vmin);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    border-bottom: solid 1px black;
+    margin-bottom: max(3vmin, 30px);
+    padding-bottom: max(10px, 1vmin);
+
+    @media screen and (max-width: 1250px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: max(2.5rem, 5.4vmin);
+    }
+`
+
 export const Title = styled.h1`
     font-size: max(1.5rem, 3vmin);
     text-transform: uppercase;
@@ -66,6 +89,10 @@ export const Title = styled.h1`
     font-weight: 400;
     color: black;
     margin-bottom: max(10px, 1vmin);
+
+    @media screen and (max-width: 1250px) {
+        font-weight: 300;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
