@@ -87,7 +87,7 @@ const Footer = () => {
             <SubSubFooterContainer>
 
                 <SubSubText to="//linkedin.com/in/jackedwardbeard/" target="_blank">
-                   Design By JACK BEARD ツ
+                   Design By JACK BEARD 💢
                 </SubSubText>
 
             </SubSubFooterContainer>

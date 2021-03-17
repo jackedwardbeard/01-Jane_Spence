@@ -254,7 +254,7 @@ export const QuestionWrapper = styled.div`
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     color: black;
-    box-shadow: 3px 3px 3px rgb(69,74,88);
+    box-shadow: 5px 5px 5px rgb(69,74,88);
 
     @media screen and (max-width: 1470px) and (min-height: 800px) {
         font-size: max(0.9rem, 1.25vw);

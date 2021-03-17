@@ -35,7 +35,7 @@ export const Row1 = styled.div`
 
 export const Column1 = styled.div`
     padding: 0 1vmin;
-    margin-right: 7vmin;
+    margin-right: 10vmin;
     margin-left: 3vmin;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ export const Input = styled.input`
     outline: none;
     border: none;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px rgb(69,74,88);
+    box-shadow: 5px 5px 5px rgb(69,74,88);
     
     @media screen and (max-width: 767px) {
         width: max(265px, 20vmin);
@@ -193,7 +193,7 @@ export const InputLarge = styled.textarea`
     border: none;
     resize: none;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px rgb(69,74,88);
+    box-shadow: 5px 5px 5px rgb(69,74,88);
 
     @media screen and (max-width: 767px) {
         width: max(265px, 20vmin);
@@ -268,7 +268,7 @@ export const SubmissionMessage = styled.p`
 
 export const DescriptionWrapper = styled.div`
     display: flex;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -288,9 +288,9 @@ export const Description = styled.p`
 
 export const SubTitleWrapper = styled.div`
     display: flex;
-    text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -299,6 +299,8 @@ export const SubTitleWrapper = styled.div`
 
 export const SubTitle = styled.h3`
     color: black;
+    display: flex;
+    text-align: right;
     font-size: max(1.4rem, 2.8vmin);
     font-weight: 400;
     text-transform: uppercase;
