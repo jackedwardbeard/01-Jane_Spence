@@ -159,6 +159,7 @@ export const Input = styled.input`
     outline: none;
     border: none;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(69,74,88);
     
     @media screen and (max-width: 767px) {
         width: max(265px, 20vmin);
@@ -192,6 +193,7 @@ export const InputLarge = styled.textarea`
     border: none;
     resize: none;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(69,74,88);
 
     @media screen and (max-width: 767px) {
         width: max(265px, 20vmin);
