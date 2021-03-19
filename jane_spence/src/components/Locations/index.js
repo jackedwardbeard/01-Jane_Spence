@@ -37,7 +37,7 @@ class Locations extends Component {
                 <InformationWrapper>
                     <Row1>
                             <Column1>
-                                <MainTitle>LOCATIONS</MainTitle>
+                                <MainTitle data-aos='fade-down'>LOCATIONS</MainTitle>
                                 <Title data-aos='fade-right'>
                                 Barry Dean Pharmacy
                                 </Title>
