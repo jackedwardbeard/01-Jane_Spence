@@ -48,7 +48,6 @@ export const Column1 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
     text-align: center;
@@ -62,10 +61,10 @@ export const Column1 = styled.div`
 export const MainTitle = styled.h1`
     display: none;
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #696969;
     border-bottom: solid 1px black;
     margin-bottom: max(3vmin, 30px);
     padding-bottom: max(10px, 1vmin);
@@ -86,8 +85,8 @@ export const Title = styled.h1`
     font-size: max(1.5rem, 3vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: black;
+    font-weight: 500;
+    color: #696969;
     margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {
@@ -110,7 +109,6 @@ export const Body = styled.p`
 export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col1;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     flex-direction: column;
@@ -129,7 +127,6 @@ export const Column2 = styled.div`
 export const Column3 = styled.div`
     padding: 0 15px;
     grid-area: col1;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     flex-direction: column;
@@ -186,9 +183,9 @@ export const BodyHours = styled.p`
 export const BodyHoursTitle = styled.h4`
     font-size: max(1rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #696969;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: max(10px, 1vmin);
 
     @media screen and (max-width: 1250px) {

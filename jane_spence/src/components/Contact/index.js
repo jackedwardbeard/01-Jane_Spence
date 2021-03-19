@@ -107,9 +107,9 @@ const Contact = ({id}) => {
                                 <Item data-aos='fade-left'>📧 jane.spence@bigpond.com</Item>
                             </Body>
                         </TextWrapper>
-                        <Label data-aos='fade-right'>ENQUIRE NOW</Label>
                         <ContactWrap>
                             <ContactForm>
+                                <Label data-aos='fade-right'>ENQUIRE NOW</Label>
                                 <Input onChange={handleChange} 
                                 value={name}
                                 type='text' 

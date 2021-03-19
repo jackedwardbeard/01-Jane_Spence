@@ -26,7 +26,8 @@ export const About = {
     showAccordion: false,
     showDescription: false,
     maxWidth: true,
-    leftAlign: true
+    leftAlign: true,
+    titleUnderline: true,
 }
 
 export const FAQ = {
@@ -38,7 +39,7 @@ export const FAQ = {
     darkButtonText: false,
     buttonText: "Can't find what you're looking for?",
     buttonLocation: 'contact',
-    title: 'F.A.Q',
+    title: 'FAQ',
     subtext: 'Click each question to see its answer!',
     body: 'Template for FAQ',
     img: faq,
@@ -48,6 +49,7 @@ export const FAQ = {
     showAccordion: true,
     description: 'You can click on a question to view its answer. If your question cannot be answered, please do not hesitate to get in touch.',
     showDescription: true,
-    maxWidth: false
+    maxWidth: false,
+    titleUnderline: false
 
 }

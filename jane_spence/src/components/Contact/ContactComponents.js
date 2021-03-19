@@ -55,13 +55,14 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #696969;
     border-bottom: solid 1px black;
     padding-bottom: max(10px, 1vmin);
-    width: 90%;
+    width: 100%;
+    text-align: left;
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -75,6 +76,7 @@ export const Body = styled.ul`
     color: #696969;
     padding-bottom: 10px;
     padding-top: 10px;
+    text-align: left;
 `
 
 export const Column2 = styled.div`
@@ -127,7 +129,6 @@ export const ContactWrap = styled.div`
 `
 
 export const ContactForm = styled.form`
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,12 +141,14 @@ export const ContactTitle = styled.h2`
 `
 
 export const Label = styled.div`
-    color: black;
+    color: #696969;
     font-family: 'Montserrat', sans-serif;
     margin-top: -10px;
     margin-bottom: max(10px, 1vmin);
     font-weight: 400;
     font-size: max(1.4rem, 2.8vmin);
+    text-align: left;
+    width: max(300px, 30vmin);
 `
 
 export const Input = styled.input`
@@ -209,13 +212,13 @@ export const InputLarge = styled.textarea`
 export const BtnWrapper = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: 'Montserrat', sans-serif;
 `
 
 export const SubmitBtn = styled.button`
     
-    border-radius: max(30px, 5vmin);
+    border-radius: max(30px, 3vmin);
     background: rgb(69,74,88);
     white-space: nowrap;
     margin-top: max(10px, 1vmin);
@@ -223,14 +226,18 @@ export const SubmitBtn = styled.button`
     color: white;
     font-size: max(1.25rem, 2.5vmin);
     font-family: 'Montserrat';
-    font-weight: 300;
+    font-weight: 500;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.2s;
+    width: max(300px, 30vmin);
 
     &:hover {
-        color: rgb(241,167,82);
+        color: black;
+        background: thistle;
+        transition: 0.2s;
     }
     
 `
@@ -253,9 +260,9 @@ export const SubmissionMessage = styled.p`
     margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
     height: max(50px, 5vmin);
-    width: 80%;
+    width: max(300px, 30vmin);
     font-family: 'Montserrat', sans-serif;
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.6rem, 1.2vmin);
     font-weight: 400;
     color: black;
     display: flex;
@@ -300,7 +307,7 @@ export const SubTitleWrapper = styled.div`
 `
 
 export const SubTitle = styled.h3`
-    color: black;
+    color: #696969;
     display: flex;
     text-align: right;
     font-size: max(1.4rem, 2.8vmin);

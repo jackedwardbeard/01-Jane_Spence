@@ -62,21 +62,21 @@ export const Column1 = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-top: 0;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 `
 
 export const Title = styled.h1`
     font-size: max(2.2rem, 4.8vmin);
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
-    border-bottom: solid 1px black;
-    margin-bottom: max(1vmin, 10px);
+    color: ${({darkText}) => (darkText ? '#696969' : 'thistle')};
+    border-bottom: ${({titleUnderline}) => (titleUnderline ? 'solid 1px black' : 'none')};
+    margin-bottom: ${({titleUnderline}) => (titleUnderline ? 'max(1vmin, 10px)' : 'none')};
     padding-bottom: max(10px, 1vmin);
-    text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'right')};
+    text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'center')};
     width: ${({maxWidth}) => (maxWidth ? '100%' : 'initial')};
 
     @media screen and (max-width: 768px) {
@@ -86,11 +86,11 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
-    font-size: max(1.75rem, 3.5vmin);
-    font-weight: 400;
+    font-size: max(2rem, 4vmin);
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: ${({darkText}) => (darkText ? 'black' : 'thistle')};
+    color: ${({darkText}) => (darkText ? '#696969' : 'thistle')};
     display: ${({showSubtitle}) => (showSubtitle ? '' : 'none')}; 
     border-bottom: solid 1px black;
     margin-bottom: max(1vmin, 10px);
@@ -190,7 +190,6 @@ export const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-top: max(5px, 1vmin);
 `
 
@@ -203,14 +202,17 @@ export const Button = styled(LinkScroll)`
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
     font-size: max(0.9rem, 2.2vmin);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none; 
+    transition: 0.2s;
 
     &:hover {
-        color: rgb(241,167,82);
+        color: black;
+        background: thistle;
+        transition: 0.2s;
     }
 
     @media screen and (max-width: 768px) {
@@ -302,17 +304,16 @@ export const AnswerWrapper = styled.div`
 export const DescriptionWrapper = styled.div`
     display: flex;
     text-align: center;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    margin-top: max(10px, 1vmin);
     margin-bottom: max(10px, 1vmin);
     padding-left: max(20px, 2vmin);
     padding-right: max(20px, 2vmin);
     display: ${({showDescription}) => (showDescription ? '' : 'none')};
 
     @media screen and (max-width: 1024px) {
-        width: 90%;
+        width: 95%;
     }
 `
 

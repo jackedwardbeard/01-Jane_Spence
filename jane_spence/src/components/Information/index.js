@@ -28,7 +28,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 
-const Information = ({leftAlign, maxWidth, darkBackground, darkText, darkButton, showButton, showDescription, description, darkButtonText, buttonText, buttonLocation, id, title, body, showBody, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext, showAccordion}) => {
+const Information = ({titleUnderline, leftAlign, maxWidth, darkBackground, darkText, darkButton, showButton, showDescription, description, darkButtonText, buttonText, buttonLocation, id, title, body, showBody, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext, showAccordion}) => {
     
     useEffect(() => {
         Aos.init({duration: 1000})
@@ -74,7 +74,7 @@ const Information = ({leftAlign, maxWidth, darkBackground, darkText, darkButton,
                 <Row1>
                     <Column1>
                         <TextWrapper>
-                            <Title data-aos='fade-down' darkText={darkText} maxWidth={maxWidth} leftAlign={leftAlign}>
+                            <Title data-aos='fade-down' darkText={darkText} maxWidth={maxWidth} leftAlign={leftAlign} titleUnderline={titleUnderline}>
                                 {title}
                             </Title>
                             <Body data-aos='fade-up' darkText={darkText} showBody={showBody}>

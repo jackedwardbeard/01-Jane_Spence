@@ -166,11 +166,11 @@ export const NavBtnLink = styled(LinkScroll)`
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: 0.5s;
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
+        transition: 0.5s;
         background: white;
         color: black;
     }
