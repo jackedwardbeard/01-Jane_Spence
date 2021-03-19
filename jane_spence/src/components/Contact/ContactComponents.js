@@ -62,7 +62,7 @@ export const Title = styled.h1`
     border-bottom: solid 1px black;
     padding-bottom: max(10px, 1vmin);
     width: 100%;
-    text-align: left;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -76,7 +76,7 @@ export const Body = styled.ul`
     color: #696969;
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: left;
+    text-align: center;
 `
 
 export const Column2 = styled.div`
@@ -147,8 +147,16 @@ export const Label = styled.div`
     margin-bottom: max(10px, 1vmin);
     font-weight: 400;
     font-size: max(1.4rem, 2.8vmin);
-    text-align: left;
+    text-align: center;
     width: max(300px, 30vmin);
+
+    @media screen and (max-width: 767px) {
+        width: max(265px, 20vmin);
+    }
+
+    @media screen and (max-width: 280px) {
+        width: max(250px, 13.1vmin);
+    }
 `
 
 export const Input = styled.input`
@@ -233,6 +241,14 @@ export const SubmitBtn = styled.button`
     text-decoration: none;
     transition: 0.2s;
     width: max(300px, 30vmin);
+
+    @media screen and (max-width: 767px) {
+        width: max(265px, 20vmin);
+    }
+
+    @media screen and (max-width: 280px) {
+        width: max(250px, 13.1vmin);
+    }
 
     &:hover {
         color: black;
