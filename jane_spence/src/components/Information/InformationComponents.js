@@ -76,6 +76,8 @@ export const Title = styled.h1`
     border-bottom: solid 1px black;
     margin-bottom: max(1vmin, 10px);
     padding-bottom: max(10px, 1vmin);
+    text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'right')};
+    width: ${({maxWidth}) => (maxWidth ? '100%' : 'initial')};
 
     @media screen and (max-width: 768px) {
         font-size: max(2.5rem, 5.4vmin);
@@ -93,6 +95,8 @@ export const Subtitle = styled.h1`
     border-bottom: solid 1px black;
     margin-bottom: max(1vmin, 10px);
     padding-bottom: max(10px, 1vmin);
+    width: 100%;
+    text-align: right;
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
@@ -107,6 +111,7 @@ export const Body = styled.p`
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
+    text-align: left;
 
     @media screen and (max-width: 1450px) and (min-height: 800px) {
         font-size: max(0.65rem, 1.7vmin);
@@ -125,6 +130,8 @@ export const SubBody = styled.p`
     font-weight: 400;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
+    text-align: right;
+    width: 100%;
 
     @media screen and (max-width: 1450px) and (min-height: 800px) {
         font-size: max(0.65rem, 1.7vmin);

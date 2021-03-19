@@ -24,7 +24,9 @@ export const About = {
     showSubtitle: true,
     showBody: true,
     showAccordion: false,
-    showDescription: false
+    showDescription: false,
+    maxWidth: true,
+    leftAlign: true
 }
 
 export const FAQ = {
@@ -45,6 +47,7 @@ export const FAQ = {
     showBody: false,
     showAccordion: true,
     description: 'You can click on a question to view its answer. If your question cannot be answered, please do not hesitate to get in touch.',
-    showDescription: true
+    showDescription: true,
+    maxWidth: false
 
 }
