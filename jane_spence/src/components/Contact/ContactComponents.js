@@ -32,6 +32,10 @@ export const Row1 = styled.div`
     justify-content: center;
     margin: auto;
     margin-top: max(5vmin, 50px);
+
+    @media screen and (max-width: 1024px) {
+        margin: auto;
+    }
 `
 
 export const Column1 = styled.div`
