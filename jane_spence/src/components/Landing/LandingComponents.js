@@ -35,6 +35,10 @@ export const LandingImg = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    @media screen and (max-width: 1024px) {
+        background-size: cover;
+    }
 `
 
 export const LandingText = styled.div`

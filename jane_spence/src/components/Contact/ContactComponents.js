@@ -116,8 +116,8 @@ export const Item = styled.div`
     color: #696969;
     font-weight: 400;
     font-family: 'Montserrat';
-    margin-top: max(10px, 1vmin);
-    margin-bottom: max(10px, 1vmin);
+    margin-top: max(7.5px, 0.75vmin);
+    margin-bottom: max(7.5px, 0.75vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(1rem, 2vmin);
@@ -227,11 +227,11 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 3vmin);
-    background: rgb(69,74,88);
+    background: thistle;
     white-space: nowrap;
     margin-top: max(10px, 1vmin);
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
-    color: white;
+    color: black;
     font-size: max(1.25rem, 2.5vmin);
     font-family: 'Montserrat';
     font-weight: 500;
@@ -240,20 +240,17 @@ export const SubmitBtn = styled.button`
     cursor: pointer;
     text-decoration: none;
     transition: 0.2s;
-    width: max(300px, 30vmin);
+    width: max(250px, 25vmin);
+    box-shadow: 8px 8px 8px rgb(69,74,88); 
 
-    @media screen and (max-width: 767px) {
-        width: max(265px, 20vmin);
-    }
-
-    @media screen and (max-width: 280px) {
-        width: max(250px, 13.1vmin);
-    }
 
     &:hover {
-        color: black;
-        background: thistle;
+        background: white;
         transition: 0.2s;
+    }
+
+    @media screen and (max-width: 768px) {
+        box-shadow: 5px 5px 5px rgb(69,74,88);
     }
     
 `
@@ -297,7 +294,6 @@ export const DescriptionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    line-height: 1;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -309,6 +305,7 @@ export const Description = styled.p`
     font-weight: 400;
     font-size: max(1rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
+    line-height: 1;
 `
 
 export const SubTitleWrapper = styled.div`

@@ -184,7 +184,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 500;
+    font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
@@ -209,7 +209,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        font-weight: 700;
+        font-weight: 500;
         color: rgb(241,167,82);
     }
 `
@@ -218,7 +218,7 @@ export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 500;
+    font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
@@ -241,7 +241,7 @@ export const NavLink = styled(LinkRouter)`
     }
 
     &:hover {
-        font-weight: 700;
+        font-weight: 500;
         color: rgb(241,167,82);
     }
 `

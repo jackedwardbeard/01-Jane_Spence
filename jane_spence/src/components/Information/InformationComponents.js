@@ -195,7 +195,7 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled(LinkScroll)`
     display: ${({showButton}) => (showButton ? '' : 'none')};
-    border-radius: max(30px, 5vmin);
+    border-radius: max(30px, 3vmin);
     background: ${({darkButton}) => (darkButton ? 'rgb(69,74,88)' : 'thistle')};
     white-space: nowrap;
     padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
@@ -208,15 +208,18 @@ export const Button = styled(LinkScroll)`
     cursor: pointer;
     text-decoration: none; 
     transition: 0.2s;
+    box-shadow: 8px 8px 8px rgb(69,74,88);
 
     &:hover {
         color: black;
-        background: thistle;
+        background: white;
         transition: 0.2s;
     }
 
     @media screen and (max-width: 768px) {
         font-size: max(1rem, 2.4vmin);
+        box-shadow: 5px 5px 5px rgb(69,74,88);
+        margin-bottom: max(10px, 1vmin);
     }
 
     @media screen and (max-width: 767px) {
@@ -269,10 +272,14 @@ export const QuestionWrapper = styled.div`
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     color: black;
-    box-shadow: 5px 5px 5px rgb(69,74,88);
+    box-shadow: 6px 6px 6px rgb(69,74,88);
 
     @media screen and (max-width: 1470px) and (min-height: 800px) {
         font-size: max(0.9rem, 1.25vw);
+    }
+
+    @media screen and (max-width: 768px) {
+        box-shadow: 4px 4px 4px rgb(69,74,88);
     }
 
     @media screen and (max-width: 767px) {

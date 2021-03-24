@@ -95,6 +95,7 @@ export const Title = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: max(2rem, 4vmin);
+        margin-top: max(10px, 1vmin);
     }
 `
 
@@ -141,12 +142,13 @@ export const Column3 = styled.div`
 `
 
 export const MapWrapper = styled.div`
-    height: max(250px, 40vh);
+    height: max(250px, 37.5vh);
     width: 22.5vw;
     overflow: hidden;
     margin-top: max(25px, 2.5vmin);
     margin-bottom: max(25px, 2.5vmin);
     border-radius: max(10px, 1vmin);
+    box-shadow: 6px 6px 6px rgb(69,74,88);
 
     @media screen and (max-width: 1250px) {
         width: 90%;
@@ -156,6 +158,7 @@ export const MapWrapper = styled.div`
     @media screen and (max-width: 1024px) {
         width: 100%;
         height: max(250px, 20vh);
+        box-shadow: 5px 5px 5px rgb(69,74,88);
     }
 
     
