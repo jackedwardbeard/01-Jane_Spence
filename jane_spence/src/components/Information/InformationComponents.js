@@ -207,13 +207,13 @@ export const Button = styled(LinkScroll)`
     border: none;
     cursor: pointer;
     text-decoration: none; 
-    transition: 0.2s;
+    transition: 0.1s;
     box-shadow: 8px 8px 8px rgb(69,74,88);
 
     &:hover {
         color: black;
         background: white;
-        transition: 0.2s;
+        transition: 0.1s;
     }
 
     @media screen and (max-width: 768px) {

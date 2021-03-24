@@ -239,14 +239,14 @@ export const SubmitBtn = styled.button`
     border: none;
     cursor: pointer;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.1s;
     width: max(250px, 25vmin);
     box-shadow: 8px 8px 8px rgb(69,74,88); 
 
 
     &:hover {
         background: white;
-        transition: 0.2s;
+        transition: 0.1s;
     }
 
     @media screen and (max-width: 768px) {
