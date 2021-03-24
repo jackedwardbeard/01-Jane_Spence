@@ -163,7 +163,7 @@ export const SubSubFooterContainer = styled.div`
 export const Title = styled.h3`
     color: white;
     font-size: max(1.1rem, 2.5vmin);
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     margin-top: max(20px, 1.5vmin);
 
@@ -184,7 +184,7 @@ export const NavLinkScroll = styled(LinkScroll)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 300;
+    font-weight: 700;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
@@ -218,7 +218,7 @@ export const NavLink = styled(LinkRouter)`
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: max(1rem, 1.75vmin);
-    font-weight: 300;
+    font-weight: 700;
     margin-top: max(15px, 1.5vmin);
     display: grid;
     text-decoration: none;
@@ -271,7 +271,7 @@ export const SubSubText = styled(LinkRouter)`
 
 export const SubText = styled.span`
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);
 
