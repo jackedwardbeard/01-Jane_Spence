@@ -36,7 +36,7 @@ export const Row1 = styled.div`
 export const Column1 = styled.div`
     padding: 0 1vmin;
     margin-right: 10vmin;
-    margin-left: 3vmin;
+    margin-left: 6vmin;
     display: flex;
     flex-direction: column;
     text-align: center;
