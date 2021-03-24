@@ -148,7 +148,7 @@ export const MapWrapper = styled.div`
     margin-top: max(25px, 2.5vmin);
     margin-bottom: max(25px, 2.5vmin);
     border-radius: max(10px, 1vmin);
-    box-shadow: 6px 6px 6px rgb(69,74,88);
+    box-shadow: 0 0 10px #000;
 
     @media screen and (max-width: 1250px) {
         width: 90%;
@@ -158,7 +158,6 @@ export const MapWrapper = styled.div`
     @media screen and (max-width: 1024px) {
         width: 100%;
         height: max(250px, 20vh);
-        box-shadow: 5px 5px 5px rgb(69,74,88);
     }
 
     
