@@ -31,6 +31,7 @@ export const Row1 = styled.div`
     align-items: top;
     justify-content: center;
     margin: auto;
+    margin-top: max(5vmin, 50px);
 `
 
 export const Column1 = styled.div`
