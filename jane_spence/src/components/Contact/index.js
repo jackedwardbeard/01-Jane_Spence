@@ -102,9 +102,9 @@ const Contact = ({id}) => {
                             <Body>
                                 <Item data-aos='fade-left'>PO BOX 5049</Item>
                                 <Item data-aos='fade-right'>Frankston South 3199</Item>
-                                <Item data-aos='fade-left'>📞 0417 389 257</Item>
-                                <Item data-aos='fade-right'>📠 5971 4686</Item>
-                                <Item data-aos='fade-left'>📧 jane.spence@bigpond.com</Item>
+                                <Item data-aos='fade-left'>P: 0417 389 257</Item>
+                                <Item data-aos='fade-right'>F: 5971 4686</Item>
+                                <Item data-aos='fade-left'>E: jane.spence@bigpond.com</Item>
                             </Body>
                         </TextWrapper>
                         <ContactWrap>

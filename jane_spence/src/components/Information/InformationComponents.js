@@ -73,7 +73,7 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? '#696969' : 'thistle')};
-    border-bottom: ${({titleUnderline}) => (titleUnderline ? 'solid 1px black' : 'none')};
+    border-bottom: ${({titleUnderline}) => (titleUnderline ? 'solid max(1px, 0.1vmin) black' : 'none')};
     margin-bottom: ${({titleUnderline}) => (titleUnderline ? 'max(1vmin, 10px)' : 'none')};
     padding-bottom: max(10px, 1vmin);
     text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'center')};
@@ -208,7 +208,7 @@ export const Button = styled(LinkScroll)`
     cursor: pointer;
     text-decoration: none; 
     transition: 0.1s;
-    box-shadow: 8px 8px 8px rgb(69,74,88);
+    box-shadow: max(0.8vmin, 8px) max(0.8vmin, 8px) max(0.8vmin, 8px) rgb(69,74,88);
 
     &:hover {
         color: black;
@@ -272,7 +272,8 @@ export const QuestionWrapper = styled.div`
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     color: black;
-    box-shadow: 6px 6px 6px rgb(69,74,88);
+    box-shadow: max(0.6vmin, 6px) max(0.6vmin, 6px) max(0.6vmin, 6px) rgb(69,74,88);
+    transition: 0.5s;
 
     @media screen and (max-width: 1470px) and (min-height: 800px) {
         font-size: max(0.9rem, 1.25vw);
@@ -291,6 +292,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
+        transition: 0.5s;
         background: rgb(69,74,88);
         color: rgb(241,167,82);
     }

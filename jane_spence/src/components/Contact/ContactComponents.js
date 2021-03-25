@@ -64,7 +64,7 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: #696969;
-    border-bottom: solid 1px black;
+    border-bottom: solid max(1px, 0.1vmin) black;
     padding-bottom: max(10px, 1vmin);
     width: 100%;
     text-align: center;
@@ -109,6 +109,7 @@ export const TextWrapper = styled.div`
 
 export const ImgWrap = styled.div`
     height: 100%;
+    width: 100%;
 `
 
 export const Img = styled.img`
@@ -148,9 +149,9 @@ export const ContactTitle = styled.h2`
 export const Label = styled.div`
     color: #696969;
     font-family: 'Montserrat', sans-serif;
-    margin-top: -10px;
+    margin-top: min(-10px, -1vmin);
     margin-bottom: max(10px, 1vmin);
-    font-weight: 400;
+    font-weight: 500;
     font-size: max(1.4rem, 2.8vmin);
     text-align: center;
     width: max(300px, 30vmin);
@@ -174,8 +175,8 @@ export const Input = styled.input`
     margin-top: max(5px, 1vmin);
     outline: none;
     border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(69,74,88);
+    border-radius: max(0.5vmin, 5px);
+    box-shadow: max(0.5vmin, 5px) max(0.5vmin, 5px) max(0.5vmin, 5px) rgb(69,74,88);
     -webkit-appearance: none;
     
     @media screen and (max-width: 767px) {
@@ -209,8 +210,8 @@ export const InputLarge = styled.textarea`
     outline: none;
     border: none;
     resize: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(69,74,88);
+    border-radius: max(0.5vmin, 5px);
+    box-shadow: max(0.5vmin, 5px) max(0.5vmin, 5px) max(0.5vmin, 5px) rgb(69,74,88);
     -webkit-appearance: none;
 
     @media screen and (max-width: 767px) {
@@ -246,7 +247,7 @@ export const SubmitBtn = styled.button`
     text-decoration: none;
     transition: 0.1s;
     width: max(250px, 25vmin);
-    box-shadow: 8px 8px 8px rgb(69,74,88); 
+    box-shadow: max(0.8vmin, 8px) max(0.8vmin, 8px) max(0.8vmin, 8px) rgb(69,74,88);
 
 
     &:hover {
@@ -329,7 +330,7 @@ export const SubTitle = styled.h3`
     display: flex;
     text-align: right;
     font-size: max(1.4rem, 2.8vmin);
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
