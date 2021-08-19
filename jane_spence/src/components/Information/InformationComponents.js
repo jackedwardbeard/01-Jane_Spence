@@ -68,7 +68,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2.2rem, 4.8vmin);
+    font-size: max(2rem, 4vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -78,10 +78,6 @@ export const Title = styled.h1`
     padding-bottom: max(10px, 1vmin);
     text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'center')};
     width: ${({maxWidth}) => (maxWidth ? '100%' : 'initial')};
-
-    @media screen and (max-width: 768px) {
-        font-size: max(2.5rem, 5.4vmin);
-    }
 `
 
 export const Subtitle = styled.h1`
@@ -97,15 +93,11 @@ export const Subtitle = styled.h1`
     padding-bottom: max(10px, 1vmin);
     width: 100%;
     text-align: right;
-
-    @media screen and (max-width: 768px) {
-        font-size: max(2rem, 4vmin);
-    }
 `
 
 export const Body = styled.p`
     margin-top: max(10px, 1vmin);
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
@@ -125,7 +117,7 @@ export const Body = styled.p`
 
 export const SubBody = styled.p`
     margin-top: max(15px, 1.5vmin);
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
@@ -200,25 +192,23 @@ export const Button = styled(LinkScroll)`
     white-space: nowrap;
     padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: max(0.9rem, 2.2vmin);
+    font-size: max(0.9rem, 2vmin);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none; 
     transition: 0.1s;
-    box-shadow: max(0.8vmin, 8px) max(0.8vmin, 8px) max(0.8vmin, 8px) rgb(69,74,88);
 
     &:hover {
-        color: black;
-        background: white;
+        background: rgb(69,74,88);
+        color: rgb(241,167,82);
         transition: 0.1s;
     }
 
     @media screen and (max-width: 768px) {
         font-size: max(1rem, 2.4vmin);
-        box-shadow: 5px 5px 5px rgb(69,74,88);
         margin-bottom: max(10px, 1vmin);
     }
 
@@ -260,11 +250,11 @@ export const Accordion = styled.div`
 
 export const QuestionWrapper = styled.div`
     
-    background: rgb(13,16,22,0.05);
+    background: rgb(13,16,22,0.1);
     border-radius: 5vmin;
     padding: max(2.5vmin, 25px);
     cursor: pointer;
-    font-size: max(1rem, 2.5vmin);
+    font-size: max(1rem, 2vmin);
     height: max(40px, 6vmin);
     display: flex;
     justify-content: space-between;
@@ -272,15 +262,10 @@ export const QuestionWrapper = styled.div`
     align-items: center;
     margin-bottom: max(20px, 2vmin);
     color: black;
-    box-shadow: max(0.6vmin, 6px) max(0.6vmin, 6px) max(0.6vmin, 6px) rgb(69,74,88);
     transition: 0.5s;
 
     @media screen and (max-width: 1470px) and (min-height: 800px) {
         font-size: max(0.9rem, 1.25vw);
-    }
-
-    @media screen and (max-width: 768px) {
-        box-shadow: 4px 4px 4px rgb(69,74,88);
     }
 
     @media screen and (max-width: 767px) {
@@ -292,7 +277,7 @@ export const QuestionWrapper = styled.div`
     }
 
     &:hover {
-        transition: 0.5s;
+        transition: 0.1s;
         background: rgb(69,74,88);
         color: rgb(241,167,82);
     }
@@ -304,7 +289,7 @@ export const AnswerWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: max(20px, 2vmin);
-    font-size: max(0.8rem, 2vmin);
+    font-size: max(0.8rem, 1.75vmin);
     color: black;
     font-weight: 400;
 

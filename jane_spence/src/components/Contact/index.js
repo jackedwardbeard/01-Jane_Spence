@@ -19,7 +19,6 @@ import {
     SubmitBtn,
     BtnWrapper,
     Error,
-    SubmissionMessage,
     DescriptionWrapper,
     Description,
     SubTitleWrapper,
@@ -31,6 +30,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import {useForm} from 'react-hook-form'
 import axios from 'axios'
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 const Contact = ({id}) => {
 
@@ -47,8 +48,19 @@ const Contact = ({id}) => {
     const [email, setEmail] = useState('');
     const [enquiry, setEnquiry] = useState('');
 
-    // state used to display a 'thanks for your enquiry' message after form submission
-    const [thanks, setThanks] = useState('');
+    // for dialog pop-up (to confirm email submission)
+    const [open, setOpen] = useState(false);
+    const [emailDialogText, setDialogText] = useState('');
+
+    // open dialog pop-up
+    const handleOpen = () => {
+        setOpen(true);
+    }
+
+    // close dialog pop-up
+    const handleClose = () => {
+        setOpen(false);
+    }
 
     // on submitting the form, send a POST request to our backend
     const onSubmit = (e) => {
@@ -68,7 +80,10 @@ const Contact = ({id}) => {
         setEmail('');
         setEnquiry('');
 
-        setThanks('Thanks for your enquiry! I will be in touch shortly.')
+        // open pop-up confirmation
+        setDialogText('Thanks for your enquiry! I will be in touch shortly.');
+        handleOpen();
+       
     }
 
     // on changing an input field on the contact form, update its value
@@ -146,7 +161,22 @@ const Contact = ({id}) => {
                                 ref={register({required: "Enquiry required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
                                 </InputLarge>
                                 <Error data-aos='fade'>{errors.enquiry && errors.enquiry.message}</Error>
-                                <SubmissionMessage>{thanks}</SubmissionMessage>
+                                <Dialog
+                                    open={open}
+                                    onClose={handleClose}
+                                >
+                                    <DialogTitle> </DialogTitle>
+                                    <DialogContent>
+                                        <DialogContentText>
+                                            { emailDialogText }
+                                        </DialogContentText>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        <Button onClick={handleClose} color="primary">
+                                            Okay
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
                             </ContactForm>
                         </ContactWrap>
                         <BtnWrapper>

@@ -60,7 +60,7 @@ export const Column1 = styled.div`
 
 export const MainTitle = styled.h1`
     display: none;
-    font-size: max(2.2rem, 4.8vmin);
+    font-size: max(2rem, 4vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -75,14 +75,10 @@ export const MainTitle = styled.h1`
         justify-content: center;
         text-align: center;
     }
-
-    @media screen and (max-width: 768px) {
-        font-size: max(2.5rem, 5.4vmin);
-    }
 `
 
 export const Title = styled.h1`
-    font-size: max(1.5rem, 3vmin);
+    font-size: max(1.4rem, 2.8vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -94,15 +90,14 @@ export const Title = styled.h1`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: max(2rem, 4vmin);
         margin-top: max(10px, 1vmin);
     }
 `
 
 export const Body = styled.p`
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.925rem, 1.85vmin);
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #696969;
     text-align: center;
 `
@@ -164,8 +159,8 @@ export const MapWrapper = styled.div`
 
 
 export const BodyHours = styled.p`
-    font-size: max(1rem, 2vmin);
-    font-family: 'Montserrat', sans-serif;
+    font-size: max(0.925rem, 1.85vmin);
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #696969;
     text-align: center;

@@ -193,7 +193,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
     @media screen and (max-width: 768px) {
         font-size: max(0.9rem, 2vmin);
-        font-weight: 700;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 539px) {
@@ -227,7 +227,7 @@ export const NavLink = styled(LinkRouter)`
 
     @media screen and (max-width: 768px) {
         font-size: max(0.9rem, 2vmin);
-        font-weight: 700;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 539px) {

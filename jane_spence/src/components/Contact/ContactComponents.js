@@ -31,7 +31,6 @@ export const Row1 = styled.div`
     align-items: top;
     justify-content: center;
     margin: auto;
-    margin-top: max(5vmin, 50px);
 
     @media screen and (max-width: 1024px) {
         margin: auto;
@@ -40,13 +39,14 @@ export const Row1 = styled.div`
 
 export const Column1 = styled.div`
     padding: 0 1vmin;
-    margin-right: 10vmin;
+    margin-right: 5vmin;
     margin-left: 6vmin;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     @media screen and (max-width: 1024px) {
         margin-right: 0;
@@ -59,7 +59,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2.2rem, 4.8vmin);
+    font-size: max(2rem, 4vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -68,10 +68,6 @@ export const Title = styled.h1`
     padding-bottom: max(10px, 1vmin);
     width: 100%;
     text-align: center;
-
-    @media screen and (max-width: 768px) {
-        font-size: max(2.5rem, 5.4vmin);
-    }
 `
 
 export const Body = styled.ul`
@@ -91,7 +87,6 @@ export const Column2 = styled.div`
     align-items: center;
     padding: 0 0.75vw;
     width: 50%;
-    height: max(77.5vh, 700px);
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -108,17 +103,16 @@ export const TextWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    height: 100%;
+    margin-top: 30px;
     width: 100%;
 `
 
 export const Img = styled.img`
     width: 100%;
-    height: 100%;
 `
 
 export const Item = styled.div`
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.925rem, 1.85vmin);
     color: #696969;
     font-weight: 400;
     font-family: 'Montserrat';
@@ -168,6 +162,7 @@ export const Label = styled.div`
 export const Input = styled.input`
     height: max(40px, 4vmin);
     width: max(300px, 30vmin);
+    background: rgb(13,16,22,0.075);
     font-size: max(1.2rem, 2vmin);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
@@ -176,7 +171,6 @@ export const Input = styled.input`
     outline: none;
     border: none;
     border-radius: max(0.5vmin, 5px);
-    box-shadow: max(0.5vmin, 5px) max(0.5vmin, 5px) max(0.5vmin, 5px) rgb(69,74,88);
     -webkit-appearance: none;
     
     @media screen and (max-width: 767px) {
@@ -192,6 +186,11 @@ export const Input = styled.input`
         margin: 0; 
     }  
 
+    ::placeholder { 
+        color: rgb(105,105,105);
+        opacity: 1; /* Firefox */
+    }
+
     @media screen and (max-width: 280px) {
         width: max(250px, 13.1vmin);
     }
@@ -199,6 +198,7 @@ export const Input = styled.input`
 
 export const InputLarge = styled.textarea`
     font-family: 'Montserrat', sans-serif;
+    background: rgb(13,16,22,0.1);
     padding-top: max(5px, 1vmin);
     type: textarea;
     font-weight: 400;
@@ -211,7 +211,6 @@ export const InputLarge = styled.textarea`
     border: none;
     resize: none;
     border-radius: max(0.5vmin, 5px);
-    box-shadow: max(0.5vmin, 5px) max(0.5vmin, 5px) max(0.5vmin, 5px) rgb(69,74,88);
     -webkit-appearance: none;
 
     @media screen and (max-width: 767px) {
@@ -220,6 +219,11 @@ export const InputLarge = styled.textarea`
 
     @media screen and (max-width: 280px) {
         width: max(250px, 13.1vmin);
+    }
+
+    ::placeholder { 
+        color: rgb(105,105,105);
+        opacity: 1; /* Firefox */
     }
 `
 
@@ -235,28 +239,24 @@ export const SubmitBtn = styled.button`
     border-radius: max(30px, 3vmin);
     background: thistle;
     white-space: nowrap;
-    margin-top: max(10px, 1vmin);
+    margin-top: max(50px, 5vmin);
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
     color: black;
-    font-size: max(1.25rem, 2.5vmin);
+    font-size: max(0.9rem, 2vmin);
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none;
     transition: 0.1s;
     width: max(250px, 25vmin);
-    box-shadow: max(0.8vmin, 8px) max(0.8vmin, 8px) max(0.8vmin, 8px) rgb(69,74,88);
 
 
     &:hover {
-        background: white;
+        background: rgb(69,74,88);
+        color: rgb(241,167,82);
         transition: 0.1s;
-    }
-
-    @media screen and (max-width: 768px) {
-        box-shadow: 5px 5px 5px rgb(69,74,88);
     }
     
 `
@@ -266,32 +266,13 @@ export const Error = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding-top: 5px;
-    font-size: max(0.825rem, 1.75vmin);
+    font-size: max(0.8rem, 1.5vmin);
     width: max(265px, 20vmin);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-`
-
-export const SubmissionMessage = styled.p`
-    margin-top: max(10px, 1vmin);
-    margin-bottom: max(10px, 1vmin);
-    height: max(50px, 5vmin);
-    width: max(300px, 30vmin);
-    font-family: 'Montserrat', sans-serif;
-    font-size: max(0.6rem, 1.2vmin);
-    font-weight: 400;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    @media screen and (max-width: 767px) {
-        font-size: max(0.75rem, 1.5vmin);
-    }
 `
 
 export const DescriptionWrapper = styled.div`
@@ -309,7 +290,7 @@ export const DescriptionWrapper = styled.div`
 export const Description = styled.p`
     color: #696969;
     font-weight: 400;
-    font-size: max(1rem, 2vmin);
+    font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
     line-height: 1;
 `
@@ -334,5 +315,4 @@ export const SubTitle = styled.h3`
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
-    margin-top: max(20px, 2vmin);
 `
