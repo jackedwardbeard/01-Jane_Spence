@@ -208,22 +208,21 @@ export const Button = styled(LinkScroll)`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: max(1rem, 2.4vmin);
-        margin-bottom: max(10px, 1vmin);
+        border-radius: max(30px, 3vmin);
+        background: thistle;
+        white-space: nowrap;
+        padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
+        color: black;
+        font-size: max(0.9rem, 2vmin);
+        font-family: 'Montserrat';
+        font-weight: 400;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.1s;
+        width: 100%;
     }
-
-    @media screen and (max-width: 767px) {
-        padding: max(13px, 1.2vmin) max(20px, 2vmin);
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 280px) {
-        font-size: 0.7rem;
-    }
-
     
 `
 

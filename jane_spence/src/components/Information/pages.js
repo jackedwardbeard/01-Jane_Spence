@@ -37,7 +37,7 @@ export const FAQ = {
     showButton: true,
     darkButton: false,
     darkButtonText: true,
-    buttonText: "Can't find what you're looking for?",
+    buttonText: "Need Further Help?",
     buttonLocation: 'contact',
     title: 'FAQ',
     subtext: 'Click each question to see its answer!',
