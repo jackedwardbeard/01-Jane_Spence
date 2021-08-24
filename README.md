@@ -64,6 +64,10 @@ npm run dev
 
 ## Required Modules (Front-End)
 
+### To install all packages (cd jane_spence)
+```bash
+npm install
+```
 ### react-scroll
 ##### react-scroll lets us use smooth scroll on components that link to certain pages/divs/ids.
 ```bash
@@ -112,6 +116,10 @@ npm install react/react-dom/react-router/dom
 
 ## Required Modules (Back-End)
 
+### To install all packages (cd root folder)
+```bash
+npm install
+```
 ### body-parser
 ##### allows our back-end to receive our POST call data from the front-end react app as req.body, which makes unpacking this data extremely easy.
 ```bash
