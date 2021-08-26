@@ -162,6 +162,11 @@ const Contact = ({id}) => {
                                 </InputLarge>
                                 <Error data-aos='fade'>{errors.enquiry && errors.enquiry.message}</Error>
                                 <Dialog
+                                    PaperProps={{
+                                        style: {
+                                        backgroundColor: 'white',
+                                        },
+                                    }}
                                     open={open}
                                     onClose={handleClose}
                                 >
