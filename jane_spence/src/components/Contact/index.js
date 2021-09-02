@@ -209,7 +209,7 @@ const Contact = () => {
                                 placeholder='Phone' 
                                 name='phone' 
                                 // prevent non digits to be entered into the number input field
-                                onKeyDown={ (evt) => evt.key === 'e' && evt.preventDefault() }
+                                onKeyDown={ (e) => ((e.key === 'e' && e.preventDefault()) || (e.key === 'E' && e.preventDefault())) }
                                 data-aos='fade-right'
                                 >
                                 </Input>
