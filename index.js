@@ -2,6 +2,7 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
 
 // configure environment variables
 dotenv.config();
@@ -16,6 +17,11 @@ app.use(express.json());
 
 // enables CORS
 app.use(cors());
+
+// redirect 'stray' requests to react's index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/jane_spence/build/index.html'));
+});
 
 // our server side POST
 app.post("/api/sendMail", (req, res) => {
