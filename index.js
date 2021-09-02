@@ -3,18 +3,17 @@ const path = require('path');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const bodyParser = require('body-parser')
 
 // enable environment variables
 require('dotenv').config()
 
-// create the server, set port to 5000 or env variable
+// create the server, set port to env variable (e.g. on heroku), or port 5000 locally
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // allows us to access req.body
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
 
 // enables CORS
 app.use(cors());
