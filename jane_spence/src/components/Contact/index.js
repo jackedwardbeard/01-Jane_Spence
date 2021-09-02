@@ -136,7 +136,7 @@ const Contact = () => {
         // validate and update phone field
         if (e.target.name === "phone") {
             //eslint-disable-next-line -- ignores regex warning
-            const phonePattern = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
+            const phonePattern = new RegExp(/^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{1}(\ |-){0,1}[0-9]{3}$/);
             if (!phonePattern.test(e.target.value) && e.target.value !== '') {
                 setPhoneErrorText('Invalid Phone Number');
             }
@@ -208,6 +208,8 @@ const Contact = () => {
                                 type='number' 
                                 placeholder='Phone' 
                                 name='phone' 
+                                // prevent non digits to be entered into the number input field
+                                onKeyDown={ (evt) => evt.key === 'e' && evt.preventDefault() }
                                 data-aos='fade-right'
                                 >
                                 </Input>
