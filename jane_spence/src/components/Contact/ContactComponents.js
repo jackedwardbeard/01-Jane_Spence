@@ -11,7 +11,6 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
 `
 
 export const InformationWrapper = styled.div`
@@ -71,7 +70,6 @@ export const Title = styled.h1`
 `
 
 export const Body = styled.ul`
-    
     font-size: max(0.75rem, 1.5vmin);
     font-family: 'Montserrat', sans-serif;
     color: #696969;

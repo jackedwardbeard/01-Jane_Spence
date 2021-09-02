@@ -26,27 +26,29 @@ import {
     GlobalStyle
 } from './ContactComponents'
 import contact from '../../images/contact.svg'
+import axios from 'axios'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import {useForm} from 'react-hook-form'
-import axios from 'axios'
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 
-const Contact = ({id}) => {
+const Contact = () => {
 
     useEffect(() => {
         Aos.init({duration: 1000})
     }, [])
-
-    // state used for form validation (react hook form)
-    const {register, handleSubmit, errors} = useForm({ mode: 'onBlur' });
 
     // state used for keeping track of contact form values/inputs
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [enquiry, setEnquiry] = useState('');
+
+    // state for managing input validation error messages
+    const [nameErrorText, setNameErrorText] = useState('');
+    const [phoneErrorText, setPhoneErrorText] = useState('');
+    const [emailErrorText, setEmailErrorText] = useState('');
+    const [enquiryErrorText, setEnquiryErrorText] = useState('');
 
     // for dialog pop-up (to confirm email submission)
     const [open, setOpen] = useState(false);
@@ -63,49 +65,111 @@ const Contact = ({id}) => {
     }
 
     // on submitting the form, send a POST request to our backend
-    const onSubmit = (e) => {
+    const onSubmit = () => {
         
-        const data = {
-            name: name,
-            phone: phone,
-            email: email,
-            enquiry: enquiry
+        // if required fields are given, and valid (i.e. no errors), POST
+        if ((email !== '' && emailErrorText === '') && (enquiry !== '' && enquiryErrorText === '')) {
+            const data = {
+                name: name,
+                phone: phone,
+                email: email,
+                enquiry: enquiry
+            }
+    
+            axios.post("/api/sendMail", data)
+            
+            // clear the form upon submitting
+            setName('');
+            setPhone('');
+            setEmail('');
+            setEnquiry('');
+    
+            // open pop-up confirmation
+            setDialogText('Thanks for your enquiry! I will be in touch shortly.');
+            handleOpen();
         }
 
-        axios.post("/api/sendMail", data)
-        
-        // clear the form upon submitting
-        setName('');
-        setPhone('');
-        setEmail('');
-        setEnquiry('');
+        // don't POST if required fields are not given or have errors
+        else {
 
-        // open pop-up confirmation
-        setDialogText('Thanks for your enquiry! I will be in touch shortly.');
-        handleOpen();
-       
+            let issues = [];
+
+            if (nameErrorText !== '') {
+                issues.push('invalid name');
+            }
+            if (phoneErrorText !== '') {
+                issues.push('invalid phone number');
+            }
+            if (email === '') {
+                issues.push('email required');
+            }
+            if (emailErrorText !== '') {
+                issues.push('email not valid');
+            }
+            if (enquiry === '') {
+                issues.push('enquiry required');
+            }
+
+            setDialogText('Error: ' + issues.join(', '));
+            handleOpen();
+        }
     }
 
-    // on changing an input field on the contact form, update its value
+    // on changing an input field on the contact form, validate and update
     const handleChange = (e) => {
         e.preventDefault();
 
-        if(e.target.name === "name") {
-            setName(e.target.value)
+        // validate and update name field
+        if (e.target.name === "name") {
+            //eslint-disable-next-line -- ignores regex warning
+            const lettersOnlyPattern = new RegExp(/^[A-Za-z\s\-]+$/);
+            // input matches name regex and isn't empty
+            if (!lettersOnlyPattern.test(e.target.value) && e.target.value !== '') {
+                setNameErrorText('Invalid Name');
+            }
+            else {
+                setNameErrorText('');
+            }
+            setName(e.target.value);
         }
-        else if(e.target.name === "phone") {
-            setPhone(e.target.value)
+
+        // validate and update phone field
+        if (e.target.name === "phone") {
+            //eslint-disable-next-line -- ignores regex warning
+            const phonePattern = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
+            if (!phonePattern.test(e.target.value) && e.target.value !== '') {
+                setPhoneErrorText('Invalid Phone Number');
+            }
+            else {
+                setPhoneErrorText('');
+            }
+            setPhone(e.target.value);
         }
-        else if(e.target.name === "email") {
-            setEmail(e.target.value)
+
+        // validate and update email field
+        if (e.target.name === "email") {
+            //eslint-disable-next-line -- ignores regex warning
+            const emailPattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+            if (!emailPattern.test(e.target.value) && e.target.value !== '') {
+                setEmailErrorText('Error');
+            }
+            else{
+                setEmailErrorText('');
+            }
+            setEmail(e.target.value);
         }
-        else {
+
+        // validate and update enquiry field
+        if (e.target.name === "enquiry") {
+            if (e.target.value === '') {
+                setEnquiryErrorText('Error')
+            }
             setEnquiry(e.target.value)
         }
     }
 
     return (
-        <InformationContainer id={id}>
+        <InformationContainer id='contact'>
             <GlobalStyle/>
             <InformationWrapper>
                 <Row1>
@@ -131,36 +195,51 @@ const Contact = ({id}) => {
                                 placeholder='Name' 
                                 name='name' 
                                 data-aos='fade-left'
-                                ref={register({required: true})}>
+                                >
                                 </Input>
-                                <Error data-aos='fade'>{errors.name && "Your name is required"}</Error>
+                                {
+                                    nameErrorText === '' ?
+                                    <></>
+                                    :
+                                    <Error data-aos='fade'>{nameErrorText}</Error>
+                                }
                                 <Input onChange={handleChange} 
                                 value={phone}
                                 type='number' 
                                 placeholder='Phone' 
                                 name='phone' 
                                 data-aos='fade-right'
-                                ref={register({required: false, maxLength: {value: 10, message: "Number is too long"}, minLength: {value: 8, message: "Number is too short"}})}>
+                                >
                                 </Input>
-                                <Error data-aos='fade'>{errors.phone && errors.phone.message}</Error>
+                                {
+                                    phoneErrorText === '' ?
+                                    <></>
+                                    :
+                                    <Error data-aos='fade'>{phoneErrorText}</Error>
+                                }
                                 <Input onChange={handleChange}
                                 value={email} 
                                 type='text' 
-                                placeholder='E-mail' 
+                                placeholder='* Email' 
                                 name='email' 
                                 data-aos='fade-left'
-                                ref={register({required: true})}>
+                                >
                                 </Input>
-                                <Error data-aos='fade'>{errors.email && "Your e-mail is required"}</Error>
+                                {
+                                    emailErrorText === '' ?
+                                    <></>
+                                    :
+                                    <Error data-aos='fade'>{emailErrorText}</Error>
+                                }
                                 <InputLarge type='text' 
                                 onChange={handleChange} 
                                 value={enquiry}
-                                placeholder='Enquiry' 
+                                placeholder='* Enquiry' 
                                 name='enquiry' 
                                 data-aos='fade-right'
-                                ref={register({required: "Enquiry required", maxLength: {value: 500, message: "Enquiry exceeds 500 characters"}})}>
+                                >
                                 </InputLarge>
-                                <Error data-aos='fade'>{errors.enquiry && errors.enquiry.message}</Error>
+                                <Error data-aos='fade'>{enquiryErrorText}</Error>
                                 <Dialog
                                     PaperProps={{
                                         style: {
@@ -184,13 +263,14 @@ const Contact = ({id}) => {
                                 </Dialog>
                             </ContactForm>
                         </ContactWrap>
-                        <BtnWrapper>
-                                    <SubmitBtn 
-                                    type='submit' 
-                                    data-aos='fade-right'
-                                    onClick={handleSubmit(onSubmit)} 
-                                    >Submit {String.fromCharCode(10140)}
-                                    </SubmitBtn>
+                        <BtnWrapper>    
+                            <SubmitBtn 
+                                type='submit' 
+                                data-aos='fade-right'
+                                onClick={onSubmit} 
+                            >
+                                Submit {String.fromCharCode(10140)}
+                            </SubmitBtn>  
                         </BtnWrapper>
                     </Column1>
                     <Column2>

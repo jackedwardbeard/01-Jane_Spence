@@ -1,62 +1,97 @@
-// our .env (environment variables) file stores our private email login details
-require('dotenv').config()
+import express from 'express';
+import nodemailer from 'nodemailer';
+import cors from 'cors';
+import dotenv from 'dotenv';
 
-const path = require('path');
-const express = require('express');
-const bodyParser = require('body-parser');
-const mailer = require("nodemailer");
-const cors = require("cors");
+// configure environment variables
+dotenv.config();
 
-// create the express app/backend/server
+// create the server, set port to 5000
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// body parser is used to receive our POST request as req.body
-// we can then easily extract our data from this req.body variable
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json());
+// allows us to access req.body
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
 
+// enables CORS
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'jane_spence/build')));
 
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/jane_spence/build/index.html'));
-  });
-  // --------------------------------
-
-// our server side POST, used to send an email with data received from the client side (contact form)
+// our server side POST
 app.post("/api/sendMail", (req, res) => {
 
     // the data received from the client side POST request (using axios)
     const data = req.body;
 
-    // the email address that will send the email from our contact form
-    const smtpTransport = mailer.createTransport({
-        service: "Gmail", // hostname
+    // create an email transport channel using the given gmail account as the sender
+    const smtpTransport = nodemailer.createTransport({
+        service: "Gmail",
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS
         }
-    });
+    })
 
-    // the data we wish to send in our e-mail
-    // these will be delivered to whichever inbox we choose to use
-    const mail = {
-        from: `${data.name} (${data.email})`, // sender address (who sends)
-        to: process.env.DEST_EMAIL, // list of receivers (who receives)
-        subject: `Message from ${data.name}`, // Subject line
-        text: `${data.name} (${data.phone}) (${data.email}) says: ${data.enquiry}`
+    // create the email
+    let email = {};
+
+    // if no name given, but phone/email/enquiry given
+    if (data.name === '' && data.phone !== '') {
+        email = {
+            from: `${data.name} (${data.email})`, // sender address
+            to: process.env.DEST_EMAIL, // receiver address(es)
+            subject: `Enquiry from ${data.email}`, // subject line
+            text: `You have received an enquiry from ${data.email}. Their phone number is ${data.phone}. Their enquiry is: ${data.enquiry}` // email body
+        }
     }
 
-    // the sending of the e-mail
-    smtpTransport.sendMail(mail, function(error, response) {
-        if(error) {
-            console.log(error)
-        } else {
-            console.log( "E-mail sent successfully!")
+    // if no phone given, but name/email/enquiry given
+    else if (data.name !== '' && data.phone === '') {
+        email = {
+            from: `${data.email}`, // sender address
+            to: process.env.DEST_EMAIL, // receiver address(es)
+            subject: `Enquiry from ${data.name} (${data.email})`, // subject line
+            text: `You have received an enquiry from ${data.name}. Their phone number was not given. Their enquiry is: ${data.enquiry}` // email body
         }
+    }
+
+    // if no phone or name given, but email/enquiry given
+    else if (data.name === '' && data.phone === '') {
+        email = {
+            from: `${data.email}`, // sender address
+            to: process.env.DEST_EMAIL, // receiver address(es)
+            subject: `Enquiry from ${data.email}`, // subject line
+            text: `You have received an enquiry from ${data.email}. Their phone number was not given. Their enquiry is: ${data.enquiry}` // email body
+        }
+    }
+
+    // if all fields were provided
+    else {
+        email = {
+            from: `${data.name} (${data.email})`, // sender address
+            to: process.env.DEST_EMAIL, // receiver address(es)
+            subject: `Enquiry from ${data.name}`, // subject line
+            text: `You have received an enquiry from ${data.name}. Their phone number is ${data.phone}. Their enquiry is: ${data.enquiry}` // email body
+        }
+    }
+
+    // send the email
+    smtpTransport.sendMail(email, function(error, response) {
+
+        // if unsuccessful
+        if (error) 
+        {
+            console.log(error);
+            res.send(error);
+        } 
+
+        // if successful
+        else 
+        {
+            console.log( 'Email sent successfully!', response);
+            res.send('Email sent successfully!');
+        }
+
         smtpTransport.close();
     })
 
