@@ -1,13 +1,16 @@
-import express from 'express';
-import nodemailer from 'nodemailer';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import path from 'path';
+// dependencies
+const path = require('path');
+const express = require('express');
+const nodemailer = require("nodemailer");
+const cors = require("cors");
+
+// enable environment variables
+require('dotenv').config()
 
 // configure environment variables
 dotenv.config();
 
-// create the server, set port to 5000
+// create the server, set port to 5000 or env variable
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -18,8 +21,10 @@ app.use(express.json());
 // enables CORS
 app.use(cors());
 
-// redirect 'stray' requests to react's index.html
+// tells backend to server files from the build folder
 app.use(express.static(path.join(__dirname, 'jane_spence/build')));
+
+// redirect all 'stray' requests to index.html react file
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/jane_spence/build/index.html'));
 });
