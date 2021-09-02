@@ -8,9 +8,6 @@ const bodyParser = require('body-parser')
 // enable environment variables
 require('dotenv').config()
 
-// configure environment variables
-dotenv.config();
-
 // create the server, set port to 5000 or env variable
 const app = express();
 const PORT = process.env.PORT || 5000;
