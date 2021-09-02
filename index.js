@@ -1,8 +1,9 @@
 // dependencies
 const path = require('path');
 const express = require('express');
-const nodemailer = require("nodemailer");
-const cors = require("cors");
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+const bodyParser = require('body-parser')
 
 // enable environment variables
 require('dotenv').config()
@@ -15,8 +16,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // allows us to access req.body
-app.use(express.urlencoded({ extended: true}));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
 // enables CORS
 app.use(cors());
