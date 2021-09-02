@@ -68,7 +68,12 @@ const Contact = () => {
     const onSubmit = () => {
         
         // if required fields are given, and valid (i.e. no errors), POST
-        if ((email !== '' && emailErrorText === '') && (enquiry !== '' && enquiryErrorText === '')) {
+        if (
+            (nameErrorText === '' && phoneErrorText === '') && 
+            (email !== '' && emailErrorText === '') && 
+            (enquiry !== '' && enquiryErrorText === '')
+            ) 
+        {
             const data = {
                 name: name,
                 phone: phone,
@@ -101,10 +106,10 @@ const Contact = () => {
                 issues.push('invalid phone number');
             }
             if (email === '') {
-                issues.push('email required');
+                issues.push('email address required');
             }
             if (emailErrorText !== '') {
-                issues.push('email not valid');
+                issues.push('invalid email address');
             }
             if (enquiry === '') {
                 issues.push('enquiry required');
@@ -118,7 +123,7 @@ const Contact = () => {
     // on changing an input field on the contact form, validate and update
     const handleChange = (e) => {
         e.preventDefault();
-
+        console.log(process.env.DEST_EMAIL);
         // validate and update name field
         if (e.target.name === "name") {
             //eslint-disable-next-line -- ignores regex warning
@@ -205,11 +210,9 @@ const Contact = () => {
                                 }
                                 <Input onChange={handleChange} 
                                 value={phone}
-                                type='number' 
+                                type='text' 
                                 placeholder='Phone' 
-                                name='phone' 
-                                // prevent non digits to be entered into the number input field
-                                onKeyDown={ (e) => ((e.key === 'e' && e.preventDefault()) || (e.key === 'E' && e.preventDefault())) }
+                                name='phone'
                                 data-aos='fade-right'
                                 >
                                 </Input>
@@ -227,12 +230,6 @@ const Contact = () => {
                                 data-aos='fade-left'
                                 >
                                 </Input>
-                                {
-                                    emailErrorText === '' ?
-                                    <></>
-                                    :
-                                    <Error data-aos='fade'>{emailErrorText}</Error>
-                                }
                                 <InputLarge type='text' 
                                 onChange={handleChange} 
                                 value={enquiry}
@@ -241,7 +238,6 @@ const Contact = () => {
                                 data-aos='fade-right'
                                 >
                                 </InputLarge>
-                                <Error data-aos='fade'>{enquiryErrorText}</Error>
                                 <Dialog
                                     PaperProps={{
                                         style: {
