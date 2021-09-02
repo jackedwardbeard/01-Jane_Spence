@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(cors());
 
 // redirect 'stray' requests to react's index.html
+app.use(express.static(path.join(__dirname, 'jane_spence/build')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/jane_spence/build/index.html'));
 });
