@@ -27,14 +27,14 @@ app.get('*', (req, res) => {
 });
 
 // our server side POST
-app.post("/api/sendMail", (req, res) => {
+app.post('/api/sendMail', (req, res) => {
 
     // the data received from the client side POST request (using axios)
     const data = req.body;
 
-    // create an email transport channel using the given gmail account as the sender
+    // create an SMTP email transport channel using the given gmail account as the sender
     const smtpTransport = nodemailer.createTransport({
-        service: "Gmail",
+        service: 'Gmail',
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS
@@ -85,7 +85,7 @@ app.post("/api/sendMail", (req, res) => {
     }
 
     // send the email
-    smtpTransport.sendMail(email, function(error, response) {
+    smtpTransport.sendMail(email, (error, response) => {
 
         // if unsuccessful
         if (error) 
@@ -97,7 +97,7 @@ app.post("/api/sendMail", (req, res) => {
         // if successful
         else 
         {
-            console.log( 'Email sent successfully!', response);
+            console.log('Email sent successfully!', response);
             res.send('Email sent successfully!');
         }
 
@@ -108,5 +108,5 @@ app.post("/api/sendMail", (req, res) => {
 
 // the express server is running & listening for requests on PORT 5000
 app.listen(PORT,  () => {
-    console.log("The backend is running on PORT", PORT);
+    console.log('The backend is running on PORT', PORT);
 })

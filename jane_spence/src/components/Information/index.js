@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import { React, useEffect, useState } from 'react';
 import {
     InformationContainer,
     InformationWrapper,
@@ -21,11 +21,11 @@ import {
     DescriptionWrapper,
     Description,
     GlobalStyle,
-} from './InformationComponents'
-import {faqs} from './faqs'
-import {FiPlus, FiMinus} from 'react-icons/fi'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+} from './InformationComponents';
+import {faqs} from './faqs';
+import {FiPlus, FiMinus} from 'react-icons/fi';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Information = ({titleUnderline, leftAlign, maxWidth, darkBackground, darkText, darkButton, showButton, showDescription, description, darkButtonText, buttonText, buttonLocation, id, title, body, showBody, subbody, subbody2, subbody3, subbody4, subbody5, img, showSubtitle, subtext, showAccordion}) => {

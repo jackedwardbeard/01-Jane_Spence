@@ -16,8 +16,7 @@ export const InformationContainer = styled.div`
         padding: 100px 0;
         width: 100%;
         overflow-x: hidden;
-    }
-    
+    } 
 `
 
 export const InformationWrapper = styled.div`
@@ -153,8 +152,6 @@ export const MapWrapper = styled.div`
         width: 100%;
         height: max(250px, 20vh);
     }
-
-    
 `
 
 

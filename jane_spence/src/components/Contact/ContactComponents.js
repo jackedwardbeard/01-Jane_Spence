@@ -53,8 +53,6 @@ export const Column1 = styled.div`
         margin-top: max(100px, 10vmin);
         margin-bottom: max(100px, 10vmin);
     }
-
-    
 `
 
 export const Title = styled.h1`
@@ -256,7 +254,6 @@ export const SubmitBtn = styled.button`
         color: rgb(241,167,82);
         transition: 0.1s;
     }
-    
 `
 
 export const Error = styled.p`
@@ -270,7 +267,6 @@ export const Error = styled.p`
     justify-content: center;
     align-items: center;
     text-align: center;
-
 `
 
 export const DescriptionWrapper = styled.div`

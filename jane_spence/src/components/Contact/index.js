@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import { React, useEffect, useState } from 'react';
 import {
     InformationContainer,
     InformationWrapper,
@@ -24,11 +24,11 @@ import {
     SubTitleWrapper,
     SubTitle,
     GlobalStyle
-} from './ContactComponents'
-import contact from '../../images/contact.svg'
-import axios from 'axios'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+} from './ContactComponents';
+import contact from '../../images/contact.svg';
+import axios from 'axios';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 enquiry: enquiry
             }
     
-            axios.post("/api/sendMail", data)
+            axios.post('/api/sendMail', data)
             
             // clear the form upon submitting
             setName('');
@@ -125,7 +125,7 @@ const Contact = () => {
         e.preventDefault();
         console.log(process.env.DEST_EMAIL);
         // validate and update name field
-        if (e.target.name === "name") {
+        if (e.target.name === 'name') {
             //eslint-disable-next-line -- ignores regex warning
             const lettersOnlyPattern = new RegExp(/^[A-Za-z\s\-]+$/);
             // input matches name regex and isn't empty
@@ -139,7 +139,7 @@ const Contact = () => {
         }
 
         // validate and update phone field
-        if (e.target.name === "phone") {
+        if (e.target.name === 'phone') {
             //eslint-disable-next-line -- ignores regex warning
             const phonePattern = new RegExp(/^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{2}(\ |-){0,1}[0-9]{1}(\ |-){0,1}[0-9]{3}$/);
             if (!phonePattern.test(e.target.value) && e.target.value !== '') {
@@ -152,7 +152,7 @@ const Contact = () => {
         }
 
         // validate and update email field
-        if (e.target.name === "email") {
+        if (e.target.name === 'email') {
             //eslint-disable-next-line -- ignores regex warning
             const emailPattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
             if (!emailPattern.test(e.target.value) && e.target.value !== '') {
@@ -165,7 +165,7 @@ const Contact = () => {
         }
 
         // validate and update enquiry field
-        if (e.target.name === "enquiry") {
+        if (e.target.name === 'enquiry') {
             if (e.target.value === '') {
                 setEnquiryErrorText('Error')
             }
@@ -260,7 +260,7 @@ const Contact = () => {
                                         </DialogContentText>
                                     </DialogContent>
                                     <DialogActions>
-                                        <Button onClick={handleClose} color="primary">
+                                        <Button onClick={handleClose} color='primary'>
                                             Okay
                                         </Button>
                                     </DialogActions>

@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import { React, useEffect } from 'react';
 import {
     LandingContainer,
     LandingBackground,
@@ -9,9 +9,9 @@ import {
     LearnMoreBtnWrapper,
     LearnMoreBtn,
     GlobalStyle
-} from './LandingComponents'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+} from './LandingComponents';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Landing = ({id}) => {
 
@@ -53,7 +53,7 @@ const Landing = ({id}) => {
                 Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
                 <LearnMoreBtnWrapper>
-                    <LearnMoreBtn to="about" smooth={true} spy={true} offset={navOffset} data-aos='fade-up'>
+                    <LearnMoreBtn to='about' smooth={true} spy={true} offset={navOffset} data-aos='fade-up'>
                     Learn More {String.fromCharCode(10140)}
                     </LearnMoreBtn>
                 </LearnMoreBtnWrapper>

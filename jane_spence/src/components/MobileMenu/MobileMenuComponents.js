@@ -23,7 +23,6 @@ export const MobileMenuContainer = styled.aside`
     background: black;
     opacity: ${({clicked}) => (clicked ? '100%' : '0%')}; // show menu if its been opened, else do not show it
     top: ${({clicked}) => (clicked ? '0' : '-100%')};
-
 `
 
 export const Icon = styled.div`
@@ -50,7 +49,6 @@ export const MobileMenuWrapper = styled.div`
     display: grid;
     align-content: center;
     justify-content: center;
-    
 `
 
 export const MobileMenu = styled.ul`
@@ -58,7 +56,6 @@ export const MobileMenu = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 30px);
     

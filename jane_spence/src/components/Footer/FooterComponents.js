@@ -132,7 +132,7 @@ export const PreFooterWrapper = styled.div`
     }
 `
 
-export const SubFooterContainer = styled.div`
+export const BottomFooterContainer = styled.div`
     background: rgb(0,0,0, 0.5);
     height: max(40px, 4vmin);
     overflow: hidden;
@@ -146,7 +146,7 @@ export const SubFooterContainer = styled.div`
 
 `
 
-export const SubSubFooterContainer = styled.div`
+export const TopFooterContainer = styled.div`
     background: rgb(0,0,0,0.3);
     height: max(80px, 8vmin);
     overflow: hidden;
@@ -189,7 +189,6 @@ export const NavLinkScroll = styled(LinkScroll)`
     display: grid;
     text-decoration: none;
     cursor: pointer;
-
 
     @media screen and (max-width: 768px) {
         font-size: max(0.9rem, 2vmin);

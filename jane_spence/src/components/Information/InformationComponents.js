@@ -223,7 +223,6 @@ export const Button = styled(LinkScroll)`
         transition: 0.1s;
         width: 100%;
     }
-    
 `
 
 export const AccordionWrapper = styled.div`
@@ -280,7 +279,6 @@ export const QuestionWrapper = styled.div`
         background: rgb(69,74,88);
         color: rgb(241,167,82);
     }
-    
 `
 
 export const AnswerWrapper = styled.div`
@@ -291,7 +289,6 @@ export const AnswerWrapper = styled.div`
     font-size: max(0.8rem, 1.75vmin);
     color: black;
     font-weight: 400;
-
 `
 
 export const DescriptionWrapper = styled.div`
