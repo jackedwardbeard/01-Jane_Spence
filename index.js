@@ -18,7 +18,7 @@ app.use(express.json());
 // enables CORS
 app.use(cors());
 
-// tells backend to server files from the build folder
+// tells backend to serve files from the build folder
 app.use(express.static(path.join(__dirname, 'jane_spence/build')));
 
 // redirect all 'stray' requests to index.html react file
