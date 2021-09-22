@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const FooterContainer = styled.div`
-    background: rgb(27, 27, 27);
+    background: rgb(18, 18, 18);
     height: max(520px, 52vmin);
     overflow: hidden;
 

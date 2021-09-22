@@ -87,6 +87,10 @@ export const LearnMoreBtnWrapper = styled(LinkScroll)`
     margin-top: max(40px, 4vmin);
     min-width: 100px;
     min-height: 100px;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const LearnMoreBtn = styled(LinkScroll)`

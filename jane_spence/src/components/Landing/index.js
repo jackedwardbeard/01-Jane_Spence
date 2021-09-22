@@ -54,7 +54,7 @@ const Landing = ({id}) => {
                 <LandingSubText data-aos='fade-left'>
                 Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
-                <LearnMoreBtnWrapper to='about' smooth={true} spy={true} offset={navOffset}>
+                <LearnMoreBtnWrapper to='about' smooth={true} spy={true} offset={navOffset} data-aos='fade-up'>
                     <DownArrow/>
                     <DownArrow/>
                 </LearnMoreBtnWrapper>
