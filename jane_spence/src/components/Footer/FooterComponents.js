@@ -36,7 +36,7 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    width: 25%;
+    width: 20%;
     height: 100%;
     float: left;
     display: flex;
@@ -52,7 +52,7 @@ export const Column1 = styled.div`
 `
 
 export const Column2 = styled.div`
-    width: 25%;
+    width: 20%;
     height: 100%;
     float: left;
     display: flex;
@@ -73,7 +73,7 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-    width: 25%;
+    width: 20%;
     height: 100%;
     float: left;
     display: flex;
@@ -274,6 +274,12 @@ export const SubSubText = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         font-size: max(1.1rem, 2.2vmin);
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 

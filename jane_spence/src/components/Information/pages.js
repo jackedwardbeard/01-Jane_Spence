@@ -1,4 +1,4 @@
-import about from '../../media/diabetes.jpg'
+import about from '../../media/about.jpg'
 import faq from '../../media/faq.jpg'
 
 

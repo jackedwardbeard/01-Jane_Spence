@@ -90,6 +90,14 @@ export const LearnMoreBtnWrapper = styled(LinkScroll)`
 
     &:hover {
         cursor: pointer;
+        margin-top: max(60px, 6vmin);
+        transition: 0.2s;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 
@@ -111,6 +119,12 @@ export const LearnMoreBtn = styled(LinkScroll)`
         transition: all 0.2s ease-in-out;
         background: white;
         color: black;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 
@@ -121,8 +135,8 @@ export const DownArrow = styled.div`
     min-height: 30px;
     min-width: 30px;
     border-style: solid;
-    border-color: rgb(155, 155, 155);
-    margin-top: -10px;
+    border-color: white;
+    margin-top: min(-10px, -1vmax);
     border-width: 0px 1px 1px 0px;
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;

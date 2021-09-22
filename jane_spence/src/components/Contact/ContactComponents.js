@@ -82,7 +82,7 @@ export const Column2 = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 0.75vw;
-    width: 50%;
+    width: 42.5%;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -103,7 +103,8 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 80%;
+    margin-top: 40px;
     border-radius: 30px;
 `
 
@@ -253,6 +254,12 @@ export const SubmitBtn = styled.button`
         background: rgb(69,74,88);
         color: rgb(216,191,216);
         transition: 0.1s;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 

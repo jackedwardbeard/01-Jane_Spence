@@ -20,6 +20,12 @@ export const MobileMenuContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
+    /* Enable hardware acceleration to fix laggy transitions */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     background: rgb(0,0,0,0.95);
     opacity: ${({clicked}) => (clicked ? '100%' : '0%')}; // show menu if its been opened, else do not show it
     top: ${({clicked}) => (clicked ? '0' : '-100%')};
@@ -41,6 +47,12 @@ export const CloseIcon = styled(FaTimes)`
     &:hover {
         color: thistle;
         transition: 0.2s ease-in-out;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 
@@ -81,6 +93,12 @@ export const MobileMenuLink = styled(LinkScroll)`
     &:hover {
         color: thistle;
         transition: 0.2s ease-in-out;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 
@@ -109,5 +127,11 @@ export const MobileMenuBtn = styled(LinkScroll)`
         transition: all 0.2s ease-in-out;
         background: white;
         color: black;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `

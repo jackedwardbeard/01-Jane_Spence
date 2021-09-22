@@ -19,6 +19,10 @@ import {
     SubmitBtn,
     BtnWrapper,
     Error,
+    DescriptionWrapper,
+    Description,
+    SubTitleWrapper,
+    SubTitle,
     GlobalStyle
 } from './ContactComponents';
 import contact from '../../media/contact.jpg';
@@ -274,6 +278,20 @@ const Contact = () => {
                         </BtnWrapper>
                     </Column1>
                     <Column2>
+                        <SubTitleWrapper data-aos='fade-down'>
+                            <SubTitle>
+                                Booking A Consultation
+                            </SubTitle>
+                        </SubTitleWrapper>
+                        <DescriptionWrapper data-aos='fade-left'>
+                            <Description>
+                                If you would like to book a consultation or speak to Jane regarding another topic, you can contact her via phone, fax or e-mail. <br></br><br></br>
+                                You can also book an appointment by calling Barry Dean Pharmacy on 9783 5201, Skye Medical Centre on 9782 8555, or by calling Jane directly on 0417 389 257.
+                                <br></br><br></br>Alternatively, you can use the contact form to the left to send an enquiry.<br></br><br></br>
+
+                                If you wish to book a consultation at Frankston Healthcare, please ring 0417 389 257.
+                            </Description>
+                        </DescriptionWrapper>
                         <ImgWrap>
                             <Img data-aos='fade-left' src={contact}/>
                         </ImgWrap>

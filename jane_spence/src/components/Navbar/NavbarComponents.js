@@ -135,11 +135,11 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: max(3px, 0.3vmin) solid thistle;
+        border-bottom: max(5px, 0.5vmin) solid thistle;
     }
 
     &:hover {
-        border-bottom: max(3px, 0.3vmin) solid thistle;
+        border-bottom: max(5px, 0.5vmin) solid thistle;
     }
 
 `;
@@ -172,5 +172,11 @@ export const NavBtnLink = styled(LinkScroll)`
         transition: 0.5s;
         background: white;
         color: black;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `

@@ -206,6 +206,12 @@ export const Button = styled(LinkScroll)`
         background: rgb(69,74,88);
         color: rgb(216,191,216);
         transition: 0.1s;
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 
     @media screen and (max-width: 768px) {
@@ -279,6 +285,12 @@ export const QuestionWrapper = styled.div`
         transition: 0.1s;
         background: rgb(69,74,88);
         color: rgb(216,191,216);
+        /* Enable hardware acceleration to fix laggy transitions */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
     }
 `
 
