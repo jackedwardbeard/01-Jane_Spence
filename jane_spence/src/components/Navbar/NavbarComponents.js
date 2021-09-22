@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Nav = styled.nav`
-    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(11,18,36,0.75)')};
+    background: ${({navTransparent}) => (navTransparent ? 'transparent' : 'rgb(0,0,0,0.55)')};
     height: max(80px, 9vh);
     margin-top: min(-80px, -9vh);
     min-height: 80px;
@@ -23,7 +23,6 @@ export const Nav = styled.nav`
     z-index: 999;
     transition: 0.5s all ease;
     width: 100%;
-    
 ` ;
 
 export const NavbarContainer = styled.div`
@@ -157,7 +156,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkScroll)`
     border-radius: max(30px, 3vmin);
-    background: thistle;
+    background: rgb(216,191,216);
     white-space: nowrap;
     padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
     color: black;

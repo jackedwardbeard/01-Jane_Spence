@@ -99,7 +99,7 @@ export const Body = styled.p`
     margin-top: max(10px, 1vmin);
     font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     white-space: pre-wrap;
@@ -119,7 +119,7 @@ export const SubBody = styled.p`
     margin-top: max(15px, 1.5vmin);
     font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: ${({darkText}) => (darkText ? '#696969' : 'white')};
     display: ${({showBody}) => (showBody ? '' : 'none')};
     text-align: right;
@@ -176,6 +176,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 90%;
+    border-radius: 30px;
 `
 
 export const ButtonWrapper = styled.div`
@@ -203,7 +204,7 @@ export const Button = styled(LinkScroll)`
 
     &:hover {
         background: rgb(69,74,88);
-        color: rgb(241,167,82);
+        color: rgb(216,191,216);
         transition: 0.1s;
     }
 
@@ -277,7 +278,7 @@ export const QuestionWrapper = styled.div`
     &:hover {
         transition: 0.1s;
         background: rgb(69,74,88);
-        color: rgb(241,167,82);
+        color: rgb(216,191,216);
     }
 `
 
@@ -310,7 +311,7 @@ export const DescriptionWrapper = styled.div`
 export const Description = styled.p`
     color: #696969;
     font-size: max(0.85rem, 2vmin);
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 768px) {

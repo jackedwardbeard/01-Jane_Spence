@@ -9,17 +9,17 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const FooterContainer = styled.div`
-    background: rgb(12,19,35);
-    height: max(590px, 59vmin);
+    background: rgb(27, 27, 27);
+    height: max(520px, 52vmin);
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-        height: max(570px, 57vmin);
+        height: max(520px, 52vmin);
     }
 `
 
 export const FooterWrapper = styled.div`
-    height: max(470px, 47vmin);
+    height: max(420px, 42vmin);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -36,7 +36,7 @@ export const Row1 = styled.div`
 `
 
 export const Column1 = styled.div`
-    width: 30%;
+    width: 25%;
     height: 100%;
     float: left;
     display: flex;
@@ -45,10 +45,14 @@ export const Column1 = styled.div`
     justify-content: top;
     text-align: center;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        width: 30%;
+    }
 `
 
 export const Column2 = styled.div`
-    width: 30%;
+    width: 25%;
     height: 100%;
     float: left;
     display: flex;
@@ -59,13 +63,17 @@ export const Column2 = styled.div`
     overflow: hidden;
     padding: 0 max(5px, 0.5vmin);
 
+    @media screen and (max-width: 1024px) {
+        width: 30%;
+    }
+
     @media screen and (max-width: 768px) {
         padding: 0 max(10px, 1vmin);
     }
 `
 
 export const Column3 = styled.div`
-    width: 30%;
+    width: 25%;
     height: 100%;
     float: left;
     display: flex;
@@ -75,6 +83,10 @@ export const Column3 = styled.div`
     text-align: center;
     overflow: hidden;
     padding: 0 max(10px, 1vmin);
+
+    @media screen and (max-width: 1024px) {
+        width: 30%;
+    }
 
     @media screen and (max-width: 320px) {
         padding: 0 max(5px, 0.5vmin);
@@ -91,7 +103,7 @@ export const PreFooterWrapper = styled.div`
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: max(1.25rem, 2.5vmin);
+    font-size: max(1.1rem, 2.2vmin);
     padding-left: max(10vw, 200px);
     padding-right: max(10vw, 200px);
     overflow: hidden;
@@ -99,16 +111,15 @@ export const PreFooterWrapper = styled.div`
     @media screen and (max-width: 1024px) {
         font-size: 1.4rem;
         height: 100px;
-        font-size: 1.5rem;
         padding: 20px 20px;
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     @media screen and (max-width: 414px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 411px) {
@@ -148,7 +159,7 @@ export const BottomFooterContainer = styled.div`
 
 export const TopFooterContainer = styled.div`
     background: rgb(0,0,0,0.3);
-    height: max(80px, 8vmin);
+    height: max(60px, 6vmin);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -157,15 +168,14 @@ export const TopFooterContainer = styled.div`
     @media screen and (max-width: 1024px) {
         height: 60px;
     }
-
 `
 
 export const Title = styled.h3`
     color: white;
-    font-size: max(1.1rem, 2.5vmin);
+    font-size: max(0.9rem, 1.8vmin);
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    margin-top: max(20px, 1.5vmin);
+    margin-top: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
         font-size: max(1rem, 2.5vmin);
@@ -181,9 +191,9 @@ export const Title = styled.h3`
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: max(1rem, 1.75vmin);
+    color: rgb(200,200,200);
+    font-family: 'Arial', sans-serif;
+    font-size: max(0.9rem, 1.6vmin);
     font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
@@ -191,8 +201,8 @@ export const NavLinkScroll = styled(LinkScroll)`
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
-        font-size: max(0.9rem, 2vmin);
-        font-weight: 500;
+        font-size: max(0.8rem, 1.5vmin);
+        font-weight: 300;
     }
 
     @media screen and (max-width: 539px) {
@@ -209,15 +219,14 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 
     &:hover {
-        font-weight: 600;
-        color: rgb(241,167,82);
+        font-weight: bold;
     }
 `
 
 export const NavLink = styled(LinkRouter)`
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: max(1rem, 1.75vmin);
+    color: rgb(200,200,200);
+    font-family: 'Arial', sans-serif;
+    font-size: max(0.9rem, 1.6vmin);
     font-weight: 300;
     margin-top: max(15px, 1.5vmin);
     display: grid;
@@ -225,8 +234,8 @@ export const NavLink = styled(LinkRouter)`
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
-        font-size: max(0.9rem, 2vmin);
-        font-weight: 500;
+        font-size: max(0.8rem, 1.5vmin);
+        font-weight: 300;
     }
 
     @media screen and (max-width: 539px) {
@@ -242,14 +251,13 @@ export const NavLink = styled(LinkRouter)`
     }
 
     &:hover {
-        font-weight: 600;
-        color: rgb(241,167,82);
+        font-weight: bold;
     }
 `
 
 export const SubSubText = styled(LinkRouter)`
     color: white;
-    font-size: max(1.25rem, 2.5vmin);
+    font-size: max(1rem, 2vmin);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     background: transparent;
@@ -265,13 +273,12 @@ export const SubSubText = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: rgb(241,167,82);
-        font-size: max(1.3rem, 2.6vmin);
+        font-size: max(1.1rem, 2.2vmin);
     }
 `
 
 export const SubText = styled.span`
-    color: white;
+    color: rgb(200,200,200);
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);

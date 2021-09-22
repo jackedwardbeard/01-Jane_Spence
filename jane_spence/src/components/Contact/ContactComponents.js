@@ -15,7 +15,7 @@ export const InformationContainer = styled.div`
 
 export const InformationWrapper = styled.div`
     z-index: 1;
-    height: max(90vh, 800px);
+    height: max(85vh, 700px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,18 +99,18 @@ export const TextWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    margin-top: 30px;
     width: 100%;
 `
 
 export const Img = styled.img`
     width: 100%;
+    border-radius: 30px;
 `
 
 export const Item = styled.div`
     font-size: max(0.925rem, 1.85vmin);
     color: #696969;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Montserrat';
     margin-top: max(7.5px, 0.75vmin);
     margin-bottom: max(7.5px, 0.75vmin);
@@ -233,11 +233,11 @@ export const BtnWrapper = styled.div`
 export const SubmitBtn = styled.button`
     
     border-radius: max(30px, 3vmin);
-    background: thistle;
     white-space: nowrap;
     margin-top: max(50px, 5vmin);
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
     color: black;
+    background: thistle;
     font-size: max(0.9rem, 2vmin);
     font-family: 'Montserrat';
     font-weight: 400;
@@ -251,7 +251,7 @@ export const SubmitBtn = styled.button`
 
     &:hover {
         background: rgb(69,74,88);
-        color: rgb(241,167,82);
+        color: rgb(216,191,216);
         transition: 0.1s;
     }
 `
@@ -283,7 +283,7 @@ export const DescriptionWrapper = styled.div`
 
 export const Description = styled.p`
     color: #696969;
-    font-weight: 400;
+    font-weight: 300;
     font-size: max(0.925rem, 1.85vmin);
     font-family: 'Montserrat', sans-serif;
     line-height: 1;

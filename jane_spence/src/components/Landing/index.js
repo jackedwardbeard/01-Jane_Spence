@@ -2,16 +2,18 @@ import { React, useEffect } from 'react';
 import {
     LandingContainer,
     LandingBackground,
-    LandingImg,
+    LandingVideo,
     LandingText,
     LandingTitle,
     LandingSubText,
     LearnMoreBtnWrapper,
     LearnMoreBtn,
+    DownArrow,
     GlobalStyle
 } from './LandingComponents';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import vid from '../../media/landingVideo.mp4'
 
 const Landing = ({id}) => {
 
@@ -43,7 +45,7 @@ const Landing = ({id}) => {
         <LandingContainer id={id}>
             <GlobalStyle/>
             <LandingBackground>
-                <LandingImg></LandingImg>
+                <LandingVideo autoPlay loop muted src={vid} type='video/mp4'/>
             </LandingBackground>
             <LandingText>
                 <LandingTitle data-aos='fade-right'>
@@ -52,11 +54,11 @@ const Landing = ({id}) => {
                 <LandingSubText data-aos='fade-left'>
                 Seek professional advice from a Consultant Pharmacist and Diabetes Educator
                 </LandingSubText>
-                <LearnMoreBtnWrapper>
-                    <LearnMoreBtn to='about' smooth={true} spy={true} offset={navOffset} data-aos='fade-up'>
-                    Learn More {String.fromCharCode(10140)}
-                    </LearnMoreBtn>
+                <LearnMoreBtnWrapper to='about' smooth={true} spy={true} offset={navOffset}>
+                    <DownArrow/>
+                    <DownArrow/>
                 </LearnMoreBtnWrapper>
+                
             </LandingText>  
         </LandingContainer>
         

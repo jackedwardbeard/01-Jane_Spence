@@ -95,8 +95,8 @@ export const Title = styled.h1`
 
 export const Body = styled.p`
     font-size: max(0.925rem, 1.85vmin);
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     color: #696969;
     text-align: center;
 `
@@ -157,8 +157,8 @@ export const MapWrapper = styled.div`
 
 export const BodyHours = styled.p`
     font-size: max(0.925rem, 1.85vmin);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color: #696969;
     text-align: center;
 

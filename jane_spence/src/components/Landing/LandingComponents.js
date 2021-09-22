@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import {Link as LinkScroll} from 'react-scroll'
-import image from '../../images/landingImg.jpg'
+import { Link as LinkScroll } from 'react-scroll'
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -28,17 +27,12 @@ export const LandingBackground = styled.div`
     position: absolute;
 `
 
-export const LandingImg = styled.div`
+export const LandingVideo = styled.video`
     width: 100%;
     height: 100%;
-    background-image: url(${image});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    @media screen and (max-width: 1024px) {
-        background-size: cover;
-    }
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: black;
 `
 
 export const LandingText = styled.div`
@@ -84,12 +78,15 @@ export const LandingSubText = styled.div`
     }
 `
 
-export const LearnMoreBtnWrapper = styled.nav`
+export const LearnMoreBtnWrapper = styled(LinkScroll)`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     font-family: 'Montserrat', sans-serif;
-    margin-top: max(20px, 2vmin);
+    margin-top: max(40px, 4vmin);
+    min-width: 100px;
+    min-height: 100px;
 `
 
 export const LearnMoreBtn = styled(LinkScroll)`
@@ -111,4 +108,18 @@ export const LearnMoreBtn = styled(LinkScroll)`
         background: white;
         color: black;
     }
+`
+
+export const DownArrow = styled.div`
+    box-sizing: border-box;
+    height: 2.5vmax;
+    width: 2.5vmax;
+    min-height: 30px;
+    min-width: 30px;
+    border-style: solid;
+    border-color: rgb(155, 155, 155);
+    margin-top: -10px;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
 `

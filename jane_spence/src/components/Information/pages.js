@@ -1,5 +1,5 @@
-import about from '../../images/about.svg'
-import faq from '../../images/faq.svg'
+import about from '../../media/diabetes.jpg'
+import faq from '../../media/faq.jpg'
 
 
 export const About = {
