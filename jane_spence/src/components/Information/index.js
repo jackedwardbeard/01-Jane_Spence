@@ -22,8 +22,8 @@ import {
     Description,
     GlobalStyle,
 } from './InformationComponents';
-import {faqs} from './faqs';
-import {FiPlus, FiMinus} from 'react-icons/fi';
+import { faqs } from './faqs';
+import { FiPlus, FiMinus } from 'react-icons/fi';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

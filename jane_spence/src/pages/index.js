@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import MobileMenu from '../components/MobileMenu'
 import Navbar from '../components/Navbar'
 import LandingBackground from '../components/Landing'
@@ -18,8 +18,8 @@ const Home = () => {
     return (
         <>
         <Helmet>
-                <meta name='Home' content='Welcome to Jane Spence Diabetes Education!'/>
-                <title>Jane Spence Diabetes Education</title>
+            <meta name='Home' content='Welcome to Jane Spence Diabetes Education!'/>
+            <title>Jane Spence Diabetes Education</title>
         </Helmet>
         <MobileMenu clicked={clicked} reverseState={reverseState}/>
         <Navbar reverseState={reverseState}/>

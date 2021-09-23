@@ -159,7 +159,7 @@ export const Label = styled.div`
 export const Input = styled.input`
     height: max(40px, 4vmin);
     width: max(300px, 30vmin);
-    background: rgb(13,16,22,0.075);
+    background: rgb(218,220,221);
     font-size: max(1.2rem, 2vmin);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
@@ -195,7 +195,7 @@ export const Input = styled.input`
 
 export const InputLarge = styled.textarea`
     font-family: 'Montserrat', sans-serif;
-    background: rgb(13,16,22,0.1);
+    background: rgb(218,220,221);
     padding-top: max(5px, 1vmin);
     type: textarea;
     font-weight: 400;

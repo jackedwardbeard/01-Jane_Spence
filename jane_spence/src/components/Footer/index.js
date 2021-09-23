@@ -36,7 +36,7 @@ const Footer = () => {
     function calcNavOffset() {
         // nav height is either 80px or 9vh, determine which
         const navHeight = Math.max(80, vh(9));
-        // offset for smooth scroll is the negative of this
+        // offset for smooth scroll is the opposite of this
         const offset = -(navHeight);
 
         return offset; 
