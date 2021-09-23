@@ -10,12 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
 export const FooterContainer = styled.div`
     background: rgb(18, 18, 18);
-    height: max(520px, 52vmin);
+    height: max(460px, 46vmin);
     overflow: hidden;
-
-    @media screen and (max-width: 1024px) {
-        height: max(520px, 52vmin);
-    }
 `
 
 export const FooterWrapper = styled.div`
@@ -96,7 +92,7 @@ export const Column3 = styled.div`
 export const PreFooterWrapper = styled.div`
     background: rgb(0,0,0, 0.1);
     height: max(80px, 8vmin);
-    color: white;
+    color: rgb(200,200,200);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,21 +174,17 @@ export const Title = styled.h3`
     margin-top: max(10px, 1vmin);
 
     @media screen and (max-width: 768px) {
-        font-size: max(1rem, 2.5vmin);
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: max(1rem, 2.5vmin);
+        font-size: max(0.8rem, 1.6vmin);
     }
 
     @media screen and (max-width: 320px) {
-        font-size: max(0.85rem, 2.5vmin);
+        font-size: max(0.75rem, 1.5vmin);
     }
 `
 
 export const NavLinkScroll = styled(LinkScroll)`
     color: rgb(200,200,200);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: max(0.9rem, 1.6vmin);
     font-weight: 300;
     margin-top: max(15px, 1.5vmin);
@@ -225,7 +217,7 @@ export const NavLinkScroll = styled(LinkScroll)`
 
 export const NavLink = styled(LinkRouter)`
     color: rgb(200,200,200);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: max(0.9rem, 1.6vmin);
     font-weight: 300;
     margin-top: max(15px, 1.5vmin);

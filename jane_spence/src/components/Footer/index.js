@@ -50,7 +50,7 @@ const Footer = () => {
             <GlobalStyle/>
             <FooterWrapper>
                 <PreFooterWrapper data-aos='fade'>
-                    For further information, visit the websites listed below or book a consultation @ 0417 389 257.
+                    For further information, visit the websites listed below or book a consultation @ 0417 389 257
                 </PreFooterWrapper>
                 <Row1>
                     <Column1>
@@ -83,23 +83,11 @@ const Footer = () => {
                     </Column3>
                 </Row1>
             </FooterWrapper>
-
-            <TopFooterContainer>
-
-                <SubSubText to='//linkedin.com/in/jackedwardbeard/' target='_blank'>
-                   Design By JACK BEARD
-                </SubSubText>
-
-            </TopFooterContainer>
-
             <BottomFooterContainer>
-                
                 <SubText>
                     Jane Spence Diabetes Education © 2021 - All Rights Reserved
                 </SubText>
-               
             </BottomFooterContainer>
-            
         </FooterContainer>
     )
 }

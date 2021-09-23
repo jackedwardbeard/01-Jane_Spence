@@ -36,7 +36,7 @@ export const NavbarContainer = styled.div`
     padding: 0 max(20px, 0.5vmin); 
 
     @media screen and (max-width: 768px) {
-        justify-content: start;
+        justify-content: flex-start;
     }
 `;
 
@@ -45,7 +45,7 @@ export const LogoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: min(-5px, -0.5vmin);
+    margin-top: min(-6px, -0.6vmin);
     
     @media screen and (max-width: 1024px) {
         margin-left: 10px;
@@ -133,6 +133,7 @@ export const NavLinks = styled(LinkScroll)`
     padding; 0 max(10px, 1vmin);
     height: 100%;
     cursor: pointer;
+    font-family: 'Montserrat';
 
     &.active {
         border-bottom: max(5px, 0.5vmin) solid thistle;

@@ -49,7 +49,7 @@ export const LandingTitle = styled.div`
     font-size: max(6.5vmin, 1.75rem);
     font-weight: 300;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         font-weight: 500;
     }
 
@@ -91,7 +91,7 @@ export const LearnMoreBtnWrapper = styled(LinkScroll)`
     &:hover {
         cursor: pointer;
         margin-top: max(60px, 6vmin);
-        transition: 0.2s;
+        //transition: 0.2s;
         /* Enable hardware acceleration to fix laggy transitions */
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);

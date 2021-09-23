@@ -266,7 +266,7 @@ export const QuestionWrapper = styled.div`
     text-align: left;
     align-items: center;
     margin-bottom: max(20px, 2vmin);
-    color: black;
+    color: #696969;
     transition: 0.5s;
 
     @media screen and (max-width: 1470px) and (min-height: 800px) {
