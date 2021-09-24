@@ -12,6 +12,10 @@ export const FooterContainer = styled.div`
     background: rgb(18, 18, 18);
     height: max(460px, 46vmin);
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        height: max(470px, 47vmin);
+    }
 `
 
 export const FooterWrapper = styled.div`
@@ -21,6 +25,10 @@ export const FooterWrapper = styled.div`
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        height: max(430px, 43vmin);
+    }
 `
 
 export const Row1 = styled.div`
