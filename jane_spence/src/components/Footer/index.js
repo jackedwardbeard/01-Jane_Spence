@@ -50,7 +50,7 @@ const Footer = () => {
             <GlobalStyle/>
             <FooterWrapper>
                 <PreFooterWrapper data-aos='fade'>
-                    For further information, visit the websites listed below or book a consultation @ 0417 389 257
+                    For further information, visit the websites listed below, or book a consultation on 0417 389 257
                 </PreFooterWrapper>
                 <Row1>
                     <Column1>
