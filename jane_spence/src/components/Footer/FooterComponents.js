@@ -14,7 +14,7 @@ export const FooterContainer = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
-        height: max(470px, 47vmin);
+        height: max(490px, 49vmin);
     }
 `
 
@@ -27,7 +27,7 @@ export const FooterWrapper = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
-        height: max(430px, 43vmin);
+        height: max(450px, 45vmin);
     }
 `
 
