@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const InformationContainer = styled.div`
-    background: rgb(242,243,244);
+    background: rgb(253, 253, 253);
     display: flex;
     flex-direction: column;
     overflow: hidden;

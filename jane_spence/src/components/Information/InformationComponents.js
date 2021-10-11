@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const InformationContainer = styled.div`
-    background: ${({darkBackground}) => (darkBackground ? 'white' : 'rgb(242,243,244)')};
+    background: ${({darkBackground}) => (darkBackground ? 'rgb(253, 253, 253)' : 'white')};
     display: flex;
     flex-direction: column;
     overflow: hidden;

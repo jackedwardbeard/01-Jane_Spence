@@ -4,7 +4,7 @@ import faq from '../../media/faq.jpg'
 
 export const About = {
     id: 'about',
-    darkBackground: true,
+    darkBackground: false,
     darkText: true,
     showButton: false,
     darkButton: true,
@@ -32,7 +32,7 @@ export const About = {
 
 export const FAQ = {
     id: 'faq',
-    darkBackground: false,
+    darkBackground: true,
     darkText: true,
     showButton: true,
     darkButton: false,
