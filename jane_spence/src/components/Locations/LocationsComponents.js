@@ -59,7 +59,7 @@ export const Column1 = styled.div`
 
 export const MainTitle = styled.h1`
     display: none;
-    font-size: max(2rem, 4vmin);
+    font-size: max(1.8rem, 3.6vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -67,6 +67,10 @@ export const MainTitle = styled.h1`
     border-bottom: solid 1px black;
     margin-bottom: max(3vmin, 30px);
     padding-bottom: max(10px, 1vmin);
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1.5rem, 3vmin);
+    }
 
     @media screen and (max-width: 1250px) {
         display: flex;

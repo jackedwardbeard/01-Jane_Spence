@@ -68,7 +68,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2rem, 4vmin);
+    font-size: max(1.8rem, 3.6vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -78,11 +78,15 @@ export const Title = styled.h1`
     padding-bottom: max(10px, 1vmin);
     text-align: ${({leftAlign}) => (leftAlign ? 'left' : 'center')};
     width: ${({maxWidth}) => (maxWidth ? '100%' : 'initial')};
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1.5rem, 3vmin);
+    }
 `
 
 export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
-    font-size: max(2rem, 4vmin);
+    font-size: max(1.8rem, 3.6vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +97,10 @@ export const Subtitle = styled.h1`
     padding-bottom: max(10px, 1vmin);
     width: 100%;
     text-align: right;
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1.5rem, 3vmin);
+    }
 `
 
 export const Body = styled.p`
@@ -193,7 +201,7 @@ export const Button = styled(LinkScroll)`
     white-space: nowrap;
     padding: max(13px, 1.2vmin) max(35px, 2.6vmin);
     color: ${({darkButtonText}) => (darkButtonText ? 'black' : 'white')};
-    font-size: max(0.9rem, 2vmin);
+    font-size: max(0.8rem, 1.9vmin);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     outline: none;
@@ -255,7 +263,7 @@ export const Accordion = styled.div`
 
 export const QuestionWrapper = styled.div`
     
-    background: rgb(13,16,22,0.1);
+    background: rgb(235,235,235);
     border-radius: 5vmin;
     padding: max(2.5vmin, 25px);
     cursor: pointer;

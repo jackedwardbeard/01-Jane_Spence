@@ -56,7 +56,7 @@ export const Column1 = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: max(2rem, 4vmin);
+    font-size: max(1.8rem, 3.6vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -65,6 +65,10 @@ export const Title = styled.h1`
     padding-bottom: max(10px, 1vmin);
     width: 100%;
     text-align: center;
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1.5rem, 3vmin);
+    }
 `
 
 export const Body = styled.ul`
@@ -143,9 +147,13 @@ export const Label = styled.div`
     margin-top: min(-10px, -1vmin);
     margin-bottom: max(10px, 1vmin);
     font-weight: 500;
-    font-size: max(1.4rem, 2.8vmin);
+    font-size: max(1.2rem, 2.4vmin);
     text-align: center;
     width: max(300px, 30vmin);
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1rem, 2vmin);
+    }
 
     @media screen and (max-width: 767px) {
         width: max(265px, 20vmin);
@@ -159,7 +167,7 @@ export const Label = styled.div`
 export const Input = styled.input`
     height: max(40px, 4vmin);
     width: max(300px, 30vmin);
-    background: rgb(218,220,221);
+    background: rgb(235,235,235);
     font-size: max(1.2rem, 2vmin);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
@@ -195,7 +203,7 @@ export const Input = styled.input`
 
 export const InputLarge = styled.textarea`
     font-family: 'Montserrat', sans-serif;
-    background: rgb(218,220,221);
+    background: rgb(235,235,235);
     padding-top: max(5px, 1vmin);
     type: textarea;
     font-weight: 400;
@@ -239,7 +247,7 @@ export const SubmitBtn = styled.button`
     padding: max(10px, 1.1vmin) max(30px, 2.5vmin);
     color: black;
     background: thistle;
-    font-size: max(0.9rem, 2vmin);
+    font-size: max(0.8rem, 1.9vmin);
     font-family: 'Montserrat';
     font-weight: 400;
     outline: none;
@@ -311,9 +319,13 @@ export const SubTitle = styled.h3`
     color: #696969;
     display: flex;
     text-align: right;
-    font-size: max(1.4rem, 2.8vmin);
+    font-size: max(1.2rem, 2.4vmin);
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(1rem, 2vmin);
+    }
 `
