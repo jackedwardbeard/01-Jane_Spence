@@ -43,11 +43,16 @@ export const LandingText = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 999;
+    width: 90%;
 `
 
 export const LandingTitle = styled.div`
     font-size: max(6.5vmin, 1.75rem);
     font-weight: 300;
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(5vmin, 1.35rem);
+    }
 
     @media screen and (max-width: 768px) {
         font-weight: 500;
@@ -70,6 +75,7 @@ export const LandingSubText = styled.div`
     font-size: max(0.8rem, 2.2vmin);
     font-weight: 300;
     margin-top: max(10px, 1vmin);
+    width: 80%;
 
     @media screen and (max-width: 1024px) {
         line-height: max(17.5px, 3vmin);

@@ -63,11 +63,7 @@ export const NavLogo = styled(LinkScroll)`
     font-size: max(1.8rem, 3.6vmin);
     overflow: hidden;
 
-    @media screen and (max-width: 950px) {
-        font-size: max(1.1rem, 3vmin);
-    }
-
-    @media screen and (max-width: 775px) {
+    @media screen and (max-width: 1350px) {
         font-size: max(1.1rem, 2.8vmin);
     }
 
@@ -120,6 +116,10 @@ export const NavItem = styled.li`
     margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
 
+    @media screen and (max-width: 1350px) {
+        font-size: max(0.7rem, 1.5vmin);
+    }
+
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -168,6 +168,10 @@ export const NavBtnLink = styled(LinkScroll)`
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none;
+
+    @media screen and (max-width: 1350px) {
+        font-size: max(0.8rem, 1.5vmin);
+    }
 
     &:hover {
         transition: 0.5s;
