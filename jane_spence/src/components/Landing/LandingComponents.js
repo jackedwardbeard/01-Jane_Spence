@@ -136,8 +136,8 @@ export const LearnMoreBtn = styled(LinkScroll)`
 
 export const DownArrow = styled.div`
     box-sizing: border-box;
-    height: 2.5vmax;
-    width: 2.5vmax;
+    height: 2.4vmax;
+    width: 2.4vmax;
     min-height: 30px;
     min-width: 30px;
     border-style: solid;
