@@ -161,8 +161,8 @@ export const NavBtnLink = styled(LinkScroll)`
     white-space: nowrap;
     padding: max(10px, 1.1vmin) max(20px, 2.2vmin);
     color: black;
-    font-size: max(1rem, 1.85vmin);
-    font-weight: 450;
+    font-size: max(0.95rem, 1.8vmin);
+    font-weight: 500;
     outline: none;
     border: none;
     cursor: pointer;
