@@ -57,7 +57,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(1.8rem, 3.6vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: #696969;
@@ -146,7 +146,7 @@ export const Label = styled.div`
     font-family: 'Montserrat', sans-serif;
     margin-top: min(-10px, -1vmin);
     margin-bottom: max(10px, 1vmin);
-    font-weight: 500;
+    font-weight: 400;
     font-size: max(1.2rem, 2.4vmin);
     text-align: center;
     width: max(300px, 30vmin);
@@ -320,7 +320,7 @@ export const SubTitle = styled.h3`
     display: flex;
     text-align: right;
     font-size: max(1.2rem, 2.4vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: max(20px, 2vmin);

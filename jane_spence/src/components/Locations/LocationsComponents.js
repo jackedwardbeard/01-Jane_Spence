@@ -60,7 +60,7 @@ export const Column1 = styled.div`
 export const MainTitle = styled.h1`
     display: none;
     font-size: max(1.8rem, 3.6vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: #696969;
@@ -84,7 +84,7 @@ export const Title = styled.h1`
     font-size: max(1.4rem, 2.8vmin);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: #696969;
     margin-bottom: max(10px, 1vmin);
 

@@ -48,14 +48,14 @@ export const LandingText = styled.div`
 
 export const LandingTitle = styled.div`
     font-size: max(6.2vmin, 1.65rem);
-    font-weight: 300;
+    font-weight: 200;
 
     @media screen and (max-width: 1350px) {
         font-size: max(5vmin, 1.35rem);
     }
 
     @media screen and (max-width: 768px) {
-        font-weight: 500;
+        font-weight: 400;
     }
 
     @media screen and (max-width: 540px) {
@@ -73,7 +73,7 @@ export const LandingTitle = styled.div`
 
 export const LandingSubText = styled.div`
     font-size: max(0.8rem, 2.2vmin);
-    font-weight: 300;
+    font-weight: 200;
     margin-top: max(10px, 1vmin);
     width: 80%;
 
@@ -81,6 +81,10 @@ export const LandingSubText = styled.div`
         line-height: max(17.5px, 3vmin);
         padding-left: max(4vw, 20px);
         padding-right: max(4vw, 20px);
+    }
+
+    @media screen and (max-width: 768px) {
+        font-weight: 300;
     }
 `
 

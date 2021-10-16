@@ -69,7 +69,7 @@ export const Column1 = styled.div`
 
 export const Title = styled.h1`
     font-size: max(1.8rem, 3.6vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? '#696969' : 'thistle')};
@@ -87,7 +87,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h1`
     margin-top: max(25px, 2.5vmin);
     font-size: max(1.8rem, 3.6vmin);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: ${({darkText}) => (darkText ? '#696969' : 'thistle')};

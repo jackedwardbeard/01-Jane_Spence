@@ -106,7 +106,7 @@ export const PreFooterWrapper = styled.div`
     align-items: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: max(1.1rem, 2.2vmin);
     padding-left: max(10vw, 200px);
     padding-right: max(10vw, 200px);
@@ -177,7 +177,7 @@ export const TopFooterContainer = styled.div`
 export const Title = styled.h3`
     color: white;
     font-size: max(0.9rem, 1.8vmin);
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     margin-top: max(10px, 1vmin);
 
@@ -285,7 +285,7 @@ export const SubSubText = styled(LinkRouter)`
 
 export const SubText = styled.span`
     color: rgb(200,200,200);
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: max(0.6rem, 1.5vmin);
 

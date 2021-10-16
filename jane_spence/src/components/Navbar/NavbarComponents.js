@@ -60,7 +60,7 @@ export const NavLogo = styled(LinkScroll)`
     text-decoration: none;
     font-weight: 800;
     position: relative;
-    font-size: max(1.75rem, 3.5vmin);
+    font-size: max(1.3rem, 3vmin);
     overflow: hidden;
 
     @media screen and (max-width: 1350px) {
@@ -112,6 +112,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     font-size: max(0.75rem, 1.7vmin);
+    font-weight: 400;
     height: max(80px, 9vh);
     margin: max(25px, 3.0643513789581207vmin);
     font-family: 'Montserrat', sans-serif;
