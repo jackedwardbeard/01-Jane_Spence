@@ -48,6 +48,7 @@ export const LandingText = styled.div`
 
 export const LandingTitle = styled.div`
     font-size: max(6.2vmin, 1.65rem);
+    font-family: 'Montserrat';
     font-weight: 200;
 
     @media screen and (max-width: 1350px) {
@@ -73,6 +74,7 @@ export const LandingTitle = styled.div`
 
 export const LandingSubText = styled.div`
     font-size: max(0.8rem, 2.2vmin);
+    font-family: 'Montserrat';
     font-weight: 200;
     margin-top: max(10px, 1vmin);
     width: 80%;
