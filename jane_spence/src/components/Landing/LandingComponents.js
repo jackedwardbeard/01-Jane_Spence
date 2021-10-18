@@ -43,13 +43,13 @@ export const LandingText = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 999;
-    width: 90%;
+    width: 95%;
 `
 
 export const LandingTitle = styled.div`
     font-size: max(6.2vmin, 1.65rem);
     font-family: 'Montserrat';
-    font-weight: 200;
+    font-weight: 100;
 
     @media screen and (max-width: 1350px) {
         font-size: max(5vmin, 1.35rem);
@@ -75,7 +75,7 @@ export const LandingTitle = styled.div`
 export const LandingSubText = styled.div`
     font-size: max(0.8rem, 2.2vmin);
     font-family: 'Montserrat';
-    font-weight: 200;
+    font-weight: 100;
     margin-top: max(10px, 1vmin);
     width: 80%;
 
@@ -87,6 +87,7 @@ export const LandingSubText = styled.div`
 
     @media screen and (max-width: 768px) {
         font-weight: 300;
+        width: 100%;
     }
 `
 

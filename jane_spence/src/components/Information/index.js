@@ -84,19 +84,19 @@ const Information = ({titleUnderline, leftAlign, maxWidth, darkBackground, darkT
                             {subtext}
                             </Subtitle>
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                ✔ {subbody}
+                                {subbody} ✔ 
                             </SubBody>
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                ✔ {subbody2}
+                                {subbody2} ✔
                             </SubBody>
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                ✔ {subbody3}
+                                {subbody3} ✔
                             </SubBody>
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                ✔ {subbody4} 
+                                {subbody4} ✔
                             </SubBody>
                             <SubBody data-aos='fade-up' darkText={darkText} showBody={showBody}>
-                                ✔ {subbody5} 
+                                {subbody5} ✔
                             </SubBody>
                             <DescriptionWrapper showDescription={showDescription}>
                                 <Description data-aos='fade-left'>
