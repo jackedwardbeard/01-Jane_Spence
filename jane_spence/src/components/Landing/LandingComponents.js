@@ -43,7 +43,7 @@ export const LandingText = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 999;
-    width: 95%;
+    width: 100%;
 `
 
 export const LandingTitle = styled.div`
